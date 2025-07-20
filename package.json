@@ -1,0 +1,23 @@
+{
+  "name": "blockchain-portfolio",
+  "version": "1.0.0",
+  "description": "Modern portfolio website for a blockchain developer and Web3 innovator",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 3000",
+    "build": "echo 'Build completed - ready for deployment'",
+    "preview": "python -m http.server 8080"
+  },
+  "keywords": [
+    "blockchain",
+    "web3",
+    "portfolio",
+    "developer",
+    "nft",
+    "ai"
+  ],
+  "author": "Blockchain Developer & Web3 Innovator",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}

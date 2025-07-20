@@ -133,7 +133,7 @@ function initializeAnimations() {
 function initializeContactForm() {
     const contactForm = document.getElementById('contactForm');
     
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
         const submitButton = contactForm.querySelector('button[type="submit"]');
@@ -142,17 +142,33 @@ function initializeContactForm() {
         submitButton.textContent = 'Sending...';
         submitButton.disabled = true;
         
-        setTimeout(() => {
-            submitButton.textContent = 'Message Sent!';
-            submitButton.style.background = 'var(--accent-gradient)';
+        try {
+            const formData = new FormData(contactForm);
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
             
-            setTimeout(() => {
-                submitButton.textContent = originalText;
-                submitButton.disabled = false;
-                submitButton.style.background = 'var(--gradient)';
+            if (response.ok) {
+                submitButton.textContent = 'Message Sent!';
+                submitButton.style.background = 'var(--accent-gradient)';
                 contactForm.reset();
-            }, 2000);
-        }, 1000);
+            } else {
+                throw new Error('Failed to send message');
+            }
+        } catch (error) {
+            submitButton.textContent = 'Error - Try Again';
+            submitButton.style.background = '#ff4757';
+        }
+        
+        setTimeout(() => {
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
+            submitButton.style.background = 'var(--gradient)';
+        }, 3000);
     });
 
     const formInputs = contactForm.querySelectorAll('input, select, textarea');

@@ -13,7 +13,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">Web3Dev</span>
+                <span class="logo-text">Volodymyr</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
@@ -34,10 +34,11 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-                    <span class="title-line">Blockchain Dev &</span>
-                    <span class="title-line gradient-text">Web3 Innovator</span>
+                    <span class="title-line">Volodymyr Dorosh</span>
+                    <span class="title-line gradient-text">Blockchain Dev & Web3 Innovator</span>
                 </h1>
-                <p class="hero-subtitle">AI Expert | Author | NFT Innovator</p>
+                <p class="hero-subtitle">AI Expert | Author | NFT Innovator | Video Content Creator</p>
+                <p class="hero-location">📍 Lviv, Ukraine</p>
                 <p class="hero-description">
                     Full-stack blockchain developer creating successful NFT projects, 
                     AI trading bots, and comprehensive blockchain ecosystems.
@@ -107,12 +108,28 @@
                                 <p>Actively maintain a Web3 blog on zora.co, staying current with blockchain trends</p>
                             </div>
                         </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-video"></i>
+                            <div>
+                                <h4>Professional Video Content Creation</h4>
+                                <p>Expert in creating complex videos using AI, including directing fully AI-generated animated films</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-gavel"></i>
+                            <div>
+                                <h4>NFT Design Awards Judge</h4>
+                                <p>Official judge at <a href="https://nftdesignawards.io/judge/volodymyrdorosh" target="_blank" style="color: var(--accent-color);">NFT Design Awards</a>, evaluating innovative NFT projects</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="about-image">
                     <div class="profile-card">
+                        <img src="profile-photo.jpg" alt="Volodymyr Dorosh" class="profile-photo">
                         <div class="card-content">
-                            <h3>Blockchain Developer</h3>
+                            <h3>Volodymyr Dorosh</h3>
+                            <p>Blockchain Developer from Lviv, Ukraine</p>
                             <p>Transforming ideas into Web3 reality</p>
                         </div>
                     </div>
@@ -247,6 +264,24 @@
                 </div>
 
                 <div class="skill-category">
+                    <h3><i class="fas fa-video"></i> Content Creation</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Video Production</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>AI-Generated Content</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Animated Films</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
                     <h3><i class="fas fa-palette"></i> NFT Ecosystem</h3>
                     <div class="skill-items">
                         <div class="skill-item">
@@ -304,15 +339,15 @@
                 
                 <div class="contact-form">
                     <h3>Get In Touch</h3>
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formspree.io/f/starbowshine@gmail.com" method="POST">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <select required>
+                            <select name="project_type" required>
                                 <option value="">Project Type</option>
                                 <option value="smart-contracts">Smart Contracts</option>
                                 <option value="nft-project">NFT Project</option>
@@ -322,7 +357,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Project Description" rows="5" required></textarea>
+                            <textarea name="message" placeholder="Project Description" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>

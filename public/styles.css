@@ -171,6 +171,13 @@ body {
     margin-bottom: 1rem;
 }
 
+.hero-location {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
 .hero-description {
     font-size: 1.1rem;
     color: var(--text-secondary);
@@ -413,6 +420,16 @@ body {
     right: 0;
     height: 4px;
     background: var(--gradient);
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
 }
 
 .card-content h3 {

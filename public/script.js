@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeCustomCursor();
     initializeNavigation();
     initializeAnimations();
-    initializeContactForm();
     initializeSkillBars();
 });
 
@@ -130,58 +129,6 @@ function initializeAnimations() {
     document.head.appendChild(style);
 }
 
-function initializeContactForm() {
-    const contactForm = document.getElementById('contactForm');
-    
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        const submitButton = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitButton.textContent;
-        
-        submitButton.textContent = 'Sending...';
-        submitButton.disabled = true;
-        
-        try {
-            const formData = new FormData(contactForm);
-            const response = await fetch(contactForm.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-            
-            if (response.ok) {
-                submitButton.textContent = 'Message Sent!';
-                submitButton.style.background = 'var(--accent-gradient)';
-                contactForm.reset();
-            } else {
-                throw new Error('Failed to send message');
-            }
-        } catch (error) {
-            submitButton.textContent = 'Error - Try Again';
-            submitButton.style.background = '#ff4757';
-        }
-        
-        setTimeout(() => {
-            submitButton.textContent = originalText;
-            submitButton.disabled = false;
-            submitButton.style.background = 'var(--gradient)';
-        }, 3000);
-    });
-
-    const formInputs = contactForm.querySelectorAll('input, select, textarea');
-    formInputs.forEach(input => {
-        input.addEventListener('focus', () => {
-            input.parentElement.style.transform = 'translateY(-2px)';
-        });
-        
-        input.addEventListener('blur', () => {
-            input.parentElement.style.transform = 'translateY(0)';
-        });
-    });
-}
 
 function initializeSkillBars() {
     const skillBars = document.querySelectorAll('.skill-progress');

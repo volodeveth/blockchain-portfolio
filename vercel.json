@@ -1,9 +1,7 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "public": true,
   "buildCommand": "echo 'Static site build complete'",
-  "outputDirectory": "public",
   "installCommand": "echo 'No install needed'",
   "framework": null
 }

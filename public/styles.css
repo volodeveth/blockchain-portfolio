@@ -129,6 +129,7 @@ body {
     align-items: center;
     position: relative;
     background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
+    overflow: hidden;
 }
 
 .hero-content {
@@ -256,6 +257,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .blockchain-animation {
@@ -761,6 +764,30 @@ body {
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
+        padding-top: 6rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2rem, 8vw, 3rem);
+        z-index: 10;
+        position: relative;
+    }
+
+    .hero-text {
+        z-index: 10;
+        position: relative;
+    }
+
+    .blockchain-animation {
+        position: relative;
+        z-index: 1;
+    }
+
+    .block {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        z-index: 1;
     }
 
     .about-content {

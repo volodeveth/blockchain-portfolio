@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeNavigation();
     initializeAnimations();
     initializeSkillBars();
-    initializeContactForm();
+    checkFormSubmissionSuccess();
 });
 
 function initializeCustomCursor() {
@@ -197,62 +197,20 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Contact form handling
-function initializeContactForm() {
-    const form = document.getElementById('contactForm');
-    if (!form) return;
-    
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const submitButton = this.querySelector('button[type="submit"]');
-        const originalText = submitButton.innerHTML;
-        
-        // Change button state to loading
-        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-        submitButton.disabled = true;
-        
-        // Create FormData object
-        const formData = new FormData(this);
-        
-        // Submit to Formspree
-        fetch(this.action, {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-            if (response.ok) {
-                // Success
-                submitButton.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-                submitButton.style.background = 'linear-gradient(135deg, #06d6a0, #059669)';
-                
-                // Reset form
-                this.reset();
-                
-                // Show success message
+// Check if form was successfully submitted
+function checkFormSubmissionSuccess() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true' || window.location.hash.includes('contact')) {
+        setTimeout(() => {
+            if (window.location.search.includes('success') || document.referrer.includes('formsubmit')) {
                 alert('Thank you for your message! I will get back to you within 24 hours.');
-                
-            } else {
-                throw new Error('Network response was not ok');
+                // Clean up URL
+                if (window.history && window.history.replaceState) {
+                    window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
+                }
             }
-        }).catch(error => {
-            // Error
-            console.error('Error:', error);
-            submitButton.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error - Try Again';
-            submitButton.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
-            
-            alert('There was an error sending your message. Please try again or check your internet connection.');
-        }).finally(() => {
-            // Reset button after 3 seconds
-            setTimeout(() => {
-                submitButton.innerHTML = originalText;
-                submitButton.disabled = false;
-                submitButton.style.background = '';
-            }, 3000);
-        });
-    });
+        }, 1000);
+    }
 }
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');

@@ -750,7 +750,26 @@ body {
 }
 
 .contact-form form {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+}
+
+.form-info {
+    background: rgba(99, 102, 241, 0.05);
+    border: 1px solid rgba(99, 102, 241, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.form-info p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.form-info i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
 }
 
 

@@ -243,7 +243,7 @@ function initializeContactForm() {
             submitButton.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error - Try Again';
             submitButton.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
             
-            alert('There was an error sending your message. Please try again or contact me directly at starbowshine@gmail.com');
+            alert('There was an error sending your message. Please try again or check your internet connection.');
         }).finally(() => {
             // Reset button after 3 seconds
             setTimeout(() => {

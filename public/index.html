@@ -59,8 +59,8 @@
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number">10,000+</span>
-                        <span class="stat-label">NFT Holders</span>
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Completed Projects</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">$30-100</span>
@@ -364,11 +364,65 @@
                 
                 <div class="contact-form">
                     <h3>Get In Touch</h3>
+                    <form action="https://formsubmit.co/starbowshine@gmail.com" method="POST" id="contactForm">
+                        <!-- FormSubmit configuration -->
+                        <input type="hidden" name="_next" value="https://volodeveth.vercel.app/public/">
+                        <input type="hidden" name="_subject" value="New Contact Form Submission from VoloDev.eth">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company (Optional)</label>
+                            <input type="text" id="company" name="company" placeholder="Your Company">
+                        </div>
+                        <div class="form-group">
+                            <label for="project-type">Project Type</label>
+                            <select id="project-type" name="project-type" required>
+                                <option value="">Select Project Type</option>
+                                <option value="smart-contracts">Smart Contracts Development</option>
+                                <option value="nft-project">NFT Project</option>
+                                <option value="trading-bot">AI Trading Bot</option>
+                                <option value="web3-platform">Web3 Platform</option>
+                                <option value="dapp">DApp Development</option>
+                                <option value="consultation">Blockchain Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget" required>
+                                <option value="">Select Budget Range</option>
+                                <option value="under-1k">Under $1,000</option>
+                                <option value="1k-5k">$1,000 - $5,000</option>
+                                <option value="5k-10k">$5,000 - $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k-plus">$50,000+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Description</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project, timeline, and specific requirements..." rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                    
                     <div class="contact-info-alt">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <div>
-                                <h4>Email</h4>
+                                <h4>Direct Email</h4>
                                 <a href="mailto:starbowshine@gmail.com">starbowshine@gmail.com</a>
                             </div>
                         </div>
@@ -377,13 +431,6 @@
                             <div>
                                 <h4>Telegram</h4>
                                 <a href="https://t.me/volodeveth" target="_blank">@volodeveth</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-briefcase"></i>
-                            <div>
-                                <h4>Upwork</h4>
-                                <a href="https://www.upwork.com/freelancers/~010f85a600db02d676?viewMode=1" target="_blank">View Profile</a>
                             </div>
                         </div>
                     </div>

@@ -3,5 +3,12 @@
   "trailingSlash": false,
   "buildCommand": "echo 'Static site build complete'",
   "installCommand": "echo 'No install needed'",
-  "framework": null
+  "outputDirectory": "public",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/public/$1"
+    }
+  ]
 }

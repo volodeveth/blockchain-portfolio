@@ -1,10 +1,41 @@
 document.addEventListener('DOMContentLoaded', function() {
+    initializeThemeToggle();
     initializeCustomCursor();
     initializeNavigation();
     initializeAnimations();
     initializeSkillBars();
     checkFormSubmissionSuccess();
 });
+
+function initializeThemeToggle() {
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const html = document.documentElement;
+
+    // Check saved theme or default to dark
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    if (savedTheme === 'light') {
+        html.setAttribute('data-theme', 'light');
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+    }
+
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = html.getAttribute('data-theme');
+
+        if (currentTheme === 'light') {
+            html.removeAttribute('data-theme');
+            localStorage.setItem('theme', 'dark');
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon');
+        } else {
+            html.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+        }
+    });
+}
 
 function initializeCustomCursor() {
     const cursor = document.querySelector('.cursor');
@@ -55,10 +86,12 @@ function initializeNavigation() {
 
     window.addEventListener('scroll', () => {
         const navbar = document.querySelector('.navbar');
+        const isLightTheme = document.documentElement.getAttribute('data-theme') === 'light';
+
         if (window.scrollY > 100) {
-            navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+            navbar.style.background = isLightTheme ? 'rgba(248, 250, 252, 0.98)' : 'rgba(10, 10, 10, 0.98)';
         } else {
-            navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+            navbar.style.background = isLightTheme ? 'rgba(248, 250, 252, 0.95)' : 'rgba(10, 10, 10, 0.95)';
         }
     });
 

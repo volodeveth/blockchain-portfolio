@@ -17,6 +17,17 @@
     --accent-gradient: linear-gradient(135deg, var(--accent-color), var(--primary-color));
 }
 
+[data-theme="light"] {
+    --primary-color: #4f46e5;
+    --secondary-color: #7c3aed;
+    --accent-color: #059669;
+    --bg-color: #f8fafc;
+    --surface-color: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --border-color: #e2e8f0;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -121,6 +132,33 @@ body {
     background: var(--text-primary);
     margin: 3px 0;
     transition: 0.3s;
+}
+
+.theme-toggle {
+    background: transparent;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    margin-left: 1rem;
+}
+
+.theme-toggle:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: rotate(15deg);
+}
+
+[data-theme="light"] .theme-toggle {
+    background: var(--surface-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .hero {
@@ -909,4 +947,68 @@ body {
     .section-title {
         font-size: 2rem;
     }
+}
+
+/* Light theme specific overrides */
+[data-theme="light"] .navbar {
+    background: rgba(248, 250, 252, 0.95);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .hero {
+    background: radial-gradient(circle at 50% 50%, rgba(79, 70, 229, 0.08) 0%, transparent 50%);
+}
+
+[data-theme="light"] .about {
+    background: linear-gradient(180deg, var(--bg-color) 0%, var(--surface-color) 100%);
+}
+
+[data-theme="light"] .skills {
+    background: linear-gradient(180deg, var(--bg-color) 0%, var(--surface-color) 100%);
+}
+
+[data-theme="light"] .project-card,
+[data-theme="light"] .skill-category,
+[data-theme="light"] .contact-form,
+[data-theme="light"] .contact-method,
+[data-theme="light"] .profile-card {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .project-card:hover,
+[data-theme="light"] .skill-category:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="light"] .achievement-item {
+    background: rgba(79, 70, 229, 0.05);
+    border-color: rgba(79, 70, 229, 0.1);
+}
+
+[data-theme="light"] .achievement-item:hover {
+    background: rgba(79, 70, 229, 0.08);
+}
+
+[data-theme="light"] .tech-tag {
+    background: rgba(79, 70, 229, 0.1);
+}
+
+[data-theme="light"] .footer {
+    background: var(--surface-color);
+    box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .nav-menu {
+    background-color: var(--surface-color);
+}
+
+[data-theme="light"] .form-group input,
+[data-theme="light"] .form-group select,
+[data-theme="light"] .form-group textarea {
+    background: var(--bg-color);
+    border-color: var(--border-color);
+}
+
+[data-theme="light"] .block {
+    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.3);
 }

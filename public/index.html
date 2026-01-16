@@ -26,12 +26,15 @@
                 <span class="logo-text">VoloDev.eth</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
             </ul>
+            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                <span id="langText">UA</span>
+            </button>
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                 <i class="fas fa-moon" id="themeIcon"></i>
             </button>
@@ -47,12 +50,12 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-                    <span class="title-line">Full-Stack Blockchain</span>
-                    <span class="title-line gradient-text">& AI Developer</span>
+                    <span class="title-line" data-i18n="hero.title1">Full-Stack Blockchain</span>
+                    <span class="title-line gradient-text" data-i18n="hero.title2">& AI Developer</span>
                 </h1>
-                <p class="hero-subtitle">Smart Contracts | DeFi | NFT Marketplaces | AI Trading Bots | E-Commerce | SaaS</p>
-                <p class="hero-location">📍 Lviv, Ukraine | 🌐 Available Worldwide</p>
-                <p class="hero-description">
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Smart Contracts | DeFi | NFT Marketplaces | AI Trading Bots | E-Commerce | SaaS</p>
+                <p class="hero-location" data-i18n="hero.location">📍 Lviv, Ukraine | 🌐 Available Worldwide</p>
+                <p class="hero-description" data-i18n="hero.description">
                     Blockchain developer with 10+ years experience building production-ready Web3 applications.
                     Specializing in <strong>Solidity smart contracts</strong>, <strong>NFT marketplaces</strong>, <strong>DeFi staking platforms</strong>,
                     <strong>AI trading bots</strong>, <strong>SaaS platforms</strong>, and <strong>full-stack e-commerce</strong> solutions.
@@ -60,25 +63,25 @@
                     (<strong>ChatGPT, Claude, Gemini, Midjourney, Sora, Runway</strong>).
                 </p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-primary" data-i18n="hero.viewProjects">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="hero.getInTouch">Get In Touch</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number">20+</span>
-                        <span class="stat-label">Projects Delivered</span>
+                        <span class="stat-label" data-i18n="hero.stats.projects">Projects Delivered</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">10+</span>
-                        <span class="stat-label">Active Platforms</span>
+                        <span class="stat-label" data-i18n="hero.stats.platforms">Active Platforms</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">$30-100</span>
-                        <span class="stat-label">Hourly Rate</span>
+                        <span class="stat-label" data-i18n="hero.stats.rate">Hourly Rate</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">10+</span>
-                        <span class="stat-label">Years Experience</span>
+                        <span class="stat-label" data-i18n="hero.stats.experience">Years Experience</span>
                     </div>
                 </div>
             </div>
@@ -97,17 +100,17 @@
 
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-i18n="about.title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-intro">
+                    <p class="about-intro" data-i18n="about.intro">
                         I am a full-stack blockchain developer and Web3 innovator with 10+ years of experience
                         and 20+ completed projects. My expertise spans NFT marketplaces, AI-powered trading bots,
                         decentralized gaming platforms, e-commerce solutions, and social media automation.
                         I specialize in Python and Node.js development with deep AI integration (ChatGPT, Claude, Claude Code, Gemini, Midjourney, Sora, Runway).
                     </p>
                     <div class="achievements">
-                        <h3>Key Achievements & Expertise</h3>
+                        <h3 data-i18n="about.achievementsTitle">Key Achievements & Expertise</h3>
                         <div class="achievement-item">
                             <i class="fas fa-store"></i>
                             <div>
@@ -178,8 +181,8 @@
                         <img src="profile-photo.jpg" alt="Volodymyr Dorosh" class="profile-photo">
                         <div class="card-content">
                             <h3>Volodymyr Dorosh</h3>
-                            <p>Blockchain Developer from Lviv, Ukraine</p>
-                            <p>Transforming ideas into Web3 reality</p>
+                            <p data-i18n="about.profileLocation">Blockchain Developer from Lviv, Ukraine</p>
+                            <p data-i18n="about.profileTagline">Transforming ideas into Web3 reality</p>
                         </div>
                     </div>
                 </div>
@@ -189,7 +192,7 @@
 
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title" data-i18n="projects.title">Featured Projects</h2>
             <div class="projects-grid">
                 <!-- New Projects -->
                 <div class="project-card">
@@ -390,7 +393,7 @@
 
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Technical Expertise</h2>
+            <h2 class="section-title" data-i18n="skills.title">Technical Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3><i class="fas fa-cube"></i> Blockchain Development</h3>
@@ -597,41 +600,41 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Let's Build Something Amazing</h2>
+            <h2 class="section-title" data-i18n="contact.title">Let's Build Something Amazing</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Ready to Transform Your Vision</h3>
-                    <p>Whether you need NFT marketplace development, decentralized gaming platforms, AI-powered trading bots, e-commerce solutions, social media automation, or custom blockchain development - I bring deep technical expertise and proven results to every project.</p>
-                    
+                    <h3 data-i18n="contact.subtitle">Ready to Transform Your Vision</h3>
+                    <p data-i18n="contact.description">Whether you need NFT marketplace development, decentralized gaming platforms, AI-powered trading bots, e-commerce solutions, social media automation, or custom blockchain development - I bring deep technical expertise and proven results to every project.</p>
+
                     <div class="contact-methods">
                         <a href="https://www.upwork.com/freelancers/~010f85a600db02d676" class="contact-method" target="_blank">
                             <i class="fas fa-briefcase"></i>
                             <div>
-                                <h4>Upwork Profile</h4>
-                                <p>View my professional profile and reviews</p>
+                                <h4 data-i18n="contact.upwork">Upwork Profile</h4>
+                                <p data-i18n="contact.upworkDesc">View my professional profile and reviews</p>
                             </div>
                         </a>
-                        
+
                         <div class="contact-method">
                             <i class="fas fa-dollar-sign"></i>
                             <div>
-                                <h4>Rate</h4>
+                                <h4 data-i18n="contact.rate">Rate</h4>
                                 <p>$30-100/hr</p>
                             </div>
                         </div>
-                        
+
                         <div class="contact-method">
                             <i class="fas fa-clock"></i>
                             <div>
-                                <h4>Availability</h4>
-                                <p>Ready to start your project</p>
+                                <h4 data-i18n="contact.availability">Availability</h4>
+                                <p data-i18n="contact.availabilityDesc">Ready to start your project</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="contact-form">
-                    <h3>Get In Touch</h3>
+                    <h3 data-i18n="contact.formTitle">Get In Touch</h3>
                     <form action="https://formsubmit.co/df8681257b38f81463cae1c076c96d1e" method="POST" id="contactForm">
                         <!-- FormSubmit configuration -->
                         <input type="hidden" name="_next" value="https://volodeveth.vercel.app/?success=true#contact">
@@ -640,54 +643,54 @@
                         <input type="hidden" name="_template" value="table">
                         
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <label for="name" data-i18n="form.name">Name</label>
+                            <input type="text" id="name" name="name" data-i18n-placeholder="form.namePlaceholder" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <label for="email" data-i18n="form.email">Email</label>
+                            <input type="email" id="email" name="email" data-i18n-placeholder="form.emailPlaceholder" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <label for="company">Company (Optional)</label>
-                            <input type="text" id="company" name="company" placeholder="Your Company">
+                            <label for="company" data-i18n="form.company">Company (Optional)</label>
+                            <input type="text" id="company" name="company" data-i18n-placeholder="form.companyPlaceholder" placeholder="Your Company">
                         </div>
                         <div class="form-group">
-                            <label for="project-type">Project Type</label>
+                            <label for="project-type" data-i18n="form.projectType">Project Type</label>
                             <select id="project-type" name="project-type" required>
-                                <option value="">Select Project Type</option>
-                                <option value="nft-marketplace">NFT Marketplace Development</option>
-                                <option value="gaming-platform">Decentralized Gaming Platform</option>
-                                <option value="ecommerce">E-Commerce Website (Next.js)</option>
-                                <option value="trading-bot">AI Trading Bot (Python/Node.js)</option>
-                                <option value="automation-bot">Social Media Automation Bot</option>
-                                <option value="smart-contracts">Smart Contracts Development</option>
-                                <option value="nft-collection">NFT Collection Launch</option>
-                                <option value="web3-platform">Web3 Platform/DApp</option>
-                                <option value="fullstack-app">Full-Stack Web Application</option>
-                                <option value="blockchain-integration">Blockchain Integration</option>
-                                <option value="consultation">Technical Consultation</option>
-                                <option value="other">Other</option>
+                                <option value="" data-i18n="form.selectProject">Select Project Type</option>
+                                <option value="nft-marketplace" data-i18n="form.nftMarketplace">NFT Marketplace Development</option>
+                                <option value="gaming-platform" data-i18n="form.gamingPlatform">Decentralized Gaming Platform</option>
+                                <option value="ecommerce" data-i18n="form.ecommerce">E-Commerce Website (Next.js)</option>
+                                <option value="trading-bot" data-i18n="form.tradingBot">AI Trading Bot (Python/Node.js)</option>
+                                <option value="automation-bot" data-i18n="form.automationBot">Social Media Automation Bot</option>
+                                <option value="smart-contracts" data-i18n="form.smartContracts">Smart Contracts Development</option>
+                                <option value="nft-collection" data-i18n="form.nftCollection">NFT Collection Launch</option>
+                                <option value="web3-platform" data-i18n="form.web3Platform">Web3 Platform/DApp</option>
+                                <option value="fullstack-app" data-i18n="form.fullstackApp">Full-Stack Web Application</option>
+                                <option value="blockchain-integration" data-i18n="form.blockchainIntegration">Blockchain Integration</option>
+                                <option value="consultation" data-i18n="form.consultation">Technical Consultation</option>
+                                <option value="other" data-i18n="form.other">Other</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="budget">Budget Range</label>
+                            <label for="budget" data-i18n="form.budget">Budget Range</label>
                             <select id="budget" name="budget" required>
-                                <option value="">Select Budget Range</option>
-                                <option value="under-1k">Under $1,000</option>
-                                <option value="1k-5k">$1,000 - $5,000</option>
-                                <option value="5k-10k">$5,000 - $10,000</option>
-                                <option value="10k-25k">$10,000 - $25,000</option>
-                                <option value="25k-50k">$25,000 - $50,000</option>
-                                <option value="50k-plus">$50,000+</option>
+                                <option value="" data-i18n="form.selectBudget">Select Budget Range</option>
+                                <option value="under-1k" data-i18n="form.under1k">Under $1,000</option>
+                                <option value="1k-5k" data-i18n="form.1k5k">$1,000 - $5,000</option>
+                                <option value="5k-10k" data-i18n="form.5k10k">$5,000 - $10,000</option>
+                                <option value="10k-25k" data-i18n="form.10k25k">$10,000 - $25,000</option>
+                                <option value="25k-50k" data-i18n="form.25k50k">$25,000 - $50,000</option>
+                                <option value="50k-plus" data-i18n="form.50kplus">$50,000+</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Project Description</label>
-                            <textarea id="message" name="message" placeholder="Tell me about your project, timeline, and specific requirements..." rows="6" required></textarea>
+                            <label for="message" data-i18n="form.message">Project Description</label>
+                            <textarea id="message" name="message" data-i18n-placeholder="form.messagePlaceholder" placeholder="Tell me about your project, timeline, and specific requirements..." rows="6" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">
                             <i class="fas fa-paper-plane"></i>
-                            Send Message
+                            <span data-i18n="form.send">Send Message</span>
                         </button>
                     </form>
 
@@ -695,8 +698,8 @@
                         <div class="contact-item">
                             <i class="fas fa-clock"></i>
                             <div>
-                                <h4>Response Time</h4>
-                                <p>I'll respond to your message within 24 hours</p>
+                                <h4 data-i18n="contact.responseTime">Response Time</h4>
+                                <p data-i18n="contact.responseTimeDesc">I'll respond to your message within 24 hours</p>
                             </div>
                         </div>
                     </div>
@@ -709,7 +712,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-text">
-                    <p>&copy; 2025 VoloDev.eth - Blockchain Developer & Web3 Innovator. Ready to transform your vision into reality.</p>
+                    <p data-i18n="footer.copyright">&copy; 2025 VoloDev.eth - Blockchain Developer & Web3 Innovator. Ready to transform your vision into reality.</p>
                 </div>
                 <div class="footer-links">
                     <a href="https://www.upwork.com/freelancers/~010f85a600db02d676" target="_blank">

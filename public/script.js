@@ -52,6 +52,26 @@ const translations = {
             message: 'Project Description', messagePlaceholder: 'Tell me about your project, timeline, and specific requirements...',
             send: 'Send Message'
         },
+        achievements: {
+            inkbot: {
+                title: 'Shopify App - InkBot (AI Product Descriptions)',
+                description: 'Built an AI-powered Shopify app that generates SEO-optimized product descriptions using DeepSeek V3. Features bulk generation, brand voice analysis, SEO scoring, 111+ languages, and subscription plans. <a href="https://inkbot.app/" target="_blank" style="color: var(--accent-color);">Visit InkBot</a>'
+            },
+            clothcast: {
+                title: 'Shopify App - ClothCast (AI Virtual Try-On)',
+                description: 'Built an AI Virtual Try-On Shopify app using FLUX.2 image generation. Customers upload a selfie to see themselves wearing any product. Features customizable widget, analytics dashboard, and privacy-first 24h data retention. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Visit ClothCast</a>'
+            }
+        },
+        projectCards: {
+            inkbot: {
+                title: 'InkBot - AI Product Descriptions',
+                description: 'AI-powered Shopify app that generates SEO-optimized product descriptions using DeepSeek V3. Features bulk generation, brand voice analysis, SEO scoring, 111+ languages, 9 niches, and 4 subscription plans. <a href="https://inkbot.app/" target="_blank" style="color: var(--accent-color);">Visit InkBot</a>'
+            },
+            clothcast: {
+                title: 'ClothCast - AI Virtual Try-On',
+                description: 'AI Virtual Try-On Shopify app using FLUX.2 image generation. Customers upload a selfie to see themselves wearing any product. Features customizable widget, theme extension, analytics dashboard, and privacy-first 24h data retention. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Visit ClothCast</a>'
+            }
+        },
         footer: { copyright: '© 2026 VoloDev.eth - Blockchain Developer & Web3 Innovator. Ready to transform your vision into reality.' }
     },
     uk: {
@@ -105,6 +125,26 @@ const translations = {
             '10k25k': '$10,000 - $25,000', '25k50k': '$25,000 - $50,000', '50kplus': '$50,000+',
             message: 'Опис проекту', messagePlaceholder: 'Розкажіть про ваш проект, терміни та специфічні вимоги...',
             send: 'Надіслати'
+        },
+        achievements: {
+            inkbot: {
+                title: 'Shopify Додаток - InkBot (AI Описи Товарів)',
+                description: 'Створив AI-powered Shopify додаток для генерації SEO-оптимізованих описів товарів за допомогою DeepSeek V3. Функції: масова генерація, аналіз голосу бренду, SEO оцінка, 111+ мов та плани підписки. <a href="https://inkbot.app/" target="_blank" style="color: var(--accent-color);">Відвідати InkBot</a>'
+            },
+            clothcast: {
+                title: 'Shopify Додаток - ClothCast (AI Віртуальна Примірка)',
+                description: 'Створив AI Shopify додаток для віртуальної примірки з використанням FLUX.2 генерації зображень. Клієнти завантажують селфі, щоб побачити себе в обраному одязі. Функції: кастомізований віджет, панель аналітики та приватність з 24-годинним зберіганням даних. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Відвідати ClothCast</a>'
+            }
+        },
+        projectCards: {
+            inkbot: {
+                title: 'InkBot - AI Описи Товарів',
+                description: 'AI-powered Shopify додаток для генерації SEO-оптимізованих описів товарів за допомогою DeepSeek V3. Функції: масова генерація, аналіз голосу бренду, SEO оцінка, 111+ мов, 9 ніш та 4 плани підписки. <a href="https://inkbot.app/" target="_blank" style="color: var(--accent-color);">Відвідати InkBot</a>'
+            },
+            clothcast: {
+                title: 'ClothCast - AI Віртуальна Примірка',
+                description: 'AI Shopify додаток для віртуальної примірки з використанням FLUX.2 генерації зображень. Клієнти завантажують селфі, щоб побачити себе в обраному одязі. Функції: кастомізований віджет, theme extension, панель аналітики та приватність з 24-годинним зберіганням даних. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Відвідати ClothCast</a>'
+            }
         },
         footer: { copyright: '© 2026 VoloDev.eth - Blockchain розробник та Web3 інноватор. Готовий перетворити вашу візію на реальність.' }
     }

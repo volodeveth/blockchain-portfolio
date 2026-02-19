@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Володимир Дорош - Full-Stack Blockchain & AI Розробник</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            color: #1a1a1a;
+            background: #f5f5f5;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .page {
+            max-width: 210mm;
+            margin: 20px auto;
+            background: #ffffff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        @media print {
+            body { background: #fff; margin: 0; }
+            .page { box-shadow: none; margin: 0; max-width: 100%; }
+            .page-break { page-break-before: always; }
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 50px 55px 40px;
+            border-bottom: 3px solid #1a1a1a;
+        }
+
+        .header-photo {
+            flex-shrink: 0;
+        }
+
+        .header-photo img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #1a1a1a;
+        }
+
+        .header-info {
+            flex: 1;
+        }
+
+        .header-name {
+            font-size: 38px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            line-height: 1.1;
+            margin-bottom: 6px;
+        }
+
+        .header-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+        }
+
+        .header-contacts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 30px;
+            font-size: 13px;
+        }
+
+        .header-contacts .label {
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .header-contacts a {
+            color: #6c5ce7;
+            text-decoration: none;
+        }
+
+        .header-contacts a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== CONTENT ===== */
+        .content {
+            padding: 0 55px 50px;
+        }
+
+        /* ===== SECTION ===== */
+        .section {
+            margin-top: 32px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 800;
+            color: #6c5ce7;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e0e0e0;
+            letter-spacing: -0.3px;
+        }
+
+        /* ===== SUMMARY ===== */
+        .summary-box {
+            background: #f8f8f8;
+            border-radius: 10px;
+            padding: 22px 28px;
+            font-size: 14px;
+            line-height: 1.7;
+            border-left: 4px solid #6c5ce7;
+        }
+
+        .summary-box strong {
+            color: #6c5ce7;
+        }
+
+        /* ===== COMPETENCIES GRID ===== */
+        .competencies-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .competency-card h3 {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #1a1a1a;
+        }
+
+        .competency-card p {
+            font-size: 13px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        /* ===== PROJECTS ===== */
+        .project-item {
+            margin-bottom: 22px;
+        }
+
+        .project-item h3 {
+            font-size: 15px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .project-item h3 a {
+            color: #6c5ce7;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .project-item h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .project-item p {
+            font-size: 13px;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+
+        .project-tech {
+            font-size: 12.5px;
+            color: #6c5ce7;
+            font-style: italic;
+        }
+
+        /* ===== EXPERIENCE ===== */
+        .experience-item {
+            margin-bottom: 28px;
+        }
+
+        .experience-role {
+            font-size: 17px;
+            font-weight: 800;
+            color: #1a1a1a;
+        }
+
+        .experience-company {
+            font-size: 14px;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .achievement-item {
+            font-size: 13px;
+            color: #333;
+            padding-left: 18px;
+            position: relative;
+            margin-bottom: 6px;
+            line-height: 1.6;
+        }
+
+        .achievement-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 7px;
+            height: 7px;
+            background: #6c5ce7;
+            border-radius: 50%;
+        }
+
+        .achievement-item strong {
+            color: #1a1a1a;
+        }
+
+        /* ===== SKILLS TABLE ===== */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skills-column h3 {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        .skills-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-column li {
+            font-size: 13px;
+            color: #444;
+            padding: 3px 0;
+            line-height: 1.4;
+        }
+
+        /* ===== LANGUAGES ===== */
+        .languages-grid {
+            display: flex;
+            gap: 40px;
+        }
+
+        .lang-item .lang-name {
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .lang-item .lang-level {
+            color: #555;
+        }
+
+        /* ===== NETWORKS ===== */
+        .networks {
+            font-size: 13px;
+            color: #444;
+            line-height: 1.7;
+        }
+
+        /* ===== TARGETS / BADGES ===== */
+        .targets {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .target-badge {
+            background: #f0edff;
+            color: #6c5ce7;
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-size: 12.5px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-photo">
+                <img src="profile-photo.jpg" alt="Володимир Дорош">
+            </div>
+            <div class="header-info">
+                <div class="header-name">ВОЛОДИМИР ДОРОШ</div>
+                <div class="header-title">Full-Stack Blockchain & AI Розробник</div>
+                <div class="header-contacts">
+                    <div><span class="label">Локація:</span> Львів, Україна</div>
+                    <div><span class="label">Телефон:</span> +380 93 468-87-89</div>
+                    <div><span class="label">Email:</span> <a href="mailto:starbowshine@gmail.com">starbowshine@gmail.com</a></div>
+                    <div><span class="label">Портфоліо:</span> <a href="https://volodeveth.vercel.app">volodeveth.vercel.app</a></div>
+                    <div><span class="label">Upwork:</span> <a href="https://www.upwork.com/freelancers/~010f85a600db02d676">Переглянути профіль</a></div>
+                    <div><span class="label">Ставка:</span> $20-30/година</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <!-- SUMMARY -->
+            <div class="section">
+                <div class="section-title">ПРОФЕСІЙНЕ РЕЗЮМЕ</div>
+                <div class="summary-box">
+                    Blockchain-розробник з <strong>10+ роками досвіду</strong> у створенні production-ready Web3 застосунків. Успішно реалізував <strong>20+ проектів</strong>, включаючи NFT-маркетплейси, DeFi стейкінг-платформи, AI-powered торгові боти, Shopify додатки, децентралізовані ігрові платформи та повноцінні e-commerce рішення. Експерт у Solidity смарт-контрактах, Next.js/React/Remix frontend розробці, Python/Node.js backend системах, Shopify App Development (Polaris, App Bridge, Liquid) та інтеграції AI (ChatGPT, Claude, Gemini, DeepSeek, Midjourney, Sora, Runway). Офіційний суддя NFT Design Awards. Доступний для віддаленої співпраці по всьому світу.
+                </div>
+            </div>
+
+            <!-- COMPETENCIES -->
+            <div class="section">
+                <div class="section-title">КЛЮЧОВІ КОМПЕТЕНЦІЇ</div>
+                <div class="competencies-grid">
+                    <div class="competency-card">
+                        <h3>Blockchain & Web3</h3>
+                        <p>Smart Contracts, Solidity, Web3.js, Ethers.js, Viem, Hardhat, Foundry, Wagmi, RainbowKit, OpenZeppelin, UUPS Proxy, ERC-20, ERC-721</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>AI & Machine Learning</h3>
+                        <p>ChatGPT, OpenAI API, Claude, Claude Code, Google Gemini, OpenRouter, DeepSeek V3, FLUX.2, Midjourney, Sora, Runway, Торгові алгоритми, ML інтеграція</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>Shopify Development</h3>
+                        <p>Shopify App Development, Shopify Polaris, App Bridge, Remix 2, Theme Extensions, Liquid, Shopify CLI & APIs, Prisma ORM</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>Frontend Розробка</h3>
+                        <p>Next.js 14-16, React 18-19, Remix 2, TypeScript, Tailwind CSS v3-v4, Framer Motion, Web3Modal</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>Backend & Бази даних</h3>
+                        <p>Node.js, Python, Django, DRF, PostgreSQL, Neon, Prisma 5, REST APIs, Vercel Functions, Binance API</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>NFT Екосистема & Інструменти</h3>
+                        <p>NFT маркетплейси, Генеративне мистецтво, IPFS, Zora/Base/Ethereum мережі, Git/GitHub, Farcaster SDK, Leaflet Maps</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECTS -->
+            <div class="section">
+                <div class="section-title">КЛЮЧОВІ ПРОЕКТИ</div>
+
+                <div class="project-item">
+                    <h3>InkBot - AI Описи Товарів для Shopify | <a href="https://inkbot.app/">inkbot.app</a></h3>
+                    <p>AI-powered Shopify додаток для генерації SEO-оптимізованих описів товарів за допомогою DeepSeek V3. Масова генерація, аналіз голосу бренду, SEO оцінка, підтримка 111+ мов, 9 ніш та 4 плани підписки з API доступом.</p>
+                    <div class="project-tech">Технології: React 18, Remix 2, TypeScript, Shopify Polaris, Prisma 5, Neon PostgreSQL, DeepSeek V3 (OpenRouter), Vercel</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>ClothCast - AI Віртуальна Примірка для Shopify | <a href="https://cloth-cast.vercel.app/landing">cloth-cast.vercel.app</a></h3>
+                    <p>AI Shopify додаток для віртуальної примірки з використанням FLUX.2 генерації зображень. Клієнти завантажують селфі, щоб побачити себе в обраному одязі. Кастомізований віджет, theme extension, панель аналітики, приватність з 24-годинним зберіганням даних та 4 плани підписки.</p>
+                    <div class="project-tech">Технології: React 18, Remix 2, TypeScript, Shopify Polaris, Prisma 5, Neon PostgreSQL, FLUX.2 Klein 4B (OpenRouter), Sharp, Vercel</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>ZORIUM.FUN - NFT Маркетплейс | <a href="https://www.zorium.fun/">zorium.fun</a></h3>
+                    <p>Децентралізований NFT маркетплейс на Zora Network з трендовою аналітикою, інструментами для креаторів та мультичейн підтримкою. Включає real-time пошук NFT, перегляд колекцій та інтеграцію Web3 гаманців.</p>
+                    <div class="project-tech">Технології: Next.js 14, TypeScript, Wagmi, RainbowKit, Zora Network, TanStack Query</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>CryptoDuel - Децентралізована Ігрова Платформа | <a href="https://www.cryptoduel.xyz/">cryptoduel.xyz</a></h3>
+                    <p>PvP крипто-ігрова платформа на Base Network з 4 ігровими режимами (Duel 1v1, Battle Royale). Включає інтеграцію Farcaster, доказово чесну блокчейн рандомізацію, real-time таблиці лідерів та PostgreSQL backend.</p>
+                    <div class="project-tech">Технології: Solidity, Next.js, Hardhat, Base Network, Farcaster SDK, PostgreSQL</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Fjord & Mekko - E-Commerce Платформа | <a href="https://www.fjord-mekko.com.ua/">fjord-mekko.com.ua</a></h3>
+                    <p>Професійний інтернет-магазин ортопедичних матраців. Включає каталог продукції з фільтрацією, інтерактивні Leaflet карти з 20+ локаціями магазинів, партнерську програму, підбір матраців та email інтеграцію.</p>
+                    <div class="project-tech">Технології: Next.js 16, React 19, TypeScript, Tailwind CSS v4, Leaflet, Resend, Framer Motion</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>AI Торгові Боти - Binance Futures</h3>
+                    <p>Просунуті криптовалютні торгові боти з GPT-3.5-turbo AI аналізом. Включають технічні індикатори (RSI, MACD, Bollinger Bands, ADX), мультитаймфрейм аналіз (5m-4h), ризик-менеджмент та стратегії скальпінгу з плечем 100x.</p>
+                    <div class="project-tech">Технології: Python, Node.js, OpenAI API, Binance API, Technical Indicators, Winston Logger</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>ZORIUM Token & DeFi Стейкінг Платформа | <a href="https://www.zorium.xyz/">zorium.xyz</a> | <a href="https://explorer.zora.energy/token/0x538D6F4fb9598dC74e15e6974049B109ae0AbC6a">Смарт-контракт</a></h3>
+                    <p>Повноцінна Web3 екосистема з ERC20 оновлюваним токеном: стейкінг, 3-рівнева реферальна система, механізм спалювання, система рівнів (Bronze до Platinum), авто-винагороди. Платформа пропонує гнучкі періоди блокування (30-365 днів) з APY до 300%. Успішно роздано airdrop 10,000+ холдерам.</p>
+                    <div class="project-tech">Технології: Solidity 0.8.19, OpenZeppelin, UUPS Proxy, Next.js 13, Wagmi, Viem, RainbowKit</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>lilURL - Сервіс Скорочення URL | <a href="https://lilurl.vercel.app/">lilurl.vercel.app</a></h3>
+                    <p>Повнофункціональний сервіс скорочення URL (альтернатива Bit.ly) з аналітикою кліків, генерацією QR-кодів, REST API, тарифними планами та дашбордом у реальному часі. Відстеження пристроїв/браузерів/локацій та обмеження запитів.</p>
+                    <div class="project-tech">Технології: Django 5.0, Django REST Framework, PostgreSQL, Tailwind CSS, Chart.js, Vercel</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Боти Автоматизації Соціальних Мереж</h3>
+                    <p>Множинні Python боти для автоматичного постингу на Zora.co та соціальних мережах. Включають AI-генерацію контенту, систему планування, крос-платформне публікування та відстеження залученості.</p>
+                    <div class="project-tech">Технології: Python, OpenAI API, Zora API, Web Scraping, Автоматизація задач</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>NFT Колекції</h3>
+                    <p>Розробив декілька успішних NFT колекцій: <strong>Bored Giraffes Yacht Club</strong> - 3,333 NFT, sold out на Ethereum; <strong>The GAFs Collection</strong> - інноваційне генеративне мистецтво; <strong>Misery Avenue: Beginning</strong> - адаптація роману в NFT.</p>
+                    <div class="project-tech">Технології: Ethereum, IPFS, Генеративне мистецтво, ERC-721, OpenSea, Rarible</div>
+                </div>
+            </div>
+
+            <!-- EXPERIENCE -->
+            <div class="section">
+                <div class="section-title">ПРОФЕСІЙНИЙ ДОСВІД</div>
+                <div class="experience-item">
+                    <div class="experience-role">Фрілансер Blockchain Розробник & Web3 Інноватор</div>
+                    <div class="experience-company">Самозайнятість | 2014 - Теперішній час | Львів, Україна (Віддалено по всьому світу)</div>
+                    <div class="achievement-item">Реалізував 20+ production-ready blockchain та full-stack веб-застосунків</div>
+                    <div class="achievement-item">Розробив 2 Shopify додатки (InkBot, ClothCast) з AI інтеграцією, підписками та Shopify App Store публікацією</div>
+                    <div class="achievement-item">Розробив смарт-контракти, що обробляють значні обсяги транзакцій на Ethereum, Base та Zora мережах</div>
+                    <div class="achievement-item">Побудував AI-інтегровані торгові системи з real-time аналізом ринку</div>
+                    <div class="achievement-item">Створив автоматизовані рішення для соціальних мереж, що збільшують залученість клієнтів</div>
+                    <div class="achievement-item">Підтримую 10+ активних платформ та застосунків у продакшені</div>
+                </div>
+            </div>
+
+            <!-- ACHIEVEMENTS -->
+            <div class="section">
+                <div class="section-title">ДОСЯГНЕННЯ & ВИЗНАННЯ</div>
+                <div class="achievement-item"><strong>InkBot - Shopify App</strong> - AI-powered додаток для генерації SEO описів товарів, 111+ мов, опубліковано на inkbot.app</div>
+                <div class="achievement-item"><strong>ClothCast - Shopify App</strong> - AI віртуальна примірка одягу з FLUX.2, theme extension для Shopify магазинів</div>
+                <div class="achievement-item"><strong>Суддя NFT Design Awards</strong> - Офіційний суддя, що оцінює інноваційні NFT проекти</div>
+                <div class="achievement-item"><strong>10,000+ Холдерів токенів</strong> - Успішно створив та роздав ZORIUM токен великій спільноті</div>
+                <div class="achievement-item"><strong>Декілька Sold-Out NFT Колекцій</strong> - Включаючи Bored Giraffes Yacht Club (3,333 NFT)</div>
+                <div class="achievement-item"><strong>Експерт AI Відео Продакшену</strong> - Створення повністю AI-згенерованих анімаційних фільмів та професійного відео контенту</div>
+            </div>
+
+            <!-- SKILLS -->
+            <div class="section">
+                <div class="section-title">ТЕХНІЧНІ НАВИЧКИ</div>
+                <div class="skills-grid">
+                    <div class="skills-column">
+                        <h3>Blockchain</h3>
+                        <ul>
+                            <li>Solidity</li>
+                            <li>Смарт-контракти</li>
+                            <li>Web3.js / Ethers.js</li>
+                            <li>Viem</li>
+                            <li>Hardhat / Foundry</li>
+                            <li>Wagmi / RainbowKit</li>
+                            <li>OpenZeppelin</li>
+                            <li>ERC-20 / ERC-721</li>
+                        </ul>
+                    </div>
+                    <div class="skills-column">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>Next.js 14-16</li>
+                            <li>React 18-19</li>
+                            <li>Remix 2</li>
+                            <li>TypeScript</li>
+                            <li>Tailwind CSS</li>
+                            <li>Framer Motion</li>
+                            <li>Shopify Polaris</li>
+                        </ul>
+                    </div>
+                    <div class="skills-column">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>Django / DRF</li>
+                            <li>PostgreSQL / Neon</li>
+                            <li>Prisma ORM</li>
+                            <li>REST APIs</li>
+                            <li>Vercel Functions</li>
+                        </ul>
+                    </div>
+                    <div class="skills-column">
+                        <h3>Shopify</h3>
+                        <ul>
+                            <li>App Development</li>
+                            <li>Polaris & App Bridge</li>
+                            <li>Theme Extensions</li>
+                            <li>Liquid</li>
+                            <li>Shopify CLI</li>
+                            <li>Shopify APIs</li>
+                        </ul>
+                    </div>
+                    <div class="skills-column">
+                        <h3>AI Інструменти</h3>
+                        <ul>
+                            <li>ChatGPT / OpenAI</li>
+                            <li>Claude / Claude Code</li>
+                            <li>Google Gemini</li>
+                            <li>DeepSeek V3</li>
+                            <li>FLUX.2</li>
+                            <li>OpenRouter</li>
+                            <li>Midjourney</li>
+                            <li>Sora / Runway</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NETWORKS -->
+            <div class="section">
+                <div class="section-title">МЕРЕЖІ & ПЛАТФОРМИ</div>
+                <div class="networks">
+                    Ethereum, Base Network, Zora Network, Binance Smart Chain, IPFS, OpenSea, Rarible, Zora.co, Farcaster, Shopify App Store, Vercel
+                </div>
+            </div>
+
+            <!-- LANGUAGES -->
+            <div class="section">
+                <div class="section-title">МОВИ</div>
+                <div class="languages-grid">
+                    <div class="lang-item">
+                        <span class="lang-name">Українська</span> — <span class="lang-level">рідна</span>
+                    </div>
+                    <div class="lang-item">
+                        <span class="lang-name">Англійська</span> — <span class="lang-level">професійний рівень</span>
+                    </div>
+                    <div class="lang-item">
+                        <span class="lang-name">Польська</span> — <span class="lang-level">середній рівень</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

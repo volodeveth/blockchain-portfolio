@@ -5,16 +5,16 @@ const translations = {
         hero: {
             title1: 'Full-Stack Blockchain',
             title2: '& AI Developer',
-            subtitle: 'Smart Contracts | DeFi | NFT Marketplaces | AI Trading Bots | E-Commerce | SaaS',
+            subtitle: 'Smart Contracts | DeFi | NFT Marketplaces | AI Trading Bots | Shopify Apps | E-Commerce | SaaS',
             location: '📍 Lviv, Ukraine | 🌐 Available Worldwide',
-            description: 'Blockchain developer with 10+ years experience building production-ready Web3 applications. Specializing in <strong>Solidity smart contracts</strong>, <strong>NFT marketplaces</strong>, <strong>DeFi staking platforms</strong>, <strong>AI trading bots</strong>, <strong>SaaS platforms</strong>, and <strong>full-stack e-commerce</strong> solutions. Expert in <strong>Next.js, React, TypeScript, Python, Django, Node.js</strong>, and AI tools (<strong>ChatGPT, Claude, Gemini, Midjourney, Sora, Runway</strong>).',
+            description: 'Blockchain developer with 10+ years experience building production-ready Web3 applications. Specializing in <strong>Solidity smart contracts</strong>, <strong>NFT marketplaces</strong>, <strong>DeFi staking platforms</strong>, <strong>AI trading bots</strong>, <strong>Shopify apps</strong>, <strong>SaaS platforms</strong>, and <strong>full-stack e-commerce</strong> solutions. Expert in <strong>Next.js, React, Remix, TypeScript, Python, Django, Node.js</strong>, and AI tools (<strong>ChatGPT, Claude, Gemini, Midjourney, Sora, Runway</strong>).',
             viewProjects: 'View Projects',
             getInTouch: 'Get In Touch',
             stats: { projects: 'Projects Delivered', platforms: 'Active Platforms', rate: 'Hourly Rate', experience: 'Years Experience' }
         },
         about: {
             title: 'About Me',
-            intro: 'I am a full-stack blockchain developer and Web3 innovator with 10+ years of experience and 20+ completed projects. My expertise spans NFT marketplaces, AI-powered trading bots, decentralized gaming platforms, e-commerce solutions, and social media automation. I specialize in Python and Node.js development with deep AI integration (ChatGPT, Claude, Claude Code, Gemini, Midjourney, Sora, Runway).',
+            intro: 'I am a full-stack blockchain developer and Web3 innovator with 10+ years of experience and 20+ completed projects. My expertise spans NFT marketplaces, AI-powered trading bots, Shopify app development, decentralized gaming platforms, e-commerce solutions, and social media automation. I specialize in Python and Node.js development with deep AI integration (ChatGPT, Claude, Claude Code, Gemini, Midjourney, Sora, Runway).',
             achievementsTitle: 'Key Achievements & Expertise',
             profileLocation: 'Blockchain Developer from Lviv, Ukraine',
             profileTagline: 'Transforming ideas into Web3 reality'
@@ -24,7 +24,7 @@ const translations = {
         contact: {
             title: "Let's Build Something Amazing",
             subtitle: 'Ready to Transform Your Vision',
-            description: 'Whether you need NFT marketplace development, decentralized gaming platforms, AI-powered trading bots, e-commerce solutions, social media automation, or custom blockchain development - I bring deep technical expertise and proven results to every project.',
+            description: 'Whether you need NFT marketplace development, decentralized gaming platforms, AI-powered trading bots, Shopify app development, e-commerce solutions, social media automation, or custom blockchain development - I bring deep technical expertise and proven results to every project.',
             upwork: 'Upwork Profile',
             upworkDesc: 'View my professional profile and reviews',
             rate: 'Rate',
@@ -44,6 +44,7 @@ const translations = {
             automationBot: 'Social Media Automation Bot', smartContracts: 'Smart Contracts Development',
             nftCollection: 'NFT Collection Launch', web3Platform: 'Web3 Platform/DApp',
             fullstackApp: 'Full-Stack Web Application', blockchainIntegration: 'Blockchain Integration',
+            shopifyApp: 'Shopify App Development',
             consultation: 'Technical Consultation', other: 'Other',
             budget: 'Budget Range', selectBudget: 'Select Budget Range',
             under1k: 'Under $1,000', '1k5k': '$1,000 - $5,000', '5k10k': '$5,000 - $10,000',
@@ -51,23 +52,23 @@ const translations = {
             message: 'Project Description', messagePlaceholder: 'Tell me about your project, timeline, and specific requirements...',
             send: 'Send Message'
         },
-        footer: { copyright: '© 2025 VoloDev.eth - Blockchain Developer & Web3 Innovator. Ready to transform your vision into reality.' }
+        footer: { copyright: '© 2026 VoloDev.eth - Blockchain Developer & Web3 Innovator. Ready to transform your vision into reality.' }
     },
     uk: {
         nav: { home: 'Головна', about: 'Про мене', projects: 'Проекти', skills: 'Навички', contact: 'Контакти' },
         hero: {
             title1: 'Full-Stack Blockchain',
             title2: '& AI Розробник',
-            subtitle: 'Смарт-контракти | DeFi | NFT Маркетплейси | AI Торгові Боти | E-Commerce | SaaS',
+            subtitle: 'Смарт-контракти | DeFi | NFT Маркетплейси | AI Торгові Боти | Shopify Додатки | E-Commerce | SaaS',
             location: '📍 Львів, Україна | 🌐 Працюю по всьому світу',
-            description: 'Blockchain розробник з 10+ роками досвіду створення продакшн-ready Web3 додатків. Спеціалізуюся на <strong>Solidity смарт-контрактах</strong>, <strong>NFT маркетплейсах</strong>, <strong>DeFi стейкінг платформах</strong>, <strong>AI торгових ботах</strong>, <strong>SaaS платформах</strong> та <strong>full-stack e-commerce</strong> рішеннях. Експерт у <strong>Next.js, React, TypeScript, Python, Django, Node.js</strong> та AI інструментах (<strong>ChatGPT, Claude, Gemini, Midjourney, Sora, Runway</strong>).',
+            description: 'Blockchain розробник з 10+ роками досвіду створення продакшн-ready Web3 додатків. Спеціалізуюся на <strong>Solidity смарт-контрактах</strong>, <strong>NFT маркетплейсах</strong>, <strong>DeFi стейкінг платформах</strong>, <strong>AI торгових ботах</strong>, <strong>Shopify додатках</strong>, <strong>SaaS платформах</strong> та <strong>full-stack e-commerce</strong> рішеннях. Експерт у <strong>Next.js, React, Remix, TypeScript, Python, Django, Node.js</strong> та AI інструментах (<strong>ChatGPT, Claude, Gemini, Midjourney, Sora, Runway</strong>).',
             viewProjects: 'Переглянути проекти',
             getInTouch: "Зв'язатися",
             stats: { projects: 'Проектів виконано', platforms: 'Активних платформ', rate: 'Ставка за годину', experience: 'Років досвіду' }
         },
         about: {
             title: 'Про мене',
-            intro: 'Я full-stack blockchain розробник та Web3 інноватор з 10+ роками досвіду та 20+ завершеними проектами. Моя експертиза охоплює NFT маркетплейси, AI-powered торгових ботів, децентралізовані ігрові платформи, e-commerce рішення та автоматизацію соціальних мереж. Спеціалізуюся на Python та Node.js розробці з глибокою AI інтеграцією (ChatGPT, Claude, Claude Code, Gemini, Midjourney, Sora, Runway).',
+            intro: 'Я full-stack blockchain розробник та Web3 інноватор з 10+ роками досвіду та 20+ завершеними проектами. Моя експертиза охоплює NFT маркетплейси, AI-powered торгових ботів, розробку Shopify додатків, децентралізовані ігрові платформи, e-commerce рішення та автоматизацію соціальних мереж. Спеціалізуюся на Python та Node.js розробці з глибокою AI інтеграцією (ChatGPT, Claude, Claude Code, Gemini, Midjourney, Sora, Runway).',
             achievementsTitle: 'Ключові досягнення та експертиза',
             profileLocation: 'Blockchain розробник зі Львова, Україна',
             profileTagline: 'Перетворюю ідеї на Web3 реальність'
@@ -77,7 +78,7 @@ const translations = {
         contact: {
             title: 'Створімо щось неймовірне',
             subtitle: 'Готовий втілити вашу візію',
-            description: 'Чи потрібна вам розробка NFT маркетплейсу, децентралізованої ігрової платформи, AI торгових ботів, e-commerce рішень, автоматизації соціальних мереж або кастомна blockchain розробка - я приношу глибоку технічну експертизу та перевірені результати в кожен проект.',
+            description: 'Чи потрібна вам розробка NFT маркетплейсу, децентралізованої ігрової платформи, AI торгових ботів, розробку Shopify додатків, e-commerce рішень, автоматизації соціальних мереж або кастомна blockchain розробка - я приношу глибоку технічну експертизу та перевірені результати в кожен проект.',
             upwork: 'Профіль Upwork',
             upworkDesc: 'Переглянути мій професійний профіль та відгуки',
             rate: 'Ставка',
@@ -97,6 +98,7 @@ const translations = {
             automationBot: 'Бот автоматизації соц. мереж', smartContracts: 'Розробка смарт-контрактів',
             nftCollection: 'Запуск NFT колекції', web3Platform: 'Web3 платформа/DApp',
             fullstackApp: 'Full-Stack веб-додаток', blockchainIntegration: 'Blockchain інтеграція',
+            shopifyApp: 'Розробка Shopify додатків',
             consultation: 'Технічна консультація', other: 'Інше',
             budget: 'Діапазон бюджету', selectBudget: 'Оберіть діапазон бюджету',
             under1k: 'До $1,000', '1k5k': '$1,000 - $5,000', '5k10k': '$5,000 - $10,000',
@@ -104,7 +106,7 @@ const translations = {
             message: 'Опис проекту', messagePlaceholder: 'Розкажіть про ваш проект, терміни та специфічні вимоги...',
             send: 'Надіслати'
         },
-        footer: { copyright: '© 2025 VoloDev.eth - Blockchain розробник та Web3 інноватор. Готовий перетворити вашу візію на реальність.' }
+        footer: { copyright: '© 2026 VoloDev.eth - Blockchain розробник та Web3 інноватор. Готовий перетворити вашу візію на реальність.' }
     }
 };
 

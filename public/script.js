@@ -60,6 +60,42 @@ const translations = {
             clothcast: {
                 title: 'Shopify App - ClothCast (AI Virtual Try-On)',
                 description: 'Built an AI Virtual Try-On Shopify app using FLUX.2 image generation. Customers upload a selfie to see themselves wearing any product. Features customizable widget, analytics dashboard, and privacy-first 24h data retention. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Visit ClothCast</a>'
+            },
+            zorium: {
+                title: 'NFT Marketplace Development - ZORIUM.FUN',
+                description: 'Building a decentralized NFT marketplace on Zora Network with Next.js, TypeScript, RainbowKit, and Web3Modal. Features trending analytics, multi-chain support, and creator tools. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">View MVP</a>'
+            },
+            cryptoduel: {
+                title: 'Decentralized Gaming Platform - CryptoDuel',
+                description: 'Built a PvP crypto gaming platform on Base Network with Solidity smart contracts, Farcaster integration, PostgreSQL, and 4 game modes (Duel 1v1, Battle Royale). Features provably fair randomization and leaderboards. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Play Now</a>'
+            },
+            fjordmekko: {
+                title: 'E-Commerce Platform - Fjord & Mekko',
+                description: 'Developed a professional online store for orthopedic mattresses using Next.js 16, React 19, Leaflet maps (20+ store locations), Resend email integration, and Framer Motion animations. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Visit Store</a>'
+            },
+            tradingbots: {
+                title: 'AI Trading Bots (Python & Node.js)',
+                description: 'Created sophisticated trading bots for Binance Futures with GPT-3.5-turbo integration, technical indicators (RSI, MACD, Bollinger Bands), multi-timeframe analysis, and 100x leverage scalping strategies'
+            },
+            lilurl: {
+                title: 'SaaS Platform - lilURL',
+                description: 'Built a full-featured URL shortening service (Bit.ly alternative) with Django 5.0, REST API, click analytics, QR code generation, subscription plans, and real-time dashboard. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">Visit lilURL</a>'
+            },
+            socialbots: {
+                title: 'Social Media Automation Bots',
+                description: 'Developed multiple Python bots for automated posting on Zora.co and other social networks with AI content generation, scheduling, and cross-platform publishing capabilities'
+            },
+            zoriumeco: {
+                title: 'ZORIUM Ecosystem (Legacy)',
+                description: 'Built a complete Web3 platform with custom tokens, staking mechanisms, and successfully airdropped to 10,000+ holders. <a href="https://www.zorium.xyz/" target="_blank" style="color: var(--accent-color);">View Platform</a>'
+            },
+            aivideo: {
+                title: 'AI Video Content Creation',
+                description: 'Expert in creating complex videos using AI tools, including directing fully AI-generated animated films and professional video production'
+            },
+            nftjudge: {
+                title: 'NFT Design Awards Judge',
+                description: 'Official judge at <a href="https://nftdesignawards.io/judge/volodymyrdorosh" target="_blank" style="color: var(--accent-color);">NFT Design Awards</a>, evaluating innovative NFT projects and design excellence'
             }
         },
         projectCards: {
@@ -70,6 +106,50 @@ const translations = {
             clothcast: {
                 title: 'ClothCast - AI Virtual Try-On',
                 description: 'AI Virtual Try-On Shopify app using FLUX.2 image generation. Customers upload a selfie to see themselves wearing any product. Features customizable widget, theme extension, analytics dashboard, and privacy-first 24h data retention. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Visit ClothCast</a>'
+            },
+            zorium: {
+                title: 'ZORIUM.FUN - NFT Marketplace',
+                description: 'Decentralized NFT marketplace on Zora Network with trending analytics, creator tools, and multi-chain support. Built with Next.js 14, TypeScript, Wagmi, RainbowKit. 🚧 MVP in progress. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">View MVP</a>'
+            },
+            cryptoduel: {
+                title: 'CryptoDuel - Crypto Gaming Platform',
+                description: 'PvP crypto game on Base Network with 4 game modes (Duel, Battle Royale). Features Farcaster integration, provably fair blockchain randomization, PostgreSQL database, and real-time leaderboards. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Play Now</a>'
+            },
+            fjordmekko: {
+                title: 'Fjord & Mekko - E-Commerce Store',
+                description: 'Professional online store for orthopedic mattresses. Features product catalog, interactive Leaflet maps with 20+ store locations, partner program, mattress selector tool, and email integration. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Visit Store</a>'
+            },
+            tradingbots: {
+                title: 'AI Trading Bots - Binance Futures',
+                description: 'Advanced trading bots for Binance Futures with GPT-3.5-turbo AI analysis, technical indicators (RSI, MACD, Bollinger Bands, ADX), multi-timeframe analysis (5m-4h), and 100x leverage scalping. Built with Python and Node.js.'
+            },
+            socialbots: {
+                title: 'Social Media Automation Bots',
+                description: 'Multiple Python bots for automated posting on Zora.co and other social networks. Features AI-powered content generation, scheduling, cross-platform publishing, and engagement tracking.'
+            },
+            lilurl: {
+                title: 'lilURL - URL Shortener Service',
+                description: 'Full-featured URL shortening service (Bit.ly alternative) with click analytics, QR code generation, REST API, and subscription plans. Features real-time dashboard with Chart.js, device/browser/location tracking, and rate limiting. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">Visit lilURL</a>'
+            },
+            zoriumtoken: {
+                title: 'ZORIUM Token - Smart Contract',
+                description: 'ERC20 upgradeable token on Zora Network with staking, multi-level referral system (3 levels), burn mechanism, tier system (Bronze to Platinum), and auto-rewards distribution. Built with Solidity 0.8.19, OpenZeppelin UUPS proxy pattern, and Hardhat. <a href="https://explorer.zora.energy/token/0x538D6F4fb9598dC74e15e6974049B109ae0AbC6a" target="_blank" style="color: var(--accent-color);">View Contract</a>'
+            },
+            zoriumplatform: {
+                title: 'ZORIUM Platform - DeFi Staking',
+                description: 'Next-gen DeFi staking platform on Zora Network with flexible lock periods (30-365 days), up to 300% APY, progressive tier system with 50% bonuses, 3-level referral program, NFT rewards integration, and real-time dashboard. Built with Next.js 13, Wagmi, Viem, RainbowKit. <a href="https://www.zorium.xyz/" target="_blank" style="color: var(--accent-color);">Visit Platform</a>'
+            },
+            bgyc: {
+                title: 'Bored Giraffes Yacht Club',
+                description: '3,333 NFT collection on Ethereum with successful sell-out minting. Complete development and deployment. <a href="https://rarible.com/bgyc/items" target="_blank" style="color: var(--accent-color);">View on Rarible</a>'
+            },
+            gafs: {
+                title: 'The GAFs NFT Collection',
+                description: 'Innovative NFT collection featuring unique generative artwork and community-driven features. <a href="https://opensea.io/collection/thegafs/overview" target="_blank" style="color: var(--accent-color);">View Collection</a>'
+            },
+            miseryavenue: {
+                title: 'Misery Avenue: Beginning',
+                description: 'Transformed published novel into NFT collection, bridging traditional publishing with Web3 innovation. <a href="https://linktr.ee/miseryavenue" target="_blank" style="color: var(--accent-color);">Visit Project</a>'
             }
         },
         footer: { copyright: '© 2026 VoloDev.eth - Blockchain Developer & Web3 Innovator. Ready to transform your vision into reality.' }
@@ -134,6 +214,42 @@ const translations = {
             clothcast: {
                 title: 'Shopify Додаток - ClothCast (AI Віртуальна Примірка)',
                 description: 'Створив AI Shopify додаток для віртуальної примірки з використанням FLUX.2 генерації зображень. Клієнти завантажують селфі, щоб побачити себе в обраному одязі. Функції: кастомізований віджет, панель аналітики та приватність з 24-годинним зберіганням даних. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Відвідати ClothCast</a>'
+            },
+            zorium: {
+                title: 'Розробка NFT Маркетплейсу - ZORIUM.FUN',
+                description: 'Розробляю децентралізований NFT маркетплейс на Zora Network з Next.js, TypeScript, RainbowKit та Web3Modal. Функції: аналітика трендів, мультичейн підтримка та інструменти для авторів. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">Переглянути MVP</a>'
+            },
+            cryptoduel: {
+                title: 'Децентралізована Ігрова Платформа - CryptoDuel',
+                description: 'Створив PvP крипто-ігрову платформу на Base Network з Solidity смарт-контрактами, інтеграцією Farcaster, PostgreSQL та 4 ігровими режимами (Дуель 1v1, Батл Рояль). Функції: доказово чесна рандомізація та таблиці лідерів. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Грати зараз</a>'
+            },
+            fjordmekko: {
+                title: 'E-Commerce Платформа - Fjord & Mekko',
+                description: 'Розробив професійний інтернет-магазин ортопедичних матраців з використанням Next.js 16, React 19, карт Leaflet (20+ локацій магазинів), інтеграції email через Resend та анімацій Framer Motion. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Відвідати магазин</a>'
+            },
+            tradingbots: {
+                title: 'AI Торгові Боти (Python & Node.js)',
+                description: 'Створив складних торгових ботів для Binance Futures з інтеграцією GPT-3.5-turbo, технічними індикаторами (RSI, MACD, Bollinger Bands), мультитаймфрейм аналізом та стратегіями скальпінгу з плечем 100x'
+            },
+            lilurl: {
+                title: 'SaaS Платформа - lilURL',
+                description: 'Створив повнофункціональний сервіс скорочення URL (альтернатива Bit.ly) з Django 5.0, REST API, аналітикою кліків, генерацією QR-кодів, планами підписки та дашбордом реального часу. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">Відвідати lilURL</a>'
+            },
+            socialbots: {
+                title: 'Боти Автоматизації Соціальних Мереж',
+                description: 'Розробив множинні Python боти для автоматичного постингу на Zora.co та інших соціальних мережах з AI генерацією контенту, плануванням та крос-платформною публікацією'
+            },
+            zoriumeco: {
+                title: 'Екосистема ZORIUM (Legacy)',
+                description: 'Створив повну Web3 платформу з кастомними токенами, механізмами стейкінгу та успішно роздав аірдроп 10,000+ холдерам. <a href="https://www.zorium.xyz/" target="_blank" style="color: var(--accent-color);">Переглянути платформу</a>'
+            },
+            aivideo: {
+                title: 'AI Створення Відеоконтенту',
+                description: 'Експерт у створенні складних відео з використанням AI інструментів, включаючи режисуру повністю AI-генерованих анімаційних фільмів та професійне відеовиробництво'
+            },
+            nftjudge: {
+                title: 'Суддя NFT Design Awards',
+                description: 'Офіційний суддя на <a href="https://nftdesignawards.io/judge/volodymyrdorosh" target="_blank" style="color: var(--accent-color);">NFT Design Awards</a>, оцінюю інноваційні NFT проекти та досконалість дизайну'
             }
         },
         projectCards: {
@@ -144,6 +260,50 @@ const translations = {
             clothcast: {
                 title: 'ClothCast - AI Віртуальна Примірка',
                 description: 'AI Shopify додаток для віртуальної примірки з використанням FLUX.2 генерації зображень. Клієнти завантажують селфі, щоб побачити себе в обраному одязі. Функції: кастомізований віджет, theme extension, панель аналітики та приватність з 24-годинним зберіганням даних. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Відвідати ClothCast</a>'
+            },
+            zorium: {
+                title: 'ZORIUM.FUN - NFT Маркетплейс',
+                description: 'Децентралізований NFT маркетплейс на Zora Network з аналітикою трендів, інструментами для авторів та мультичейн підтримкою. Побудований з Next.js 14, TypeScript, Wagmi, RainbowKit. 🚧 MVP в процесі. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">Переглянути MVP</a>'
+            },
+            cryptoduel: {
+                title: 'CryptoDuel - Крипто Ігрова Платформа',
+                description: 'PvP крипто-гра на Base Network з 4 ігровими режимами (Дуель, Батл Рояль). Функції: інтеграція Farcaster, доказово чесна blockchain рандомізація, база даних PostgreSQL та таблиці лідерів реального часу. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Грати зараз</a>'
+            },
+            fjordmekko: {
+                title: 'Fjord & Mekko - E-Commerce Магазин',
+                description: 'Професійний інтернет-магазин ортопедичних матраців. Функції: каталог товарів, інтерактивні карти Leaflet з 20+ локаціями магазинів, партнерська програма, підбір матраців та email інтеграція. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Відвідати магазин</a>'
+            },
+            tradingbots: {
+                title: 'AI Торгові Боти - Binance Futures',
+                description: 'Просунуті торгові боти для Binance Futures з AI аналізом GPT-3.5-turbo, технічними індикаторами (RSI, MACD, Bollinger Bands, ADX), мультитаймфрейм аналізом (5хв-4год) та скальпінгом з плечем 100x. Побудовані на Python та Node.js.'
+            },
+            socialbots: {
+                title: 'Боти Автоматизації Соціальних Мереж',
+                description: 'Множинні Python боти для автоматичного постингу на Zora.co та інших соціальних мережах. Функції: AI генерація контенту, планування, крос-платформна публікація та відстеження залученості.'
+            },
+            lilurl: {
+                title: 'lilURL - Сервіс Скорочення URL',
+                description: 'Повнофункціональний сервіс скорочення URL (альтернатива Bit.ly) з аналітикою кліків, генерацією QR-кодів, REST API та планами підписки. Функції: дашборд реального часу з Chart.js, відстеження пристроїв/браузерів/локацій та обмеження запитів. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">Відвідати lilURL</a>'
+            },
+            zoriumtoken: {
+                title: 'ZORIUM Token - Смарт-контракт',
+                description: 'ERC20 оновлюваний токен на Zora Network зі стейкінгом, багаторівневою реферальною системою (3 рівні), механізмом спалювання, системою рівнів (Bronze до Platinum) та авто-розподілом нагород. Побудований з Solidity 0.8.19, патерном проксі OpenZeppelin UUPS та Hardhat. <a href="https://explorer.zora.energy/token/0x538D6F4fb9598dC74e15e6974049B109ae0AbC6a" target="_blank" style="color: var(--accent-color);">Переглянути контракт</a>'
+            },
+            zoriumplatform: {
+                title: 'ZORIUM Platform - DeFi Стейкінг',
+                description: 'DeFi стейкінг платформа нового покоління на Zora Network з гнучкими періодами блокування (30-365 днів), до 300% APY, прогресивною системою рівнів з 50% бонусами, 3-рівневою реферальною програмою, інтеграцією NFT нагород та дашбордом реального часу. Побудована з Next.js 13, Wagmi, Viem, RainbowKit. <a href="https://www.zorium.xyz/" target="_blank" style="color: var(--accent-color);">Відвідати платформу</a>'
+            },
+            bgyc: {
+                title: 'Bored Giraffes Yacht Club',
+                description: '3,333 NFT колекція на Ethereum з успішним повним розпродажем мінтингу. Повна розробка та деплой. <a href="https://rarible.com/bgyc/items" target="_blank" style="color: var(--accent-color);">Переглянути на Rarible</a>'
+            },
+            gafs: {
+                title: 'The GAFs NFT Колекція',
+                description: 'Інноваційна NFT колекція з унікальним генеративним мистецтвом та функціями, орієнтованими на спільноту. <a href="https://opensea.io/collection/thegafs/overview" target="_blank" style="color: var(--accent-color);">Переглянути колекцію</a>'
+            },
+            miseryavenue: {
+                title: 'Misery Avenue: Beginning',
+                description: 'Перетворив опублікований роман на NFT колекцію, з\'єднавши традиційне видавництво з Web3 інноваціями. <a href="https://linktr.ee/miseryavenue" target="_blank" style="color: var(--accent-color);">Відвідати проект</a>'
             }
         },
         footer: { copyright: '© 2026 VoloDev.eth - Blockchain розробник та Web3 інноватор. Готовий перетворити вашу візію на реальність.' }

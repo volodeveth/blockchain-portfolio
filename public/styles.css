@@ -397,8 +397,18 @@ body {
 }
 
 @keyframes glowPulse {
-    0%, 100% { opacity: 0.1; }
-    50% { opacity: 0.25; }
+    0%, 100% { opacity: 0.02; }
+    50% { opacity: 0.06; }
+}
+
+/* Cursor blinking */
+.screen-cursor {
+    animation: cursorBlink 1s step-end infinite;
+}
+
+@keyframes cursorBlink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 /* Typing hands subtle animation */
@@ -445,11 +455,11 @@ body {
 /* Tech Bubbles Container — positioned above the monitor */
 .tech-bubbles {
     position: absolute;
-    top: 0;
+    top: -5%;
     left: 50%;
     transform: translateX(-50%);
-    width: 140%;
-    height: 30%;
+    width: 150%;
+    height: 35%;
     pointer-events: none;
     overflow: visible;
 }
@@ -1247,10 +1257,55 @@ body {
     color: var(--text-primary);
 }
 
+/* Interactive animations */
+.tech-bubble {
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.tech-bubble.popping {
+    animation: bubblePop 0.4s ease-out forwards !important;
+}
+
+@keyframes bubblePop {
+    0% { transform: translateX(var(--pop-x)) translateY(var(--pop-y)) scale(1); opacity: 0.85; }
+    50% { transform: translateX(var(--pop-x)) translateY(var(--pop-y)) scale(1.5); opacity: 1; }
+    100% { transform: translateX(var(--pop-x)) translateY(var(--pop-y)) scale(0); opacity: 0; }
+}
+
+.coffee-mug {
+    transform-origin: 74px 276px;
+    transition: transform 0.01s;
+}
+
+.coffee-mug.flipping {
+    animation: mugFlip 0.8s ease-in-out;
+}
+
+@keyframes mugFlip {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg) translateY(-10px); }
+    100% { transform: rotate(360deg) translateY(0); }
+}
+
+.developer-group {
+    transform-origin: 197px 280px;
+}
+
+.developer-group.spinning {
+    animation: devSpin 0.8s ease-in-out;
+}
+
+@keyframes devSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
     .code-line,
     .screen-glow,
+    .screen-cursor,
     .typing-hands,
     .left-hand,
     .right-hand,
@@ -1259,8 +1314,9 @@ body {
         animation: none;
     }
 
-    .code-line { opacity: 0.6; }
-    .screen-glow { opacity: 0.15; }
+    .code-line { opacity: 0.7; }
+    .screen-glow { opacity: 0.03; }
+    .screen-cursor { opacity: 1; }
     .steam { opacity: 0.2; }
     .tech-bubble {
         opacity: 0.7;

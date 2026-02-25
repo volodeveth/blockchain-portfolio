@@ -579,13 +579,62 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
-    const parallaxElements = document.querySelectorAll('.blockchain-animation');
-    
+    const parallaxElements = document.querySelectorAll('.dev-scene');
+
     parallaxElements.forEach(element => {
-        const speed = 0.5;
+        const speed = 0.15;
         element.style.transform = `translateY(${scrolled * speed}px)`;
     });
 });
+
+// Developer scene interactive animations
+function initializeDevSceneInteractions() {
+    // Tech bubbles — pop on click
+    document.querySelectorAll('.tech-bubble').forEach(bubble => {
+        bubble.addEventListener('click', function() {
+            const style = getComputedStyle(this);
+            const matrix = new DOMMatrix(style.transform);
+            this.style.setProperty('--pop-x', matrix.m41 + 'px');
+            this.style.setProperty('--pop-y', matrix.m42 + 'px');
+            this.classList.add('popping');
+            this.addEventListener('animationend', function handler() {
+                this.classList.remove('popping');
+                this.removeEventListener('animationend', handler);
+            });
+        });
+    });
+
+    // Coffee mug — flip on click
+    const mug = document.querySelector('.coffee-mug');
+    if (mug) {
+        mug.addEventListener('click', function() {
+            if (!this.classList.contains('flipping')) {
+                this.classList.add('flipping');
+                this.addEventListener('animationend', function handler() {
+                    this.classList.remove('flipping');
+                    this.removeEventListener('animationend', handler);
+                });
+            }
+        });
+    }
+
+    // Chair — spin developer on click
+    const chair = document.querySelector('.chair-group');
+    const dev = document.querySelector('.developer-group');
+    if (chair && dev) {
+        chair.addEventListener('click', function() {
+            if (!dev.classList.contains('spinning')) {
+                dev.classList.add('spinning');
+                dev.addEventListener('animationend', function handler() {
+                    dev.classList.remove('spinning');
+                    dev.removeEventListener('animationend', handler);
+                });
+            }
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', initializeDevSceneInteractions);
 
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {

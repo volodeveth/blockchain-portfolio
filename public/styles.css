@@ -98,11 +98,26 @@ body {
     background-clip: text;
 }
 
-.footer-logo-img {
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
     margin-bottom: 0.5rem;
+}
+
+.footer-logo-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+}
+
+.footer-brand-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .nav-menu {
@@ -436,17 +451,18 @@ body {
     background: linear-gradient(180deg, var(--bg-color) 0%, var(--surface-color) 100%);
 }
 
-.about-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem;
+.about-header {
+    display: flex;
     align-items: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
 }
 
 .about-intro {
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
+    font-size: 1.15rem;
     color: var(--text-secondary);
+    line-height: 1.8;
+    flex: 1;
 }
 
 .achievements h3 {
@@ -455,10 +471,15 @@ body {
     color: var(--accent-color);
 }
 
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
 .achievement-item {
     display: flex;
     gap: 1rem;
-    margin-bottom: 2rem;
     padding: 1.5rem;
     background: rgba(99, 102, 241, 0.05);
     border-radius: 15px;
@@ -476,6 +497,7 @@ body {
     font-size: 2rem;
     color: var(--primary-color);
     margin-top: 0.5rem;
+    flex-shrink: 0;
 }
 
 .achievement-item h4 {
@@ -485,16 +507,20 @@ body {
 
 .achievement-item p {
     color: var(--text-secondary);
+    font-size: 0.95rem;
 }
 
 .profile-card {
     background: var(--surface-color);
     border-radius: 20px;
-    padding: 3rem 2rem;
-    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
     border: 1px solid var(--border-color);
     position: relative;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .profile-card::before {
@@ -508,22 +534,53 @@ body {
 }
 
 .profile-photo {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1.5rem;
     border: 3px solid var(--primary-color);
     box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+    flex-shrink: 0;
 }
 
 .card-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.card-content p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.profile-socials {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.profile-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--primary-color);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.profile-socials a:hover {
+    background: var(--primary-color);
+    color: #fff;
+    transform: translateY(-2px);
 }
 
 .projects {
@@ -938,7 +995,21 @@ body {
         z-index: 1;
     }
 
-    .about-content {
+    .about-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-socials {
+        justify-content: center;
+    }
+
+    .achievements-grid {
         grid-template-columns: 1fr;
     }
 

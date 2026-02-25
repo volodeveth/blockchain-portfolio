@@ -122,124 +122,123 @@
                         </defs>
 
                         <!-- Desk -->
-                        <rect x="40" y="250" width="320" height="12" rx="4" fill="url(#deskGrad)"/>
+                        <rect x="40" y="265" width="320" height="12" rx="4" fill="url(#deskGrad)"/>
                         <!-- Desk legs -->
-                        <rect x="60" y="262" width="8" height="60" rx="2" fill="url(#deskGrad)" opacity="0.8"/>
-                        <rect x="332" y="262" width="8" height="60" rx="2" fill="url(#deskGrad)" opacity="0.8"/>
-
-                        <!-- Chair back -->
-                        <rect x="145" y="210" width="80" height="90" rx="12" fill="url(#chairGrad)" opacity="0.6"/>
-                        <!-- Chair seat -->
-                        <rect x="140" y="290" width="90" height="12" rx="4" fill="url(#chairGrad)" opacity="0.7"/>
-                        <!-- Chair leg -->
-                        <rect x="180" y="302" width="10" height="30" rx="3" fill="url(#chairGrad)" opacity="0.5"/>
-                        <!-- Chair base -->
-                        <ellipse cx="185" cy="335" rx="30" ry="5" fill="url(#chairGrad)" opacity="0.4"/>
+                        <rect x="60" y="277" width="8" height="55" rx="2" fill="url(#deskGrad)" opacity="0.8"/>
+                        <rect x="332" y="277" width="8" height="55" rx="2" fill="url(#deskGrad)" opacity="0.8"/>
 
                         <!-- Monitor stand -->
-                        <rect x="183" y="215" width="14" height="35" rx="3" fill="url(#monitorGrad)"/>
+                        <rect x="190" y="195" width="14" height="70" rx="3" fill="url(#monitorGrad)"/>
                         <!-- Monitor base -->
-                        <ellipse cx="190" cy="250" rx="30" ry="6" fill="url(#monitorGrad)" opacity="0.8"/>
+                        <ellipse cx="197" cy="265" rx="30" ry="6" fill="url(#monitorGrad)" opacity="0.8"/>
 
-                        <!-- Monitor body -->
-                        <rect x="110" y="100" width="160" height="120" rx="8" fill="url(#monitorGrad)"/>
-                        <!-- Screen -->
-                        <rect class="monitor-screen" x="118" y="108" width="144" height="104" rx="4" fill="url(#screenGrad)"/>
+                        <!-- Monitor body (back panel facing us - we see the back of the monitor) -->
+                        <rect x="120" y="80" width="155" height="118" rx="8" fill="url(#monitorGrad)"/>
+                        <!-- Monitor back panel detail -->
+                        <rect x="135" y="95" width="125" height="88" rx="4" fill="url(#deskGrad)" opacity="0.3"/>
+                        <!-- Monitor back ventilation lines -->
+                        <rect x="160" y="105" width="75" height="2" rx="1" fill="url(#chairGrad)" opacity="0.2"/>
+                        <rect x="160" y="115" width="75" height="2" rx="1" fill="url(#chairGrad)" opacity="0.2"/>
+                        <rect x="160" y="125" width="75" height="2" rx="1" fill="url(#chairGrad)" opacity="0.2"/>
+                        <!-- Monitor logo on back -->
+                        <circle cx="197" cy="145" r="8" fill="url(#chairGrad)" opacity="0.25"/>
 
-                        <!-- Code lines on screen -->
-                        <g class="code-lines">
-                            <rect class="code-line code-line-1" x="126" y="118" width="60" height="4" rx="2" fill="#6366f1" opacity="0.7"/>
-                            <rect class="code-line code-line-2" x="126" y="128" width="90" height="4" rx="2" fill="#06d6a0" opacity="0.6"/>
-                            <rect class="code-line code-line-3" x="136" y="138" width="70" height="4" rx="2" fill="#8b5cf6" opacity="0.5"/>
-                            <rect class="code-line code-line-4" x="136" y="148" width="50" height="4" rx="2" fill="#06d6a0" opacity="0.6"/>
-                            <rect class="code-line code-line-5" x="126" y="158" width="80" height="4" rx="2" fill="#6366f1" opacity="0.7"/>
-                            <rect class="code-line code-line-6" x="136" y="168" width="60" height="4" rx="2" fill="#f59e0b" opacity="0.5"/>
-                            <rect class="code-line code-line-7" x="126" y="178" width="100" height="4" rx="2" fill="#8b5cf6" opacity="0.6"/>
-                            <rect class="code-line code-line-8" x="136" y="188" width="45" height="4" rx="2" fill="#06d6a0" opacity="0.5"/>
-                            <rect class="code-line code-line-9" x="126" y="198" width="75" height="4" rx="2" fill="#6366f1" opacity="0.6"/>
+                        <!-- Screen glow visible from the front (above monitor, illuminating upward) -->
+                        <rect class="screen-glow" x="120" y="72" width="155" height="8" rx="3" fill="#6366f1" opacity="0.15"/>
+
+                        <!-- Code lines glow reflecting on desk surface -->
+                        <g class="code-lines" opacity="0.4">
+                            <rect class="code-line code-line-1" x="140" y="268" width="40" height="2" rx="1" fill="#6366f1" opacity="0.3"/>
+                            <rect class="code-line code-line-2" x="190" y="268" width="55" height="2" rx="1" fill="#06d6a0" opacity="0.25"/>
+                            <rect class="code-line code-line-3" x="255" y="268" width="30" height="2" rx="1" fill="#8b5cf6" opacity="0.2"/>
                         </g>
 
-                        <!-- Cursor blinking on screen -->
-                        <rect class="screen-cursor" x="201" y="198" width="8" height="4" rx="1" fill="#06d6a0"/>
-
-                        <!-- Developer body (behind desk) -->
-                        <!-- Torso / Shirt -->
-                        <path d="M155,250 Q155,210 185,200 Q215,210 215,250 Z" fill="url(#shirtGrad)"/>
-
-                        <!-- Neck -->
-                        <rect x="177" y="175" width="16" height="28" rx="6" fill="url(#skinGrad)"/>
-
-                        <!-- Head -->
-                        <ellipse cx="185" cy="165" rx="28" ry="30" fill="url(#skinGrad)"/>
-
-                        <!-- Hair -->
-                        <path d="M157,155 Q157,130 185,128 Q213,130 213,155 Q213,145 185,142 Q157,145 157,155 Z" fill="url(#hairGrad)"/>
-
-                        <!-- Eyes -->
-                        <ellipse cx="176" cy="162" rx="3.5" ry="4" fill="#2a2a3e"/>
-                        <ellipse cx="194" cy="162" rx="3.5" ry="4" fill="#2a2a3e"/>
-                        <!-- Eye shine -->
-                        <circle cx="177.5" cy="161" r="1.2" fill="#fff" opacity="0.8"/>
-                        <circle cx="195.5" cy="161" r="1.2" fill="#fff" opacity="0.8"/>
-
-                        <!-- Mouth (slight smile) -->
-                        <path d="M179,174 Q185,178 191,174" stroke="#c09070" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-
-                        <!-- Glasses -->
-                        <circle cx="176" cy="162" r="8" stroke="#8b5cf6" stroke-width="1.5" fill="none" opacity="0.6"/>
-                        <circle cx="194" cy="162" r="8" stroke="#8b5cf6" stroke-width="1.5" fill="none" opacity="0.6"/>
-                        <line x1="184" y1="162" x2="186" y2="162" stroke="#8b5cf6" stroke-width="1.5" opacity="0.6"/>
-
-                        <!-- Left arm + hand on keyboard area -->
-                        <g class="typing-hands">
-                            <path class="left-arm" d="M155,230 Q130,240 120,248" stroke="url(#shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
-                            <circle class="left-hand" cx="118" cy="248" r="7" fill="url(#skinGrad)"/>
-                            <!-- Right arm + hand on keyboard area -->
-                            <path class="right-arm" d="M215,230 Q240,240 250,248" stroke="url(#shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
-                            <circle class="right-hand" cx="252" cy="248" r="7" fill="url(#skinGrad)"/>
-                        </g>
-
-                        <!-- Keyboard -->
-                        <rect x="100" y="248" width="180" height="10" rx="3" fill="url(#deskGrad)" opacity="0.9"/>
+                        <!-- Keyboard on desk -->
+                        <rect x="140" y="255" width="115" height="10" rx="3" fill="url(#deskGrad)" opacity="0.9"/>
                         <!-- Keyboard keys (subtle) -->
                         <g opacity="0.3">
-                            <rect x="108" y="250" width="12" height="5" rx="1" fill="#6366f1"/>
-                            <rect x="124" y="250" width="12" height="5" rx="1" fill="#6366f1"/>
-                            <rect x="140" y="250" width="12" height="5" rx="1" fill="#6366f1"/>
-                            <rect x="156" y="250" width="12" height="5" rx="1" fill="#6366f1"/>
-                            <rect x="172" y="250" width="12" height="5" rx="1" fill="#6366f1"/>
-                            <rect x="188" y="250" width="12" height="5" rx="1" fill="#6366f1"/>
-                            <rect x="204" y="250" width="12" height="5" rx="1" fill="#6366f1"/>
-                            <rect x="220" y="250" width="12" height="5" rx="1" fill="#6366f1"/>
-                            <rect x="236" y="250" width="12" height="5" rx="1" fill="#6366f1"/>
-                            <rect x="252" y="250" width="12" height="5" rx="1" fill="#6366f1"/>
+                            <rect x="145" y="257" width="8" height="4" rx="1" fill="#6366f1"/>
+                            <rect x="156" y="257" width="8" height="4" rx="1" fill="#6366f1"/>
+                            <rect x="167" y="257" width="8" height="4" rx="1" fill="#6366f1"/>
+                            <rect x="178" y="257" width="8" height="4" rx="1" fill="#6366f1"/>
+                            <rect x="189" y="257" width="8" height="4" rx="1" fill="#6366f1"/>
+                            <rect x="200" y="257" width="8" height="4" rx="1" fill="#6366f1"/>
+                            <rect x="211" y="257" width="8" height="4" rx="1" fill="#6366f1"/>
+                            <rect x="222" y="257" width="8" height="4" rx="1" fill="#6366f1"/>
+                            <rect x="233" y="257" width="8" height="4" rx="1" fill="#6366f1"/>
+                            <rect x="244" y="257" width="8" height="4" rx="1" fill="#6366f1"/>
                         </g>
 
-                        <!-- Coffee mug -->
-                        <rect x="310" y="232" width="18" height="18" rx="3" fill="url(#chairGrad)" opacity="0.8"/>
-                        <path d="M328,237 Q336,237 336,244 Q336,250 328,250" stroke="url(#chairGrad)" stroke-width="2.5" fill="none" opacity="0.6"/>
+                        <!-- Mouse -->
+                        <ellipse cx="280" cy="260" rx="8" ry="5" fill="url(#deskGrad)" opacity="0.8"/>
+
+                        <!-- Coffee mug on desk -->
+                        <rect x="65" y="248" width="18" height="18" rx="3" fill="url(#chairGrad)" opacity="0.8"/>
+                        <path d="M83,253 Q91,253 91,260 Q91,266 83,266" stroke="url(#chairGrad)" stroke-width="2.5" fill="none" opacity="0.6"/>
                         <!-- Coffee steam -->
-                        <path class="steam steam-1" d="M315,230 Q313,222 317,215" stroke="#8b5cf6" stroke-width="1.2" fill="none" opacity="0.3" stroke-linecap="round"/>
-                        <path class="steam steam-2" d="M321,230 Q323,220 319,212" stroke="#6366f1" stroke-width="1.2" fill="none" opacity="0.3" stroke-linecap="round"/>
+                        <path class="steam steam-1" d="M70,246 Q68,238 72,231" stroke="#8b5cf6" stroke-width="1.2" fill="none" opacity="0.3" stroke-linecap="round"/>
+                        <path class="steam steam-2" d="M76,246 Q78,236 74,228" stroke="#6366f1" stroke-width="1.2" fill="none" opacity="0.3" stroke-linecap="round"/>
+
+                        <!-- Chair back (visible behind developer) -->
+                        <path d="M150,290 Q148,235 197,225 Q246,235 244,290 Z" fill="url(#chairGrad)" opacity="0.35"/>
+
+                        <!-- Developer (back view - sitting facing monitor) -->
+                        <!-- Shoulders / Upper body -->
+                        <path d="M148,290 Q148,245 197,230 Q246,245 246,290 Z" fill="url(#shirtGrad)"/>
+
+                        <!-- Collar detail -->
+                        <path d="M180,232 Q197,228 214,232" stroke="#4f46e5" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+                        <!-- Neck (back view) -->
+                        <rect x="189" y="205" width="16" height="30" rx="6" fill="url(#skinGrad)"/>
+
+                        <!-- Head (back view - mostly hair) -->
+                        <ellipse cx="197" cy="190" rx="28" ry="30" fill="url(#hairGrad)"/>
+                        <!-- Hair texture/volume on back -->
+                        <path d="M169,185 Q169,158 197,155 Q225,158 225,185" fill="url(#hairGrad)"/>
+                        <path d="M172,195 Q172,168 197,165 Q222,168 222,195" fill="url(#hairGrad)" opacity="0.7"/>
+                        <!-- Subtle hair highlight -->
+                        <path d="M180,170 Q197,162 214,170" stroke="#5a4738" stroke-width="1" fill="none" opacity="0.4"/>
+
+                        <!-- Ears (visible from back, peeking out from hair) -->
+                        <ellipse cx="168" cy="192" rx="5" ry="7" fill="url(#skinGrad)" opacity="0.7"/>
+                        <ellipse cx="226" cy="192" rx="5" ry="7" fill="url(#skinGrad)" opacity="0.7"/>
+
+                        <!-- Left arm reaching to keyboard -->
+                        <g class="typing-hands">
+                            <path class="left-arm" d="M158,260 Q150,265 145,262" stroke="url(#shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
+                            <circle class="left-hand" cx="143" cy="262" r="6" fill="url(#skinGrad)"/>
+                            <!-- Right arm reaching to mouse -->
+                            <path class="right-arm" d="M236,260 Q255,265 272,260" stroke="url(#shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
+                            <circle class="right-hand" cx="274" cy="259" r="6" fill="url(#skinGrad)"/>
+                        </g>
+
+                        <!-- Headphones on head -->
+                        <path d="M166,180 Q166,155 197,152 Q228,155 228,180" stroke="#3a3a4e" stroke-width="4" fill="none" stroke-linecap="round"/>
+                        <rect x="160" y="177" width="10" height="16" rx="4" fill="#3a3a4e"/>
+                        <rect x="224" y="177" width="10" height="16" rx="4" fill="#3a3a4e"/>
+                        <!-- Headphone cushions -->
+                        <rect x="158" y="179" width="6" height="12" rx="3" fill="#4a4a5e"/>
+                        <rect x="230" y="179" width="6" height="12" rx="3" fill="#4a4a5e"/>
                     </svg>
 
-                    <!-- Tech bubbles floating from monitor -->
+                    <!-- Tech bubbles floating above monitor -->
                     <div class="tech-bubbles">
-                        <span class="tech-bubble" style="--i:0; --dir:-1.2">Next.js</span>
-                        <span class="tech-bubble" style="--i:1; --dir:1.5">React</span>
-                        <span class="tech-bubble" style="--i:2; --dir:-0.8">Solidity</span>
-                        <span class="tech-bubble" style="--i:3; --dir:1.1">Python</span>
-                        <span class="tech-bubble" style="--i:4; --dir:-1.6">TypeScript</span>
-                        <span class="tech-bubble" style="--i:5; --dir:0.7">Node.js</span>
-                        <span class="tech-bubble" style="--i:6; --dir:-0.5">Django</span>
-                        <span class="tech-bubble" style="--i:7; --dir:1.8">Web3.js</span>
-                        <span class="tech-bubble" style="--i:8; --dir:-1.4">ChatGPT</span>
-                        <span class="tech-bubble" style="--i:9; --dir:0.9">Claude</span>
-                        <span class="tech-bubble" style="--i:10; --dir:-0.3">Tailwind</span>
-                        <span class="tech-bubble" style="--i:11; --dir:1.3">Shopify</span>
-                        <span class="tech-bubble" style="--i:12; --dir:-1.0">Hardhat</span>
-                        <span class="tech-bubble" style="--i:13; --dir:0.5">PostgreSQL</span>
-                        <span class="tech-bubble" style="--i:14; --dir:-1.7">Remix</span>
+                        <span class="tech-bubble" style="--i:0; --dir:-2.2">Next.js</span>
+                        <span class="tech-bubble" style="--i:1; --dir:2.5">React</span>
+                        <span class="tech-bubble" style="--i:2; --dir:-1.5">Solidity</span>
+                        <span class="tech-bubble" style="--i:3; --dir:1.8">Python</span>
+                        <span class="tech-bubble" style="--i:4; --dir:-2.8">TypeScript</span>
+                        <span class="tech-bubble" style="--i:5; --dir:1.2">Node.js</span>
+                        <span class="tech-bubble" style="--i:6; --dir:-0.8">Django</span>
+                        <span class="tech-bubble" style="--i:7; --dir:3.0">Web3.js</span>
+                        <span class="tech-bubble" style="--i:8; --dir:-2.5">ChatGPT</span>
+                        <span class="tech-bubble" style="--i:9; --dir:1.5">Claude</span>
+                        <span class="tech-bubble" style="--i:10; --dir:-0.5">Tailwind</span>
+                        <span class="tech-bubble" style="--i:11; --dir:2.2">Shopify</span>
+                        <span class="tech-bubble" style="--i:12; --dir:-1.8">Hardhat</span>
+                        <span class="tech-bubble" style="--i:13; --dir:0.8">PostgreSQL</span>
+                        <span class="tech-bubble" style="--i:14; --dir:-3.0">Remix</span>
                     </div>
                 </div>
             </div>

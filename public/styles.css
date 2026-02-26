@@ -1386,8 +1386,8 @@ body {
 @keyframes coffeeMugSip {
     /* mug lifts to face and tilts as if pouring */
     0%, 63%  { transform: translate(0, 0) rotate(0deg); }
-    70%      { transform: translate(89px, -49px) rotate(-38deg); }
-    83%      { transform: translate(89px, -49px) rotate(-38deg); }
+    70%      { transform: translate(89px, -49px) rotate(38deg); }
+    83%      { transform: translate(89px, -49px) rotate(38deg); }
     89%      { transform: translate(0, 0) rotate(0deg); }
     100%     { transform: translate(0, 0) rotate(0deg); }
 }

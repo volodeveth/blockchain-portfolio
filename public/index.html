@@ -203,39 +203,45 @@
                             <path d="M180,248 Q197,243 214,248" stroke="#4f46e5" stroke-width="1.5" fill="none" opacity="0.5"/>
                             <!-- Neck -->
                             <rect x="189" y="218" width="16" height="30" rx="6" fill="url(#skinGrad)"/>
-                            <!-- Head group (animates for sip) -->
-                            <g class="head-group">
-                                <!-- Head (back of head — hair) -->
+                            <!-- Back of head (normal view, hides during sip) -->
+                            <g class="back-of-head-group">
                                 <ellipse cx="197" cy="202" rx="28" ry="30" fill="url(#hairGrad)"/>
                                 <path d="M169,197 Q169,170 197,167 Q225,170 225,197" fill="url(#hairGrad)"/>
                                 <path d="M172,207 Q172,180 197,177 Q222,180 222,207" fill="url(#hairGrad)" opacity="0.7"/>
                                 <path d="M180,182 Q197,174 214,182" stroke="#1a0f06" stroke-width="1" fill="none" opacity="0.4"/>
-                                <!-- Ears -->
                                 <ellipse cx="168" cy="204" rx="5" ry="7" fill="url(#skinGrad)" opacity="0.7"/>
                                 <ellipse cx="226" cy="204" rx="5" ry="7" fill="url(#skinGrad)" opacity="0.7"/>
-                                <!-- Headphones -->
                                 <path d="M166,192 Q166,167 197,164 Q228,167 228,192" stroke="#3a3a4e" stroke-width="4" fill="none" stroke-linecap="round"/>
                                 <rect x="160" y="189" width="10" height="16" rx="4" fill="#3a3a4e"/>
                                 <rect x="224" y="189" width="10" height="16" rx="4" fill="#3a3a4e"/>
                                 <rect x="158" y="191" width="6" height="12" rx="3" fill="#4a4a5e"/>
                                 <rect x="230" y="191" width="6" height="12" rx="3" fill="#4a4a5e"/>
-                                <!-- Left cheek profile + short dark beard (appears on head turn) -->
-                                <g class="face-profile-group">
-                                    <!-- Cheek skin -->
-                                    <path d="M172,200 Q161,211 161,220 Q162,231 170,234 Q178,238 185,233" fill="url(#skinGrad)"/>
-                                    <!-- Short dark beard on lower jaw -->
-                                    <path d="M163,219 Q160,227 162,233 Q166,238 173,238 Q181,237 185,231 Q186,225 183,219" fill="#1a0f06" opacity="0.82"/>
-                                    <!-- Stubble texture -->
-                                    <circle cx="166" cy="221" r="1.2" fill="#3a1a08" opacity="0.55"/>
-                                    <circle cx="164" cy="225" r="1.2" fill="#3a1a08" opacity="0.55"/>
-                                    <circle cx="165" cy="229" r="1.2" fill="#3a1a08" opacity="0.55"/>
-                                    <circle cx="169" cy="233" r="1.2" fill="#3a1a08" opacity="0.55"/>
-                                    <circle cx="173" cy="235" r="1.2" fill="#3a1a08" opacity="0.55"/>
-                                    <circle cx="177" cy="234" r="1.2" fill="#3a1a08" opacity="0.55"/>
-                                    <circle cx="181" cy="231" r="1.2" fill="#3a1a08" opacity="0.55"/>
-                                    <circle cx="169" cy="217" r="1" fill="#3a1a08" opacity="0.4"/>
-                                    <circle cx="173" cy="216" r="1" fill="#3a1a08" opacity="0.4"/>
-                                </g>
+                            </g>
+                            <!-- Left profile head (shown during sip: face + beard visible) -->
+                            <g class="profile-head-group">
+                                <!-- Hair / back of head in left profile -->
+                                <ellipse cx="190" cy="200" rx="26" ry="28" fill="url(#hairGrad)"/>
+                                <!-- Face skin: left-facing profile shape -->
+                                <path d="M183,174 Q172,178 163,190 Q158,200 160,212 Q162,222 167,230 Q172,235 179,234 Q184,229 185,222 Q187,210 188,200 Q187,186 182,175 Z" fill="url(#skinGrad)"/>
+                                <!-- Ear (back/right side visible in left profile) -->
+                                <ellipse cx="214" cy="203" rx="5" ry="7" fill="url(#skinGrad)" opacity="0.8"/>
+                                <!-- Headphone band over hair -->
+                                <path d="M183,173 Q190,163 210,170" stroke="#3a3a4e" stroke-width="4" fill="none" stroke-linecap="round"/>
+                                <!-- Headphone right ear cup -->
+                                <rect x="208" y="189" width="10" height="16" rx="4" fill="#3a3a4e"/>
+                                <rect x="206" y="191" width="6" height="12" rx="3" fill="#4a4a5e"/>
+                                <!-- Nose (side profile bump) -->
+                                <path d="M160,200 Q156,205 159,211" stroke="#d4a47a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+                                <!-- Short dark beard on jaw and chin -->
+                                <path d="M164,220 Q161,227 163,233 Q167,237 174,237 Q181,236 185,230 Q186,224 184,220 Q179,224 172,223 Q167,222 164,220 Z" fill="#1a0f06" opacity="0.87"/>
+                                <!-- Beard stubble texture -->
+                                <circle cx="166" cy="222" r="1.1" fill="#2a1208" opacity="0.5"/>
+                                <circle cx="165" cy="226" r="1.1" fill="#2a1208" opacity="0.5"/>
+                                <circle cx="165" cy="230" r="1.1" fill="#2a1208" opacity="0.5"/>
+                                <circle cx="168" cy="233" r="1.1" fill="#2a1208" opacity="0.5"/>
+                                <circle cx="172" cy="235" r="1.1" fill="#2a1208" opacity="0.5"/>
+                                <circle cx="176" cy="234" r="1.1" fill="#2a1208" opacity="0.5"/>
+                                <circle cx="180" cy="232" r="1.1" fill="#2a1208" opacity="0.5"/>
                             </g>
                         </g>
 
@@ -253,14 +259,6 @@
                             </g>
                             <path class="right-arm" d="M232,278 Q255,280 272,270" stroke="url(#shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
                             <circle class="right-hand" cx="274" cy="269" r="6" fill="url(#skinGrad)"/>
-                        </g>
-                        <!-- Mug held near face (during sip) -->
-                        <g class="mug-in-hand">
-                            <rect x="149" y="222" width="16" height="13" rx="2" fill="url(#chairGrad)" opacity="0.9"/>
-                            <path d="M165,225 Q172,225 172,231 Q172,237 165,237" stroke="url(#chairGrad)" stroke-width="2" fill="none" opacity="0.7"/>
-                            <rect x="151" y="224" width="12" height="4" rx="1" fill="#3a1f0a" opacity="0.55"/>
-                            <path d="M153,221 Q151,215 154,210" stroke="#8b5cf6" stroke-width="1" fill="none" opacity="0.65" stroke-linecap="round"/>
-                            <path d="M158,221 Q160,214 157,209" stroke="#6366f1" stroke-width="1" fill="none" opacity="0.65" stroke-linecap="round"/>
                         </g>
                     </svg>
 

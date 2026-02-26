@@ -1276,6 +1276,8 @@ body {
 .coffee-mug {
     transform-origin: 74px 276px;
     transition: transform 0.01s;
+    animation: coffeeMugSip 25s ease-in-out infinite;
+    animation-delay: 5s;
 }
 
 .coffee-mug.flipping {
@@ -1301,26 +1303,26 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-/* === SIP COFFEE ANIMATION (periodic, ~25s cycle) ===
-   Timeline:
+/* === SIP COFFEE ANIMATION (periodic, 25s cycle) ===
+   Head cross-fades from back-view → left-profile → back-view.
+   Mug translates from desk up to face level and returns.
    0%–60%  : normal coding
-   60%–67% : head turns left, arm extends to mug
-   67%–74% : mug-in-hand rises to face (sipping)
-   74%–82% : sipping pause
-   82%–88% : mug returns, sip arm fades out
-   88%–93% : head rotates back
-   93%–100%: normal
+   60%–67% : back-of-head fades out, profile fades in, arm extends
+   67%–73% : sip arm fades (holding mug), mug rises to face
+   73%–83% : sipping (profile + mug at face)
+   83%–89% : mug returns, sip arm briefly visible
+   89%–95% : profile fades out, back-of-head fades in
+   95%–100%: normal
 */
-.head-group {
-    transform-box: fill-box;
-    transform-origin: center 87%;
-    animation: headSipTurn 25s ease-in-out infinite;
+
+.back-of-head-group {
+    animation: backOfHeadVis 25s ease-in-out infinite;
     animation-delay: 5s;
 }
 
-.face-profile-group {
+.profile-head-group {
     opacity: 0;
-    animation: faceReveal 25s ease-in-out infinite;
+    animation: profileHeadVis 25s ease-in-out infinite;
     animation-delay: 5s;
 }
 
@@ -1335,50 +1337,46 @@ body {
     animation-delay: 5s;
 }
 
-.mug-in-hand {
-    opacity: 0;
-    animation: mugInHandVis 25s ease-in-out infinite;
-    animation-delay: 5s;
+@keyframes backOfHeadVis {
+    0%, 60%  { opacity: 1; }
+    67%      { opacity: 0; }
+    89%      { opacity: 0; }
+    95%      { opacity: 1; }
+    100%     { opacity: 1; }
 }
 
-@keyframes headSipTurn {
-    0%, 60%  { transform: rotate(0deg); }
-    67%      { transform: rotate(-23deg); }
-    84%      { transform: rotate(-23deg); }
-    91%      { transform: rotate(0deg); }
-    100%     { transform: rotate(0deg); }
-}
-
-@keyframes faceReveal {
-    0%, 62%  { opacity: 0; }
-    68%      { opacity: 1; }
-    84%      { opacity: 1; }
-    90%      { opacity: 0; }
+@keyframes profileHeadVis {
+    0%, 60%  { opacity: 0; }
+    67%      { opacity: 1; }
+    89%      { opacity: 1; }
+    95%      { opacity: 0; }
     100%     { opacity: 0; }
 }
 
 @keyframes leftArmGroupVis {
-    0%, 61%  { opacity: 1; }
-    66%      { opacity: 0; }
-    88%      { opacity: 0; }
-    93%      { opacity: 1; }
+    0%, 60%  { opacity: 1; }
+    65%      { opacity: 0; }
+    91%      { opacity: 0; }
+    96%      { opacity: 1; }
     100%     { opacity: 1; }
 }
 
 @keyframes leftSipGroupVis {
-    0%, 61%  { opacity: 0; }
-    66%      { opacity: 1; }
-    86%      { opacity: 1; }
+    0%, 60%  { opacity: 0; }
+    65%      { opacity: 1; }
+    72%      { opacity: 0; }
+    84%      { opacity: 0; }
+    87%      { opacity: 1; }
     91%      { opacity: 0; }
     100%     { opacity: 0; }
 }
 
-@keyframes mugInHandVis {
-    0%, 67%  { opacity: 0; }
-    72%      { opacity: 1; }
-    81%      { opacity: 1; }
-    86%      { opacity: 0; }
-    100%     { opacity: 0; }
+@keyframes coffeeMugSip {
+    0%, 63%  { transform: translate(0, 0); }
+    70%      { transform: translate(89px, -49px); }
+    83%      { transform: translate(89px, -49px); }
+    89%      { transform: translate(0, 0); }
+    100%     { transform: translate(0, 0); }
 }
 
 /* Reduced motion support */
@@ -1391,11 +1389,11 @@ body {
     .right-hand,
     .steam,
     .tech-bubble,
-    .head-group,
-    .face-profile-group,
+    .back-of-head-group,
+    .profile-head-group,
     .left-arm-group,
     .left-sip-group,
-    .mug-in-hand {
+    .coffee-mug {
         animation: none;
     }
 
@@ -1403,9 +1401,8 @@ body {
     .screen-glow { opacity: 0.03; }
     .screen-cursor { opacity: 1; }
     .steam { opacity: 0.2; }
-    .face-profile-group { opacity: 0; }
+    .profile-head-group { opacity: 0; }
     .left-sip-group { opacity: 0; }
-    .mug-in-hand { opacity: 0; }
     .tech-bubble {
         opacity: 0.7;
         transform: translateX(calc(-50% + var(--dir) * 50px)) translateY(-60px);

@@ -61,6 +61,10 @@ const translations = {
                 title: 'Shopify App - ClothCast (AI Virtual Try-On)',
                 description: 'Built an AI Virtual Try-On Shopify app using FLUX.2 image generation. Customers upload a selfie to see themselves wearing any product. Features customizable widget, analytics dashboard, and privacy-first 24h data retention. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Visit ClothCast</a>'
             },
+            nifta: {
+                title: 'NFT Marketplace - NiFTa (Base Network)',
+                description: 'Building a full-stack NFT marketplace on Base Network with 4 Solidity smart contracts (Factory, ERC-1155, Marketplace, Events). Features unique revenue split (Creator 50% / First Minter 10% / Referral 20%), 48h timer urgency mechanic, UUPS upgradeable contracts, and social verification via X/Farcaster OAuth. <a href="https://nifta-zeta.vercel.app/" target="_blank" style="color: var(--accent-color);">View MVP</a>'
+            },
             zorium: {
                 title: 'NFT Marketplace Development - ZORIUM.FUN',
                 description: 'Building a decentralized NFT marketplace on Zora Network with Next.js, TypeScript, RainbowKit, and Web3Modal. Features trending analytics, multi-chain support, and creator tools. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">View MVP</a>'
@@ -218,6 +222,10 @@ const translations = {
             clothcast: {
                 title: 'Shopify Додаток - ClothCast (AI Віртуальна Примірка)',
                 description: 'Створив AI Shopify додаток для віртуальної примірки з використанням FLUX.2 генерації зображень. Клієнти завантажують селфі, щоб побачити себе в обраному одязі. Функції: кастомізований віджет, панель аналітики та приватність з 24-годинним зберіганням даних. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Відвідати ClothCast</a>'
+            },
+            nifta: {
+                title: 'NFT Маркетплейс - NiFTa (Base Network)',
+                description: 'Розробляю повноцінний NFT маркетплейс на Base Network з 4 Solidity смарт-контрактами (Factory, ERC-1155, Marketplace, Events). Унікальний розподіл доходів (Автор 50% / Перший мінтер 10% / Реферал 20%), механіка 48-годинного таймера терміновості, UUPS оновлювані контракти та верифікація через X/Farcaster OAuth. <a href="https://nifta-zeta.vercel.app/" target="_blank" style="color: var(--accent-color);">Переглянути MVP</a>'
             },
             zorium: {
                 title: 'Розробка NFT Маркетплейсу - ZORIUM.FUN',

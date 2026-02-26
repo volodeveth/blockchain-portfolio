@@ -1301,6 +1301,86 @@ body {
     100% { transform: rotate(360deg); }
 }
 
+/* === SIP COFFEE ANIMATION (periodic, ~25s cycle) ===
+   Timeline:
+   0%–60%  : normal coding
+   60%–67% : head turns left, arm extends to mug
+   67%–74% : mug-in-hand rises to face (sipping)
+   74%–82% : sipping pause
+   82%–88% : mug returns, sip arm fades out
+   88%–93% : head rotates back
+   93%–100%: normal
+*/
+.head-group {
+    transform-box: fill-box;
+    transform-origin: center 87%;
+    animation: headSipTurn 25s ease-in-out infinite;
+    animation-delay: 5s;
+}
+
+.face-profile-group {
+    opacity: 0;
+    animation: faceReveal 25s ease-in-out infinite;
+    animation-delay: 5s;
+}
+
+.left-arm-group {
+    animation: leftArmGroupVis 25s ease-in-out infinite;
+    animation-delay: 5s;
+}
+
+.left-sip-group {
+    opacity: 0;
+    animation: leftSipGroupVis 25s ease-in-out infinite;
+    animation-delay: 5s;
+}
+
+.mug-in-hand {
+    opacity: 0;
+    animation: mugInHandVis 25s ease-in-out infinite;
+    animation-delay: 5s;
+}
+
+@keyframes headSipTurn {
+    0%, 60%  { transform: rotate(0deg); }
+    67%      { transform: rotate(-23deg); }
+    84%      { transform: rotate(-23deg); }
+    91%      { transform: rotate(0deg); }
+    100%     { transform: rotate(0deg); }
+}
+
+@keyframes faceReveal {
+    0%, 62%  { opacity: 0; }
+    68%      { opacity: 1; }
+    84%      { opacity: 1; }
+    90%      { opacity: 0; }
+    100%     { opacity: 0; }
+}
+
+@keyframes leftArmGroupVis {
+    0%, 61%  { opacity: 1; }
+    66%      { opacity: 0; }
+    88%      { opacity: 0; }
+    93%      { opacity: 1; }
+    100%     { opacity: 1; }
+}
+
+@keyframes leftSipGroupVis {
+    0%, 61%  { opacity: 0; }
+    66%      { opacity: 1; }
+    86%      { opacity: 1; }
+    91%      { opacity: 0; }
+    100%     { opacity: 0; }
+}
+
+@keyframes mugInHandVis {
+    0%, 67%  { opacity: 0; }
+    72%      { opacity: 1; }
+    81%      { opacity: 1; }
+    86%      { opacity: 0; }
+    100%     { opacity: 0; }
+}
+
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
     .code-line,
@@ -1310,7 +1390,12 @@ body {
     .left-hand,
     .right-hand,
     .steam,
-    .tech-bubble {
+    .tech-bubble,
+    .head-group,
+    .face-profile-group,
+    .left-arm-group,
+    .left-sip-group,
+    .mug-in-hand {
         animation: none;
     }
 
@@ -1318,6 +1403,9 @@ body {
     .screen-glow { opacity: 0.03; }
     .screen-cursor { opacity: 1; }
     .steam { opacity: 0.2; }
+    .face-profile-group { opacity: 0; }
+    .left-sip-group { opacity: 0; }
+    .mug-in-hand { opacity: 0; }
     .tech-bubble {
         opacity: 0.7;
         transform: translateX(calc(-50% + var(--dir) * 50px)) translateY(-60px);

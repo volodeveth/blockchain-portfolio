@@ -1107,8 +1107,17 @@ body {
         position: relative;
     }
 
+    .hero {
+        min-height: auto;
+        padding-bottom: 3rem;
+    }
+
+    .hero-visual {
+        order: -1;
+    }
+
     .dev-scene {
-        max-width: 300px;
+        max-width: 340px;
         margin: 0 auto;
     }
 

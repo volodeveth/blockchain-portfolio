@@ -115,6 +115,10 @@ const translations = {
                 title: 'CryptoDuel - Crypto Gaming Platform',
                 description: 'PvP crypto game on Base Network with 4 game modes (Duel, Battle Royale). Features Farcaster integration, provably fair blockchain randomization, PostgreSQL database, and real-time leaderboards. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Play Now</a>'
             },
+            nifta: {
+                title: 'NiFTa - NFT Marketplace on Base',
+                description: 'Full-stack NFT marketplace on Base Network with 4 gas-efficient Solidity smart contracts (Factory, ERC-1155 Collection, Marketplace, Events). Features unique revenue split (Creator 50% / First Minter 10% / Referral 20%), 48h timer urgency mechanic, ERC-2981 royalties, UUPS upgradeable contracts, and X/Farcaster OAuth social verification. <a href="https://nifta-zeta.vercel.app/" target="_blank" style="color: var(--accent-color);">View MVP</a>'
+            },
             fjordmekko: {
                 title: 'Fjord & Mekko - E-Commerce Store',
                 description: 'Professional online store for orthopedic mattresses. Features product catalog, interactive Leaflet maps with 20+ store locations, partner program, mattress selector tool, and email integration. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Visit Store</a>'
@@ -268,6 +272,10 @@ const translations = {
             cryptoduel: {
                 title: 'CryptoDuel - Крипто Ігрова Платформа',
                 description: 'PvP крипто-гра на Base Network з 4 ігровими режимами (Дуель, Батл Рояль). Функції: інтеграція Farcaster, доказово чесна blockchain рандомізація, база даних PostgreSQL та таблиці лідерів реального часу. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Грати зараз</a>'
+            },
+            nifta: {
+                title: 'NiFTa - NFT Маркетплейс на Base',
+                description: 'Full-stack NFT маркетплейс на Base Network з 4 газово-ефективними Solidity смарт-контрактами (Factory, ERC-1155 Collection, Marketplace, Events). Унікальний розподіл доходів (Автор 50% / Перший мінтер 10% / Реферал 20%), механіка 48-годинного таймера терміновості, роялті ERC-2981, UUPS оновлювані контракти та OAuth верифікація через X/Farcaster. <a href="https://nifta-zeta.vercel.app/" target="_blank" style="color: var(--accent-color);">Переглянути MVP</a>'
             },
             fjordmekko: {
                 title: 'Fjord & Mekko - E-Commerce Магазин',

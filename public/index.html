@@ -248,16 +248,21 @@
                                 <circle cx="157" cy="208" r="3.5" fill="url(#skinGrad)" opacity="0.65"/>
                                 <!-- Nose bridge line -->
                                 <path d="M160,200 Q156,205 157,210" stroke="#c8906a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
-                                <!-- Mustache: 2px thin strip -->
+                                <!-- Mustache: 2px thin under nose -->
                                 <path d="M159,210 Q157,211 158,212 Q161,212 164,212 Q166,211 165,210 Q162,209 159,210 Z" fill="#1a0f06" opacity="0.85"/>
-                                <!-- Beard: compact, connected to mustache, short -->
-                                <path d="M161,212 Q159,216 160,222 Q161,228 164,232 Q169,235 175,234 Q180,232 182,226 Q183,219 182,212 Q177,214 171,213 Q165,213 161,212 Z" fill="#1a0f06" opacity="0.78"/>
+                                <!-- Mouth (visible gap between mustache and beard) -->
+                                <path d="M160,215 Q163,217 166,215" stroke="#9a5040" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.55"/>
+                                <!-- Thin side connector: left edge only, links mustache to beard -->
+                                <path d="M159,212 Q158,215 159,219 L161,219 Q161,215 161,212 Z" fill="#1a0f06" opacity="0.72"/>
+                                <!-- Beard: starts below mouth (y=219), reaches back of jaw (x=186) -->
+                                <path d="M161,219 Q159,224 160,229 Q162,234 167,236 Q173,237 179,235 Q184,231 186,224 Q186,219 183,218 Q177,219 170,219 Q165,219 161,219 Z" fill="#1a0f06" opacity="0.78"/>
                                 <!-- Sparse stubble -->
-                                <circle cx="164" cy="220" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                                <circle cx="165" cy="225" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                                <circle cx="168" cy="229" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                                <circle cx="172" cy="232" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                                <circle cx="177" cy="231" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                                <circle cx="163" cy="222" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                                <circle cx="165" cy="226" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                                <circle cx="168" cy="230" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                                <circle cx="172" cy="233" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                                <circle cx="177" cy="232" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                                <circle cx="182" cy="228" r="0.8" fill="#3a1a08" opacity="0.4"/>
                             </g>
                         </g>
 

@@ -1274,8 +1274,8 @@ body {
 }
 
 .coffee-mug {
-    transform-origin: 74px 276px;
-    transition: transform 0.01s;
+    transform-box: fill-box;
+    transform-origin: center center;
     animation: coffeeMugSip 25s ease-in-out infinite;
     animation-delay: 5s;
 }
@@ -1322,8 +1322,11 @@ body {
 
 .profile-head-group {
     opacity: 0;
-    animation: profileHeadVis 25s ease-in-out infinite;
-    animation-delay: 5s;
+    transform-box: fill-box;
+    transform-origin: 50% 85%;
+    animation: profileHeadVis 25s ease-in-out infinite,
+               profileHeadTilt 25s ease-in-out infinite;
+    animation-delay: 5s, 5s;
 }
 
 .left-arm-group {
@@ -1371,12 +1374,22 @@ body {
     100%     { opacity: 0; }
 }
 
+/* Head tilts back (+clockwise) while drinking — pivot near neck */
+@keyframes profileHeadTilt {
+    0%, 70%  { transform: rotate(0deg); }
+    76%      { transform: rotate(9deg); }
+    83%      { transform: rotate(9deg); }
+    89%      { transform: rotate(0deg); }
+    100%     { transform: rotate(0deg); }
+}
+
 @keyframes coffeeMugSip {
-    0%, 63%  { transform: translate(0, 0); }
-    70%      { transform: translate(89px, -49px); }
-    83%      { transform: translate(89px, -49px); }
-    89%      { transform: translate(0, 0); }
-    100%     { transform: translate(0, 0); }
+    /* mug lifts to face and tilts as if pouring */
+    0%, 63%  { transform: translate(0, 0) rotate(0deg); }
+    70%      { transform: translate(89px, -49px) rotate(-38deg); }
+    83%      { transform: translate(89px, -49px) rotate(-38deg); }
+    89%      { transform: translate(0, 0) rotate(0deg); }
+    100%     { transform: translate(0, 0) rotate(0deg); }
 }
 
 /* Reduced motion support */

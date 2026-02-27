@@ -680,6 +680,51 @@ function checkFormSubmissionSuccess() {
     }
 }
 
+// Walk Banner: restart cycle after hero arrives + 2s hold
+(function () {
+    var banner = document.querySelector('.walk-banner');
+    if (!banner) return;
+    var svg = banner.querySelector('.walk-svg');
+    var hero = banner.querySelector('.bw-walk-hero');
+    if (!svg || !hero) return;
+
+    var SEL = [
+        '.bw-walk-hero', '.bw-body-bob',
+        '.bw-leg-front', '.bw-leg-back',
+        '.bw-arm-back-walk', '.bw-arm-front-wave',
+        '.bw-hero-shadow', '.bw-trail-icon',
+        '.bw-chat-bubble', '.bw-clip-rect-1',
+        '.bw-clip-rect-2', '.bw-cursor'
+    ].join(',');
+
+    function restartCycle() {
+        // Fade out the SVG smoothly
+        svg.style.transition = 'opacity 0.5s ease';
+        svg.style.opacity = '0';
+        setTimeout(function () {
+            // Reset all animations while invisible
+            banner.querySelectorAll(SEL).forEach(function (el) {
+                el.style.animation = 'none';
+                void el.offsetWidth; // force reflow
+                el.style.animation = '';
+            });
+            // Fade back in on next frame
+            requestAnimationFrame(function () {
+                svg.style.opacity = '1';
+                setTimeout(function () {
+                    svg.style.transition = '';
+                    svg.style.opacity = '';
+                }, 500);
+            });
+        }, 550);
+    }
+
+    hero.addEventListener('animationend', function (e) {
+        if (e.animationName !== 'bw-hero-walk') return;
+        setTimeout(restartCycle, 2000); // hold 2s then restart
+    });
+}());
+
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 if (prefersReducedMotion.matches) {
     document.body.style.scrollBehavior = 'auto';

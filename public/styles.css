@@ -1401,6 +1401,157 @@ body {
     100%     { transform: translate(0, 0) rotate(0deg); }
 }
 
+/* ====================================
+   Walk Banner – "The Walk + Chat Bubble"
+   ==================================== */
+
+.walk-banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #0a0a18;
+    border-top:    1px solid rgba(99,102,241,0.12);
+    border-bottom: 1px solid rgba(99,102,241,0.12);
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+}
+.walk-svg {
+    width: 100%;
+    height: auto;
+    max-height: 240px;
+    display: block;
+}
+
+/* Hero walks across */
+@keyframes bw-hero-walk {
+    0%   { transform: translateX(1040px); }
+    60%  { transform: translateX(0px); }
+    100% { transform: translateX(0px); }
+}
+.bw-walk-hero {
+    animation: bw-hero-walk 10s cubic-bezier(0.4, 0, 0.6, 1) 1 forwards;
+}
+
+/* Body bob while walking */
+@keyframes bw-body-bob {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-3.5px); }
+}
+.bw-body-bob {
+    animation: bw-body-bob 0.23s ease-in-out 26 forwards;
+}
+
+/* Leg swing */
+@keyframes bw-leg-f {
+    0%   { transform: rotate(-30deg); }
+    50%  { transform: rotate(30deg);  }
+    100% { transform: rotate(-30deg); }
+}
+@keyframes bw-leg-b {
+    0%   { transform: rotate(30deg);  }
+    50%  { transform: rotate(-30deg); }
+    100% { transform: rotate(30deg);  }
+}
+.bw-leg-front {
+    animation: bw-leg-f 0.46s ease-in-out 13 forwards;
+    transform-origin: 0 0;
+}
+.bw-leg-back {
+    animation: bw-leg-b 0.46s ease-in-out 13 forwards;
+    transform-origin: 0 0;
+}
+
+/* Back arm swings during walk */
+@keyframes bw-arm-b {
+    0%   { transform: rotate(-22deg); }
+    50%  { transform: rotate(22deg);  }
+    100% { transform: rotate(-22deg); }
+}
+.bw-arm-back-walk {
+    animation: bw-arm-b 0.46s ease-in-out 13 forwards;
+    transform-origin: 0 0;
+}
+
+/* Front arm waves after stop */
+@keyframes bw-wave {
+    0%   { transform: rotate(0deg);   }
+    25%  { transform: rotate(-52deg); }
+    50%  { transform: rotate(-26deg); }
+    75%  { transform: rotate(-58deg); }
+    100% { transform: rotate(-32deg); }
+}
+.bw-arm-front-wave {
+    animation: bw-wave 0.65s ease-in-out 3 6.0s forwards;
+    transform-origin: 0 0;
+}
+
+/* Shadow under hero */
+@keyframes bw-shadow-in {
+    from { opacity: 0; }
+    to   { opacity: 0.22; }
+}
+.bw-hero-shadow {
+    opacity: 0;
+    animation: bw-shadow-in 0.4s ease-out 5.9s 1 forwards;
+}
+
+/* Tech trail icons pop in */
+@keyframes bw-trail-pop {
+    0%   { transform: scale(0) rotate(-160deg); opacity: 0; }
+    70%  { transform: scale(1.15) rotate(5deg);  opacity: 1; }
+    100% { transform: scale(1) rotate(0deg);     opacity: 0.9; }
+}
+.bw-trail-icon {
+    opacity: 0;
+    animation: bw-trail-pop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) 1 forwards;
+}
+.bw-trail-7 { animation-delay: 1.1s; }
+.bw-trail-6 { animation-delay: 1.9s; }
+.bw-trail-5 { animation-delay: 2.7s; }
+.bw-trail-4 { animation-delay: 3.4s; }
+.bw-trail-3 { animation-delay: 4.2s; }
+.bw-trail-2 { animation-delay: 4.9s; }
+.bw-trail-1 { animation-delay: 5.6s; }
+
+/* Chat bubble pops in from pointer tip */
+@keyframes bw-bubble-pop {
+    0%   { opacity: 0; transform: scale(0.4); }
+    70%  { opacity: 1; transform: scale(1.04); }
+    100% { opacity: 1; transform: scale(1); }
+}
+.bw-chat-bubble {
+    opacity: 0;
+    transform-origin: 276px 80px;
+    animation: bw-bubble-pop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) 1 6.0s forwards;
+}
+
+/* Typewriter text reveal via clip-rect width expansion */
+@keyframes bw-reveal-1 {
+    from { width: 0; }
+    to   { width: 460px; }
+}
+@keyframes bw-reveal-2 {
+    from { width: 0; }
+    to   { width: 438px; }
+}
+.bw-clip-rect-1 {
+    animation: bw-reveal-1 1.5s steps(48, end) 1 6.5s forwards;
+}
+.bw-clip-rect-2 {
+    animation: bw-reveal-2 2.0s steps(35, end) 1 8.0s forwards;
+}
+
+/* Blinking cursor */
+@keyframes bw-cursor-blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+.bw-cursor {
+    opacity: 0;
+    animation: bw-cursor-blink 0.7s step-end 8.0s infinite;
+}
+
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
     .code-line,
@@ -1429,4 +1580,18 @@ body {
         opacity: 0.7;
         transform: translateX(calc(-50% + var(--dir) * 50px)) translateY(-60px);
     }
+
+    /* Walk Banner: skip animation, show final state */
+    .bw-walk-hero    { animation: none; transform: translateX(0); }
+    .bw-body-bob     { animation: none; }
+    .bw-leg-front,
+    .bw-leg-back,
+    .bw-arm-back-walk,
+    .bw-arm-front-wave { animation: none; transform: rotate(0deg); }
+    .bw-hero-shadow  { animation: none; opacity: 0.22; }
+    .bw-trail-icon   { animation: none; opacity: 0.9; transform: scale(1); }
+    .bw-chat-bubble  { animation: none; opacity: 1; transform: scale(1); }
+    .bw-clip-rect-1  { animation: none; width: 460px; }
+    .bw-clip-rect-2  { animation: none; width: 438px; }
+    .bw-cursor       { animation: none; opacity: 1; }
 }

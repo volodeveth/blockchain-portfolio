@@ -923,6 +923,208 @@
         </div>
     </section>
 
+    <!-- Walk Banner: hero walks in, tech trail, chat bubble -->
+    <section class="walk-banner" aria-hidden="true">
+        <svg class="walk-svg" viewBox="0 0 1200 190" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="bw-bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%"   style="stop-color:#141428"/>
+                    <stop offset="100%" style="stop-color:#0a0a18"/>
+                </linearGradient>
+                <linearGradient id="bw-groundGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%"   style="stop-color:#6366f1;stop-opacity:0"/>
+                    <stop offset="25%"  style="stop-color:#6366f1;stop-opacity:0.6"/>
+                    <stop offset="75%"  style="stop-color:#8b5cf6;stop-opacity:0.6"/>
+                    <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0"/>
+                </linearGradient>
+                <linearGradient id="bw-skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%"   style="stop-color:#f0c8a0"/>
+                    <stop offset="100%" style="stop-color:#e0b090"/>
+                </linearGradient>
+                <linearGradient id="bw-shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%"   style="stop-color:#6366f1"/>
+                    <stop offset="100%" style="stop-color:#8b5cf6"/>
+                </linearGradient>
+                <linearGradient id="bw-hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%"   style="stop-color:#1a0f06"/>
+                    <stop offset="100%" style="stop-color:#0d0703"/>
+                </linearGradient>
+                <linearGradient id="bw-bubbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%"   style="stop-color:#1a1a38"/>
+                    <stop offset="100%" style="stop-color:#121228"/>
+                </linearGradient>
+                <!-- Typewriter clip paths (userSpaceOnUse = SVG coords) -->
+                <clipPath id="bw-clip1">
+                    <rect class="bw-clip-rect-1" x="318" y="52" width="0" height="30"/>
+                </clipPath>
+                <clipPath id="bw-clip2">
+                    <rect class="bw-clip-rect-2" x="318" y="105" width="0" height="38"/>
+                </clipPath>
+            </defs>
+
+            <!-- Background -->
+            <rect width="1200" height="190" fill="url(#bw-bgGrad)"/>
+            <!-- Subtle grid lines -->
+            <g opacity="0.035">
+                <line x1="0" y1="63"  x2="1200" y2="63"  stroke="#6366f1" stroke-width="1"/>
+                <line x1="0" y1="126" x2="1200" y2="126" stroke="#6366f1" stroke-width="1"/>
+            </g>
+            <!-- Ground glow -->
+            <rect x="0" y="178" width="1200" height="2" fill="url(#bw-groundGlow)"/>
+
+            <!-- Shadow under hero (appears when stopped) -->
+            <ellipse class="bw-hero-shadow" cx="252" cy="178" rx="44" ry="5" fill="#6366f1"/>
+
+            <!-- ===== Tech trail icons ===== -->
+            <!-- Each: outer g = fixed SVG position | inner g = animated scale/opacity -->
+            <g transform="translate(1100,152)">
+                <g class="bw-trail-icon bw-trail-7">
+                    <rect x="-36" y="-13" width="72" height="26" rx="13" fill="#0d0d22" stroke="#627eea" stroke-width="1.3"/>
+                    <text x="0" y="5" text-anchor="middle" font-family="'Fira Code',monospace" font-size="11" fill="#627eea">Ethereum</text>
+                </g>
+            </g>
+            <g transform="translate(975,148)">
+                <g class="bw-trail-icon bw-trail-6">
+                    <rect x="-30" y="-13" width="60" height="26" rx="13" fill="#0d0d22" stroke="#61dafb" stroke-width="1.3"/>
+                    <text x="0" y="5" text-anchor="middle" font-family="'Fira Code',monospace" font-size="11" fill="#61dafb">React</text>
+                </g>
+            </g>
+            <g transform="translate(848,148)">
+                <g class="bw-trail-icon bw-trail-5">
+                    <rect x="-35" y="-13" width="70" height="26" rx="13" fill="#0d0d22" stroke="#8b5cf6" stroke-width="1.3"/>
+                    <text x="0" y="5" text-anchor="middle" font-family="'Fira Code',monospace" font-size="11" fill="#8b5cf6">Solidity</text>
+                </g>
+            </g>
+            <g transform="translate(720,152)">
+                <g class="bw-trail-icon bw-trail-4">
+                    <rect x="-31" y="-13" width="62" height="26" rx="13" fill="#0d0d22" stroke="#5b9fd6" stroke-width="1.3"/>
+                    <text x="0" y="5" text-anchor="middle" font-family="'Fira Code',monospace" font-size="11" fill="#5b9fd6">Python</text>
+                </g>
+            </g>
+            <g transform="translate(592,148)">
+                <g class="bw-trail-icon bw-trail-3">
+                    <rect x="-31" y="-13" width="62" height="26" rx="13" fill="#0d0d22" stroke="#5ab65a" stroke-width="1.3"/>
+                    <text x="0" y="5" text-anchor="middle" font-family="'Fira Code',monospace" font-size="11" fill="#5ab65a">Node.js</text>
+                </g>
+            </g>
+            <g transform="translate(462,148)">
+                <g class="bw-trail-icon bw-trail-2">
+                    <rect x="-27" y="-13" width="54" height="26" rx="13" fill="#0d0d22" stroke="#f59e0b" stroke-width="1.3"/>
+                    <text x="0" y="5" text-anchor="middle" font-family="'Fira Code',monospace" font-size="11" fill="#f59e0b">Web3</text>
+                </g>
+            </g>
+            <g transform="translate(338,152)">
+                <g class="bw-trail-icon bw-trail-1">
+                    <rect x="-27" y="-13" width="54" height="26" rx="13" fill="#0d0d22" stroke="#06d6a0" stroke-width="1.3"/>
+                    <text x="0" y="5" text-anchor="middle" font-family="'Fira Code',monospace" font-size="11" fill="#06d6a0">AI API</text>
+                </g>
+            </g>
+
+            <!-- ===== Walking Hero ===== -->
+            <!-- bw-walk-hero: translateX animation (moves hero left across banner) -->
+            <g class="bw-walk-hero">
+                <!-- bw-body-bob: vertical bounce while walking -->
+                <g class="bw-body-bob">
+                    <!-- Character scaled from original 400×380 coords:
+                         translate(136,-52) scale(0.60)
+                         Maps: head-center(190,200)→(250,68), feet(197,375)→(254,173) -->
+                    <g transform="translate(136, -52) scale(0.60)">
+
+                        <!-- Back leg (behind body), pivot at hip (215,305) -->
+                        <g transform="translate(215, 305)">
+                            <g class="bw-leg-back">
+                                <path d="M0,0 Q14,32 18,68" stroke="#18182e" stroke-width="22" stroke-linecap="round" fill="none"/>
+                                <ellipse cx="19" cy="70" rx="19" ry="7.5" fill="#1a1a2e"/>
+                            </g>
+                        </g>
+
+                        <!-- Body / shirt -->
+                        <path d="M152,310 Q152,260 197,245 Q242,260 242,310 Z" fill="url(#bw-shirtGrad)"/>
+                        <path d="M180,248 Q197,243 214,248" stroke="#4f46e5" stroke-width="1.5" fill="none" opacity="0.5"/>
+                        <!-- Neck -->
+                        <rect x="189" y="218" width="16" height="30" rx="6" fill="url(#bw-skinGrad)"/>
+
+                        <!-- Profile head (left-facing, same as hero animation) -->
+                        <ellipse cx="190" cy="200" rx="26" ry="28" fill="url(#bw-hairGrad)"/>
+                        <path d="M183,174 Q172,178 163,190 Q158,200 160,212 Q162,222 167,230 Q172,235 179,234 Q184,229 185,222 Q187,210 188,200 Q187,186 182,175 Z" fill="url(#bw-skinGrad)"/>
+                        <ellipse cx="214" cy="203" rx="5" ry="7" fill="url(#bw-skinGrad)" opacity="0.8"/>
+                        <path d="M183,173 Q190,163 210,170" stroke="#3a3a4e" stroke-width="4" fill="none" stroke-linecap="round"/>
+                        <rect x="208" y="189" width="10" height="16" rx="4" fill="#3a3a4e"/>
+                        <rect x="206" y="191" width="6"  height="12" rx="3" fill="#4a4a5e"/>
+                        <path d="M162,187 Q167,184 173,186" stroke="#1a0f06" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.9"/>
+                        <ellipse cx="167" cy="196" rx="5.5" ry="4" fill="white" opacity="0.95"/>
+                        <circle cx="165" cy="197" r="3.2" fill="#3d2b1f"/>
+                        <circle cx="165" cy="197" r="1.7" fill="#0a0603"/>
+                        <circle cx="166" cy="195" r="0.9" fill="white" opacity="0.9"/>
+                        <path d="M161,193 Q167,189 173,193" stroke="#b07855" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.8"/>
+                        <circle cx="157" cy="208" r="3.5" fill="url(#bw-skinGrad)" opacity="0.65"/>
+                        <path d="M160,200 Q156,205 157,210" stroke="#c8906a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+                        <path d="M159,210 Q163,208 167,210 Q168,212 167,215 Q167,218 164,219 L161,219 Q160,216 159,213 Q158,211 159,210 Z" fill="#1a0f06" opacity="0.85"/>
+                        <path d="M160,215 Q162,217 164,215" stroke="#9a5040" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.5"/>
+                        <path d="M161,219 Q159,224 160,229 Q162,234 167,236 Q173,237 179,235 Q184,231 186,224 Q186,219 183,218 Q177,219 170,219 Q165,219 161,219 Z" fill="#1a0f06" opacity="0.78"/>
+                        <circle cx="163" cy="222" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                        <circle cx="165" cy="226" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                        <circle cx="168" cy="230" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                        <circle cx="173" cy="233" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                        <circle cx="178" cy="232" r="0.8" fill="#3a1a08" opacity="0.4"/>
+
+                        <!-- Back arm (right arm, swings during walk), pivot at shoulder (232,278) -->
+                        <g transform="translate(232, 278)">
+                            <g class="bw-arm-back-walk">
+                                <path d="M0,0 Q22,16 32,30" stroke="url(#bw-shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
+                                <circle cx="34" cy="32" r="6" fill="url(#bw-skinGrad)"/>
+                            </g>
+                        </g>
+
+                        <!-- Front arm (left arm, waves after stop), pivot at shoulder (162,278) -->
+                        <g transform="translate(162, 278)">
+                            <g class="bw-arm-front-wave">
+                                <path d="M0,0 Q-22,-16 -30,-30" stroke="url(#bw-shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
+                                <circle cx="-32" cy="-32" r="6" fill="url(#bw-skinGrad)"/>
+                            </g>
+                        </g>
+
+                        <!-- Front leg (left leg, in front), pivot at hip (179,305) -->
+                        <g transform="translate(179, 305)">
+                            <g class="bw-leg-front">
+                                <path d="M0,0 Q-14,32 -18,68" stroke="#1a1a3a" stroke-width="22" stroke-linecap="round" fill="none"/>
+                                <ellipse cx="-19" cy="70" rx="19" ry="7.5" fill="#2a2a3e"/>
+                            </g>
+                        </g>
+
+                    </g><!-- /scale wrapper -->
+                </g><!-- /body-bob -->
+            </g><!-- /walk-hero -->
+
+            <!-- ===== Chat Bubble (appears after hero stops) ===== -->
+            <!-- Bubble tail pointer tip at (276,80) matching character mouth position -->
+            <g class="bw-chat-bubble">
+                <!-- Rounded rect bubble + triangular pointer on left edge -->
+                <path d="M320,22 L948,22 Q972,22 972,46 L972,158 Q972,180 948,180 L320,180 Q296,180 296,158 L296,98 L276,80 L296,63 L296,46 Q296,22 320,22 Z"
+                      fill="url(#bw-bubbleGrad)" stroke="#6366f1" stroke-width="1.5"/>
+
+                <!-- Line 1: code comment (typewriter reveal via clip path) -->
+                <text clip-path="url(#bw-clip1)"
+                      x="318" y="74"
+                      font-family="'Fira Code','Courier New',monospace"
+                      font-size="16"
+                      fill="#6366f1" opacity="0.75">// 10+ years experience · 20+ projects shipped</text>
+
+                <!-- Line 2: main call-to-action -->
+                <text clip-path="url(#bw-clip2)"
+                      x="318" y="130"
+                      font-family="'Fira Code','Courier New',monospace"
+                      font-size="23"
+                      font-weight="600"
+                      fill="#e8e8ff">Let's build something amazing!</text>
+
+                <!-- Blinking cursor after line 2 -->
+                <rect class="bw-cursor" x="752" y="110" width="13" height="22" rx="2" fill="#06d6a0"/>
+            </g>
+
+        </svg>
+    </section>
+
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title" data-i18n="contact.title">Let's Build Something Amazing</h2>

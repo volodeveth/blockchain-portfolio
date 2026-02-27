@@ -682,6 +682,156 @@
         </div>
     </section>
 
+    <!-- Terminal Banner: between Featured Projects and Technical Expertise -->
+    <section class="term-banner" aria-hidden="true">
+        <svg class="term-svg" viewBox="0 0 1200 190" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <!-- Typewriter clip paths (SVG userSpaceOnUse coords) -->
+                <clipPath id="tb-clip1"><rect class="tb-clip-cmd"    x="162" y="42"  width="0" height="16"/></clipPath>
+                <clipPath id="tb-clip2"><rect class="tb-clip-scan"   x="36"  y="60"  width="0" height="16"/></clipPath>
+                <clipPath id="tb-clip3"><rect class="tb-clip-tech1"  x="95"  y="96"  width="0" height="16"/></clipPath>
+                <clipPath id="tb-clip4"><rect class="tb-clip-tech2"  x="95"  y="114" width="0" height="16"/></clipPath>
+                <clipPath id="tb-clip5"><rect class="tb-clip-status" x="53"  y="132" width="0" height="16"/></clipPath>
+                <!-- Hero gradients (tb- prefix to avoid conflicts) -->
+                <linearGradient id="tb-skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%"   style="stop-color:#f0c8a0"/>
+                    <stop offset="100%" style="stop-color:#e0b090"/>
+                </linearGradient>
+                <linearGradient id="tb-shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%"   style="stop-color:#6366f1"/>
+                    <stop offset="100%" style="stop-color:#8b5cf6"/>
+                </linearGradient>
+                <linearGradient id="tb-hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%"   style="stop-color:#1a0f06"/>
+                    <stop offset="100%" style="stop-color:#0d0703"/>
+                </linearGradient>
+            </defs>
+
+            <!-- Background -->
+            <rect width="1200" height="190" fill="#0a0a18"/>
+            <!-- Ground line -->
+            <line x1="0" y1="181" x2="1200" y2="181" stroke="#6366f1" stroke-width="1" opacity="0.15"/>
+
+            <!-- ===== Terminal Window ===== -->
+            <g class="tb-window">
+                <!-- Window frame -->
+                <rect x="20" y="8" width="920" height="175" rx="8"
+                      fill="#0d0d1a" stroke="#6366f1" stroke-width="1" stroke-opacity="0.25"/>
+                <!-- Title bar -->
+                <rect x="20" y="8" width="920" height="26" rx="8" fill="#1a1a2e"/>
+                <rect x="20" y="24" width="920" height="10"        fill="#1a1a2e"/>
+                <!-- Traffic lights -->
+                <circle cx="44" cy="21" r="5" fill="#ff5f56"/>
+                <circle cx="60" cy="21" r="5" fill="#ffbd2e"/>
+                <circle cx="76" cy="21" r="5" fill="#27c93f"/>
+                <!-- Window title -->
+                <text x="480" y="25" text-anchor="middle"
+                      font-family="'Fira Code','Courier New',monospace" font-size="12" fill="#4a4a6a">volodev@eth — bash</text>
+                <!-- Content area darker inset -->
+                <rect x="21" y="34" width="918" height="148" fill="#080812"/>
+
+                <!-- Line 1: Prompt (static green) + Command (typewriter) -->
+                <text x="36" y="55"
+                      font-family="'Fira Code','Courier New',monospace" font-size="14" fill="#06d6a0">volodev@eth:~$ </text>
+                <text clip-path="url(#tb-clip1)"
+                      x="162" y="55"
+                      font-family="'Fira Code','Courier New',monospace" font-size="14" fill="#e8e8ff">load --skills</text>
+
+                <!-- Line 2: Scanning (typewriter, appears at 1.8s) -->
+                <text clip-path="url(#tb-clip2)"
+                      x="36" y="73"
+                      font-family="'Fira Code','Courier New',monospace" font-size="14" fill="#6a6a8a">Scanning 10 years of experience...</text>
+
+                <!-- Line 3: Progress bar (appears at 2.6s) -->
+                <g class="tb-prog-wrap">
+                    <text x="36" y="91"
+                          font-family="'Fira Code','Courier New',monospace" font-size="14" fill="#4a4a6a">[</text>
+                    <rect class="tb-progress-bar" x="46" y="79" width="0" height="14" rx="2" fill="#6366f1" opacity="0.85"/>
+                    <text x="338" y="91"
+                          font-family="'Fira Code','Courier New',monospace" font-size="14" fill="#4a4a6a">]</text>
+                    <text class="tb-prog-pct" x="350" y="91"
+                          font-family="'Fira Code','Courier New',monospace" font-size="14" fill="#06d6a0"> 100%</text>
+                </g>
+
+                <!-- Line 4: "Found:" label + tech stack line 1 (typewriter) -->
+                <text class="tb-found-lbl" x="36" y="109"
+                      font-family="'Fira Code','Courier New',monospace" font-size="14" fill="#8b5cf6">Found: </text>
+                <text clip-path="url(#tb-clip3)"
+                      x="95" y="109"
+                      font-family="'Fira Code','Courier New',monospace" font-size="14" fill="#c8c8e8">Solidity · React · Python · Node.js · TypeScript · Next.js</text>
+
+                <!-- Line 5: Tech stack line 2 continuation (typewriter) -->
+                <text clip-path="url(#tb-clip4)"
+                      x="95" y="127"
+                      font-family="'Fira Code','Courier New',monospace" font-size="14" fill="#c8c8e8">Web3.js · Hardhat · AI APIs · Shopify · Remix · Django · Prisma</text>
+
+                <!-- Line 6: Status line -->
+                <text class="tb-status-chk" x="36" y="145"
+                      font-family="'Fira Code','Courier New',monospace" font-size="14" fill="#27c93f">&#x2713; </text>
+                <text clip-path="url(#tb-clip5)"
+                      x="53" y="145"
+                      font-family="'Fira Code','Courier New',monospace" font-size="14" fill="#e8e8ff">All skills loaded. Scroll down to explore &#x2192;</text>
+                <!-- Blinking cursor after last line -->
+                <rect class="tb-end-cursor" x="417" y="133" width="8" height="13" rx="1" fill="#06d6a0"/>
+            </g>
+
+            <!-- ===== Hero (right of terminal, facing left toward screen) ===== -->
+            <!-- scale=0.65, translate so feet at y=175, center-x≈1070 -->
+            <g class="tb-hero-body">
+                <g transform="translate(946.5, -68.75) scale(0.65)">
+                    <!-- Back leg (behind body) -->
+                    <g transform="translate(215, 305)">
+                        <path d="M0,0 Q14,32 18,68" stroke="#18182e" stroke-width="22" stroke-linecap="round" fill="none"/>
+                        <ellipse cx="19" cy="70" rx="19" ry="7.5" fill="#1a1a2e"/>
+                    </g>
+                    <!-- Body / shirt -->
+                    <path d="M152,310 Q152,260 197,245 Q242,260 242,310 Z" fill="url(#tb-shirtGrad)"/>
+                    <path d="M180,248 Q197,243 214,248" stroke="#4f46e5" stroke-width="1.5" fill="none" opacity="0.5"/>
+                    <!-- Neck -->
+                    <rect x="189" y="218" width="16" height="30" rx="6" fill="url(#tb-skinGrad)"/>
+                    <!-- Profile head (facing left = toward terminal) -->
+                    <ellipse cx="190" cy="200" rx="26" ry="28" fill="url(#tb-hairGrad)"/>
+                    <path d="M183,174 Q172,178 163,190 Q158,200 160,212 Q162,222 167,230 Q172,235 179,234 Q184,229 185,222 Q187,210 188,200 Q187,186 182,175 Z" fill="url(#tb-skinGrad)"/>
+                    <ellipse cx="214" cy="203" rx="5" ry="7" fill="url(#tb-skinGrad)" opacity="0.8"/>
+                    <path d="M183,173 Q190,163 210,170" stroke="#3a3a4e" stroke-width="4" fill="none" stroke-linecap="round"/>
+                    <rect x="208" y="189" width="10" height="16" rx="4" fill="#3a3a4e"/>
+                    <rect x="206" y="191" width="6"  height="12" rx="3" fill="#4a4a5e"/>
+                    <path d="M162,187 Q167,184 173,186" stroke="#1a0f06" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.9"/>
+                    <ellipse cx="167" cy="196" rx="5.5" ry="4" fill="white" opacity="0.95"/>
+                    <circle cx="165" cy="197" r="3.2" fill="#3d2b1f"/>
+                    <circle cx="165" cy="197" r="1.7" fill="#0a0603"/>
+                    <circle cx="166" cy="195" r="0.9" fill="white" opacity="0.9"/>
+                    <path d="M161,193 Q167,189 173,193" stroke="#b07855" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.8"/>
+                    <circle cx="157" cy="208" r="3.5" fill="url(#tb-skinGrad)" opacity="0.65"/>
+                    <path d="M160,200 Q156,205 157,210" stroke="#c8906a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+                    <path d="M159,210 Q163,208 167,210 Q168,212 167,215 Q167,218 164,219 L161,219 Q160,216 159,213 Q158,211 159,210 Z" fill="#1a0f06" opacity="0.85"/>
+                    <path d="M160,215 Q162,217 164,215" stroke="#9a5040" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.5"/>
+                    <path d="M161,219 Q159,224 160,229 Q162,234 167,236 Q173,237 179,235 Q184,231 186,224 Q186,219 183,218 Q177,219 170,219 Q165,219 161,219 Z" fill="#1a0f06" opacity="0.78"/>
+                    <circle cx="163" cy="222" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                    <circle cx="165" cy="226" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                    <circle cx="168" cy="230" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                    <!-- Back arm (right arm, static resting) -->
+                    <path d="M232,278 Q250,292 258,308" stroke="url(#tb-shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
+                    <circle cx="260" cy="310" r="6" fill="url(#tb-skinGrad)"/>
+                    <!-- Front arm (left arm) — rises to POINT toward terminal -->
+                    <g transform="translate(162, 278)">
+                        <g class="tb-hero-point">
+                            <path d="M0,0 Q-22,-16 -30,-30" stroke="url(#tb-shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
+                            <circle cx="-32" cy="-32" r="6" fill="url(#tb-skinGrad)"/>
+                        </g>
+                    </g>
+                    <!-- Front leg -->
+                    <g transform="translate(179, 305)">
+                        <path d="M0,0 Q-10,35 -12,68" stroke="#1a1a3a" stroke-width="22" stroke-linecap="round" fill="none"/>
+                        <ellipse cx="-13" cy="70" rx="19" ry="7.5" fill="#2a2a3e"/>
+                    </g>
+                </g>
+            </g>
+            <!-- Hero shadow -->
+            <ellipse cx="1070" cy="179" rx="38" ry="4" fill="#6366f1" opacity="0.1"/>
+        </svg>
+    </section>
+
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title" data-i18n="skills.title">Technical Expertise</h2>

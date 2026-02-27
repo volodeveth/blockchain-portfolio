@@ -1401,6 +1401,81 @@ body {
     100%     { transform: translate(0, 0) rotate(0deg); }
 }
 
+/* ============================================
+   Terminal Banner – "load --skills"
+   ============================================ */
+
+.term-banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #0a0a18;
+    border-top:    1px solid rgba(99,102,241,0.12);
+    border-bottom: 1px solid rgba(99,102,241,0.12);
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+}
+.term-svg {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    display: block;
+}
+
+/* Terminal window slides down */
+@keyframes tb-win-in {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0);    }
+}
+.tb-window { animation: tb-win-in 0.35s ease-out 1 forwards; }
+
+/* Typewriter clip-rect expansions */
+@keyframes tb-rev-cmd    { from{width:0} to{width:110px} }
+@keyframes tb-rev-scan   { from{width:0} to{width:286px} }
+@keyframes tb-rev-tech1  { from{width:0} to{width:479px} }
+@keyframes tb-rev-tech2  { from{width:0} to{width:530px} }
+@keyframes tb-rev-status { from{width:0} to{width:362px} }
+
+.tb-clip-cmd    { animation: tb-rev-cmd    1.2s steps(13,end) 0.05s 1 forwards; }
+.tb-clip-scan   { animation: tb-rev-scan   0.8s steps(34,end) 1.8s  1 forwards; }
+.tb-clip-tech1  { animation: tb-rev-tech1  1.6s steps(57,end) 4.5s  1 forwards; }
+.tb-clip-tech2  { animation: tb-rev-tech2  1.5s steps(63,end) 6.2s  1 forwards; }
+.tb-clip-status { animation: tb-rev-status 1.0s steps(43,end) 7.8s  1 forwards; }
+
+/* Progress bar fill */
+@keyframes tb-prog-fill { from{width:0} to{width:290px} }
+.tb-progress-bar { animation: tb-prog-fill 1.8s linear 2.6s 1 forwards; }
+
+/* Simple opacity reveals */
+@keyframes tb-appear { from{opacity:0} to{opacity:1} }
+.tb-prog-wrap  { opacity:0; animation: tb-appear 0.15s ease 2.6s  1 forwards; }
+.tb-prog-pct   { opacity:0; animation: tb-appear 0.1s  ease 4.4s  1 forwards; }
+.tb-found-lbl  { opacity:0; animation: tb-appear 0.15s ease 4.5s  1 forwards; }
+.tb-status-chk { opacity:0; animation: tb-appear 0.1s  ease 7.8s  1 forwards; }
+
+/* End-of-session blinking cursor */
+@keyframes tb-blink { 0%,100%{opacity:1} 50%{opacity:0} }
+.tb-end-cursor { opacity:0; animation: tb-blink 0.6s step-end 8.8s infinite; }
+
+/* Hero: arm points toward terminal */
+@keyframes tb-hero-point {
+    0%   { transform: rotate(0deg);   }
+    60%  { transform: rotate(-50deg); }
+    100% { transform: rotate(-45deg); }
+}
+.tb-hero-point {
+    animation: tb-hero-point 0.7s ease-out 0.5s 1 forwards;
+    transform-origin: 0 0;
+}
+
+/* Hero: subtle float */
+@keyframes tb-hero-float {
+    0%,100% { transform: translateY(0);    }
+    50%     { transform: translateY(-2px); }
+}
+.tb-hero-body { animation: tb-hero-float 3.5s ease-in-out infinite; }
+
 /* ====================================
    Walk Banner – "The Walk + Chat Bubble"
    ==================================== */
@@ -1580,6 +1655,22 @@ body {
         opacity: 0.7;
         transform: translateX(calc(-50% + var(--dir) * 50px)) translateY(-60px);
     }
+
+    /* Terminal Banner: show final state */
+    .tb-window     { animation: none; opacity: 1; transform: translateY(0); }
+    .tb-clip-cmd    { animation: none; width: 110px; }
+    .tb-clip-scan   { animation: none; width: 286px; }
+    .tb-clip-tech1  { animation: none; width: 479px; }
+    .tb-clip-tech2  { animation: none; width: 530px; }
+    .tb-clip-status { animation: none; width: 362px; }
+    .tb-progress-bar{ animation: none; width: 290px; }
+    .tb-prog-wrap   { animation: none; opacity: 1; }
+    .tb-prog-pct    { animation: none; opacity: 1; }
+    .tb-found-lbl   { animation: none; opacity: 1; }
+    .tb-status-chk  { animation: none; opacity: 1; }
+    .tb-end-cursor  { animation: none; opacity: 1; }
+    .tb-hero-point  { animation: none; transform: rotate(-45deg); }
+    .tb-hero-body   { animation: none; }
 
     /* Walk Banner: skip animation, show final state */
     .bw-walk-hero    { animation: none; transform: translateX(0); }

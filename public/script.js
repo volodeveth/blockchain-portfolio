@@ -680,49 +680,46 @@ function checkFormSubmissionSuccess() {
     }
 }
 
-// Walk Banner: restart cycle after hero arrives + 2s hold
+// Walk Banner: auto-restart loop via SVG clone (guaranteed animation reset)
 (function () {
     var banner = document.querySelector('.walk-banner');
     if (!banner) return;
     var svg = banner.querySelector('.walk-svg');
-    var hero = banner.querySelector('.bw-walk-hero');
-    if (!svg || !hero) return;
+    if (!svg) return;
 
-    var SEL = [
-        '.bw-walk-hero', '.bw-body-bob',
-        '.bw-leg-front', '.bw-leg-back',
-        '.bw-arm-back-walk', '.bw-arm-front-wave',
-        '.bw-hero-shadow', '.bw-trail-icon',
-        '.bw-chat-bubble', '.bw-clip-rect-1',
-        '.bw-clip-rect-2', '.bw-cursor'
-    ].join(',');
+    var ANIM_MS = 10000; // hero walk animation duration
+    var HOLD_MS = 2000;  // hold final state before restart
+    var FADE_MS = 500;   // fade transition duration
 
-    function restartCycle() {
-        // Fade out the SVG smoothly
-        svg.style.transition = 'opacity 0.5s ease';
-        svg.style.opacity = '0';
+    function runCycle() {
         setTimeout(function () {
-            // Reset all animations while invisible
-            banner.querySelectorAll(SEL).forEach(function (el) {
-                el.style.animation = 'none';
-                void el.offsetWidth; // force reflow
-                el.style.animation = '';
-            });
-            // Fade back in on next frame
-            requestAnimationFrame(function () {
-                svg.style.opacity = '1';
-                setTimeout(function () {
-                    svg.style.transition = '';
-                    svg.style.opacity = '';
-                }, 500);
-            });
-        }, 550);
+            // Fade out
+            svg.style.transition = 'opacity ' + FADE_MS + 'ms ease';
+            svg.style.opacity = '0';
+
+            setTimeout(function () {
+                // Deep-clone the SVG — guarantees 100% animation state reset
+                var fresh = svg.cloneNode(true);
+                fresh.removeAttribute('style'); // clear any leftover inline styles
+                svg.parentNode.replaceChild(fresh, svg);
+                svg = fresh;
+
+                // Start invisible, then fade in
+                svg.style.opacity = '0';
+                requestAnimationFrame(function () {
+                    svg.style.transition = 'opacity ' + FADE_MS + 'ms ease';
+                    svg.style.opacity = '1';
+                    setTimeout(function () {
+                        svg.style.transition = '';
+                        svg.style.opacity = '';
+                        runCycle(); // schedule next cycle
+                    }, FADE_MS);
+                });
+            }, FADE_MS + 100);
+        }, ANIM_MS + HOLD_MS);
     }
 
-    hero.addEventListener('animationend', function (e) {
-        if (e.animationName !== 'bw-hero-walk') return;
-        setTimeout(restartCycle, 2000); // hold 2s then restart
-    });
+    runCycle();
 }());
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');

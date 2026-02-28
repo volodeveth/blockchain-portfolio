@@ -680,6 +680,45 @@ function checkFormSubmissionSuccess() {
     }
 }
 
+// Timeline Banner: auto-restart loop via SVG clone
+(function () {
+    var banner = document.querySelector('.tl-banner');
+    if (!banner) return;
+    var svg = banner.querySelector('.tl-svg');
+    if (!svg) return;
+
+    var ANIM_MS = 5000; // all nodes appear by ~4s, give buffer
+    var HOLD_MS = 2000;
+    var FADE_MS = 500;
+
+    function runCycle() {
+        setTimeout(function () {
+            svg.style.transition = 'opacity ' + FADE_MS + 'ms ease';
+            svg.style.opacity = '0';
+
+            setTimeout(function () {
+                var fresh = svg.cloneNode(true);
+                fresh.removeAttribute('style');
+                svg.parentNode.replaceChild(fresh, svg);
+                svg = fresh;
+
+                svg.style.opacity = '0';
+                requestAnimationFrame(function () {
+                    svg.style.transition = 'opacity ' + FADE_MS + 'ms ease';
+                    svg.style.opacity = '1';
+                    setTimeout(function () {
+                        svg.style.transition = '';
+                        svg.style.opacity = '';
+                        runCycle();
+                    }, FADE_MS);
+                });
+            }, FADE_MS + 100);
+        }, ANIM_MS + HOLD_MS);
+    }
+
+    runCycle();
+}());
+
 // Walk Banner: auto-restart loop via SVG clone (guaranteed animation reset)
 (function () {
     var banner = document.querySelector('.walk-banner');

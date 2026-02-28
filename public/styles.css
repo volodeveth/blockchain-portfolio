@@ -1402,6 +1402,62 @@ body {
 }
 
 /* ============================================
+   Timeline Banner – Career Timeline
+   ============================================ */
+
+.tl-banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #0a0a18;
+    border-top:    1px solid rgba(99,102,241,0.12);
+    border-bottom: 1px solid rgba(99,102,241,0.12);
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+}
+.tl-svg {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    display: block;
+}
+
+/* Line segments draw left to right */
+@keyframes tl-draw { to { stroke-dashoffset: 0; } }
+.tl-seg-1 { animation: tl-draw 0.7s ease-out 0.4s 1 forwards; }
+.tl-seg-2 { animation: tl-draw 0.7s ease-out 1.2s 1 forwards; }
+.tl-seg-3 { animation: tl-draw 0.7s ease-out 2.0s 1 forwards; }
+.tl-seg-4 { animation: tl-draw 0.7s ease-out 2.8s 1 forwards; }
+
+/* Node pop-in with elastic bounce */
+.tl-node-inner { opacity: 0; transform-origin: 0 0; }
+@keyframes tl-node-pop {
+    0%   { opacity: 0; transform: scale(0);    }
+    70%  { opacity: 1; transform: scale(1.25); }
+    100% { opacity: 1; transform: scale(1);    }
+}
+.tl-ni-1 { animation: tl-node-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) 0.3s 1 forwards; }
+.tl-ni-2 { animation: tl-node-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) 1.1s 1 forwards; }
+.tl-ni-3 { animation: tl-node-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) 1.9s 1 forwards; }
+.tl-ni-4 { animation: tl-node-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) 2.7s 1 forwards; }
+.tl-ni-5 { animation: tl-node-pop 0.4s cubic-bezier(0.34,1.56,0.64,1) 3.5s 1 forwards; }
+
+/* "Now" node – pulsing ring */
+.tl-pulse-wrap { transform-origin: 0 0; opacity: 0; animation: tl-pulse 1.5s ease-out 4.0s infinite; }
+@keyframes tl-pulse {
+    0%   { transform: scale(1);   opacity: 0.8; }
+    100% { transform: scale(2.4); opacity: 0;   }
+}
+
+/* Hero subtle float */
+@keyframes tl-hero-float {
+    0%,100% { transform: translateY(0);    }
+    50%     { transform: translateY(-2px); }
+}
+.tl-hero-body { animation: tl-hero-float 3.5s ease-in-out infinite; }
+
+/* ============================================
    Terminal Banner – "load --skills"
    ============================================ */
 
@@ -1655,6 +1711,13 @@ body {
         opacity: 0.7;
         transform: translateX(calc(-50% + var(--dir) * 50px)) translateY(-60px);
     }
+
+    /* Timeline Banner: show final state */
+    .tl-seg-1, .tl-seg-2,
+    .tl-seg-3, .tl-seg-4  { animation: none; stroke-dashoffset: 0; }
+    .tl-node-inner         { animation: none; opacity: 1; transform: scale(1); }
+    .tl-pulse-wrap         { animation: none; opacity: 0; }
+    .tl-hero-body          { animation: none; }
 
     /* Terminal Banner: show final state */
     .tb-window     { animation: none; opacity: 1; transform: translateY(0); }

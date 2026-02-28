@@ -1660,14 +1660,14 @@ body {
 /* Typewriter text reveal via clip-rect width expansion */
 @keyframes bw-reveal-1 {
     from { width: 0; }
-    to   { width: 460px; }
+    to   { width: 280px; }
 }
 @keyframes bw-reveal-2 {
     from { width: 0; }
     to   { width: 438px; }
 }
 .bw-clip-rect-1 {
-    animation: bw-reveal-1 1.5s steps(48, end) 1 6.5s forwards;
+    animation: bw-reveal-1 1.5s steps(29, end) 1 6.5s forwards;
 }
 .bw-clip-rect-2 {
     animation: bw-reveal-2 2.0s steps(35, end) 1 8.0s forwards;
@@ -1745,7 +1745,7 @@ body {
     .bw-hero-shadow  { animation: none; opacity: 0.22; }
     .bw-trail-icon   { animation: none; opacity: 0.9; transform: scale(1); }
     .bw-chat-bubble  { animation: none; opacity: 1; transform: scale(1); }
-    .bw-clip-rect-1  { animation: none; width: 460px; }
+    .bw-clip-rect-1  { animation: none; width: 280px; }
     .bw-clip-rect-2  { animation: none; width: 438px; }
     .bw-cursor       { animation: none; opacity: 1; }
 }

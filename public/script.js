@@ -14,7 +14,7 @@ const translations = {
         },
         about: {
             title: 'About Me',
-            intro: 'I am a full-stack blockchain developer and Web3 innovator with 10+ years of experience and 20+ completed projects. My expertise spans NFT marketplaces, AI-powered trading bots, Shopify app development, decentralized gaming platforms, e-commerce solutions, and social media automation. I specialize in Python and Node.js development with deep AI integration (ChatGPT, Claude, Claude Code, Gemini, Midjourney, Sora, Runway).',
+            intro: 'I am a full-stack blockchain developer and Web3 innovator with 10+ years of experience and 20+ completed projects. My expertise spans NFT marketplaces, AI-powered trading bots, Shopify app development, decentralized gaming platforms, e-commerce solutions, and social media automation. I specialize in Python, Node.js, and PHP/Symfony development with deep AI integration (ChatGPT, Claude, Claude Code, Gemini, Midjourney, Sora, Runway).',
             achievementsTitle: 'Key Achievements & Expertise',
             profileLocation: 'Blockchain Developer from Lviv, Ukraine',
             profileTagline: 'Transforming ideas into Web3 reality'
@@ -85,6 +85,10 @@ const translations = {
                 title: 'SaaS Platform - lilURL',
                 description: 'Built a full-featured URL shortening service (Bit.ly alternative) with Django 5.0, REST API, click analytics, QR code generation, subscription plans, and real-time dashboard. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">Visit lilURL</a>'
             },
+            doshka: {
+                title: 'REST API Backend - Doshka (Kanban Board)',
+                description: 'Built a full-featured Trello-like REST API with Symfony 7.2, JWT authentication, role-based access control via Symfony Voters (owner/admin/member), async email notifications via Redis queue + Symfony Messenger, and daily deadline reminders via Symfony Scheduler. Full Docker Compose environment with PostgreSQL 16 and OpenAPI/Swagger docs. <a href="https://github.com/volodeveth/doshka-backend" target="_blank" style="color: var(--accent-color);">View on GitHub</a>'
+            },
             socialbots: {
                 title: 'Social Media Automation Bots',
                 description: 'Developed multiple Python bots for automated posting on Zora.co and other social networks with AI content generation, scheduling, and cross-platform publishing capabilities'
@@ -139,6 +143,10 @@ const translations = {
                 title: 'lilURL - URL Shortener Service',
                 description: 'Full-featured URL shortening service (Bit.ly alternative) with click analytics, QR code generation, REST API, and subscription plans. Features real-time dashboard with Chart.js, device/browser/location tracking, and rate limiting. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">Visit lilURL</a>'
             },
+            doshka: {
+                title: 'Doshka — Kanban Board REST API',
+                description: 'Full-featured Trello-like REST API built with Symfony 7.2, JWT auth, role-based access control (Symfony Voters), async email notifications via Redis queue + Symfony Messenger, and daily deadline reminders via Scheduler. Full Docker Compose environment with PostgreSQL 16 and OpenAPI docs. <a href="https://github.com/volodeveth/doshka-backend" target="_blank" style="color: var(--accent-color);">View on GitHub</a>'
+            },
             zoriumtoken: {
                 title: 'ZORIUM Token - Smart Contract',
                 description: 'ERC20 upgradeable token on Zora Network with staking, multi-level referral system (3 levels), burn mechanism, tier system (Bronze to Platinum), and auto-rewards distribution. Built with Solidity 0.8.19, OpenZeppelin UUPS proxy pattern, and Hardhat. <a href="https://explorer.zora.energy/token/0x538D6F4fb9598dC74e15e6974049B109ae0AbC6a" target="_blank" style="color: var(--accent-color);">View Contract</a>'
@@ -176,7 +184,7 @@ const translations = {
         },
         about: {
             title: 'Про мене',
-            intro: 'Я full-stack blockchain розробник та Web3 інноватор з 10+ роками досвіду та 20+ завершеними проектами. Моя експертиза охоплює NFT маркетплейси, AI-powered торгових ботів, розробку Shopify додатків, децентралізовані ігрові платформи, e-commerce рішення та автоматизацію соціальних мереж. Спеціалізуюся на Python та Node.js розробці з глибокою AI інтеграцією (ChatGPT, Claude, Claude Code, Gemini, Midjourney, Sora, Runway).',
+            intro: 'Я full-stack blockchain розробник та Web3 інноватор з 10+ роками досвіду та 20+ завершеними проектами. Моя експертиза охоплює NFT маркетплейси, AI-powered торгових ботів, розробку Shopify додатків, децентралізовані ігрові платформи, e-commerce рішення та автоматизацію соціальних мереж. Спеціалізуюся на Python, Node.js та PHP/Symfony розробці з глибокою AI інтеграцією (ChatGPT, Claude, Claude Code, Gemini, Midjourney, Sora, Runway).',
             achievementsTitle: 'Ключові досягнення та експертиза',
             profileLocation: 'Blockchain розробник зі Львова, Україна',
             profileTagline: 'Перетворюю ідеї на Web3 реальність'
@@ -247,6 +255,10 @@ const translations = {
                 title: 'SaaS Платформа - lilURL',
                 description: 'Створив повнофункціональний сервіс скорочення URL (альтернатива Bit.ly) з Django 5.0, REST API, аналітикою кліків, генерацією QR-кодів, планами підписки та дашбордом реального часу. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">Відвідати lilURL</a>'
             },
+            doshka: {
+                title: 'REST API Backend - Doshka (Kanban Дошка)',
+                description: 'Розробив повноцінний REST API у стилі Trello з Symfony 7.2, JWT автентифікацією, рольовим контролем доступу через Symfony Voters (owner/admin/member), асинхронними email-повідомленнями через Redis + Symfony Messenger та щоденними нагадуваннями про дедлайни через Scheduler. Повне Docker Compose середовище з PostgreSQL 16 та OpenAPI/Swagger документацією. <a href="https://github.com/volodeveth/doshka-backend" target="_blank" style="color: var(--accent-color);">Переглянути на GitHub</a>'
+            },
             socialbots: {
                 title: 'Боти Автоматизації Соціальних Мереж',
                 description: 'Розробив множинні Python боти для автоматичного постингу на Zora.co та інших соціальних мережах з AI генерацією контенту, плануванням та крос-платформною публікацією'
@@ -300,6 +312,10 @@ const translations = {
             lilurl: {
                 title: 'lilURL - Сервіс Скорочення URL',
                 description: 'Повнофункціональний сервіс скорочення URL (альтернатива Bit.ly) з аналітикою кліків, генерацією QR-кодів, REST API та планами підписки. Функції: дашборд реального часу з Chart.js, відстеження пристроїв/браузерів/локацій та обмеження запитів. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">Відвідати lilURL</a>'
+            },
+            doshka: {
+                title: 'Doshka — Kanban Board REST API',
+                description: 'Повноцінний REST API у стилі Trello з Symfony 7.2, JWT автентифікацією, рольовим контролем доступу (Symfony Voters), асинхронними email-повідомленнями через Redis + Symfony Messenger та нагадуваннями про дедлайни через Scheduler. Повне Docker Compose середовище з OpenAPI документацією. <a href="https://github.com/volodeveth/doshka-backend" target="_blank" style="color: var(--accent-color);">Переглянути на GitHub</a>'
             },
             zoriumtoken: {
                 title: 'ZORIUM Token - Смарт-контракт',

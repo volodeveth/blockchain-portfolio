@@ -339,6 +339,176 @@ const translations = {
             }
         },
         footer: { copyright: '© 2026 VoloDev.eth - Blockchain розробник та Web3 інноватор. Готовий перетворити вашу візію на реальність.' }
+    },
+    de: {
+        nav: { home: 'Start', about: 'Über mich', projects: 'Projekte', skills: 'Kenntnisse', contact: 'Kontakt' },
+        hero: {
+            title1: 'Full-Stack Blockchain',
+            title2: '& KI-Entwickler',
+            subtitle: 'Smart Contracts | DeFi | NFT-Marktplätze | KI-Trading-Bots | Shopify-Apps | E-Commerce | SaaS',
+            location: '📍 Lwiw, Ukraine | 🌐 Weltweit verfügbar',
+            description: 'Blockchain-Entwickler mit 10+ Jahren Erfahrung in der Entwicklung produktionsreifer Web3-Anwendungen. Spezialisierung auf <strong>Solidity-Smart-Contracts</strong>, <strong>NFT-Marktplätze</strong>, <strong>DeFi-Staking-Plattformen</strong>, <strong>KI-Trading-Bots</strong>, <strong>Shopify-Apps</strong>, <strong>SaaS-Plattformen</strong> und <strong>Full-Stack-E-Commerce</strong>-Lösungen. Experte in <strong>Next.js, React, Remix, TypeScript, Python, Django, Node.js, PHP, Symfony</strong> und KI-Tools (<strong>ChatGPT, Claude, Gemini, Midjourney, Sora, Runway</strong>).',
+            viewProjects: 'Projekte ansehen',
+            getInTouch: 'Kontakt aufnehmen',
+            stats: { projects: 'Abgeschlossene Projekte', platforms: 'Aktive Plattformen', rate: 'Stundensatz', experience: 'Jahre Erfahrung' }
+        },
+        about: {
+            title: 'Über mich',
+            intro: 'Ich bin ein Full-Stack-Blockchain-Entwickler und Web3-Innovator mit 10+ Jahren Erfahrung und 20+ abgeschlossenen Projekten. Mein Fachwissen umfasst NFT-Marktplätze, KI-gestützte Trading-Bots, Shopify-App-Entwicklung, dezentrale Gaming-Plattformen, E-Commerce-Lösungen und Social-Media-Automatisierung. Ich spezialisiere mich auf Python-, Node.js- und PHP/Symfony-Entwicklung mit tiefer KI-Integration (ChatGPT, Claude, Claude Code, Gemini, Midjourney, Sora, Runway).',
+            achievementsTitle: 'Wichtigste Erfolge & Fachkenntnisse',
+            profileLocation: 'Blockchain-Entwickler aus Lwiw, Ukraine',
+            profileTagline: 'Ideen in Web3-Realität verwandeln'
+        },
+        projects: { title: 'Ausgewählte Projekte' },
+        skills: { title: 'Technische Kompetenz' },
+        contact: {
+            title: 'Lass uns etwas Großartiges bauen',
+            subtitle: 'Bereit, Ihre Vision umzusetzen',
+            description: 'Ob Sie eine NFT-Marktplatz-Entwicklung, dezentrale Gaming-Plattformen, KI-Trading-Bots, Shopify-App-Entwicklung, E-Commerce-Lösungen, Social-Media-Automatisierung oder individuelle Blockchain-Entwicklung benötigen – ich bringe tiefes technisches Fachwissen und bewährte Ergebnisse in jedes Projekt.',
+            upwork: 'Upwork-Profil',
+            upworkDesc: 'Mein professionelles Profil und Bewertungen ansehen',
+            rate: 'Stundensatz',
+            availability: 'Verfügbarkeit',
+            availabilityDesc: 'Bereit, Ihr Projekt zu starten',
+            formTitle: 'Kontakt aufnehmen',
+            responseTime: 'Antwortzeit',
+            responseTimeDesc: 'Ich antworte innerhalb von 24 Stunden auf Ihre Nachricht'
+        },
+        form: {
+            name: 'Name', namePlaceholder: 'Ihr Name',
+            email: 'E-Mail', emailPlaceholder: 'Ihre E-Mail',
+            company: 'Unternehmen (Optional)', companyPlaceholder: 'Ihr Unternehmen',
+            projectType: 'Projektart', selectProject: 'Projektart auswählen',
+            nftMarketplace: 'NFT-Marktplatz-Entwicklung', gamingPlatform: 'Dezentrale Gaming-Plattform',
+            ecommerce: 'E-Commerce-Website (Next.js)', tradingBot: 'KI-Trading-Bot (Python/Node.js)',
+            automationBot: 'Social-Media-Automatisierungsbot', smartContracts: 'Smart-Contract-Entwicklung',
+            nftCollection: 'NFT-Collection-Launch', web3Platform: 'Web3-Plattform/DApp',
+            fullstackApp: 'Full-Stack-Webanwendung', blockchainIntegration: 'Blockchain-Integration',
+            shopifyApp: 'Shopify-App-Entwicklung',
+            consultation: 'Technische Beratung', other: 'Sonstiges',
+            budget: 'Budgetrahmen', selectBudget: 'Budgetrahmen auswählen',
+            under1k: 'Unter $1.000', '1k5k': '$1.000 – $5.000', '5k10k': '$5.000 – $10.000',
+            '10k25k': '$10.000 – $25.000', '25k50k': '$25.000 – $50.000', '50kplus': '$50.000+',
+            message: 'Projektbeschreibung', messagePlaceholder: 'Erzählen Sie mir von Ihrem Projekt, dem Zeitplan und den spezifischen Anforderungen...',
+            send: 'Nachricht senden'
+        },
+        achievements: {
+            inkbot: {
+                title: 'Shopify-App – InkBot (KI-Produktbeschreibungen)',
+                description: 'Entwicklung einer KI-gestützten Shopify-App zur Generierung SEO-optimierter Produktbeschreibungen mit DeepSeek V3. Funktionen: Massengenerierung, Markenstimm-Analyse, SEO-Bewertung, 111+ Sprachen und Abonnementpläne. <a href="https://inkbot.app/" target="_blank" style="color: var(--accent-color);">InkBot besuchen</a>'
+            },
+            clothcast: {
+                title: 'Shopify-App – ClothCast (KI-Virtuelle Anprobe)',
+                description: 'Entwicklung einer KI-basierten Shopify-App für virtuelle Anproben mit FLUX.2-Bildgenerierung. Kunden laden ein Selfie hoch und sehen sich selbst im gewünschten Produkt. Funktionen: anpassbares Widget, Analyse-Dashboard und datenschutzfreundliche 24h-Datenspeicherung. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">ClothCast besuchen</a>'
+            },
+            nifta: {
+                title: 'NFT-Marktplatz – NiFTa (Base Network)',
+                description: 'Entwicklung eines Full-Stack-NFT-Marktplatzes auf dem Base Network mit 4 Solidity-Smart-Contracts (Factory, ERC-1155, Marketplace, Events). Einzigartiger Erlösaufteilung (Ersteller 50% / Erster Minter 10% / Empfehlung 20%), 48h-Timer-Dringlichkeitsmechanik, UUPS-aktualisierbare Contracts und soziale Verifizierung via X/Farcaster OAuth. <a href="https://nifta-zeta.vercel.app/" target="_blank" style="color: var(--accent-color);">MVP ansehen</a>'
+            },
+            zorium: {
+                title: 'NFT-Marktplatz-Entwicklung – ZORIUM.FUN',
+                description: 'Entwicklung eines dezentralen NFT-Marktplatzes auf dem Zora Network mit Next.js, TypeScript, RainbowKit und Web3Modal. Funktionen: Trend-Analyse, Multi-Chain-Unterstützung und Erstellerwerkzeuge. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">MVP ansehen</a>'
+            },
+            cryptoduel: {
+                title: 'Dezentrale Gaming-Plattform – CryptoDuel',
+                description: 'Entwicklung einer PvP-Krypto-Gaming-Plattform auf dem Base Network mit Solidity-Smart-Contracts, Farcaster-Integration, PostgreSQL und 4 Spielmodi (Duell 1v1, Battle Royale). Funktionen: nachweislich faire Zufallsgenerierung und Bestenlisten. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Jetzt spielen</a>'
+            },
+            fjordmekko: {
+                title: 'E-Commerce-Plattform – Fjord & Mekko',
+                description: 'Entwicklung eines professionellen Online-Shops für orthopädische Matratzen mit Next.js 16, React 19, Leaflet-Karten (20+ Filialstandorte), Resend-E-Mail-Integration und Framer-Motion-Animationen. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Shop besuchen</a>'
+            },
+            tradingbots: {
+                title: 'KI-Trading-Bots (Python & Node.js)',
+                description: 'Entwicklung ausgereifter Trading-Bots für Binance Futures mit GPT-3.5-turbo-Integration, technischen Indikatoren (RSI, MACD, Bollinger Bands), Multi-Timeframe-Analyse und 100x-Hebel-Scalping-Strategien'
+            },
+            lilurl: {
+                title: 'SaaS-Plattform – lilURL',
+                description: 'Entwicklung eines vollständigen URL-Kürzungsdienstes (Bit.ly-Alternative) mit Django 5.0, REST API, Klick-Analyse, QR-Code-Generierung, Abonnementplänen und Echtzeit-Dashboard. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">lilURL besuchen</a>'
+            },
+            doshka: {
+                title: 'REST-API-Backend – Doshka (Kanban-Board)',
+                description: 'Entwicklung einer vollständigen Trello-ähnlichen REST-API mit Symfony 7.2, JWT-Authentifizierung, rollenbasierter Zugriffskontrolle via Symfony Voters (owner/admin/member), asynchronen E-Mail-Benachrichtigungen via Redis-Queue + Symfony Messenger und täglichen Deadline-Erinnerungen via Symfony Scheduler. Vollständige Docker-Compose-Umgebung mit PostgreSQL 16 und OpenAPI/Swagger-Dokumentation. <a href="https://github.com/volodeveth/doshka-backend" target="_blank" style="color: var(--accent-color);">Auf GitHub ansehen</a>'
+            },
+            socialbots: {
+                title: 'Social-Media-Automatisierungsbots',
+                description: 'Entwicklung mehrerer Python-Bots für automatisiertes Posting auf Zora.co und anderen sozialen Netzwerken mit KI-Inhaltsgenerierung, Planung und plattformübergreifender Veröffentlichung'
+            },
+            zoriumeco: {
+                title: 'ZORIUM-Ökosystem (Legacy)',
+                description: 'Entwicklung einer vollständigen Web3-Plattform mit eigenen Tokens, Staking-Mechanismen und erfolgreichem Airdrop an 10.000+ Inhaber. <a href="https://www.zorium.xyz/" target="_blank" style="color: var(--accent-color);">Plattform besuchen</a>'
+            },
+            aivideo: {
+                title: 'KI-Videocontent-Erstellung',
+                description: 'Experte in der Erstellung komplexer Videos mit KI-Tools, einschließlich der Regie vollständig KI-generierter Animationsfilme und professioneller Videoproduktion'
+            },
+            nftjudge: {
+                title: 'NFT Design Awards – Juror',
+                description: 'Offizieller Juror bei den <a href="https://nftdesignawards.io/judge/volodymyrdorosh" target="_blank" style="color: var(--accent-color);">NFT Design Awards</a>, Bewertung innovativer NFT-Projekte und gestalterischer Exzellenz'
+            }
+        },
+        projectCards: {
+            inkbot: {
+                title: 'InkBot – KI-Produktbeschreibungen',
+                description: 'KI-gestützte Shopify-App zur Generierung SEO-optimierter Produktbeschreibungen mit DeepSeek V3. Funktionen: Massengenerierung, Markenstimm-Analyse, SEO-Bewertung, 111+ Sprachen, 9 Nischen und 4 Abonnementpläne. <a href="https://inkbot.app/" target="_blank" style="color: var(--accent-color);">InkBot besuchen</a>'
+            },
+            clothcast: {
+                title: 'ClothCast – KI-Virtuelle Anprobe',
+                description: 'KI-Shopify-App für virtuelle Anproben mit FLUX.2-Bildgenerierung. Kunden laden ein Selfie hoch und sehen sich selbst im gewünschten Produkt. Funktionen: anpassbares Widget, Theme-Extension, Analyse-Dashboard und datenschutzfreundliche 24h-Datenspeicherung. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">ClothCast besuchen</a>'
+            },
+            zorium: {
+                title: 'ZORIUM.FUN – NFT-Marktplatz',
+                description: 'Dezentraler NFT-Marktplatz auf dem Zora Network mit Trend-Analyse, Erstellerwerkzeugen und Multi-Chain-Unterstützung. Entwickelt mit Next.js 14, TypeScript, Wagmi, RainbowKit. 🚧 MVP in Entwicklung. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">MVP ansehen</a>'
+            },
+            cryptoduel: {
+                title: 'CryptoDuel – Krypto-Gaming-Plattform',
+                description: 'PvP-Krypto-Spiel auf dem Base Network mit 4 Spielmodi (Duell, Battle Royale). Funktionen: Farcaster-Integration, nachweislich faire Blockchain-Zufallsgenerierung, PostgreSQL-Datenbank und Echtzeit-Bestenlisten. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Jetzt spielen</a>'
+            },
+            nifta: {
+                title: 'NiFTa – NFT-Marktplatz auf Base',
+                description: 'Full-Stack-NFT-Marktplatz auf dem Base Network mit 4 gaseffizienten Solidity-Smart-Contracts (Factory, ERC-1155 Collection, Marketplace, Events). Einzigartige Erlösaufteilung (Ersteller 50% / Erster Minter 10% / Empfehlung 20%), 48h-Timer-Dringlichkeitsmechanik, ERC-2981-Lizenzgebühren, UUPS-aktualisierbare Contracts und OAuth-Verifizierung via X/Farcaster. <a href="https://nifta-zeta.vercel.app/" target="_blank" style="color: var(--accent-color);">MVP ansehen</a>'
+            },
+            fjordmekko: {
+                title: 'Fjord & Mekko – E-Commerce-Shop',
+                description: 'Professioneller Online-Shop für orthopädische Matratzen. Funktionen: Produktkatalog, interaktive Leaflet-Karten mit 20+ Filialstandorten, Partnerprogramm, Matratzenkonfigurator und E-Mail-Integration. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Shop besuchen</a>'
+            },
+            tradingbots: {
+                title: 'KI-Trading-Bots – Binance Futures',
+                description: 'Fortschrittliche Trading-Bots für Binance Futures mit GPT-3.5-turbo-KI-Analyse, technischen Indikatoren (RSI, MACD, Bollinger Bands, ADX), Multi-Timeframe-Analyse (5m–4h) und 100x-Hebel-Scalping. Entwickelt mit Python und Node.js.'
+            },
+            socialbots: {
+                title: 'Social-Media-Automatisierungsbots',
+                description: 'Mehrere Python-Bots für automatisiertes Posting auf Zora.co und anderen sozialen Netzwerken. Funktionen: KI-gestützte Inhaltsgenerierung, Planung, plattformübergreifende Veröffentlichung und Engagement-Tracking.'
+            },
+            lilurl: {
+                title: 'lilURL – URL-Kürzungsdienst',
+                description: 'Vollständiger URL-Kürzungsdienst (Bit.ly-Alternative) mit Klick-Analyse, QR-Code-Generierung, REST API und Abonnementplänen. Funktionen: Echtzeit-Dashboard mit Chart.js, Geräte-/Browser-/Standortverfolgung und Rate-Limiting. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">lilURL besuchen</a>'
+            },
+            doshka: {
+                title: 'Doshka — Kanban-Board-REST-API',
+                description: 'Vollständige Trello-ähnliche REST-API mit Symfony 7.2, JWT-Authentifizierung, rollenbasierter Zugriffskontrolle (Symfony Voters), asynchronen E-Mail-Benachrichtigungen via Redis-Queue + Symfony Messenger und täglichen Deadline-Erinnerungen via Scheduler. Vollständige Docker-Compose-Umgebung mit PostgreSQL 16 und OpenAPI-Dokumentation. <a href="https://github.com/volodeveth/doshka-backend" target="_blank" style="color: var(--accent-color);">Auf GitHub ansehen</a>'
+            },
+            zoriumtoken: {
+                title: 'ZORIUM Token – Smart Contract',
+                description: 'ERC20-Upgrade-fähiger Token auf dem Zora Network mit Staking, mehrstufigem Empfehlungssystem (3 Ebenen), Burn-Mechanismus, Tier-System (Bronze bis Platin) und automatischer Belohnungsverteilung. Entwickelt mit Solidity 0.8.19, OpenZeppelin UUPS-Proxy-Pattern und Hardhat. <a href="https://explorer.zora.energy/token/0x538D6F4fb9598dC74e15e6974049B109ae0AbC6a" target="_blank" style="color: var(--accent-color);">Contract ansehen</a>'
+            },
+            zoriumplatform: {
+                title: 'ZORIUM-Plattform – DeFi-Staking',
+                description: 'DeFi-Staking-Plattform der nächsten Generation auf dem Zora Network mit flexiblen Sperrzeiträumen (30–365 Tage), bis zu 300% APY, progressivem Tier-System mit 50% Boni, 3-stufigem Empfehlungsprogramm, NFT-Belohnungsintegration und Echtzeit-Dashboard. Entwickelt mit Next.js 13, Wagmi, Viem, RainbowKit. <a href="https://www.zorium.xyz/" target="_blank" style="color: var(--accent-color);">Plattform besuchen</a>'
+            },
+            bgyc: {
+                title: 'Bored Giraffes Yacht Club',
+                description: '3.333 NFT-Collection auf Ethereum mit erfolgreichem Ausverkauf beim Minting. Vollständige Entwicklung und Deployment. <a href="https://rarible.com/bgyc/items" target="_blank" style="color: var(--accent-color);">Auf Rarible ansehen</a>'
+            },
+            gafs: {
+                title: 'The GAFs NFT Collection',
+                description: 'Innovative NFT-Collection mit einzigartiger generativer Kunst und community-getriebenen Funktionen. <a href="https://opensea.io/collection/thegafs/overview" target="_blank" style="color: var(--accent-color);">Collection ansehen</a>'
+            },
+            miseryavenue: {
+                title: 'Misery Avenue: Beginning',
+                description: 'Verwandlung eines veröffentlichten Romans in eine NFT-Collection – Brücke zwischen traditionellem Verlagswesen und Web3-Innovation. <a href="https://linktr.ee/miseryavenue" target="_blank" style="color: var(--accent-color);">Projekt besuchen</a>'
+            }
+        },
+        footer: { copyright: '© 2026 VoloDev.eth – Blockchain-Entwickler & Web3-Innovator. Bereit, Ihre Vision in die Realität umzusetzen.' }
     }
 };
 

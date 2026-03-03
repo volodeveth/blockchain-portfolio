@@ -355,30 +355,25 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function initializeLanguageToggle() {
-    const langToggle = document.getElementById('langToggle');
-    const langText = document.getElementById('langText');
-
-    // Check saved language or default to English
     const savedLang = localStorage.getItem('language') || 'en';
     currentLang = savedLang;
+    setActiveLangBtn(savedLang);
+    if (savedLang !== 'en') applyTranslations(savedLang);
 
-    if (savedLang === 'uk') {
-        langText.textContent = 'EN';
-        applyTranslations('uk');
-    }
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const lang = btn.getAttribute('data-lang');
+            currentLang = lang;
+            localStorage.setItem('language', lang);
+            setActiveLangBtn(lang);
+            applyTranslations(lang);
+        });
+    });
+}
 
-    langToggle.addEventListener('click', () => {
-        if (currentLang === 'en') {
-            currentLang = 'uk';
-            langText.textContent = 'EN';
-            localStorage.setItem('language', 'uk');
-            applyTranslations('uk');
-        } else {
-            currentLang = 'en';
-            langText.textContent = 'UA';
-            localStorage.setItem('language', 'en');
-            applyTranslations('en');
-        }
+function setActiveLangBtn(lang) {
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
 }
 

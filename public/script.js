@@ -20,7 +20,37 @@ const translations = {
             profileTagline: 'Transforming ideas into Web3 reality'
         },
         projects: { title: 'Featured Projects' },
-        skills: { title: 'Technical Expertise' },
+        skills: {
+            title: 'Technical Expertise',
+            cat: {
+                blockchain: 'Blockchain Development',
+                python: 'Python Development',
+                ai: 'AI Integration & Tools',
+                frontend: 'Frontend Development',
+                backend: 'Backend Development',
+                shopify: 'Shopify Development',
+                tools: 'Tools & Integrations',
+                content: 'Content Creation',
+                nft: 'NFT Ecosystem'
+            },
+            items: {
+                automationBots: 'Automation & Bots',
+                tradingBots: 'Trading Bots',
+                aiImageGen: 'Midjourney & AI Image Gen',
+                aiVideo: 'Sora & Runway (AI Video)',
+                tradingAlgo: 'Trading Algorithms & ML',
+                apiDev: 'API Development (REST)',
+                shopifyAppDev: 'Shopify App Development',
+                themeExt: 'Theme Extensions & Liquid',
+                videoProduction: 'Video Production',
+                aiVideos: 'AI-Generated Videos',
+                animatedFilms: 'Animated Films',
+                nftDev: 'NFT Development (ERC-721)',
+                marketplaceDev: 'Marketplace Development',
+                generativeArt: 'Generative Art',
+                ipfs: 'IPFS / Decentralized Storage'
+            }
+        },
         contact: {
             title: "Let's Build Something Amazing",
             subtitle: 'Ready to Transform Your Vision',
@@ -190,7 +220,37 @@ const translations = {
             profileTagline: 'Перетворюю ідеї на Web3 реальність'
         },
         projects: { title: 'Вибрані проекти' },
-        skills: { title: 'Технічна експертиза' },
+        skills: {
+            title: 'Технічна експертиза',
+            cat: {
+                blockchain: 'Blockchain-розробка',
+                python: 'Python-розробка',
+                ai: 'KI-інтеграція та інструменти',
+                frontend: 'Frontend-розробка',
+                backend: 'Backend-розробка',
+                shopify: 'Shopify-розробка',
+                tools: 'Інструменти та інтеграції',
+                content: 'Створення контенту',
+                nft: 'NFT-екосистема'
+            },
+            items: {
+                automationBots: 'Автоматизація та боти',
+                tradingBots: 'Торгові боти',
+                aiImageGen: 'Midjourney та AI-генерація зображень',
+                aiVideo: 'Sora & Runway (AI відео)',
+                tradingAlgo: 'Торгові алгоритми та ML',
+                apiDev: 'Розробка API (REST)',
+                shopifyAppDev: 'Розробка Shopify-додатків',
+                themeExt: 'Theme Extensions та Liquid',
+                videoProduction: 'Відеовиробництво',
+                aiVideos: 'AI-генеровані відео',
+                animatedFilms: 'Анімаційні фільми',
+                nftDev: 'Розробка NFT (ERC-721)',
+                marketplaceDev: 'Розробка маркетплейсу',
+                generativeArt: 'Генеративне мистецтво',
+                ipfs: 'IPFS / Децентралізоване сховище'
+            }
+        },
         contact: {
             title: 'Створімо щось неймовірне',
             subtitle: 'Готовий втілити вашу візію',
@@ -360,7 +420,37 @@ const translations = {
             profileTagline: 'Ideen in Web3-Realität verwandeln'
         },
         projects: { title: 'Ausgewählte Projekte' },
-        skills: { title: 'Technische Kompetenz' },
+        skills: {
+            title: 'Technische Kompetenz',
+            cat: {
+                blockchain: 'Blockchain-Entwicklung',
+                python: 'Python-Entwicklung',
+                ai: 'KI-Integration & Tools',
+                frontend: 'Frontend-Entwicklung',
+                backend: 'Backend-Entwicklung',
+                shopify: 'Shopify-Entwicklung',
+                tools: 'Tools & Integrationen',
+                content: 'Content-Erstellung',
+                nft: 'NFT-Ökosystem'
+            },
+            items: {
+                automationBots: 'Automatisierung & Bots',
+                tradingBots: 'Trading-Bots',
+                aiImageGen: 'Midjourney & KI-Bildgenerierung',
+                aiVideo: 'Sora & Runway (KI-Video)',
+                tradingAlgo: 'Handelsalgorithmen & ML',
+                apiDev: 'API-Entwicklung (REST)',
+                shopifyAppDev: 'Shopify-App-Entwicklung',
+                themeExt: 'Theme-Extensions & Liquid',
+                videoProduction: 'Videoproduktion',
+                aiVideos: 'KI-generierte Videos',
+                animatedFilms: 'Animationsfilme',
+                nftDev: 'NFT-Entwicklung (ERC-721)',
+                marketplaceDev: 'Marktplatz-Entwicklung',
+                generativeArt: 'Generative Kunst',
+                ipfs: 'IPFS / Dezentraler Speicher'
+            }
+        },
         contact: {
             title: 'Lass uns etwas Großartiges bauen',
             subtitle: 'Bereit, Ihre Vision umzusetzen',

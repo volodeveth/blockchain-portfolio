@@ -642,8 +642,9 @@ body {
 }
 
 .lang-tag--primary {
-    background: var(--accent-gradient);
-    color: #fff;
+    background: rgba(99, 102, 241, 0.12);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    color: var(--primary-color);
 }
 
 .lang-banner-more {

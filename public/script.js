@@ -28,6 +28,7 @@ const translations = {
         skills: {
             title: 'Technical Expertise',
             cat: {
+                agentWorkflow: 'AI Agents & Dev Workflow',
                 blockchain: 'Blockchain Development',
                 python: 'Python Development',
                 ai: 'AI Integration & Tools',
@@ -53,7 +54,14 @@ const translations = {
                 nftDev: 'NFT Development (ERC-721)',
                 marketplaceDev: 'Marketplace Development',
                 generativeArt: 'Generative Art',
-                ipfs: 'IPFS / Decentralized Storage'
+                ipfs: 'IPFS / Decentralized Storage',
+                claudeCode: 'Claude Code Orchestration',
+                multiAgent: 'Multi-Agent Systems (Opus / Sonnet / Haiku)',
+                parallelAgents: 'Parallel Subagent Execution',
+                codeReview: 'Automated Code Review & Security Audit',
+                figmaMcp: 'Figma → Code (MCP API)',
+                thirdPartyAi: 'OpenAI / Gemini / Grok API Integration',
+                cicd: 'Git → Vercel CI/CD Pipeline'
             }
         },
         contact: {
@@ -233,6 +241,7 @@ const translations = {
         skills: {
             title: 'Технічна експертиза',
             cat: {
+                agentWorkflow: 'AI-агенти та Воркфлоу',
                 blockchain: 'Blockchain-розробка',
                 python: 'Python-розробка',
                 ai: 'KI-інтеграція та інструменти',
@@ -258,7 +267,14 @@ const translations = {
                 nftDev: 'Розробка NFT (ERC-721)',
                 marketplaceDev: 'Розробка маркетплейсу',
                 generativeArt: 'Генеративне мистецтво',
-                ipfs: 'IPFS / Децентралізоване сховище'
+                ipfs: 'IPFS / Децентралізоване сховище',
+                claudeCode: 'Claude Code Оркестрація',
+                multiAgent: 'Мульти-агентні Системи (Opus / Sonnet / Haiku)',
+                parallelAgents: 'Паралельне Виконання Субагентів',
+                codeReview: 'Автоматизований Code Review та Аудит Безпеки',
+                figmaMcp: 'Figma → Код (MCP API)',
+                thirdPartyAi: 'OpenAI / Gemini / Grok API Інтеграція',
+                cicd: 'Git → Vercel CI/CD Пайплайн'
             }
         },
         contact: {
@@ -438,6 +454,7 @@ const translations = {
         skills: {
             title: 'Technische Kompetenz',
             cat: {
+                agentWorkflow: 'KI-Agenten & Workflow',
                 blockchain: 'Blockchain-Entwicklung',
                 python: 'Python-Entwicklung',
                 ai: 'KI-Integration & Tools',
@@ -463,7 +480,14 @@ const translations = {
                 nftDev: 'NFT-Entwicklung (ERC-721)',
                 marketplaceDev: 'Marktplatz-Entwicklung',
                 generativeArt: 'Generative Kunst',
-                ipfs: 'IPFS / Dezentraler Speicher'
+                ipfs: 'IPFS / Dezentraler Speicher',
+                claudeCode: 'Claude Code Orchestrierung',
+                multiAgent: 'Multi-Agenten-Systeme (Opus / Sonnet / Haiku)',
+                parallelAgents: 'Parallele Subagenten-Ausführung',
+                codeReview: 'Automatisiertes Code-Review & Sicherheitsaudit',
+                figmaMcp: 'Figma → Code (MCP API)',
+                thirdPartyAi: 'OpenAI / Gemini / Grok API Integration',
+                cicd: 'Git → Vercel CI/CD Pipeline'
             }
         },
         contact: {

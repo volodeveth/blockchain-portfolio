@@ -20,6 +20,11 @@ const translations = {
             profileTagline: 'Shipping production apps with AI agent orchestration'
         },
         projects: { title: 'Featured Projects' },
+        langBanner: {
+            title: 'No Language Barriers',
+            desc: 'Fluent real-time communication in 50+ languages via AI live voice interpreter',
+            more: '+ Arabic, Hindi, Portuguese, Dutch, Swedish, Polish, Czech, Turkish, Vietnamese, Thai and 32 more'
+        },
         valueProp: {
             quality: { title: 'AI Agent Quality', desc: 'Automated review by Opus: bugs, security, UI/UX — every commit' },
             speed: { title: 'Team Speed', desc: 'Features ship in parallel: Architect + Implementer + Tester simultaneously' },
@@ -235,6 +240,11 @@ const translations = {
             profileTagline: 'Постачаю продакшн-додатки з AI агентною оркестрацією'
         },
         projects: { title: 'Вибрані проекти' },
+        langBanner: {
+            title: 'Без мовних бар\'єрів',
+            desc: 'Вільне спілкування в реальному часі 50+ мовами через AI голосовий перекладач',
+            more: '+ арабська, хінді, португальська, нідерландська, шведська, польська, чеська, турецька, в\'єтнамська, тайська та ще 32'
+        },
         valueProp: {
             quality: { title: 'Якість AI Агента', desc: 'Автоматизований review від Opus: баги, безпека, UI/UX — кожен коміт' },
             speed: { title: 'Швидкість Команди', desc: 'Фічі поставляються паралельно: Архітектор + Імплементатор + Тестер одночасно' },
@@ -450,6 +460,11 @@ const translations = {
             profileTagline: 'Produktions-Apps mit KI-Agenten-Orchestrierung liefern'
         },
         projects: { title: 'Ausgewählte Projekte' },
+        langBanner: {
+            title: 'Keine Sprachbarrieren',
+            desc: 'Fließende Echtzeitkommunikation in über 50 Sprachen per KI-Live-Dolmetscher',
+            more: '+ Arabisch, Hindi, Portugiesisch, Niederländisch, Schwedisch, Polnisch, Tschechisch, Türkisch, Vietnamesisch, Thailändisch und 32 weitere'
+        },
         valueProp: {
             quality: { title: 'KI-Agenten-Qualität', desc: 'Automatisiertes Review durch Opus: Bugs, Sicherheit, UI/UX — bei jedem Commit' },
             speed: { title: 'Team-Geschwindigkeit', desc: 'Features werden parallel geliefert: Architekt + Implementierer + Tester gleichzeitig' },

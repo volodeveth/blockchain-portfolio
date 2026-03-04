@@ -663,7 +663,7 @@ function initializeLanguageToggle() {
     const savedLang = localStorage.getItem('language') || 'en';
     currentLang = savedLang;
     setActiveLangBtn(savedLang);
-    if (savedLang !== 'en') applyTranslations(savedLang);
+    applyTranslations(savedLang);
 
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', () => {

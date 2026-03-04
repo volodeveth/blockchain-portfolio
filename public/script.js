@@ -100,51 +100,51 @@ const translations = {
         achievements: {
             inkbot: {
                 title: 'Shopify App - InkBot (AI Product Descriptions)',
-                description: 'Built an AI-powered Shopify app that generates SEO-optimized product descriptions using DeepSeek V3. Features bulk generation, brand voice analysis, SEO scoring, 111+ languages, and subscription plans. <a href="https://inkbot.app/" target="_blank" style="color: var(--accent-color);">Visit InkBot</a>'
+                description: 'Built with multi-agent AI orchestration using Claude Code — from architecture planning to security audit. AI-powered Shopify app that generates SEO-optimized product descriptions using DeepSeek V3. Features bulk generation, brand voice analysis, SEO scoring, 111+ languages, and subscription plans. <a href="https://inkbot.app/" target="_blank" style="color: var(--accent-color);">Visit InkBot</a>'
             },
             clothcast: {
                 title: 'Shopify App - ClothCast (AI Virtual Try-On)',
-                description: 'Built an AI Virtual Try-On Shopify app using FLUX.2 image generation. Customers upload a selfie to see themselves wearing any product. Features customizable widget, analytics dashboard, and privacy-first 24h data retention. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Visit ClothCast</a>'
+                description: 'Developed with multi-agent AI workflow — FLUX.2 API integration, widget UI, and analytics built in parallel by specialized subagents. AI Virtual Try-On Shopify app using FLUX.2 image generation. Customers upload a selfie to see themselves wearing any product. Features customizable widget, analytics dashboard, and privacy-first 24h data retention. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Visit ClothCast</a>'
             },
             nifta: {
                 title: 'NFT Marketplace - NiFTa (Base Network)',
-                description: 'Building a full-stack NFT marketplace on Base Network with 4 Solidity smart contracts (Factory, ERC-1155, Marketplace, Events). Features unique revenue split (Creator 50% / First Minter 10% / Referral 20%), 48h timer urgency mechanic, UUPS upgradeable contracts, and social verification via X/Farcaster OAuth. <a href="https://nifta-zeta.vercel.app/" target="_blank" style="color: var(--accent-color);">View MVP</a>'
+                description: 'Built with multi-agent AI orchestration — smart contracts, marketplace frontend, and security audit executed in parallel. Full-stack NFT marketplace on Base Network with 4 Solidity smart contracts (Factory, ERC-1155, Marketplace, Events). Features unique revenue split (Creator 50% / First Minter 10% / Referral 20%), 48h timer urgency mechanic, UUPS upgradeable contracts, and social verification via X/Farcaster OAuth. <a href="https://nifta-zeta.vercel.app/" target="_blank" style="color: var(--accent-color);">View MVP</a>'
             },
             zorium: {
                 title: 'NFT Marketplace Development - ZORIUM.FUN',
-                description: 'Building a decentralized NFT marketplace on Zora Network with Next.js, TypeScript, RainbowKit, and Web3Modal. Features trending analytics, multi-chain support, and creator tools. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">View MVP</a>'
+                description: 'Developed with multi-agent AI workflow — blockchain integration, analytics, and creator tools built simultaneously. Decentralized NFT marketplace on Zora Network with Next.js, TypeScript, RainbowKit, and Web3Modal. Features trending analytics, multi-chain support, and creator tools. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">View MVP</a>'
             },
             cryptoduel: {
                 title: 'Decentralized Gaming Platform - CryptoDuel',
-                description: 'Built a PvP crypto gaming platform on Base Network with Solidity smart contracts, Farcaster integration, PostgreSQL, and 4 game modes (Duel 1v1, Battle Royale). Features provably fair randomization and leaderboards. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Play Now</a>'
+                description: 'Built with multi-agent AI orchestration — smart contracts, game logic, PostgreSQL schema, and frontend implemented in parallel. PvP crypto gaming platform on Base Network with Solidity smart contracts, Farcaster integration, PostgreSQL, and 4 game modes (Duel 1v1, Battle Royale). Features provably fair randomization and leaderboards. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Play Now</a>'
             },
             fjordmekko: {
                 title: 'E-Commerce Platform - Fjord & Mekko',
-                description: 'Developed a professional online store for orthopedic mattresses using Next.js 16, React 19, Leaflet maps (20+ store locations), Resend email integration, and Framer Motion animations. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Visit Store</a>'
+                description: 'Developed with multi-agent AI workflow — Next.js architecture, Leaflet integration, and Framer Motion animations built and reviewed by specialized agents. Professional online store for orthopedic mattresses using Next.js 16, React 19, Leaflet maps (20+ store locations), Resend email integration, and Framer Motion animations. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Visit Store</a>'
             },
             tradingbots: {
                 title: 'AI Trading Bots (Python & Node.js)',
-                description: 'Created sophisticated trading bots for Binance Futures with GPT-3.5-turbo integration, technical indicators (RSI, MACD, Bollinger Bands), multi-timeframe analysis, and 100x leverage scalping strategies'
+                description: 'Architected with multi-agent AI orchestration — trading algorithms, indicator logic, and risk management reviewed in parallel by specialized subagents. Sophisticated trading bots for Binance Futures with GPT-3.5-turbo integration, technical indicators (RSI, MACD, Bollinger Bands), multi-timeframe analysis, and 100x leverage scalping strategies'
             },
             lilurl: {
                 title: 'SaaS Platform - lilURL',
-                description: 'Built a full-featured URL shortening service (Bit.ly alternative) with Django 5.0, REST API, click analytics, QR code generation, subscription plans, and real-time dashboard. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">Visit lilURL</a>'
+                description: 'Built with multi-agent AI workflow — database schema, REST API, and analytics dashboard developed in parallel by specialized subagents. Full-featured URL shortening service (Bit.ly alternative) with Django 5.0, REST API, click analytics, QR code generation, subscription plans, and real-time dashboard. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">Visit lilURL</a>'
             },
             doshka: {
                 title: 'REST API Backend - Doshka (Kanban Board)',
-                description: 'Built a full-featured Trello-like REST API with Symfony 7.2, JWT authentication, role-based access control via Symfony Voters (owner/admin/member), async email notifications via Redis queue + Symfony Messenger, and daily deadline reminders via Symfony Scheduler. Full Docker Compose environment with PostgreSQL 16 and OpenAPI/Swagger docs. <a href="https://github.com/volodeveth/doshka-backend" target="_blank" style="color: var(--accent-color);">View on GitHub</a>'
+                description: 'Developed with multi-agent AI orchestration — Symfony architecture, JWT system, Redis queue, and OpenAPI docs built simultaneously by specialized subagents. Full-featured Trello-like REST API with Symfony 7.2, JWT authentication, role-based access control via Symfony Voters (owner/admin/member), async email notifications via Redis queue + Symfony Messenger, and daily deadline reminders via Symfony Scheduler. Full Docker Compose environment with PostgreSQL 16 and OpenAPI/Swagger docs. <a href="https://github.com/volodeveth/doshka-backend" target="_blank" style="color: var(--accent-color);">View on GitHub</a>'
             },
             socialbots: {
                 title: 'Social Media Automation Bots',
-                description: 'Developed multiple Python bots for automated posting on Zora.co and other social networks with AI content generation, scheduling, and cross-platform publishing capabilities'
+                description: 'Built with multi-agent AI workflow — automation logic, content generation, and scheduling reviewed by specialized subagents. Multiple Python bots for automated posting on Zora.co and other social networks with AI content generation, scheduling, and cross-platform publishing capabilities'
             },
             zoriumeco: {
                 title: 'ZORIUM Ecosystem (Legacy)',
-                description: 'Built a complete Web3 platform with custom tokens, staking mechanisms, and successfully airdropped to 10,000+ holders. <a href="https://www.zorium.xyz/" target="_blank" style="color: var(--accent-color);">View Platform</a>'
+                description: 'Developed with multi-agent AI orchestration — token contracts, staking mechanisms, and platform frontend built in parallel. Complete Web3 platform with custom tokens, staking mechanisms, successfully airdropped to 10,000+ holders. <a href="https://www.zorium.xyz/" target="_blank" style="color: var(--accent-color);">View Platform</a>'
             },
             aivideo: {
                 title: 'AI Video Content Creation',
-                description: 'Expert in creating complex videos using AI tools, including directing fully AI-generated animated films and professional video production'
+                description: 'Expert in AI-directed video production — combining Sora, Runway, and Midjourney into complete video workflows, including directing fully AI-generated animated films and professional video production'
             },
             nftjudge: {
                 title: 'NFT Design Awards Judge',
@@ -315,51 +315,51 @@ const translations = {
         achievements: {
             inkbot: {
                 title: 'Shopify Додаток - InkBot (AI Описи Товарів)',
-                description: 'Створив AI-powered Shopify додаток для генерації SEO-оптимізованих описів товарів за допомогою DeepSeek V3. Функції: масова генерація, аналіз голосу бренду, SEO оцінка, 111+ мов та плани підписки. <a href="https://inkbot.app/" target="_blank" style="color: var(--accent-color);">Відвідати InkBot</a>'
+                description: 'Побудовано з мульти-агентною AI оркестрацією Claude Code — від планування архітектури до аудиту безпеки. Створив AI-powered Shopify додаток для генерації SEO-оптимізованих описів товарів за допомогою DeepSeek V3. Функції: масова генерація, аналіз голосу бренду, SEO оцінка, 111+ мов та плани підписки. <a href="https://inkbot.app/" target="_blank" style="color: var(--accent-color);">Відвідати InkBot</a>'
             },
             clothcast: {
                 title: 'Shopify Додаток - ClothCast (AI Віртуальна Примірка)',
-                description: 'Створив AI Shopify додаток для віртуальної примірки з використанням FLUX.2 генерації зображень. Клієнти завантажують селфі, щоб побачити себе в обраному одязі. Функції: кастомізований віджет, панель аналітики та приватність з 24-годинним зберіганням даних. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Відвідати ClothCast</a>'
+                description: 'Розроблено з мульти-агентним AI воркфлоу — FLUX.2 API інтеграція, widget UI та аналітика побудовані паралельно спеціалізованими субагентами. Створив AI Shopify додаток для віртуальної примірки з використанням FLUX.2 генерації зображень. Клієнти завантажують селфі, щоб побачити себе в обраному одязі. Функції: кастомізований віджет, панель аналітики та приватність з 24-годинним зберіганням даних. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Відвідати ClothCast</a>'
             },
             nifta: {
                 title: 'NFT Маркетплейс - NiFTa (Base Network)',
-                description: 'Розробляю повноцінний NFT маркетплейс на Base Network з 4 Solidity смарт-контрактами (Factory, ERC-1155, Marketplace, Events). Унікальний розподіл доходів (Автор 50% / Перший мінтер 10% / Реферал 20%), механіка 48-годинного таймера терміновості, UUPS оновлювані контракти та верифікація через X/Farcaster OAuth. <a href="https://nifta-zeta.vercel.app/" target="_blank" style="color: var(--accent-color);">Переглянути MVP</a>'
+                description: 'Побудовано з мульти-агентною AI оркестрацією — смарт-контракти, фронтенд маркетплейсу та аудит безпеки виконані паралельно. Розробляю повноцінний NFT маркетплейс на Base Network з 4 Solidity смарт-контрактами (Factory, ERC-1155, Marketplace, Events). Унікальний розподіл доходів (Автор 50% / Перший мінтер 10% / Реферал 20%), механіка 48-годинного таймера терміновості, UUPS оновлювані контракти та верифікація через X/Farcaster OAuth. <a href="https://nifta-zeta.vercel.app/" target="_blank" style="color: var(--accent-color);">Переглянути MVP</a>'
             },
             zorium: {
                 title: 'Розробка NFT Маркетплейсу - ZORIUM.FUN',
-                description: 'Розробляю децентралізований NFT маркетплейс на Zora Network з Next.js, TypeScript, RainbowKit та Web3Modal. Функції: аналітика трендів, мультичейн підтримка та інструменти для авторів. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">Переглянути MVP</a>'
+                description: 'Розроблено з мульти-агентним AI воркфлоу — блокчейн інтеграція, аналітика та інструменти для авторів побудовані одночасно. Розробляю децентралізований NFT маркетплейс на Zora Network з Next.js, TypeScript, RainbowKit та Web3Modal. Функції: аналітика трендів, мультичейн підтримка та інструменти для авторів. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">Переглянути MVP</a>'
             },
             cryptoduel: {
                 title: 'Децентралізована Ігрова Платформа - CryptoDuel',
-                description: 'Створив PvP крипто-ігрову платформу на Base Network з Solidity смарт-контрактами, інтеграцією Farcaster, PostgreSQL та 4 ігровими режимами (Дуель 1v1, Батл Рояль). Функції: доказово чесна рандомізація та таблиці лідерів. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Грати зараз</a>'
+                description: 'Побудовано з мульти-агентною AI оркестрацією — смарт-контракти, ігрова логіка, PostgreSQL схема та фронтенд реалізовані паралельно. Створив PvP крипто-ігрову платформу на Base Network з Solidity смарт-контрактами, інтеграцією Farcaster, PostgreSQL та 4 ігровими режимами (Дуель 1v1, Батл Рояль). Функції: доказово чесна рандомізація та таблиці лідерів. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Грати зараз</a>'
             },
             fjordmekko: {
                 title: 'E-Commerce Платформа - Fjord & Mekko',
-                description: 'Розробив професійний інтернет-магазин ортопедичних матраців з використанням Next.js 16, React 19, карт Leaflet (20+ локацій магазинів), інтеграції email через Resend та анімацій Framer Motion. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Відвідати магазин</a>'
+                description: 'Розроблено з мульти-агентним AI воркфлоу — Next.js архітектура, Leaflet інтеграція та Framer Motion анімації побудовані та перевірені спеціалізованими агентами. Розробив професійний інтернет-магазин ортопедичних матраців з використанням Next.js 16, React 19, карт Leaflet (20+ локацій магазинів), інтеграції email через Resend та анімацій Framer Motion. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Відвідати магазин</a>'
             },
             tradingbots: {
                 title: 'AI Торгові Боти (Python & Node.js)',
-                description: 'Створив складних торгових ботів для Binance Futures з інтеграцією GPT-3.5-turbo, технічними індикаторами (RSI, MACD, Bollinger Bands), мультитаймфрейм аналізом та стратегіями скальпінгу з плечем 100x'
+                description: 'Спроектовано з мульти-агентною AI оркестрацією — торгові алгоритми, логіка індикаторів та управління ризиками перевірені паралельно спеціалізованими субагентами. Створив складних торгових ботів для Binance Futures з інтеграцією GPT-3.5-turbo, технічними індикаторами (RSI, MACD, Bollinger Bands), мультитаймфрейм аналізом та стратегіями скальпінгу з плечем 100x'
             },
             lilurl: {
                 title: 'SaaS Платформа - lilURL',
-                description: 'Створив повнофункціональний сервіс скорочення URL (альтернатива Bit.ly) з Django 5.0, REST API, аналітикою кліків, генерацією QR-кодів, планами підписки та дашбордом реального часу. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">Відвідати lilURL</a>'
+                description: 'Побудовано з мульти-агентним AI воркфлоу — схема бази даних, REST API та аналітичний дашборд розроблені паралельно спеціалізованими субагентами. Створив повнофункціональний сервіс скорочення URL (альтернатива Bit.ly) з Django 5.0, REST API, аналітикою кліків, генерацією QR-кодів, планами підписки та дашбордом реального часу. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">Відвідати lilURL</a>'
             },
             doshka: {
                 title: 'REST API Backend - Doshka (Kanban Дошка)',
-                description: 'Розробив повноцінний REST API у стилі Trello з Symfony 7.2, JWT автентифікацією, рольовим контролем доступу через Symfony Voters (owner/admin/member), асинхронними email-повідомленнями через Redis + Symfony Messenger та щоденними нагадуваннями про дедлайни через Scheduler. Повне Docker Compose середовище з PostgreSQL 16 та OpenAPI/Swagger документацією. <a href="https://github.com/volodeveth/doshka-backend" target="_blank" style="color: var(--accent-color);">Переглянути на GitHub</a>'
+                description: 'Розроблено з мульти-агентною AI оркестрацією — Symfony архітектура, JWT система, Redis черга та OpenAPI документація побудовані одночасно спеціалізованими субагентами. Розробив повноцінний REST API у стилі Trello з Symfony 7.2, JWT автентифікацією, рольовим контролем доступу через Symfony Voters (owner/admin/member), асинхронними email-повідомленнями через Redis + Symfony Messenger та щоденними нагадуваннями про дедлайни через Scheduler. Повне Docker Compose середовище з PostgreSQL 16 та OpenAPI/Swagger документацією. <a href="https://github.com/volodeveth/doshka-backend" target="_blank" style="color: var(--accent-color);">Переглянути на GitHub</a>'
             },
             socialbots: {
                 title: 'Боти Автоматизації Соціальних Мереж',
-                description: 'Розробив множинні Python боти для автоматичного постингу на Zora.co та інших соціальних мережах з AI генерацією контенту, плануванням та крос-платформною публікацією'
+                description: 'Побудовано з мульти-агентним AI воркфлоу — логіка автоматизації, генерація контенту та планування перевірені спеціалізованими субагентами. Розробив множинні Python боти для автоматичного постингу на Zora.co та інших соціальних мережах з AI генерацією контенту, плануванням та крос-платформною публікацією'
             },
             zoriumeco: {
                 title: 'Екосистема ZORIUM (Legacy)',
-                description: 'Створив повну Web3 платформу з кастомними токенами, механізмами стейкінгу та успішно роздав аірдроп 10,000+ холдерам. <a href="https://www.zorium.xyz/" target="_blank" style="color: var(--accent-color);">Переглянути платформу</a>'
+                description: 'Розроблено з мульти-агентною AI оркестрацією — токен-контракти, механізми стейкінгу та фронтенд платформи побудовані паралельно. Створив повну Web3 платформу з кастомними токенами, механізмами стейкінгу та успішно роздав аірдроп 10,000+ холдерам. <a href="https://www.zorium.xyz/" target="_blank" style="color: var(--accent-color);">Переглянути платформу</a>'
             },
             aivideo: {
                 title: 'AI Створення Відеоконтенту',
-                description: 'Експерт у створенні складних відео з використанням AI інструментів, включаючи режисуру повністю AI-генерованих анімаційних фільмів та професійне відеовиробництво'
+                description: 'Експерт у AI-режисурі відеовиробництва — поєднання Sora, Runway та Midjourney у повні відеоворкфлоу, включаючи режисуру повністю AI-генерованих анімаційних фільмів та професійне відеовиробництво'
             },
             nftjudge: {
                 title: 'Суддя NFT Design Awards',
@@ -530,51 +530,51 @@ const translations = {
         achievements: {
             inkbot: {
                 title: 'Shopify-App – InkBot (KI-Produktbeschreibungen)',
-                description: 'Entwicklung einer KI-gestützten Shopify-App zur Generierung SEO-optimierter Produktbeschreibungen mit DeepSeek V3. Funktionen: Massengenerierung, Markenstimm-Analyse, SEO-Bewertung, 111+ Sprachen und Abonnementpläne. <a href="https://inkbot.app/" target="_blank" style="color: var(--accent-color);">InkBot besuchen</a>'
+                description: 'Entwickelt mit Multi-Agenten-KI-Orchestrierung über Claude Code — von der Architekturplanung bis zum Sicherheitsaudit. Entwicklung einer KI-gestützten Shopify-App zur Generierung SEO-optimierter Produktbeschreibungen mit DeepSeek V3. Funktionen: Massengenerierung, Markenstimm-Analyse, SEO-Bewertung, 111+ Sprachen und Abonnementpläne. <a href="https://inkbot.app/" target="_blank" style="color: var(--accent-color);">InkBot besuchen</a>'
             },
             clothcast: {
                 title: 'Shopify-App – ClothCast (KI-Virtuelle Anprobe)',
-                description: 'Entwicklung einer KI-basierten Shopify-App für virtuelle Anproben mit FLUX.2-Bildgenerierung. Kunden laden ein Selfie hoch und sehen sich selbst im gewünschten Produkt. Funktionen: anpassbares Widget, Analyse-Dashboard und datenschutzfreundliche 24h-Datenspeicherung. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">ClothCast besuchen</a>'
+                description: 'Entwickelt mit Multi-Agenten-KI-Workflow — FLUX.2 API-Integration, Widget-UI und Analytics parallel von spezialisierten Subagenten erstellt. Entwicklung einer KI-basierten Shopify-App für virtuelle Anproben mit FLUX.2-Bildgenerierung. Kunden laden ein Selfie hoch und sehen sich selbst im gewünschten Produkt. Funktionen: anpassbares Widget, Analyse-Dashboard und datenschutzfreundliche 24h-Datenspeicherung. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">ClothCast besuchen</a>'
             },
             nifta: {
                 title: 'NFT-Marktplatz – NiFTa (Base Network)',
-                description: 'Entwicklung eines Full-Stack-NFT-Marktplatzes auf dem Base Network mit 4 Solidity-Smart-Contracts (Factory, ERC-1155, Marketplace, Events). Einzigartiger Erlösaufteilung (Ersteller 50% / Erster Minter 10% / Empfehlung 20%), 48h-Timer-Dringlichkeitsmechanik, UUPS-aktualisierbare Contracts und soziale Verifizierung via X/Farcaster OAuth. <a href="https://nifta-zeta.vercel.app/" target="_blank" style="color: var(--accent-color);">MVP ansehen</a>'
+                description: 'Entwickelt mit Multi-Agenten-KI-Orchestrierung — Smart Contracts, Marktplatz-Frontend und Sicherheitsaudit parallel ausgeführt. Entwicklung eines Full-Stack-NFT-Marktplatzes auf dem Base Network mit 4 Solidity-Smart-Contracts (Factory, ERC-1155, Marketplace, Events). Einzigartiger Erlösaufteilung (Ersteller 50% / Erster Minter 10% / Empfehlung 20%), 48h-Timer-Dringlichkeitsmechanik, UUPS-aktualisierbare Contracts und soziale Verifizierung via X/Farcaster OAuth. <a href="https://nifta-zeta.vercel.app/" target="_blank" style="color: var(--accent-color);">MVP ansehen</a>'
             },
             zorium: {
                 title: 'NFT-Marktplatz-Entwicklung – ZORIUM.FUN',
-                description: 'Entwicklung eines dezentralen NFT-Marktplatzes auf dem Zora Network mit Next.js, TypeScript, RainbowKit und Web3Modal. Funktionen: Trend-Analyse, Multi-Chain-Unterstützung und Erstellerwerkzeuge. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">MVP ansehen</a>'
+                description: 'Entwickelt mit Multi-Agenten-KI-Workflow — Blockchain-Integration, Analytics und Erstellerwerkzeuge gleichzeitig erstellt. Entwicklung eines dezentralen NFT-Marktplatzes auf dem Zora Network mit Next.js, TypeScript, RainbowKit und Web3Modal. Funktionen: Trend-Analyse, Multi-Chain-Unterstützung und Erstellerwerkzeuge. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">MVP ansehen</a>'
             },
             cryptoduel: {
                 title: 'Dezentrale Gaming-Plattform – CryptoDuel',
-                description: 'Entwicklung einer PvP-Krypto-Gaming-Plattform auf dem Base Network mit Solidity-Smart-Contracts, Farcaster-Integration, PostgreSQL und 4 Spielmodi (Duell 1v1, Battle Royale). Funktionen: nachweislich faire Zufallsgenerierung und Bestenlisten. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Jetzt spielen</a>'
+                description: 'Entwickelt mit Multi-Agenten-KI-Orchestrierung — Smart Contracts, Spiellogik, PostgreSQL-Schema und Frontend parallel implementiert. Entwicklung einer PvP-Krypto-Gaming-Plattform auf dem Base Network mit Solidity-Smart-Contracts, Farcaster-Integration, PostgreSQL und 4 Spielmodi (Duell 1v1, Battle Royale). Funktionen: nachweislich faire Zufallsgenerierung und Bestenlisten. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Jetzt spielen</a>'
             },
             fjordmekko: {
                 title: 'E-Commerce-Plattform – Fjord & Mekko',
-                description: 'Entwicklung eines professionellen Online-Shops für orthopädische Matratzen mit Next.js 16, React 19, Leaflet-Karten (20+ Filialstandorte), Resend-E-Mail-Integration und Framer-Motion-Animationen. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Shop besuchen</a>'
+                description: 'Entwickelt mit Multi-Agenten-KI-Workflow — Next.js-Architektur, Leaflet-Integration und Framer-Motion-Animationen von spezialisierten Agenten erstellt und überprüft. Entwicklung eines professionellen Online-Shops für orthopädische Matratzen mit Next.js 16, React 19, Leaflet-Karten (20+ Filialstandorte), Resend-E-Mail-Integration und Framer-Motion-Animationen. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Shop besuchen</a>'
             },
             tradingbots: {
                 title: 'KI-Trading-Bots (Python & Node.js)',
-                description: 'Entwicklung ausgereifter Trading-Bots für Binance Futures mit GPT-3.5-turbo-Integration, technischen Indikatoren (RSI, MACD, Bollinger Bands), Multi-Timeframe-Analyse und 100x-Hebel-Scalping-Strategien'
+                description: 'Entwickelt mit Multi-Agenten-KI-Orchestrierung — Handelsalgorithmen, Indikatorlogik und Risikomanagement parallel von spezialisierten Subagenten überprüft. Entwicklung ausgereifter Trading-Bots für Binance Futures mit GPT-3.5-turbo-Integration, technischen Indikatoren (RSI, MACD, Bollinger Bands), Multi-Timeframe-Analyse und 100x-Hebel-Scalping-Strategien'
             },
             lilurl: {
                 title: 'SaaS-Plattform – lilURL',
-                description: 'Entwicklung eines vollständigen URL-Kürzungsdienstes (Bit.ly-Alternative) mit Django 5.0, REST API, Klick-Analyse, QR-Code-Generierung, Abonnementplänen und Echtzeit-Dashboard. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">lilURL besuchen</a>'
+                description: 'Entwickelt mit Multi-Agenten-KI-Workflow — Datenbankschema, REST API und Analyse-Dashboard parallel von spezialisierten Subagenten erstellt. Entwicklung eines vollständigen URL-Kürzungsdienstes (Bit.ly-Alternative) mit Django 5.0, REST API, Klick-Analyse, QR-Code-Generierung, Abonnementplänen und Echtzeit-Dashboard. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">lilURL besuchen</a>'
             },
             doshka: {
                 title: 'REST-API-Backend – Doshka (Kanban-Board)',
-                description: 'Entwicklung einer vollständigen Trello-ähnlichen REST-API mit Symfony 7.2, JWT-Authentifizierung, rollenbasierter Zugriffskontrolle via Symfony Voters (owner/admin/member), asynchronen E-Mail-Benachrichtigungen via Redis-Queue + Symfony Messenger und täglichen Deadline-Erinnerungen via Symfony Scheduler. Vollständige Docker-Compose-Umgebung mit PostgreSQL 16 und OpenAPI/Swagger-Dokumentation. <a href="https://github.com/volodeveth/doshka-backend" target="_blank" style="color: var(--accent-color);">Auf GitHub ansehen</a>'
+                description: 'Entwickelt mit Multi-Agenten-KI-Orchestrierung — Symfony-Architektur, JWT-System, Redis-Queue und OpenAPI-Dokumentation gleichzeitig von spezialisierten Subagenten erstellt. Entwicklung einer vollständigen Trello-ähnlichen REST-API mit Symfony 7.2, JWT-Authentifizierung, rollenbasierter Zugriffskontrolle via Symfony Voters (owner/admin/member), asynchronen E-Mail-Benachrichtigungen via Redis-Queue + Symfony Messenger und täglichen Deadline-Erinnerungen via Symfony Scheduler. Vollständige Docker-Compose-Umgebung mit PostgreSQL 16 und OpenAPI/Swagger-Dokumentation. <a href="https://github.com/volodeveth/doshka-backend" target="_blank" style="color: var(--accent-color);">Auf GitHub ansehen</a>'
             },
             socialbots: {
                 title: 'Social-Media-Automatisierungsbots',
-                description: 'Entwicklung mehrerer Python-Bots für automatisiertes Posting auf Zora.co und anderen sozialen Netzwerken mit KI-Inhaltsgenerierung, Planung und plattformübergreifender Veröffentlichung'
+                description: 'Entwickelt mit Multi-Agenten-KI-Workflow — Automatisierungslogik, Inhaltsgenerierung und Planung von spezialisierten Subagenten überprüft. Entwicklung mehrerer Python-Bots für automatisiertes Posting auf Zora.co und anderen sozialen Netzwerken mit KI-Inhaltsgenerierung, Planung und plattformübergreifender Veröffentlichung'
             },
             zoriumeco: {
                 title: 'ZORIUM-Ökosystem (Legacy)',
-                description: 'Entwicklung einer vollständigen Web3-Plattform mit eigenen Tokens, Staking-Mechanismen und erfolgreichem Airdrop an 10.000+ Inhaber. <a href="https://www.zorium.xyz/" target="_blank" style="color: var(--accent-color);">Plattform besuchen</a>'
+                description: 'Entwickelt mit Multi-Agenten-KI-Orchestrierung — Token-Contracts, Staking-Mechanismen und Plattform-Frontend parallel erstellt. Entwicklung einer vollständigen Web3-Plattform mit eigenen Tokens, Staking-Mechanismen und erfolgreichem Airdrop an 10.000+ Inhaber. <a href="https://www.zorium.xyz/" target="_blank" style="color: var(--accent-color);">Plattform besuchen</a>'
             },
             aivideo: {
                 title: 'KI-Videocontent-Erstellung',
-                description: 'Experte in der Erstellung komplexer Videos mit KI-Tools, einschließlich der Regie vollständig KI-generierter Animationsfilme und professioneller Videoproduktion'
+                description: 'Experte in KI-gesteuerter Videoproduktion — Kombination von Sora, Runway und Midjourney zu vollständigen Video-Workflows, einschließlich der Regie vollständig KI-generierter Animationsfilme und professioneller Videoproduktion'
             },
             nftjudge: {
                 title: 'NFT Design Awards – Juror',

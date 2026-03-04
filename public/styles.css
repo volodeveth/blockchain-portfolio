@@ -244,6 +244,7 @@ body {
     position: relative;
     background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
     overflow: hidden;
+    padding-top: 5rem;
 }
 
 .hero-content {
@@ -1181,6 +1182,7 @@ body {
 
     .hero {
         min-height: auto;
+        padding-top: 0;
         padding-bottom: 3rem;
     }
 

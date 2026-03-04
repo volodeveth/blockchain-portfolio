@@ -67,7 +67,7 @@ const translations = {
         contact: {
             title: "Let's Build Something Amazing",
             subtitle: 'Ready to Transform Your Vision',
-            description: 'Whether you need NFT marketplace development, decentralized gaming platforms, AI-powered trading bots, Shopify app development, e-commerce solutions, social media automation, or custom blockchain development - I bring deep technical expertise and proven results to every project.',
+            description: 'Whether you need a full-stack web app, AI agent integration, Shopify app, SaaS platform, e-commerce solution, or Web3/blockchain development — you get multi-agent AI engineering: faster delivery, automated quality control, and senior-level code review on every commit. Team output. Solo price.',
             upwork: 'Upwork Profile',
             upworkDesc: 'View my professional profile and reviews',
             rate: 'Rate',
@@ -88,6 +88,8 @@ const translations = {
             nftCollection: 'NFT Collection Launch', web3Platform: 'Web3 Platform/DApp',
             fullstackApp: 'Full-Stack Web Application', blockchainIntegration: 'Blockchain Integration',
             shopifyApp: 'Shopify App Development',
+            aiAgentIntegration: 'AI Agent Integration',
+            multiAgentSystem: 'Multi-Agent System Development',
             consultation: 'Technical Consultation', other: 'Other',
             budget: 'Budget Range', selectBudget: 'Select Budget Range',
             under1k: 'Under $1,000', '1k5k': '$1,000 - $5,000', '5k10k': '$5,000 - $10,000',
@@ -211,7 +213,7 @@ const translations = {
                 description: 'Transformed published novel into NFT collection, bridging traditional publishing with Web3 innovation. <a href="https://linktr.ee/miseryavenue" target="_blank" style="color: var(--accent-color);">Visit Project</a>'
             }
         },
-        footer: { copyright: '© 2026 VoloDev.eth - Blockchain Developer & Web3 Innovator. Ready to transform your vision into reality.' }
+        footer: { copyright: '© 2026 VoloDev.eth — Agentic Full Stack Developer & AI Engineer. Team output. Solo price.' }
     },
     uk: {
         nav: { home: 'Головна', about: 'Про мене', projects: 'Проекти', skills: 'Навички', contact: 'Контакти' },
@@ -280,7 +282,7 @@ const translations = {
         contact: {
             title: 'Створімо щось неймовірне',
             subtitle: 'Готовий втілити вашу візію',
-            description: 'Чи потрібна вам розробка NFT маркетплейсу, децентралізованої ігрової платформи, AI торгових ботів, розробку Shopify додатків, e-commerce рішень, автоматизації соціальних мереж або кастомна blockchain розробка - я приношу глибоку технічну експертизу та перевірені результати в кожен проект.',
+            description: 'Чи потрібен full-stack веб-додаток, AI агентна інтеграція, Shopify додаток, SaaS платформа, e-commerce рішення або Web3/blockchain розробка — ви отримуєте мульти-агентний AI інжиніринг: швидша доставка, автоматизований контроль якості та code review рівня senior на кожному коміті. Продуктивність команди. Ціна одного спеціаліста.',
             upwork: 'Профіль Upwork',
             upworkDesc: 'Переглянути мій професійний профіль та відгуки',
             rate: 'Ставка',
@@ -301,6 +303,8 @@ const translations = {
             nftCollection: 'Запуск NFT колекції', web3Platform: 'Web3 платформа/DApp',
             fullstackApp: 'Full-Stack веб-додаток', blockchainIntegration: 'Blockchain інтеграція',
             shopifyApp: 'Розробка Shopify додатків',
+            aiAgentIntegration: 'AI Агентна Інтеграція',
+            multiAgentSystem: 'Розробка Мульти-агентної Системи',
             consultation: 'Технічна консультація', other: 'Інше',
             budget: 'Діапазон бюджету', selectBudget: 'Оберіть діапазон бюджету',
             under1k: 'До $1,000', '1k5k': '$1,000 - $5,000', '5k10k': '$5,000 - $10,000',
@@ -424,7 +428,7 @@ const translations = {
                 description: 'Перетворив опублікований роман на NFT колекцію, з\'єднавши традиційне видавництво з Web3 інноваціями. <a href="https://linktr.ee/miseryavenue" target="_blank" style="color: var(--accent-color);">Відвідати проект</a>'
             }
         },
-        footer: { copyright: '© 2026 VoloDev.eth - Blockchain розробник та Web3 інноватор. Готовий перетворити вашу візію на реальність.' }
+        footer: { copyright: '© 2026 VoloDev.eth — Agentic Full Stack Розробник та AI Інженер. Продуктивність команди. Ціна одного.' }
     },
     de: {
         nav: { home: 'Start', about: 'Über mich', projects: 'Projekte', skills: 'Kenntnisse', contact: 'Kontakt' },
@@ -493,7 +497,7 @@ const translations = {
         contact: {
             title: 'Lass uns etwas Großartiges bauen',
             subtitle: 'Bereit, Ihre Vision umzusetzen',
-            description: 'Ob Sie eine NFT-Marktplatz-Entwicklung, dezentrale Gaming-Plattformen, KI-Trading-Bots, Shopify-App-Entwicklung, E-Commerce-Lösungen, Social-Media-Automatisierung oder individuelle Blockchain-Entwicklung benötigen – ich bringe tiefes technisches Fachwissen und bewährte Ergebnisse in jedes Projekt.',
+            description: 'Ob Sie eine Full-Stack-Web-App, KI-Agenten-Integration, Shopify-App, SaaS-Plattform, E-Commerce-Lösung oder Web3/Blockchain-Entwicklung benötigen — Sie erhalten Multi-Agenten-KI-Engineering: schnellere Lieferung, automatisierte Qualitätskontrolle und Senior-Level-Code-Review bei jedem Commit. Team-Output. Solo-Preis.',
             upwork: 'Upwork-Profil',
             upworkDesc: 'Mein professionelles Profil und Bewertungen ansehen',
             rate: 'Stundensatz',
@@ -514,6 +518,8 @@ const translations = {
             nftCollection: 'NFT-Collection-Launch', web3Platform: 'Web3-Plattform/DApp',
             fullstackApp: 'Full-Stack-Webanwendung', blockchainIntegration: 'Blockchain-Integration',
             shopifyApp: 'Shopify-App-Entwicklung',
+            aiAgentIntegration: 'KI-Agenten-Integration',
+            multiAgentSystem: 'Multi-Agenten-System-Entwicklung',
             consultation: 'Technische Beratung', other: 'Sonstiges',
             budget: 'Budgetrahmen', selectBudget: 'Budgetrahmen auswählen',
             under1k: 'Unter $1.000', '1k5k': '$1.000 – $5.000', '5k10k': '$5.000 – $10.000',
@@ -637,7 +643,7 @@ const translations = {
                 description: 'Verwandlung eines veröffentlichten Romans in eine NFT-Collection – Brücke zwischen traditionellem Verlagswesen und Web3-Innovation. <a href="https://linktr.ee/miseryavenue" target="_blank" style="color: var(--accent-color);">Projekt besuchen</a>'
             }
         },
-        footer: { copyright: '© 2026 VoloDev.eth – Blockchain-Entwickler & Web3-Innovator. Bereit, Ihre Vision in die Realität umzusetzen.' }
+        footer: { copyright: '© 2026 VoloDev.eth — Agentic Full Stack Entwickler & KI-Ingenieur. Team-Output. Solo-Preis.' }
     }
 };
 

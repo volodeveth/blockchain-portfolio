@@ -3,14 +3,14 @@ const translations = {
     en: {
         nav: { home: 'Home', about: 'About', projects: 'Projects', skills: 'Skills', contact: 'Contact' },
         hero: {
-            title1: 'Full-Stack Blockchain',
-            title2: '& AI Developer',
-            subtitle: 'Smart Contracts | DeFi | NFT Marketplaces | AI Trading Bots | Shopify Apps | E-Commerce | SaaS',
+            title1: 'Agentic Full Stack',
+            title2: 'Developer & AI Engineer',
+            subtitle: 'Claude Code Agents | Multi-Agent Systems | Full-Stack Apps | AI Integration | Shopify | SaaS | Web3',
             location: '📍 Lviv, Ukraine | 🌐 Available Worldwide',
-            description: 'Blockchain developer with 10+ years experience building production-ready Web3 applications. Specializing in <strong>Solidity smart contracts</strong>, <strong>NFT marketplaces</strong>, <strong>DeFi staking platforms</strong>, <strong>AI trading bots</strong>, <strong>Shopify apps</strong>, <strong>SaaS platforms</strong>, and <strong>full-stack e-commerce</strong> solutions. Expert in <strong>Next.js, React, Remix, TypeScript, Python, Django, Node.js, PHP, Symfony</strong>, and AI tools (<strong>ChatGPT, Claude, Gemini, Midjourney, Sora, Runway</strong>).',
+            description: 'Full-stack developer & AI engineer with 10+ years experience. I build production-ready applications using multi-agent AI orchestration — Claude Code with specialized roles (Planner, Architect, Reviewer, Security Auditor, Implementer), parallel subagents, and third-party AI APIs (OpenAI, Gemini, Grok). One engineer. Team productivity. Expert in <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — every project ships with automated code review, security audit, and personal quality control.',
             viewProjects: 'View Projects',
             getInTouch: 'Get In Touch',
-            stats: { projects: 'Projects Delivered', platforms: 'Active Platforms', rate: 'Hourly Rate', experience: 'Years Experience' }
+            stats: { projects: 'Products Shipped', platforms: 'Active Platforms', rate: 'Hourly Rate', experience: 'Years Experience' }
         },
         about: {
             title: 'About Me',
@@ -203,14 +203,14 @@ const translations = {
     uk: {
         nav: { home: 'Головна', about: 'Про мене', projects: 'Проекти', skills: 'Навички', contact: 'Контакти' },
         hero: {
-            title1: 'Full-Stack Blockchain',
-            title2: '& AI Розробник',
-            subtitle: 'Смарт-контракти | DeFi | NFT Маркетплейси | AI Торгові Боти | Shopify Додатки | E-Commerce | SaaS',
+            title1: 'Agentic Full Stack',
+            title2: 'Розробник та AI Інженер',
+            subtitle: 'Claude Code Агенти | Мульти-агентні Системи | Full-Stack Додатки | AI Інтеграція | Shopify | SaaS | Web3',
             location: '📍 Львів, Україна | 🌐 Працюю по всьому світу',
-            description: 'Blockchain розробник з 10+ роками досвіду створення продакшн-ready Web3 додатків. Спеціалізуюся на <strong>Solidity смарт-контрактах</strong>, <strong>NFT маркетплейсах</strong>, <strong>DeFi стейкінг платформах</strong>, <strong>AI торгових ботах</strong>, <strong>Shopify додатках</strong>, <strong>SaaS платформах</strong> та <strong>full-stack e-commerce</strong> рішеннях. Експерт у <strong>Next.js, React, Remix, TypeScript, Python, Django, Node.js, PHP, Symfony</strong> та AI інструментах (<strong>ChatGPT, Claude, Gemini, Midjourney, Sora, Runway</strong>).',
+            description: 'Full-stack розробник та AI інженер з 10+ роками досвіду. Будую продакшн-ready додатки з мульти-агентною AI оркестрацією — Claude Code зі спеціалізованими ролями (Planner, Architect, Reviewer, Security Auditor, Implementer), паралельними субагентами та AI API сторонніх провайдерів (OpenAI, Gemini, Grok). Один інженер. Продуктивність команди. Експерт у <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — кожен проект поставляється з автоматизованим code review, аудитом безпеки та особистим контролем якості.',
             viewProjects: 'Переглянути проекти',
             getInTouch: "Зв'язатися",
-            stats: { projects: 'Проектів виконано', platforms: 'Активних платформ', rate: 'Ставка за годину', experience: 'Років досвіду' }
+            stats: { projects: 'Продуктів реалізовано', platforms: 'Активних платформ', rate: 'Ставка за годину', experience: 'Років досвіду' }
         },
         about: {
             title: 'Про мене',
@@ -403,14 +403,14 @@ const translations = {
     de: {
         nav: { home: 'Start', about: 'Über mich', projects: 'Projekte', skills: 'Kenntnisse', contact: 'Kontakt' },
         hero: {
-            title1: 'Full-Stack Blockchain',
-            title2: '& KI-Entwickler',
-            subtitle: 'Smart Contracts | DeFi | NFT-Marktplätze | KI-Trading-Bots | Shopify-Apps | E-Commerce | SaaS',
+            title1: 'Agentic Full Stack',
+            title2: 'Entwickler & KI-Ingenieur',
+            subtitle: 'Claude Code Agenten | Multi-Agenten-Systeme | Full-Stack Apps | KI-Integration | Shopify | SaaS | Web3',
             location: '📍 Lwiw, Ukraine | 🌐 Weltweit verfügbar',
-            description: 'Blockchain-Entwickler mit 10+ Jahren Erfahrung in der Entwicklung produktionsreifer Web3-Anwendungen. Spezialisierung auf <strong>Solidity-Smart-Contracts</strong>, <strong>NFT-Marktplätze</strong>, <strong>DeFi-Staking-Plattformen</strong>, <strong>KI-Trading-Bots</strong>, <strong>Shopify-Apps</strong>, <strong>SaaS-Plattformen</strong> und <strong>Full-Stack-E-Commerce</strong>-Lösungen. Experte in <strong>Next.js, React, Remix, TypeScript, Python, Django, Node.js, PHP, Symfony</strong> und KI-Tools (<strong>ChatGPT, Claude, Gemini, Midjourney, Sora, Runway</strong>).',
+            description: 'Full-Stack-Entwickler & KI-Ingenieur mit 10+ Jahren Erfahrung. Ich entwickle produktionsreife Anwendungen mit Multi-Agenten-KI-Orchestrierung — Claude Code mit spezialisierten Rollen (Planner, Architect, Reviewer, Security Auditor, Implementer), parallelen Subagenten und Drittanbieter-KI-APIs (OpenAI, Gemini, Grok). Ein Ingenieur. Team-Produktivität. Experte in <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — jedes Projekt wird mit automatischem Code-Review, Sicherheitsaudit und persönlicher Qualitätskontrolle geliefert.',
             viewProjects: 'Projekte ansehen',
             getInTouch: 'Kontakt aufnehmen',
-            stats: { projects: 'Abgeschlossene Projekte', platforms: 'Aktive Plattformen', rate: 'Stundensatz', experience: 'Jahre Erfahrung' }
+            stats: { projects: 'Ausgelieferte Produkte', platforms: 'Aktive Plattformen', rate: 'Stundensatz', experience: 'Jahre Erfahrung' }
         },
         about: {
             title: 'Über mich',

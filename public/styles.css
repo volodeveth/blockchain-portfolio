@@ -604,10 +604,7 @@ body {
 
 .lang-banner-header i {
     font-size: 1.6rem;
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--primary-color);
 }
 
 .lang-banner-header h4 {
@@ -685,9 +682,10 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: var(--accent-gradient);
+    background: rgba(99, 102, 241, 0.12);
+    border: 1px solid rgba(99, 102, 241, 0.3);
     font-size: 1.4rem;
-    color: #fff;
+    color: var(--primary-color);
 }
 
 .value-card-title {

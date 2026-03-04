@@ -14,12 +14,17 @@ const translations = {
         },
         about: {
             title: 'About Me',
-            intro: 'I am a full-stack blockchain developer and Web3 innovator with 10+ years of experience and 20+ completed projects. My expertise spans NFT marketplaces, AI-powered trading bots, Shopify app development, decentralized gaming platforms, e-commerce solutions, and social media automation. I specialize in Python, Node.js, and PHP/Symfony development with deep AI integration (ChatGPT, Claude, Claude Code, Gemini, Midjourney, Sora, Runway).',
+            intro: 'I\'m a full-stack developer & AI engineer with 10+ years of experience and 20+ shipped products. I work with multi-agent AI systems — Claude Code CLI orchestrating specialized subagents in parallel (Planner, Architect, Implementer, Reviewer, Security Auditor) — to deliver production-ready applications faster and at a fraction of the cost of a traditional team. Every project ships with automated code review, security audit, and my personal quality control. Stack: <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — plus Shopify app development, SaaS, and Web3 integration.',
             achievementsTitle: 'Key Achievements & Expertise',
-            profileLocation: 'Blockchain Developer from Lviv, Ukraine',
-            profileTagline: 'Transforming ideas into Web3 reality'
+            profileLocation: 'Agentic Full Stack Developer from Lviv, Ukraine',
+            profileTagline: 'Shipping production apps with AI agent orchestration'
         },
         projects: { title: 'Featured Projects' },
+        valueProp: {
+            quality: { title: 'AI Agent Quality', desc: 'Automated review by Opus: bugs, security, UI/UX — every commit' },
+            speed: { title: 'Team Speed', desc: 'Features ship in parallel: Architect + Implementer + Tester simultaneously' },
+            cost: { title: 'Solo Cost', desc: '1 engineer. No management overhead. No team coordination cost.' }
+        },
         skills: {
             title: 'Technical Expertise',
             cat: {
@@ -214,12 +219,17 @@ const translations = {
         },
         about: {
             title: 'Про мене',
-            intro: 'Я full-stack blockchain розробник та Web3 інноватор з 10+ роками досвіду та 20+ завершеними проектами. Моя експертиза охоплює NFT маркетплейси, AI-powered торгових ботів, розробку Shopify додатків, децентралізовані ігрові платформи, e-commerce рішення та автоматизацію соціальних мереж. Спеціалізуюся на Python, Node.js та PHP/Symfony розробці з глибокою AI інтеграцією (ChatGPT, Claude, Claude Code, Gemini, Midjourney, Sora, Runway).',
+            intro: 'Я full-stack розробник та AI інженер з 10+ роками досвіду та 20+ реалізованими продуктами. Працюю з мульти-агентними AI системами — Claude Code CLI оркеструє спеціалізованих субагентів паралельно (Planner, Architect, Implementer, Reviewer, Security Auditor) — щоб доставляти продакшн-ready додатки швидше та вдвічі дешевше ніж традиційна команда. Кожен проект поставляється з автоматизованим code review, аудитом безпеки та моїм особистим контролем якості. Стек: <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — плюс розробка Shopify додатків, SaaS та Web3 інтеграція.',
             achievementsTitle: 'Ключові досягнення та експертиза',
-            profileLocation: 'Blockchain розробник зі Львова, Україна',
-            profileTagline: 'Перетворюю ідеї на Web3 реальність'
+            profileLocation: 'Agentic Full Stack Розробник зі Львова, Україна',
+            profileTagline: 'Постачаю продакшн-додатки з AI агентною оркестрацією'
         },
         projects: { title: 'Вибрані проекти' },
+        valueProp: {
+            quality: { title: 'Якість AI Агента', desc: 'Автоматизований review від Opus: баги, безпека, UI/UX — кожен коміт' },
+            speed: { title: 'Швидкість Команди', desc: 'Фічі поставляються паралельно: Архітектор + Імплементатор + Тестер одночасно' },
+            cost: { title: 'Ціна Одного Спеціаліста', desc: '1 інженер. Без управлінських витрат. Без витрат на координацію команди.' }
+        },
         skills: {
             title: 'Технічна експертиза',
             cat: {
@@ -414,12 +424,17 @@ const translations = {
         },
         about: {
             title: 'Über mich',
-            intro: 'Ich bin ein Full-Stack-Blockchain-Entwickler und Web3-Innovator mit 10+ Jahren Erfahrung und 20+ abgeschlossenen Projekten. Mein Fachwissen umfasst NFT-Marktplätze, KI-gestützte Trading-Bots, Shopify-App-Entwicklung, dezentrale Gaming-Plattformen, E-Commerce-Lösungen und Social-Media-Automatisierung. Ich spezialisiere mich auf Python-, Node.js- und PHP/Symfony-Entwicklung mit tiefer KI-Integration (ChatGPT, Claude, Claude Code, Gemini, Midjourney, Sora, Runway).',
+            intro: 'Ich bin ein Full-Stack-Entwickler & KI-Ingenieur mit 10+ Jahren Erfahrung und 20+ ausgelieferten Produkten. Ich arbeite mit Multi-Agenten-KI-Systemen — Claude Code CLI orchestriert spezialisierte Subagenten parallel (Planner, Architect, Implementer, Reviewer, Security Auditor) — um produktionsreife Anwendungen schneller und zu einem Bruchteil der Kosten eines traditionellen Teams zu liefern. Jedes Projekt wird mit automatischem Code-Review, Sicherheitsaudit und persönlicher Qualitätskontrolle geliefert. Stack: <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — plus Shopify-App-Entwicklung, SaaS und Web3-Integration.',
             achievementsTitle: 'Wichtigste Erfolge & Fachkenntnisse',
-            profileLocation: 'Blockchain-Entwickler aus Lwiw, Ukraine',
-            profileTagline: 'Ideen in Web3-Realität verwandeln'
+            profileLocation: 'Agentic Full Stack Entwickler aus Lwiw, Ukraine',
+            profileTagline: 'Produktions-Apps mit KI-Agenten-Orchestrierung liefern'
         },
         projects: { title: 'Ausgewählte Projekte' },
+        valueProp: {
+            quality: { title: 'KI-Agenten-Qualität', desc: 'Automatisiertes Review durch Opus: Bugs, Sicherheit, UI/UX — bei jedem Commit' },
+            speed: { title: 'Team-Geschwindigkeit', desc: 'Features werden parallel geliefert: Architekt + Implementierer + Tester gleichzeitig' },
+            cost: { title: 'Solo-Preis', desc: '1 Ingenieur. Kein Management-Overhead. Keine Team-Koordinationskosten.' }
+        },
         skills: {
             title: 'Technische Kompetenz',
             cat: {

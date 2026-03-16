@@ -166,6 +166,10 @@ const translations = {
                 title: 'ClothCast - AI Virtual Try-On',
                 description: 'AI Virtual Try-On Shopify app using FLUX.2 image generation. Customers upload a selfie to see themselves wearing any product. Features customizable widget, theme extension, analytics dashboard, and privacy-first 24h data retention. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Visit ClothCast</a>'
             },
+            askdorosh: {
+                title: 'Ask About Dorosh — Production RAG System',
+                description: 'Production RAG chatbot that indexes 16 real projects + CV (2,100+ chunks). Hybrid search (pgvector HNSW + BM25 GIN) with RRF fusion, Jina Reranker v3, DeepSeek LLM streaming via SSE. Self-hosted on AWS EC2 with Nginx, PM2, Let\'s Encrypt SSL, and GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Try It Live</a>'
+            },
             zorium: {
                 title: 'ZORIUM.FUN - NFT Marketplace',
                 description: 'Decentralized NFT marketplace on Zora Network with trending analytics, creator tools, and multi-chain support. Built with Next.js 14, TypeScript, Wagmi, RainbowKit. 🚧 MVP in progress. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">View MVP</a>'
@@ -387,6 +391,10 @@ const translations = {
                 title: 'ClothCast - AI Віртуальна Примірка',
                 description: 'AI Shopify додаток для віртуальної примірки з використанням FLUX.2 генерації зображень. Клієнти завантажують селфі, щоб побачити себе в обраному одязі. Функції: кастомізований віджет, theme extension, панель аналітики та приватність з 24-годинним зберіганням даних. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Відвідати ClothCast</a>'
             },
+            askdorosh: {
+                title: 'Ask About Dorosh — Продакшн RAG Система',
+                description: 'Продакшн RAG чат-бот, що індексує 16 реальних проектів + CV (2,100+ чанків). Гібридний пошук (pgvector HNSW + BM25 GIN) з RRF фузією, Jina Reranker v3, DeepSeek LLM стрімінг через SSE. Self-hosted на AWS EC2 з Nginx, PM2, Let\'s Encrypt SSL та GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Спробувати наживо</a>'
+            },
             zorium: {
                 title: 'ZORIUM.FUN - NFT Маркетплейс',
                 description: 'Децентралізований NFT маркетплейс на Zora Network з аналітикою трендів, інструментами для авторів та мультичейн підтримкою. Побудований з Next.js 14, TypeScript, Wagmi, RainbowKit. 🚧 MVP в процесі. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">Переглянути MVP</a>'
@@ -607,6 +615,10 @@ const translations = {
             clothcast: {
                 title: 'ClothCast – KI-Virtuelle Anprobe',
                 description: 'KI-Shopify-App für virtuelle Anproben mit FLUX.2-Bildgenerierung. Kunden laden ein Selfie hoch und sehen sich selbst im gewünschten Produkt. Funktionen: anpassbares Widget, Theme-Extension, Analyse-Dashboard und datenschutzfreundliche 24h-Datenspeicherung. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">ClothCast besuchen</a>'
+            },
+            askdorosh: {
+                title: 'Ask About Dorosh — Produktions-RAG-System',
+                description: 'Produktions-RAG-Chatbot, der 16 reale Projekte + CV indiziert (2.100+ Chunks). Hybridsuche (pgvector HNSW + BM25 GIN) mit RRF-Fusion, Jina Reranker v3, DeepSeek-LLM-Streaming via SSE. Self-hosted auf AWS EC2 mit Nginx, PM2, Let\'s Encrypt SSL und GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Live testen</a>'
             },
             zorium: {
                 title: 'ZORIUM.FUN – NFT-Marktplatz',

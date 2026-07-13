@@ -130,7 +130,7 @@ const translations = {
             },
             rag: {
                 title: 'Production RAG System',
-                description: '2,100+ indexed chunks, hybrid search (pgvector HNSW + BM25 + RRF fusion), neural reranking — self-hosted on AWS EC2 with CI/CD'
+                description: '3,400+ indexed chunks, hybrid search (pgvector HNSW + BM25 + RRF fusion), neural reranking — self-hosted on AWS EC2 with CI/CD'
             },
             holders: {
                 title: '10,000+ Token Holders',
@@ -160,7 +160,7 @@ const translations = {
             },
             askdorosh: {
                 title: 'Ask About Dorosh — Production RAG System',
-                description: 'Production RAG chatbot that indexes 16 real projects + CV (2,100+ chunks). Hybrid search (pgvector HNSW + BM25 GIN) with RRF fusion, Jina Reranker v3, DeepSeek LLM streaming via SSE. Self-hosted on AWS EC2 with Nginx, PM2, Let\'s Encrypt SSL, and GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Try It Live</a>'
+                description: 'Production RAG chatbot that indexes 34 real projects + CV (3,400+ chunks). Hybrid search (pgvector HNSW + BM25 GIN) with RRF fusion, Jina Reranker v3, DeepSeek LLM streaming via SSE. Self-hosted on AWS EC2 with Nginx, PM2, Let\'s Encrypt SSL, and GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Try It Live</a>'
             },
             buddy: {
                 title: 'Buddy Agent — Self-Extending AI Assistant',
@@ -243,7 +243,7 @@ const translations = {
         rag: {
             fabLabel: 'Ask my AI',
             title: 'Ask About Dorosh',
-            subtitle: 'My own RAG pipeline — 16 projects + CV indexed',
+            subtitle: 'My own RAG pipeline — 34 projects + CV indexed',
             welcome: "Hi! I'm an AI that knows Volodymyr's work inside out — 16 indexed projects plus his CV. Ask me anything about his skills, stack, or experience.",
             q1: 'What Shopify apps has he built?',
             q2: 'How does his multi-agent AI workflow work?',
@@ -383,7 +383,7 @@ const translations = {
             },
             rag: {
                 title: 'Продакшн RAG система',
-                description: '2 100+ проіндексованих чанків, гібридний пошук (pgvector HNSW + BM25 + RRF), нейронний реранкінг — self-hosted на AWS EC2 з CI/CD'
+                description: '3 400+ проіндексованих чанків, гібридний пошук (pgvector HNSW + BM25 + RRF), нейронний реранкінг — self-hosted на AWS EC2 з CI/CD'
             },
             holders: {
                 title: '10 000+ холдерів токена',
@@ -413,7 +413,7 @@ const translations = {
             },
             askdorosh: {
                 title: 'Ask About Dorosh — Продакшн RAG Система',
-                description: 'Продакшн RAG чат-бот, що індексує 16 реальних проектів + CV (2,100+ чанків). Гібридний пошук (pgvector HNSW + BM25 GIN) з RRF фузією, Jina Reranker v3, DeepSeek LLM стрімінг через SSE. Self-hosted на AWS EC2 з Nginx, PM2, Let\'s Encrypt SSL та GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Спробувати наживо</a>'
+                description: 'Продакшн RAG чат-бот, що індексує 34 реальні проекти + CV (3,400+ чанків). Гібридний пошук (pgvector HNSW + BM25 GIN) з RRF фузією, Jina Reranker v3, DeepSeek LLM стрімінг через SSE. Self-hosted на AWS EC2 з Nginx, PM2, Let\'s Encrypt SSL та GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Спробувати наживо</a>'
             },
             buddy: {
                 title: 'Buddy Agent — Самодоповнюваний AI Асистент',
@@ -496,7 +496,7 @@ const translations = {
         rag: {
             fabLabel: 'Спитай мій AI',
             title: 'Ask About Dorosh',
-            subtitle: 'Власний RAG пайплайн — 16 проектів + CV в індексі',
+            subtitle: 'Власний RAG пайплайн — 34 проекти + CV в індексі',
             welcome: 'Привіт! Я AI, який знає роботу Володимира зсередини — 16 проіндексованих проектів плюс CV. Питай будь-що про навички, стек чи досвід.',
             q1: 'Які Shopify додатки він створив?',
             q2: 'Як працює його мульти-агентний AI воркфлоу?',
@@ -636,7 +636,7 @@ const translations = {
             },
             rag: {
                 title: 'Produktions-RAG-System',
-                description: '2.100+ indexierte Chunks, hybride Suche (pgvector HNSW + BM25 + RRF), neuronales Reranking — self-hosted auf AWS EC2 mit CI/CD'
+                description: '3.400+ indexierte Chunks, hybride Suche (pgvector HNSW + BM25 + RRF), neuronales Reranking — self-hosted auf AWS EC2 mit CI/CD'
             },
             holders: {
                 title: '10.000+ Token-Inhaber',
@@ -666,7 +666,7 @@ const translations = {
             },
             askdorosh: {
                 title: 'Ask About Dorosh — Produktions-RAG-System',
-                description: 'Produktions-RAG-Chatbot, der 16 reale Projekte + CV indiziert (2.100+ Chunks). Hybridsuche (pgvector HNSW + BM25 GIN) mit RRF-Fusion, Jina Reranker v3, DeepSeek-LLM-Streaming via SSE. Self-hosted auf AWS EC2 mit Nginx, PM2, Let\'s Encrypt SSL und GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Live testen</a>'
+                description: 'Produktions-RAG-Chatbot, der 34 reale Projekte + CV indiziert (3.400+ Chunks). Hybridsuche (pgvector HNSW + BM25 GIN) mit RRF-Fusion, Jina Reranker v3, DeepSeek-LLM-Streaming via SSE. Self-hosted auf AWS EC2 mit Nginx, PM2, Let\'s Encrypt SSL und GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Live testen</a>'
             },
             buddy: {
                 title: 'Buddy Agent — Selbsterweiternder KI-Assistent',
@@ -749,7 +749,7 @@ const translations = {
         rag: {
             fabLabel: 'Frag meine KI',
             title: 'Ask About Dorosh',
-            subtitle: 'Eigene RAG-Pipeline — 16 Projekte + CV indexiert',
+            subtitle: 'Eigene RAG-Pipeline — 34 Projekte + CV indexiert',
             welcome: 'Hallo! Ich bin eine KI, die Volodymyrs Arbeit in- und auswendig kennt — 16 indexierte Projekte plus CV. Frag mich alles über Skills, Stack oder Erfahrung.',
             q1: 'Welche Shopify-Apps hat er entwickelt?',
             q2: 'Wie funktioniert sein Multi-Agenten-KI-Workflow?',

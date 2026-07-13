@@ -10,6 +10,7 @@ const translations = {
             description: 'Full-stack developer & AI engineer with 10+ years experience. I build production-ready applications using multi-agent AI orchestration — Claude Code with specialized roles (Planner, Architect, Reviewer, Security Auditor, Implementer), parallel subagents, and third-party AI APIs (OpenAI, Gemini, Grok). One engineer. Team productivity. Expert in <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — every project ships with automated code review, security audit, and personal quality control.',
             viewProjects: 'View Projects',
             getInTouch: 'Get In Touch',
+            downloadCv: 'Download CV',
             stats: { projects: 'Products Shipped', platforms: 'Active Platforms', shopifyApps: 'Shopify Apps Published', experience: 'Years Experience' }
         },
         about: {
@@ -82,6 +83,8 @@ const translations = {
             upwork: 'Upwork Profile',
             upworkDesc: 'View my professional profile and reviews',
             githubDesc: 'View my open source projects',
+            cv: 'Download CV',
+            cvDesc: 'Printable CV — EN / UA / DE',
             rate: 'Rate',
             availability: 'Availability',
             availabilityDesc: 'Ready to start your project',
@@ -249,6 +252,7 @@ const translations = {
             description: 'Full-stack розробник та AI інженер з 10+ роками досвіду. Будую продакшн-ready додатки з мульти-агентною AI оркестрацією — Claude Code зі спеціалізованими ролями (Planner, Architect, Reviewer, Security Auditor, Implementer), паралельними субагентами та AI API сторонніх провайдерів (OpenAI, Gemini, Grok). Один інженер. Продуктивність команди. Експерт у <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — кожен проект поставляється з автоматизованим code review, аудитом безпеки та особистим контролем якості.',
             viewProjects: 'Переглянути проекти',
             getInTouch: "Зв'язатися",
+            downloadCv: 'Завантажити CV',
             stats: { projects: 'Продуктів реалізовано', platforms: 'Активних платформ', shopifyApps: 'Опублікованих Shopify додатків', experience: 'Років досвіду' }
         },
         about: {
@@ -321,6 +325,8 @@ const translations = {
             upwork: 'Профіль Upwork',
             upworkDesc: 'Переглянути мій професійний профіль та відгуки',
             githubDesc: 'Мої проєкти з відкритим кодом',
+            cv: 'Завантажити CV',
+            cvDesc: 'CV для друку — EN / UA / DE',
             rate: 'Ставка',
             availability: 'Доступність',
             availabilityDesc: 'Готовий розпочати ваш проект',
@@ -488,6 +494,7 @@ const translations = {
             description: 'Full-Stack-Entwickler & KI-Ingenieur mit 10+ Jahren Erfahrung. Ich entwickle produktionsreife Anwendungen mit Multi-Agenten-KI-Orchestrierung — Claude Code mit spezialisierten Rollen (Planner, Architect, Reviewer, Security Auditor, Implementer), parallelen Subagenten und Drittanbieter-KI-APIs (OpenAI, Gemini, Grok). Ein Ingenieur. Team-Produktivität. Experte in <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — jedes Projekt wird mit automatischem Code-Review, Sicherheitsaudit und persönlicher Qualitätskontrolle geliefert.',
             viewProjects: 'Projekte ansehen',
             getInTouch: 'Kontakt aufnehmen',
+            downloadCv: 'CV herunterladen',
             stats: { projects: 'Ausgelieferte Produkte', platforms: 'Aktive Plattformen', shopifyApps: 'Veröffentlichte Shopify-Apps', experience: 'Jahre Erfahrung' }
         },
         about: {
@@ -560,6 +567,8 @@ const translations = {
             upwork: 'Upwork-Profil',
             upworkDesc: 'Mein professionelles Profil und Bewertungen ansehen',
             githubDesc: 'Meine Open-Source-Projekte ansehen',
+            cv: 'CV herunterladen',
+            cvDesc: 'Druckbares CV — EN / UA / DE',
             rate: 'Stundensatz',
             availability: 'Verfügbarkeit',
             availabilityDesc: 'Bereit, Ihr Projekt zu starten',
@@ -759,6 +768,12 @@ function applyTranslations(lang) {
 
     // Keep <html lang> in sync for a11y and SEO
     document.documentElement.lang = lang === 'uk' ? 'uk' : lang;
+
+    // Point CV links at the CV matching the selected language
+    const cvSuffix = { en: 'EN', uk: 'UA', de: 'DE' }[lang] || 'EN';
+    document.querySelectorAll('.cv-link').forEach(el => {
+        el.href = 'cv/Volodymyr_Dorosh_CV_' + cvSuffix + '.html';
+    });
 
     // Apply text content translations
     document.querySelectorAll('[data-i18n]').forEach(el => {

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Volodymyr Dorosh - Agentic Full Stack Entwickler & KI-Ingenieur</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            color: #1a1a1a;
+            background: #f5f5f5;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .page {
+            max-width: 210mm;
+            margin: 20px auto;
+            background: #ffffff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        @media print {
+            body { background: #fff; margin: 0; }
+            .page { box-shadow: none; margin: 0; max-width: 100%; }
+            .page-break { page-break-before: always; }
+            .no-print { display: none; }
+        }
+
+        .print-hint {
+            max-width: 210mm;
+            margin: 12px auto 0;
+            text-align: right;
+            font-size: 12px;
+            color: #888;
+        }
+
+        .print-hint button {
+            font: inherit;
+            color: #6c5ce7;
+            background: none;
+            border: 1px solid #6c5ce7;
+            border-radius: 6px;
+            padding: 4px 12px;
+            cursor: pointer;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 50px 55px 40px;
+            border-bottom: 3px solid #1a1a1a;
+        }
+
+        .header-photo {
+            flex-shrink: 0;
+        }
+
+        .header-photo img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #1a1a1a;
+        }
+
+        .header-info {
+            flex: 1;
+        }
+
+        .header-name {
+            font-size: 38px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            line-height: 1.1;
+            margin-bottom: 6px;
+        }
+
+        .header-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+        }
+
+        .header-contacts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 30px;
+            font-size: 13px;
+        }
+
+        .header-contacts .label {
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .header-contacts a {
+            color: #6c5ce7;
+            text-decoration: none;
+        }
+
+        .header-contacts a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== CONTENT ===== */
+        .content {
+            padding: 0 55px 50px;
+        }
+
+        /* ===== SECTION ===== */
+        .section {
+            margin-top: 32px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 800;
+            color: #6c5ce7;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e0e0e0;
+            letter-spacing: -0.3px;
+        }
+
+        /* ===== SUMMARY ===== */
+        .summary-box {
+            background: #f8f8f8;
+            border-radius: 10px;
+            padding: 22px 28px;
+            font-size: 14px;
+            line-height: 1.7;
+            border-left: 4px solid #6c5ce7;
+        }
+
+        .summary-box strong {
+            color: #6c5ce7;
+        }
+
+        /* ===== COMPETENCIES GRID ===== */
+        .competencies-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .competency-card h3 {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #1a1a1a;
+        }
+
+        .competency-card p {
+            font-size: 13px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        /* ===== PROJECTS ===== */
+        .project-item {
+            margin-bottom: 22px;
+            page-break-inside: avoid;
+        }
+
+        .project-item h3 {
+            font-size: 15px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .project-item h3 a {
+            color: #6c5ce7;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .project-item h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .project-item p {
+            font-size: 13px;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+
+        .project-tech {
+            font-size: 12.5px;
+            color: #6c5ce7;
+            font-style: italic;
+        }
+
+        /* ===== EXPERIENCE ===== */
+        .experience-item {
+            margin-bottom: 28px;
+        }
+
+        .experience-role {
+            font-size: 17px;
+            font-weight: 800;
+            color: #1a1a1a;
+        }
+
+        .experience-company {
+            font-size: 14px;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .achievement-item {
+            font-size: 13px;
+            color: #333;
+            padding-left: 18px;
+            position: relative;
+            margin-bottom: 6px;
+            line-height: 1.6;
+        }
+
+        .achievement-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 7px;
+            height: 7px;
+            background: #6c5ce7;
+            border-radius: 50%;
+        }
+
+        .achievement-item strong {
+            color: #1a1a1a;
+        }
+
+        /* ===== SKILLS TABLE ===== */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skills-column h3 {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        .skills-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-column li {
+            font-size: 13px;
+            color: #444;
+            padding: 3px 0;
+            line-height: 1.4;
+        }
+
+        /* ===== LANGUAGES ===== */
+        .languages-grid {
+            display: flex;
+            gap: 40px;
+        }
+
+        .lang-item .lang-name {
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .lang-item .lang-level {
+            color: #555;
+        }
+
+        .ai-interpreter-note {
+            margin-top: 14px;
+            padding: 12px 18px;
+            background: #f8f8f8;
+            border-left: 3px solid #6c5ce7;
+            border-radius: 6px;
+            font-size: 13px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .ai-interpreter-note strong {
+            color: #6c5ce7;
+        }
+
+        /* ===== NETWORKS ===== */
+        .networks {
+            font-size: 13px;
+            color: #444;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="print-hint no-print">
+        <button onclick="window.print()">Als PDF speichern / Drucken</button>
+    </div>
+    <div class="page">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-photo">
+                <img src="../profile-photo.jpg" alt="Volodymyr Dorosh">
+            </div>
+            <div class="header-info">
+                <div class="header-name">VOLODYMYR DOROSH</div>
+                <div class="header-title">Agentic Full Stack Entwickler & KI-Ingenieur</div>
+                <div class="header-contacts">
+                    <div><span class="label">Standort:</span> Lwiw, Ukraine</div>
+                    <div><span class="label">Telefon:</span> +380 93 468-87-89</div>
+                    <div><span class="label">Email:</span> <a href="mailto:starbowshine@gmail.com">starbowshine@gmail.com</a></div>
+                    <div><span class="label">Portfolio:</span> <a href="https://volodeveth.vercel.app" target="_blank" rel="noopener">volodeveth.vercel.app</a></div>
+                    <div><span class="label">LinkedIn:</span> <a href="https://www.linkedin.com/in/volodymyr-dorosh-bb1bb0a4/" target="_blank" rel="noopener">Profil ansehen</a></div>
+                    <div><span class="label">GitHub:</span> <a href="https://github.com/volodeveth" target="_blank" rel="noopener">github.com/volodeveth</a></div>
+                    <div><span class="label">DOU:</span> <a href="https://dou.ua/users/volodeveth/" target="_blank" rel="noopener">Profil ansehen</a></div>
+                    <div><span class="label">Stundensatz:</span> $20+/Stunde</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <!-- SUMMARY -->
+            <div class="section">
+                <div class="section-title">BERUFLICHES PROFIL</div>
+                <div class="summary-box">
+                    Full-Stack-Entwickler & KI-Ingenieur mit <strong>10+ Jahren Erfahrung</strong> und <strong>20+ ausgelieferten Produkten</strong>. Ich entwickle produktionsreife Anwendungen mit <strong>Multi-Agenten-KI-Orchestrierung</strong> — Claude Code CLI mit spezialisierten Subagenten-Rollen (Planner, Architect, Implementer, Reviewer, Security Auditor), die parallel laufen, plus Drittanbieter-KI-APIs (OpenAI, Gemini, Grok). Jedes Projekt wird mit automatischem Code-Review, Sicherheitsaudit und persönlicher Qualitätskontrolle geliefert. Experte in Next.js/React/Remix Frontend, Python/Django/Node.js/PHP (Symfony) Backend, Solidity Smart Contracts, Shopify-App-Entwicklung (Polaris, App Bridge, Liquid), <strong>RAG-Systemen</strong> (pgvector, Jina AI, hybride Suche), <strong>LLM-Fine-Tuning</strong> (QLoRA, LoRA, PEFT, GGUF/Ollama), synthetischer Datensatzgenerierung, <strong>selbsterweiternden KI-Agenten</strong> (LangGraph, OpenClaw), <strong>Echtzeit-Sprachagenten</strong> (LiveKit, OpenAI Realtime, Whisper) und <strong>KI-gestütztem Site-Auditing</strong> (Playwright + Multi-LLM-Routing). Offizieller Juror bei den NFT Design Awards. <strong>Team-Output. Solo-Preis.</strong> Weltweit für Remote-Zusammenarbeit verfügbar.
+                </div>
+            </div>
+
+            <!-- COMPETENCIES -->
+            <div class="section">
+                <div class="section-title">KERNKOMPETENZEN</div>
+                <div class="competencies-grid">
+                    <div class="competency-card">
+                        <h3>KI-Agenten & Dev-Workflow</h3>
+                        <p>Claude Code Orchestrierung, Multi-Agenten-Systeme (Opus / Sonnet / Haiku), parallele Subagenten-Ausführung, eigene Claude Code Skills, automatisiertes Code-Review & Sicherheitsaudit, Figma → Code (MCP API), Git → Vercel / GitHub Actions CI/CD</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>ML & LLM Engineering</h3>
+                        <p>LLM-Fine-Tuning (QLoRA, LoRA, PEFT), synthetische Datensatzgenerierung, GGUF/Ollama/llama.cpp, RAG-Pipeline (pgvector + Jina AI, hybride Suche), LangGraph-Agenten, selbsterweiternde Agenten-Architektur (OpenClaw)</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>Sprach- & Echtzeit-KI</h3>
+                        <p>LiveKit Agents, OpenAI Realtime API, Echtzeit-Speech-to-Speech-Agenten, Whisper STT, Edge-TTS, ukrainische Sprachschnittstellen, Telegram-Sprachbots</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>KI-Automatisierung & Site-Auditing</h3>
+                        <p>Playwright Headless-Crawling, DOM-Heuristiken + LLM-Extraktion, Vision-OCR (Qwen), Multi-LLM-Routing mit Kostenverfolgung (DeepSeek / Claude / Qwen), FastAPI, Google-Sheets-Reporting, deterministische Analytik + LLM-Narrativ</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>Frontend-Entwicklung</h3>
+                        <p>Next.js 14-16, React 18-19, Remix 2, TypeScript, Tailwind CSS v3-v4, Framer Motion, Web3Modal</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>Backend & Datenbanken</h3>
+                        <p>Node.js, Python, Django, DRF, FastAPI, PHP 8.3, Symfony 7, API Platform, PostgreSQL, Neon, Supabase, Redis, Docker, Prisma 5, REST APIs, Vercel Functions, AWS EC2, Nginx, PM2, Binance API</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>Shopify-Entwicklung</h3>
+                        <p>Shopify-App-Entwicklung, Shopify Polaris, App Bridge, Remix 2, Theme Extensions, Liquid, Shopify CLI & APIs, Prisma ORM, Agentic-Commerce-Readiness</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>Blockchain & Web3</h3>
+                        <p>Smart Contracts, Solidity, Web3.js, Ethers.js, Viem, Hardhat, Foundry, Wagmi, RainbowKit, OpenZeppelin, UUPS Proxy, ERC-20, ERC-721, ERC-1155</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>KI-Tools & Anbieter</h3>
+                        <p>Claude / Claude Code, ChatGPT / OpenAI API, Google Gemini, xAI Grok, DeepSeek, MiniMax, Qwen (Vision), FLUX.2, OpenRouter, Midjourney, Sora, Runway</p>
+                    </div>
+                    <div class="competency-card">
+                        <h3>Automatisierung & Bots</h3>
+                        <p>Telegram Bot Platform, X-API-Automatisierung, Web Scraping, Handelsalgorithmen (Binance Futures), B2B-Outreach-Pipelines (E-Mail / Viber / Telegram), Aufgabenplanung</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECTS -->
+            <div class="section">
+                <div class="section-title">AUSGEWÄHLTE PROJEKTE</div>
+
+                <div class="project-item">
+                    <h3>InkBot - AI Product Descriptions for Shopify | <a href="https://inkbot.app/">inkbot.app</a></h3>
+                    <p>KI-gestützte Shopify-App zur Generierung SEO-optimierter Produktbeschreibungen mit DeepSeek V3. Funktionen: Massengenerierung, Markenstimm-Analyse, SEO-Bewertung, 111+ Sprachen, 9 Nischen und 4 Abonnementpläne mit API-Zugang.</p>
+                    <div class="project-tech">Technologien: React 18, Remix 2, TypeScript, Shopify Polaris, Prisma 5, Neon PostgreSQL, DeepSeek V3 (OpenRouter), Vercel</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>ClothCast - AI Virtual Try-On for Shopify | <a href="https://cloth-cast.vercel.app/landing">cloth-cast.vercel.app</a></h3>
+                    <p>KI-Virtual-Try-On-Shopify-App mit FLUX.2-Bildgenerierung. Kunden laden ein Selfie hoch und sehen sich selbst im gewünschten Produkt. Funktionen: anpassbares Widget, Theme Extension, Analyse-Dashboard und datenschutzfreundliche 24h-Datenspeicherung.</p>
+                    <div class="project-tech">Technologien: React 18, Remix 2, TypeScript, Shopify Polaris, Prisma 5, Neon PostgreSQL, FLUX.2 Klein 4B (OpenRouter), Sharp, Vercel</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Ask About Dorosh — Production RAG System | <a href="https://ask-about-dorosh.duckdns.org">Live Demo</a> | <a href="https://github.com/volodeveth/supa-rag">GitHub</a></h3>
+                    <p>Produktionsreifer Chatbot, der 16 reale Projekte + CV indiziert (2.100+ Chunks). Hybride Suche (pgvector HNSW + BM25 GIN) mit Reciprocal Rank Fusion, Jina Reranker v3 neuronalem Cross-Encoder, DeepSeek-LLM-Streaming via SSE. Self-hosted auf AWS EC2 mit Nginx Reverse Proxy, PM2, Let's Encrypt SSL und GitHub Actions CI/CD Auto-Deploy.</p>
+                    <div class="project-tech">Technologien: Next.js 16, React 19, TypeScript, Tailwind CSS v4, Supabase PostgreSQL + pgvector, Jina Embeddings v3, Jina Reranker v3, DeepSeek (OpenRouter), AWS EC2, Nginx, PM2, GitHub Actions</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Buddy Agent — Self-Extending Personal AI Assistant | <a href="https://github.com/volodeveth/buddy-agent">GitHub</a></h3>
+                    <p>Selbsterweiternder Telegram-KI-Assistent mit Dual-LLM-Architektur — DeepSeek V3.2 verteilt Aufgaben, während MiniMax M2.7 autonom neue Skills generiert. Funktionen: ukrainische Sprachschnittstelle (Whisper STT + Edge-TTS), 3-stufige Sicherheit mit PIN, persistenter Speicher, Sandbox-Ausführung via NemoClaw-Policy und modulares Skill-System mit AST-basierter Code-Validierung.</p>
+                    <div class="project-tech">Technologien: Python, OpenClaw, DeepSeek V3.2, MiniMax M2.7, OpenRouter, Telegram Bot API, faster-whisper, edge-tts, bcrypt, APScheduler</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Pizza Voice Agent — Real-Time Voice Ordering | <a href="https://github.com/volodeveth/pizza-voice-agent">GitHub</a></h3>
+                    <p>Sprachassistent für eine Pizzeria: natürliche gesprochene Bestellung auf Ukrainisch mit Echtzeit-Speech-to-Speech-Dialog, Menülogik und Bestellbestätigung. Entwickelt mit LiveKit Agents und der OpenAI Realtime API mit Next.js-Frontend.</p>
+                    <div class="project-tech">Technologien: LiveKit Agents, OpenAI Realtime API, Next.js, TypeScript, Python, WebRTC</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>KI-Site-Auditor für E-Commerce (Kundenprojekt)</h3>
+                    <p>CLI- + Web-Auditor, der E-Commerce-Sites gegen Marketplace-Compliance-Checklisten validiert. Headless-Playwright-Crawling kombiniert mit LLM-Intelligenz (Adressextraktion, visuelle Kartenerkennung via Vision-OCR, Sprachkonsistenz) und DOM-Heuristiken. Multi-LLM-Routing (DeepSeek smart/cheap + Claude-Fallback + Qwen-Vision) mit Kostenverfolgung pro Aufruf. Berichte mit Beweis-Artefakten (Screenshots, Zitate) in Google Sheets. 102 Unit-Tests, ruff/mypy clean.</p>
+                    <div class="project-tech">Technologien: Python 3.12, FastAPI, Playwright, DeepSeek, Claude, Qwen Vision, Google Sheets API, pydantic v2, pytest</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>LoopForge — Autonomous Multi-Agent Dev Loop | <a href="https://github.com/volodeveth/loopforge">GitHub</a></h3>
+                    <p>Schmiedet große Features in einem autonomen Multi-Agenten-Loop für Claude Code: Anforderungsinterview → Spezifikation → Plan → TDD-Implementierungsschleife → Verifizierung. Agentic Engineering als wiederverwendbarer Workflow.</p>
+                    <div class="project-tech">Technologien: Claude Code, Multi-Agent Orchestration, Spec-Driven Development, TDD Automation</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>TinyLlama QLoRA Fine-Tuning Pipeline | <a href="https://github.com/volodeveth/tinyllama-qlora-colab">Colab</a> | <a href="https://github.com/volodeveth/TinyLlama-Training">Local</a></h3>
+                    <p>End-to-End-LLM-Fine-Tuning-Pipeline: Google-Colab-Notebook für QLoRA-Training auf T4 GPU + lokale CPU-Pipeline mit LoRA. Funktionen: 4-Bit-Quantisierung, Adapter-Persistenz auf Google Drive, GGUF-Export mit Q4_K_M-Quantisierung und Ollama-Deployment. Unterstützt Resume-Training und inkrementelles Fine-Tuning.</p>
+                    <div class="project-tech">Technologien: Python, HuggingFace Transformers, PEFT, QLoRA/LoRA, BitsAndBytes, llama.cpp, GGUF, Ollama, Google Colab</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Dataset Factory — Synthetic Dataset Generation Pipeline | <a href="https://github.com/volodeveth/dataset-factory">GitHub</a></h3>
+                    <p>Universelle Pipeline zur Generierung hochwertiger Trainingsdatensätze mit LLMs. Funktionen: interaktiver Wizard, 4 Ausgabeformate (Alpaca, Chat, QA, Classification), Text-Chunking, Validierung mit Deduplizierung, Spracherkennung und Label-Verteilungsanalyse. Konfigurierbar via YAML mit Unterstützung für jedes OpenRouter-Modell.</p>
+                    <div class="project-tech">Technologien: Python, DeepSeek V3, OpenRouter API, YAML Configs, Data Validation, Text Chunking</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>LangGraph Code Assistant Agent</h3>
+                    <p>Intelligenter Code-Analyse-Agent mit LangGraph-State-Graph-Architektur. Funktionen: Verzeichnis-Scanning mit Auto-Watch (Änderungserkennung via Hashing), Multi-Datei-Analyse, Bug-Erkennung, Code-Review und Testgenerierung. Streamlit-UI mit zwei Eingabemodi.</p>
+                    <div class="project-tech">Technologien: Python, LangGraph, Streamlit, MiniMax M2.5, OpenRouter</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>AgentPulse — Agentic-Commerce Readiness for Shopify</h3>
+                    <p>Eingebettete Shopify-App, die die Bereitschaft eines Shops für Agentic Commerce bewertet — wie gut KI-Shopping-Agenten den Shop entdecken, verstehen und dort einkaufen können — mit umsetzbaren Empfehlungen.</p>
+                    <div class="project-tech">Technologien: Shopify, Remix, TypeScript, Shopify Polaris</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>NiFTa - NFT Marketplace on Base Network | <a href="https://nifta-zeta.vercel.app/">View MVP</a></h3>
+                    <p>Full-Stack-NFT-Marktplatz auf dem Base Network mit 4 gaseffizienten Solidity Smart Contracts (Factory, ERC-1155 Collection, Marketplace, Events). Einzigartige Erlösaufteilung (Ersteller 50% / Erster Minter 10% / Empfehlung 20%), 48h-Timer-Mechanik, ERC-2981-Royalties, UUPS-aktualisierbare Contracts und X/Farcaster-OAuth-Verifizierung.</p>
+                    <div class="project-tech">Technologien: Solidity 0.8.x, ERC-1155, UUPS Proxy, Next.js, TypeScript, Wagmi, RainbowKit, Base Network, Hardhat</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Doshka - Kanban Board REST API | <a href="https://github.com/volodeveth/doshka-backend">GitHub</a></h3>
+                    <p>Vollständige Trello-ähnliche REST-API mit Symfony 7.2, JWT-Authentifizierung, rollenbasierter Zugriffskontrolle via Symfony Voters (owner/admin/member), asynchronen E-Mail-Benachrichtigungen via Redis-Queue + Symfony Messenger und täglichen Deadline-Erinnerungen via Symfony Scheduler. Vollständige Docker-Compose-Umgebung mit PostgreSQL 16 und OpenAPI/Swagger-Dokumentation.</p>
+                    <div class="project-tech">Technologien: PHP 8.3, Symfony 7.2, JWT, Redis, Docker, Docker Compose, PostgreSQL 16, Symfony Messenger, OpenAPI/Swagger</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>CryptoDuel - Decentralized Gaming Platform | <a href="https://www.cryptoduel.xyz/">cryptoduel.xyz</a></h3>
+                    <p>PvP-Krypto-Gaming-Plattform auf dem Base Network mit 4 Spielmodi (Duell 1v1, Battle Royale). Funktionen: Farcaster-Integration, nachweislich faire Blockchain-Zufallsgenerierung, Echtzeit-Bestenlisten und PostgreSQL-Backend.</p>
+                    <div class="project-tech">Technologien: Solidity, Next.js, Hardhat, Base Network, Farcaster SDK, PostgreSQL</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>Fjord & Mekko - E-Commerce Platform | <a href="https://www.fjord-mekko.com.ua/">fjord-mekko.com.ua</a></h3>
+                    <p>Professioneller Online-Shop für orthopädische Matratzen. Funktionen: Produktkatalog mit Filterung, interaktive Leaflet-Karten mit 20+ Filialstandorten, Partnerprogramm, Matratzen-Berater und Resend-E-Mail-Integration.</p>
+                    <div class="project-tech">Technologien: Next.js 16, React 19, TypeScript, Tailwind CSS v4, Leaflet, Resend, Framer Motion</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>lilURL - URL Shortener Service | <a href="https://lilurl.vercel.app/">lilurl.vercel.app</a></h3>
+                    <p>Vollständiger URL-Kürzungsdienst (Bit.ly-Alternative) mit Klick-Analyse, QR-Code-Generierung, REST API, Abonnementplänen und Echtzeit-Dashboard. Geräte-/Browser-/Standort-Tracking und Rate Limiting.</p>
+                    <div class="project-tech">Technologien: Django 5.0, Django REST Framework, PostgreSQL, Tailwind CSS, Chart.js, Vercel</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>AI Trading Bots - Binance Futures</h3>
+                    <p>Fortgeschrittene Kryptowährungs-Trading-Bots mit GPT-KI-Analyse. Funktionen: technische Indikatoren (RSI, MACD, Bollinger Bands, ADX), Multi-Timeframe-Analyse (5m-4h), Risikomanagement und 100x-Hebel-Scalping-Strategien.</p>
+                    <div class="project-tech">Technologien: Python, Node.js, OpenAI API, Binance API, Technical Indicators, Winston Logger</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>ZORIUM Ecosystem — Token, DeFi Staking & NFT Marketplace | <a href="https://www.zorium.xyz/">zorium.xyz</a> | <a href="https://www.zorium.fun/">zorium.fun</a></h3>
+                    <p>Vollständiges Web3-Ökosystem auf dem Zora Network: ERC20-aktualisierbarer Token mit Staking, 3-stufigem Empfehlungssystem, Burn-Mechanismus und Tier-System (Bronze bis Platinum); DeFi-Staking-Plattform mit flexiblen Sperrfristen (30-365 Tage) und bis zu 300% APY; plus dezentraler NFT-Marktplatz mit Trend-Analyse und Erstellerwerkzeugen. Erfolgreicher Airdrop an 10.000+ Inhaber.</p>
+                    <div class="project-tech">Technologien: Solidity 0.8.19, OpenZeppelin, UUPS Proxy, Next.js, TypeScript, Wagmi, Viem, RainbowKit, TanStack Query</div>
+                </div>
+
+                <div class="project-item">
+                    <h3>NFT-Kollektionen & Social-Automatisierung</h3>
+                    <p>Mehrere erfolgreiche NFT-Kollektionen entwickelt: <strong>Bored Giraffes Yacht Club</strong> - 3.333 NFTs, ausverkauft auf Ethereum; <strong>The GAFs Collection</strong> - innovative generative Kunst; <strong>Misery Avenue: Beginning</strong> - Roman-zu-NFT-Adaption. Plus Python-Bots für automatisiertes KI-Content-Posting auf Zora.co und in sozialen Netzwerken.</p>
+                    <div class="project-tech">Technologien: Ethereum, IPFS, Generative Art, ERC-721, OpenSea, Rarible, Python, Zora API</div>
+                </div>
+            </div>
+
+            <!-- EXPERIENCE -->
+            <div class="section">
+                <div class="section-title">BERUFSERFAHRUNG</div>
+                <div class="experience-item">
+                    <div class="experience-role">Agentic Full Stack Entwickler & KI-Ingenieur</div>
+                    <div class="experience-company">Selbstständig | 2014 - heute | Lwiw, Ukraine (weltweit remote)</div>
+                    <div class="achievement-item">20+ produktionsreife Full-Stack-Webanwendungen mit Multi-Agenten-KI-Orchestrierung ausgeliefert</div>
+                    <div class="achievement-item">Multi-Agenten-KI-Entwicklungsworkflow mit Claude Code aufgebaut — Opus als Orchestrator, Sonnet/Haiku als spezialisierte parallele Subagenten</div>
+                    <div class="achievement-item">2 veröffentlichte Shopify-Apps (InkBot, ClothCast) mit KI-Integration und Abonnementplänen entwickelt, plus AgentPulse (Agentic-Commerce-Readiness-Bewertung)</div>
+                    <div class="achievement-item">End-to-End-LLM-Fine-Tuning-Pipelines (QLoRA/LoRA) mit synthetischer Datensatzgenerierung, GGUF-Export und Ollama-Deployment aufgebaut</div>
+                    <div class="achievement-item">Selbsterweiternden KI-Agenten mit Dual-LLM-Architektur entwickelt — generiert, validiert und deployt autonom eigene Skills</div>
+                    <div class="achievement-item">Echtzeit-Sprachagenten (LiveKit + OpenAI Realtime) mit natürlicher gesprochener ukrainischer Interaktion entwickelt</div>
+                    <div class="achievement-item">KI-gestützte E-Commerce-Site-Auditoren entwickelt — Playwright-Crawling + Multi-LLM-Routing mit Kostenverfolgung und beweisgestütztem Reporting</div>
+                    <div class="achievement-item">Smart Contracts mit erheblichen Transaktionsvolumina auf Ethereum-, Base- und Zora-Netzwerken entwickelt</div>
+                    <div class="achievement-item">KI-integrierte Handelssysteme mit Echtzeit-Marktanalyse entwickelt</div>
+                    <div class="achievement-item">Jedes Projekt wird mit automatischem Code-Review, Sicherheitsaudit und persönlicher Qualitätskontrolle geliefert</div>
+                    <div class="achievement-item">10+ aktive Plattformen und Anwendungen in Produktion gepflegt</div>
+                </div>
+            </div>
+
+            <!-- ACHIEVEMENTS -->
+            <div class="section">
+                <div class="section-title">ERFOLGE & AUSZEICHNUNGEN</div>
+                <div class="achievement-item"><strong>20+ ausgelieferte Produkte</strong> - Full-Stack-Web-Apps, Shopify-Apps, Smart Contracts, KI-Agenten, Sprachagenten und ML-Pipelines in Produktion</div>
+                <div class="achievement-item"><strong>2 veröffentlichte Shopify-Apps</strong> - InkBot (KI-Produktbeschreibungen, 111+ Sprachen) und ClothCast (KI-Virtual-Try-On mit FLUX.2)</div>
+                <div class="achievement-item"><strong>End-to-End-ML-Pipeline</strong> - Von synthetischer Datensatzgenerierung → QLoRA/LoRA-Fine-Tuning → GGUF-Export → Ollama-Deployment</div>
+                <div class="achievement-item"><strong>Selbsterweiternder KI-Agent</strong> - Agent, der autonom eigene Skills schreibt, validiert und deployt — via Dual-LLM-Architektur</div>
+                <div class="achievement-item"><strong>Produktions-RAG-System</strong> - Hybride Suche (pgvector + BM25 + RRF), neuronales Jina-Reranking, 2.100+ indexierte Chunks, self-hosted auf AWS EC2</div>
+                <div class="achievement-item"><strong>Echtzeit-Sprach-KI</strong> - Speech-to-Speech-Bestellagent auf Ukrainisch, gebaut auf LiveKit + OpenAI Realtime API</div>
+                <div class="achievement-item"><strong>NFT Design Awards Juror</strong> - Offizieller Juror zur Bewertung innovativer NFT-Projekte</div>
+                <div class="achievement-item"><strong>10.000+ Token-Inhaber</strong> - ZORIUM-Token erfolgreich entwickelt und per Airdrop an große Community verteilt</div>
+                <div class="achievement-item"><strong>Mehrere ausverkaufte NFT-Kollektionen</strong> - Darunter Bored Giraffes Yacht Club (3.333 NFTs auf Ethereum)</div>
+                <div class="achievement-item"><strong>KI-Videoproduktion</strong> - Erstellung vollständig KI-generierter Animationsfilme und professioneller Videoinhalte</div>
+            </div>
+
+            <!-- SKILLS -->
+            <div class="section">
+                <div class="section-title">TECHNISCHE FÄHIGKEITEN</div>
+                <div class="skills-grid">
+                    <div class="skills-column">
+                        <h3>KI-Agenten & Workflow</h3>
+                        <ul>
+                            <li>Claude Code Orchestration</li>
+                            <li>Multi-Agent Systems</li>
+                            <li>Parallel Subagents</li>
+                            <li>Custom Claude Code Skills</li>
+                            <li>Auto Code Review</li>
+                            <li>Security Audit</li>
+                            <li>Figma → Code (MCP)</li>
+                            <li>Git → Vercel CI/CD</li>
+                        </ul>
+                    </div>
+                    <div class="skills-column">
+                        <h3>ML & Fine-Tuning</h3>
+                        <ul>
+                            <li>QLoRA / LoRA / PEFT</li>
+                            <li>HuggingFace Transformers</li>
+                            <li>BitsAndBytes (4-bit)</li>
+                            <li>GGUF / llama.cpp</li>
+                            <li>Ollama</li>
+                            <li>Dataset Generation</li>
+                            <li>LangGraph</li>
+                            <li>RAG Pipeline / pgvector</li>
+                            <li>Jina AI (Embed + Rerank)</li>
+                        </ul>
+                    </div>
+                    <div class="skills-column">
+                        <h3>Sprache & Automatisierung</h3>
+                        <ul>
+                            <li>LiveKit Agents</li>
+                            <li>OpenAI Realtime API</li>
+                            <li>Whisper STT / Edge-TTS</li>
+                            <li>Playwright</li>
+                            <li>FastAPI</li>
+                            <li>Multi-LLM Routing</li>
+                            <li>Google Sheets API</li>
+                            <li>Telegram Bots</li>
+                        </ul>
+                    </div>
+                    <div class="skills-column">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>Next.js 14-16</li>
+                            <li>React 18-19</li>
+                            <li>Remix 2</li>
+                            <li>TypeScript</li>
+                            <li>Tailwind CSS</li>
+                            <li>Framer Motion</li>
+                            <li>Shopify Polaris</li>
+                        </ul>
+                    </div>
+                    <div class="skills-column">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Python / Django / DRF</li>
+                            <li>PHP 8.3 / Symfony 7</li>
+                            <li>PostgreSQL / Neon / Supabase</li>
+                            <li>Redis (Cache + Queue)</li>
+                            <li>Docker / Docker Compose</li>
+                            <li>Prisma ORM</li>
+                            <li>REST APIs</li>
+                            <li>AWS EC2 / Nginx / PM2</li>
+                            <li>GitHub Actions CI/CD</li>
+                        </ul>
+                    </div>
+                    <div class="skills-column">
+                        <h3>Blockchain & KI-Tools</h3>
+                        <ul>
+                            <li>Solidity / Smart Contracts</li>
+                            <li>Hardhat / Foundry</li>
+                            <li>Wagmi / Viem / RainbowKit</li>
+                            <li>ERC-20 / 721 / 1155</li>
+                            <li>Claude / ChatGPT / Gemini</li>
+                            <li>DeepSeek / MiniMax / Qwen</li>
+                            <li>FLUX.2 / OpenRouter</li>
+                            <li>Midjourney / Sora / Runway</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NETWORKS -->
+            <div class="section">
+                <div class="section-title">NETZWERKE & PLATTFORMEN</div>
+                <div class="networks">
+                    <strong>KI & Cloud:</strong> OpenRouter, OpenAI Platform, Anthropic (Claude), Google AI Studio, Jina AI, Hugging Face Hub, Google Colab, LiveKit Cloud, AWS EC2, Vercel, Supabase, Neon, Docker Hub<br>
+                    <strong>Web3:</strong> Ethereum, Base Network, Zora Network, Binance Smart Chain, IPFS, OpenSea, Farcaster<br>
+                    <strong>Commerce & Dev:</strong> Shopify App Store, Shopify Partners, GitHub, Telegram Bot Platform
+                </div>
+            </div>
+
+            <!-- LANGUAGES -->
+            <div class="section">
+                <div class="section-title">SPRACHEN</div>
+                <div class="languages-grid">
+                    <div class="lang-item">
+                        <span class="lang-name">Ukrainisch</span> — <span class="lang-level">Muttersprache</span>
+                    </div>
+                    <div class="lang-item">
+                        <span class="lang-name">Englisch</span> — <span class="lang-level">B2 (Obere Mittelstufe)</span>
+                    </div>
+                    <div class="lang-item">
+                        <span class="lang-name">Polnisch</span> — <span class="lang-level">Mittelstufe</span>
+                    </div>
+                </div>
+                <div class="ai-interpreter-note">
+                    <strong>Keine Sprachbarrieren:</strong> Flüssige Echtzeit-Kommunikation in 50+ Sprachen via KI-Live-Sprachdolmetscher (DE, FR, ES, ZH, JA, KO, IT, AR, HI, PT, NL, SV, PL, CS, TR, VI, TH und mehr).
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

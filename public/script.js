@@ -1093,6 +1093,17 @@ const bannerVisibility = new WeakMap();
         entries.forEach(function (entry) {
             bannerVisibility.set(entry.target, entry.isIntersecting);
             entry.target.classList.toggle('anim-paused', !entry.isIntersecting);
+            // First time a scene scrolls into view, rewind its animations so
+            // the viewer sees the sequence from the beginning, not mid-cycle.
+            if (entry.isIntersecting && !entry.target.dataset.seen) {
+                entry.target.dataset.seen = '1';
+                var svg = entry.target.querySelector('svg');
+                if (svg && typeof svg.getAnimations === 'function') {
+                    svg.getAnimations({ subtree: true }).forEach(function (a) {
+                        a.currentTime = 0;
+                    });
+                }
+            }
         });
     }, { rootMargin: '100px' });
     animated.forEach(function (el) { io.observe(el); });
@@ -1101,128 +1112,57 @@ function bannerActive(el) {
     return !document.hidden && bannerVisibility.get(el) !== false;
 }
 
-// Timeline Banner: auto-restart loop via SVG clone
-(function () {
-    var banner = document.querySelector('.tl-banner');
+// Banner replay: rewind SVG animations in place via the Web Animations API —
+// no DOM cloning, no re-parse/layout of the whole SVG tree. Each banner plays
+// its sequence a limited number of times, then holds the final state (infinite
+// sub-animations like pulses and cursor blinks keep running).
+function setupBannerReplay(bannerSel, svgSel, animMs, holdMs, maxCycles) {
+    var banner = document.querySelector(bannerSel);
     if (!banner) return;
-    var svg = banner.querySelector('.tl-svg');
-    if (!svg) return;
+    var svg = banner.querySelector(svgSel);
+    if (!svg || typeof svg.getAnimations !== 'function') return;
 
-    var ANIM_MS = 5000; // all nodes appear by ~4s, give buffer
-    var HOLD_MS = 2000;
     var FADE_MS = 500;
+    var cyclesPlayed = 1; // the initial CSS run is the first cycle
+
+    function finiteAnimsStillRunning() {
+        return svg.getAnimations({ subtree: true }).some(function (a) {
+            var timing = a.effect && a.effect.getTiming();
+            return timing && timing.iterations !== Infinity && a.playState === 'running';
+        });
+    }
+
+    function rewind() {
+        svg.getAnimations({ subtree: true }).forEach(function (a) {
+            a.currentTime = 0;
+        });
+    }
 
     function runCycle() {
         setTimeout(function () {
-            if (!bannerActive(banner)) { runCycle(); return; }
+            if (cyclesPlayed >= maxCycles) return; // hold final state
+            if (!bannerActive(banner) || finiteAnimsStillRunning()) { runCycle(); return; }
+            cyclesPlayed++;
             svg.style.transition = 'opacity ' + FADE_MS + 'ms ease';
             svg.style.opacity = '0';
-
             setTimeout(function () {
-                var fresh = svg.cloneNode(true);
-                fresh.removeAttribute('style');
-                svg.parentNode.replaceChild(fresh, svg);
-                svg = fresh;
-
-                svg.style.opacity = '0';
-                requestAnimationFrame(function () {
-                    svg.style.transition = 'opacity ' + FADE_MS + 'ms ease';
-                    svg.style.opacity = '1';
-                    setTimeout(function () {
-                        svg.style.transition = '';
-                        svg.style.opacity = '';
-                        runCycle();
-                    }, FADE_MS);
-                });
-            }, FADE_MS + 100);
-        }, ANIM_MS + HOLD_MS);
+                rewind();
+                svg.style.opacity = '1';
+                setTimeout(function () {
+                    svg.style.transition = '';
+                    svg.style.opacity = '';
+                    runCycle();
+                }, FADE_MS);
+            }, FADE_MS + 50);
+        }, animMs + holdMs);
     }
 
     runCycle();
-}());
+}
 
-// Walk Banner: auto-restart loop via SVG clone (guaranteed animation reset)
-(function () {
-    var banner = document.querySelector('.walk-banner');
-    if (!banner) return;
-    var svg = banner.querySelector('.walk-svg');
-    if (!svg) return;
-
-    var ANIM_MS = 10000; // hero walk animation duration
-    var HOLD_MS = 2000;  // hold final state before restart
-    var FADE_MS = 500;   // fade transition duration
-
-    function runCycle() {
-        setTimeout(function () {
-            if (!bannerActive(banner)) { runCycle(); return; }
-            // Fade out
-            svg.style.transition = 'opacity ' + FADE_MS + 'ms ease';
-            svg.style.opacity = '0';
-
-            setTimeout(function () {
-                // Deep-clone the SVG — guarantees 100% animation state reset
-                var fresh = svg.cloneNode(true);
-                fresh.removeAttribute('style'); // clear any leftover inline styles
-                svg.parentNode.replaceChild(fresh, svg);
-                svg = fresh;
-
-                // Start invisible, then fade in
-                svg.style.opacity = '0';
-                requestAnimationFrame(function () {
-                    svg.style.transition = 'opacity ' + FADE_MS + 'ms ease';
-                    svg.style.opacity = '1';
-                    setTimeout(function () {
-                        svg.style.transition = '';
-                        svg.style.opacity = '';
-                        runCycle(); // schedule next cycle
-                    }, FADE_MS);
-                });
-            }, FADE_MS + 100);
-        }, ANIM_MS + HOLD_MS);
-    }
-
-    runCycle();
-}());
-
-// Terminal Banner: auto-restart loop via SVG clone (guaranteed animation reset)
-(function () {
-    var banner = document.querySelector('.term-banner');
-    if (!banner) return;
-    var svg = banner.querySelector('.term-svg');
-    if (!svg) return;
-
-    var ANIM_MS = 9500; // last text reveal ends ~8.8s, give slight buffer
-    var HOLD_MS = 2000;  // hold final state before restart
-    var FADE_MS = 500;   // fade transition duration
-
-    function runCycle() {
-        setTimeout(function () {
-            if (!bannerActive(banner)) { runCycle(); return; }
-            svg.style.transition = 'opacity ' + FADE_MS + 'ms ease';
-            svg.style.opacity = '0';
-
-            setTimeout(function () {
-                var fresh = svg.cloneNode(true);
-                fresh.removeAttribute('style');
-                svg.parentNode.replaceChild(fresh, svg);
-                svg = fresh;
-
-                svg.style.opacity = '0';
-                requestAnimationFrame(function () {
-                    svg.style.transition = 'opacity ' + FADE_MS + 'ms ease';
-                    svg.style.opacity = '1';
-                    setTimeout(function () {
-                        svg.style.transition = '';
-                        svg.style.opacity = '';
-                        runCycle();
-                    }, FADE_MS);
-                });
-            }, FADE_MS + 100);
-        }, ANIM_MS + HOLD_MS);
-    }
-
-    runCycle();
-}());
+setupBannerReplay('.tl-banner', '.tl-svg', 5000, 2000, 2);
+setupBannerReplay('.walk-banner', '.walk-svg', 10000, 2000, 2);
+setupBannerReplay('.term-banner', '.term-svg', 9500, 2000, 2);
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 if (prefersReducedMotion.matches) {

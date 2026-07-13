@@ -48,6 +48,56 @@
     </script>
 </head>
 <body>
+    <!-- Shared character sprite: profile head + torso, referenced by <use> in the
+         hero scene and all three banners. Gradients resolve document-wide. -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <defs>
+            <linearGradient id="dev-skin" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f0c8a0"/>
+                <stop offset="100%" stop-color="#e0b090"/>
+            </linearGradient>
+            <linearGradient id="dev-shirt" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#6366f1"/>
+                <stop offset="100%" stop-color="#8b5cf6"/>
+            </linearGradient>
+            <linearGradient id="dev-hair" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1a0f06"/>
+                <stop offset="100%" stop-color="#0d0703"/>
+            </linearGradient>
+            <g id="dev-profile-head">
+                <ellipse cx="190" cy="200" rx="26" ry="28" fill="url(#dev-hair)"/>
+                <path d="M183,174 Q172,178 163,190 Q158,200 160,212 Q162,222 167,230 Q172,235 179,234 Q184,229 185,222 Q187,210 188,200 Q187,186 182,175 Z" fill="url(#dev-skin)"/>
+                <ellipse cx="214" cy="203" rx="5" ry="7" fill="url(#dev-skin)" opacity="0.8"/>
+                <path d="M183,173 Q190,163 210,170" stroke="#3a3a4e" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <rect x="208" y="189" width="10" height="16" rx="4" fill="#3a3a4e"/>
+                <rect x="206" y="191" width="6" height="12" rx="3" fill="#4a4a5e"/>
+                <path d="M162,187 Q167,184 173,186" stroke="#1a0f06" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.9"/>
+                <ellipse cx="167" cy="196" rx="6.5" ry="5" fill="#c8906a" opacity="0.25"/>
+                <ellipse cx="167" cy="196" rx="5.5" ry="4" fill="white" opacity="0.95"/>
+                <circle cx="165" cy="197" r="3.2" fill="#3d2b1f"/>
+                <circle cx="165" cy="197" r="1.7" fill="#0a0603"/>
+                <circle cx="166" cy="195" r="0.9" fill="white" opacity="0.9"/>
+                <path d="M161,193 Q167,189 173,193" stroke="#b07855" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.8"/>
+                <ellipse class="blink-lid" cx="167" cy="196" rx="6.5" ry="5.5" fill="url(#dev-skin)" opacity="0"/>
+                <circle cx="157" cy="208" r="3.5" fill="url(#dev-skin)" opacity="0.65"/>
+                <path d="M160,200 Q156,205 157,210" stroke="#c8906a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+                <path d="M159,210 Q163,208 167,210 Q168,212 167,215 Q167,218 164,219 L161,219 Q160,216 159,213 Q158,211 159,210 Z" fill="#1a0f06" opacity="0.85"/>
+                <path d="M160,215 Q162,217 164,215" stroke="#9a5040" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.5"/>
+                <path d="M161,219 Q159,224 160,229 Q162,234 167,236 Q173,237 179,235 Q184,231 186,224 Q186,219 183,218 Q177,219 170,219 Q165,219 161,219 Z" fill="#1a0f06" opacity="0.78"/>
+                <circle cx="163" cy="222" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                <circle cx="165" cy="226" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                <circle cx="168" cy="230" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                <circle cx="172" cy="233" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                <circle cx="177" cy="232" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                <circle cx="182" cy="228" r="0.8" fill="#3a1a08" opacity="0.4"/>
+            </g>
+            <g id="dev-body">
+                <path d="M152,310 Q152,260 197,245 Q242,260 242,310 Z" fill="url(#dev-shirt)"/>
+                <path d="M180,248 Q197,243 214,248" stroke="#4f46e5" stroke-width="1.5" fill="none" opacity="0.5"/>
+                <rect x="189" y="218" width="16" height="30" rx="6" fill="url(#dev-skin)"/>
+            </g>
+        </defs>
+    </svg>
     <div class="cursor"></div>
     
     <nav class="navbar">
@@ -125,14 +175,6 @@
                     <!-- Developer at computer SVG -->
                     <svg class="dev-svg" viewBox="0 0 400 380" xmlns="http://www.w3.org/2000/svg">
                         <defs>
-                            <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#f0c8a0"/>
-                                <stop offset="100%" style="stop-color:#e0b090"/>
-                            </linearGradient>
-                            <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#6366f1"/>
-                                <stop offset="100%" style="stop-color:#8b5cf6"/>
-                            </linearGradient>
                             <linearGradient id="monitorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                                 <stop offset="0%" style="stop-color:#2a2a3e"/>
                                 <stop offset="100%" style="stop-color:#1a1a2e"/>
@@ -144,10 +186,6 @@
                             <linearGradient id="deskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                                 <stop offset="0%" style="stop-color:#3a3a4e"/>
                                 <stop offset="100%" style="stop-color:#2a2a3e"/>
-                            </linearGradient>
-                            <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#1a0f06"/>
-                                <stop offset="100%" style="stop-color:#0d0703"/>
                             </linearGradient>
                             <linearGradient id="chairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                                 <stop offset="0%" style="stop-color:#4a4a5e"/>
@@ -233,18 +271,15 @@
                         <!-- Developer (back view - clickable via chair) -->
                         <g class="developer-group">
                             <!-- Shoulders / body -->
-                            <path d="M152,310 Q152,260 197,245 Q242,260 242,310 Z" fill="url(#shirtGrad)"/>
-                            <path d="M180,248 Q197,243 214,248" stroke="#4f46e5" stroke-width="1.5" fill="none" opacity="0.5"/>
-                            <!-- Neck -->
-                            <rect x="189" y="218" width="16" height="30" rx="6" fill="url(#skinGrad)"/>
+                            <use href="#dev-body"/>
                             <!-- Back of head (normal view, hides during sip) -->
                             <g class="back-of-head-group">
-                                <ellipse cx="197" cy="202" rx="28" ry="30" fill="url(#hairGrad)"/>
-                                <path d="M169,197 Q169,170 197,167 Q225,170 225,197" fill="url(#hairGrad)"/>
-                                <path d="M172,207 Q172,180 197,177 Q222,180 222,207" fill="url(#hairGrad)" opacity="0.7"/>
+                                <ellipse cx="197" cy="202" rx="28" ry="30" fill="url(#dev-hair)"/>
+                                <path d="M169,197 Q169,170 197,167 Q225,170 225,197" fill="url(#dev-hair)"/>
+                                <path d="M172,207 Q172,180 197,177 Q222,180 222,207" fill="url(#dev-hair)" opacity="0.7"/>
                                 <path d="M180,182 Q197,174 214,182" stroke="#1a0f06" stroke-width="1" fill="none" opacity="0.4"/>
-                                <ellipse cx="168" cy="204" rx="5" ry="7" fill="url(#skinGrad)" opacity="0.7"/>
-                                <ellipse cx="226" cy="204" rx="5" ry="7" fill="url(#skinGrad)" opacity="0.7"/>
+                                <ellipse cx="168" cy="204" rx="5" ry="7" fill="url(#dev-skin)" opacity="0.7"/>
+                                <ellipse cx="226" cy="204" rx="5" ry="7" fill="url(#dev-skin)" opacity="0.7"/>
                                 <path d="M166,192 Q166,167 197,164 Q228,167 228,192" stroke="#3a3a4e" stroke-width="4" fill="none" stroke-linecap="round"/>
                                 <rect x="160" y="189" width="10" height="16" rx="4" fill="#3a3a4e"/>
                                 <rect x="224" y="189" width="10" height="16" rx="4" fill="#3a3a4e"/>
@@ -253,48 +288,7 @@
                             </g>
                             <!-- Left profile head (shown during sip: face + beard visible) -->
                             <g class="profile-head-group">
-                                <!-- Hair / back of head in left profile -->
-                                <ellipse cx="190" cy="200" rx="26" ry="28" fill="url(#hairGrad)"/>
-                                <!-- Face skin: left-facing profile shape -->
-                                <path d="M183,174 Q172,178 163,190 Q158,200 160,212 Q162,222 167,230 Q172,235 179,234 Q184,229 185,222 Q187,210 188,200 Q187,186 182,175 Z" fill="url(#skinGrad)"/>
-                                <!-- Ear (back/right side visible in left profile) -->
-                                <ellipse cx="214" cy="203" rx="5" ry="7" fill="url(#skinGrad)" opacity="0.8"/>
-                                <!-- Headphone band over hair -->
-                                <path d="M183,173 Q190,163 210,170" stroke="#3a3a4e" stroke-width="4" fill="none" stroke-linecap="round"/>
-                                <!-- Headphone right ear cup -->
-                                <rect x="208" y="189" width="10" height="16" rx="4" fill="#3a3a4e"/>
-                                <rect x="206" y="191" width="6" height="12" rx="3" fill="#4a4a5e"/>
-                                <!-- Eyebrow -->
-                                <path d="M162,187 Q167,184 173,186" stroke="#1a0f06" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.9"/>
-                                <!-- Eye socket shadow -->
-                                <ellipse cx="167" cy="196" rx="6.5" ry="5" fill="#c8906a" opacity="0.25"/>
-                                <!-- Sclera (white of eye) -->
-                                <ellipse cx="167" cy="196" rx="5.5" ry="4" fill="white" opacity="0.95"/>
-                                <!-- Iris -->
-                                <circle cx="165" cy="197" r="3.2" fill="#3d2b1f"/>
-                                <!-- Pupil -->
-                                <circle cx="165" cy="197" r="1.7" fill="#0a0603"/>
-                                <!-- Eye highlight -->
-                                <circle cx="166" cy="195" r="0.9" fill="white" opacity="0.9"/>
-                                <!-- Upper eyelid -->
-                                <path d="M161,193 Q167,189 173,193" stroke="#b07855" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.8"/>
-                                <!-- Nose tip (profile) -->
-                                <circle cx="157" cy="208" r="3.5" fill="url(#skinGrad)" opacity="0.65"/>
-                                <!-- Nose bridge line -->
-                                <path d="M160,200 Q156,205 157,210" stroke="#c8906a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
-                                <!-- Mustache: arches across top, right edge curves down to beard -->
-                                <path d="M159,210 Q163,208 167,210 Q168,212 167,215 Q167,218 164,219 L161,219 Q160,216 159,213 Q158,211 159,210 Z" fill="#1a0f06" opacity="0.85"/>
-                                <!-- Mouth visible in the gap (left of right leg) -->
-                                <path d="M160,215 Q162,217 164,215" stroke="#9a5040" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.5"/>
-                                <!-- Beard: starts below mouth (y=219), reaches back of jaw (x=186) -->
-                                <path d="M161,219 Q159,224 160,229 Q162,234 167,236 Q173,237 179,235 Q184,231 186,224 Q186,219 183,218 Q177,219 170,219 Q165,219 161,219 Z" fill="#1a0f06" opacity="0.78"/>
-                                <!-- Sparse stubble -->
-                                <circle cx="163" cy="222" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                                <circle cx="165" cy="226" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                                <circle cx="168" cy="230" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                                <circle cx="172" cy="233" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                                <circle cx="177" cy="232" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                                <circle cx="182" cy="228" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                                <use href="#dev-profile-head"/>
                             </g>
                         </g>
 
@@ -302,16 +296,16 @@
                         <g class="typing-hands">
                             <!-- Normal left arm (hides during sip) -->
                             <g class="left-arm-group">
-                                <path class="left-arm" d="M162,278 Q150,280 145,275" stroke="url(#shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
-                                <circle class="left-hand" cx="143" cy="274" r="6" fill="url(#skinGrad)"/>
+                                <path class="left-arm" d="M162,278 Q150,280 145,275" stroke="url(#dev-shirt)" stroke-width="14" fill="none" stroke-linecap="round"/>
+                                <circle class="left-hand" cx="143" cy="274" r="6" fill="url(#dev-skin)"/>
                             </g>
                             <!-- Sipping arm: reaches to mug on desk -->
                             <g class="left-sip-group">
-                                <path d="M162,278 Q118,273 82,265" stroke="url(#shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
-                                <circle cx="78" cy="264" r="6" fill="url(#skinGrad)"/>
+                                <path d="M162,278 Q118,273 82,265" stroke="url(#dev-shirt)" stroke-width="14" fill="none" stroke-linecap="round"/>
+                                <circle cx="78" cy="264" r="6" fill="url(#dev-skin)"/>
                             </g>
-                            <path class="right-arm" d="M232,278 Q255,280 272,270" stroke="url(#shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
-                            <circle class="right-hand" cx="274" cy="269" r="6" fill="url(#skinGrad)"/>
+                            <path class="right-arm" d="M232,278 Q255,280 272,270" stroke="url(#dev-shirt)" stroke-width="14" fill="none" stroke-linecap="round"/>
+                            <circle class="right-hand" cx="274" cy="269" r="6" fill="url(#dev-skin)"/>
                         </g>
                     </svg>
 
@@ -497,18 +491,6 @@
                     <stop offset="0%"   stop-color="#1e1b4b"/>
                     <stop offset="100%" stop-color="#6366f1"/>
                 </linearGradient>
-                <linearGradient id="tl-skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%"   stop-color="#f0c8a0"/>
-                    <stop offset="100%" stop-color="#e0b090"/>
-                </linearGradient>
-                <linearGradient id="tl-shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%"   stop-color="#6366f1"/>
-                    <stop offset="100%" stop-color="#8b5cf6"/>
-                </linearGradient>
-                <linearGradient id="tl-hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%"   stop-color="#1a0f06"/>
-                    <stop offset="100%" stop-color="#0d0703"/>
-                </linearGradient>
             </defs>
 
             <!-- Background -->
@@ -595,37 +577,15 @@
                         <ellipse cx="19" cy="70" rx="19" ry="7.5" fill="#1a1a2e"/>
                     </g>
                     <!-- Body / shirt -->
-                    <path d="M152,310 Q152,260 197,245 Q242,260 242,310 Z" fill="url(#tl-shirtGrad)"/>
-                    <path d="M180,248 Q197,243 214,248" stroke="#4f46e5" stroke-width="1.5" fill="none" opacity="0.5"/>
-                    <!-- Neck -->
-                    <rect x="189" y="218" width="16" height="30" rx="6" fill="url(#tl-skinGrad)"/>
+                    <use href="#dev-body"/>
                     <!-- Profile head (facing left) -->
-                    <ellipse cx="190" cy="200" rx="26" ry="28" fill="url(#tl-hairGrad)"/>
-                    <path d="M183,174 Q172,178 163,190 Q158,200 160,212 Q162,222 167,230 Q172,235 179,234 Q184,229 185,222 Q187,210 188,200 Q187,186 182,175 Z" fill="url(#tl-skinGrad)"/>
-                    <ellipse cx="214" cy="203" rx="5" ry="7" fill="url(#tl-skinGrad)" opacity="0.8"/>
-                    <path d="M183,173 Q190,163 210,170" stroke="#3a3a4e" stroke-width="4" fill="none" stroke-linecap="round"/>
-                    <rect x="208" y="189" width="10" height="16" rx="4" fill="#3a3a4e"/>
-                    <rect x="206" y="191" width="6"  height="12" rx="3" fill="#4a4a5e"/>
-                    <path d="M162,187 Q167,184 173,186" stroke="#1a0f06" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.9"/>
-                    <ellipse cx="167" cy="196" rx="5.5" ry="4" fill="white" opacity="0.95"/>
-                    <circle cx="165" cy="197" r="3.2" fill="#3d2b1f"/>
-                    <circle cx="165" cy="197" r="1.7" fill="#0a0603"/>
-                    <circle cx="166" cy="195" r="0.9" fill="white" opacity="0.9"/>
-                    <path d="M161,193 Q167,189 173,193" stroke="#b07855" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.8"/>
-                    <circle cx="157" cy="208" r="3.5" fill="url(#tl-skinGrad)" opacity="0.65"/>
-                    <path d="M160,200 Q156,205 157,210" stroke="#c8906a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
-                    <path d="M159,210 Q163,208 167,210 Q168,212 167,215 Q167,218 164,219 L161,219 Q160,216 159,213 Q158,211 159,210 Z" fill="#1a0f06" opacity="0.85"/>
-                    <path d="M160,215 Q162,217 164,215" stroke="#9a5040" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.5"/>
-                    <path d="M161,219 Q159,224 160,229 Q162,234 167,236 Q173,237 179,235 Q184,231 186,224 Q186,219 183,218 Q177,219 170,219 Q165,219 161,219 Z" fill="#1a0f06" opacity="0.78"/>
-                    <circle cx="163" cy="222" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                    <circle cx="165" cy="226" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                    <circle cx="168" cy="230" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                    <use href="#dev-profile-head"/>
                     <!-- Back arm (resting) -->
-                    <path d="M232,278 Q250,292 258,308" stroke="url(#tl-shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
-                    <circle cx="260" cy="310" r="6" fill="url(#tl-skinGrad)"/>
+                    <path d="M232,278 Q250,292 258,308" stroke="url(#dev-shirt)" stroke-width="14" fill="none" stroke-linecap="round"/>
+                    <circle cx="260" cy="310" r="6" fill="url(#dev-skin)"/>
                     <!-- Front arm (resting) -->
-                    <path d="M162,278 Q148,295 144,312" stroke="url(#tl-shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
-                    <circle cx="143" cy="314" r="6" fill="url(#tl-skinGrad)"/>
+                    <path d="M162,278 Q148,295 144,312" stroke="url(#dev-shirt)" stroke-width="14" fill="none" stroke-linecap="round"/>
+                    <circle cx="143" cy="314" r="6" fill="url(#dev-skin)"/>
                     <!-- Front leg -->
                     <g transform="translate(179,305)">
                         <path d="M0,0 Q-10,35 -12,68" stroke="#1a1a3a" stroke-width="22" stroke-linecap="round" fill="none"/>
@@ -1047,18 +1007,6 @@
                 <clipPath id="tb-clip4"><rect class="tb-clip-tech2"  x="95"  y="114" width="0" height="16"/></clipPath>
                 <clipPath id="tb-clip5"><rect class="tb-clip-status" x="53"  y="132" width="0" height="16"/></clipPath>
                 <!-- Hero gradients (tb- prefix to avoid conflicts) -->
-                <linearGradient id="tb-skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%"   style="stop-color:#f0c8a0"/>
-                    <stop offset="100%" style="stop-color:#e0b090"/>
-                </linearGradient>
-                <linearGradient id="tb-shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%"   style="stop-color:#6366f1"/>
-                    <stop offset="100%" style="stop-color:#8b5cf6"/>
-                </linearGradient>
-                <linearGradient id="tb-hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%"   style="stop-color:#1a0f06"/>
-                    <stop offset="100%" style="stop-color:#0d0703"/>
-                </linearGradient>
             </defs>
 
             <!-- Background -->
@@ -1139,39 +1087,17 @@
                         <ellipse cx="19" cy="70" rx="19" ry="7.5" fill="#1a1a2e"/>
                     </g>
                     <!-- Body / shirt -->
-                    <path d="M152,310 Q152,260 197,245 Q242,260 242,310 Z" fill="url(#tb-shirtGrad)"/>
-                    <path d="M180,248 Q197,243 214,248" stroke="#4f46e5" stroke-width="1.5" fill="none" opacity="0.5"/>
-                    <!-- Neck -->
-                    <rect x="189" y="218" width="16" height="30" rx="6" fill="url(#tb-skinGrad)"/>
+                    <use href="#dev-body"/>
                     <!-- Profile head (facing left = toward terminal) -->
-                    <ellipse cx="190" cy="200" rx="26" ry="28" fill="url(#tb-hairGrad)"/>
-                    <path d="M183,174 Q172,178 163,190 Q158,200 160,212 Q162,222 167,230 Q172,235 179,234 Q184,229 185,222 Q187,210 188,200 Q187,186 182,175 Z" fill="url(#tb-skinGrad)"/>
-                    <ellipse cx="214" cy="203" rx="5" ry="7" fill="url(#tb-skinGrad)" opacity="0.8"/>
-                    <path d="M183,173 Q190,163 210,170" stroke="#3a3a4e" stroke-width="4" fill="none" stroke-linecap="round"/>
-                    <rect x="208" y="189" width="10" height="16" rx="4" fill="#3a3a4e"/>
-                    <rect x="206" y="191" width="6"  height="12" rx="3" fill="#4a4a5e"/>
-                    <path d="M162,187 Q167,184 173,186" stroke="#1a0f06" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.9"/>
-                    <ellipse cx="167" cy="196" rx="5.5" ry="4" fill="white" opacity="0.95"/>
-                    <circle cx="165" cy="197" r="3.2" fill="#3d2b1f"/>
-                    <circle cx="165" cy="197" r="1.7" fill="#0a0603"/>
-                    <circle cx="166" cy="195" r="0.9" fill="white" opacity="0.9"/>
-                    <path d="M161,193 Q167,189 173,193" stroke="#b07855" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.8"/>
-                    <circle cx="157" cy="208" r="3.5" fill="url(#tb-skinGrad)" opacity="0.65"/>
-                    <path d="M160,200 Q156,205 157,210" stroke="#c8906a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
-                    <path d="M159,210 Q163,208 167,210 Q168,212 167,215 Q167,218 164,219 L161,219 Q160,216 159,213 Q158,211 159,210 Z" fill="#1a0f06" opacity="0.85"/>
-                    <path d="M160,215 Q162,217 164,215" stroke="#9a5040" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.5"/>
-                    <path d="M161,219 Q159,224 160,229 Q162,234 167,236 Q173,237 179,235 Q184,231 186,224 Q186,219 183,218 Q177,219 170,219 Q165,219 161,219 Z" fill="#1a0f06" opacity="0.78"/>
-                    <circle cx="163" cy="222" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                    <circle cx="165" cy="226" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                    <circle cx="168" cy="230" r="0.8" fill="#3a1a08" opacity="0.4"/>
+                    <use href="#dev-profile-head"/>
                     <!-- Back arm (right arm, static resting) -->
-                    <path d="M232,278 Q250,292 258,308" stroke="url(#tb-shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
-                    <circle cx="260" cy="310" r="6" fill="url(#tb-skinGrad)"/>
+                    <path d="M232,278 Q250,292 258,308" stroke="url(#dev-shirt)" stroke-width="14" fill="none" stroke-linecap="round"/>
+                    <circle cx="260" cy="310" r="6" fill="url(#dev-skin)"/>
                     <!-- Front arm (left arm) — rises to POINT toward terminal -->
                     <g transform="translate(162, 278)">
                         <g class="tb-hero-point">
-                            <path d="M0,0 Q-22,-16 -30,-30" stroke="url(#tb-shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
-                            <circle cx="-32" cy="-32" r="6" fill="url(#tb-skinGrad)"/>
+                            <path d="M0,0 Q-22,-16 -30,-30" stroke="url(#dev-shirt)" stroke-width="14" fill="none" stroke-linecap="round"/>
+                            <circle cx="-32" cy="-32" r="6" fill="url(#dev-skin)"/>
                         </g>
                     </g>
                     <!-- Front leg -->
@@ -1471,18 +1397,6 @@
                     <stop offset="75%"  style="stop-color:#8b5cf6;stop-opacity:0.6"/>
                     <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0"/>
                 </linearGradient>
-                <linearGradient id="bw-skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%"   style="stop-color:#f0c8a0"/>
-                    <stop offset="100%" style="stop-color:#e0b090"/>
-                </linearGradient>
-                <linearGradient id="bw-shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%"   style="stop-color:#6366f1"/>
-                    <stop offset="100%" style="stop-color:#8b5cf6"/>
-                </linearGradient>
-                <linearGradient id="bw-hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%"   style="stop-color:#1a0f06"/>
-                    <stop offset="100%" style="stop-color:#0d0703"/>
-                </linearGradient>
                 <linearGradient id="bw-bubbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%"   style="stop-color:#1a1a38"/>
                     <stop offset="100%" style="stop-color:#121228"/>
@@ -1573,48 +1487,23 @@
                         </g>
 
                         <!-- Body / shirt -->
-                        <path d="M152,310 Q152,260 197,245 Q242,260 242,310 Z" fill="url(#bw-shirtGrad)"/>
-                        <path d="M180,248 Q197,243 214,248" stroke="#4f46e5" stroke-width="1.5" fill="none" opacity="0.5"/>
-                        <!-- Neck -->
-                        <rect x="189" y="218" width="16" height="30" rx="6" fill="url(#bw-skinGrad)"/>
+                        <use href="#dev-body"/>
 
                         <!-- Profile head (left-facing, same as hero animation) -->
-                        <ellipse cx="190" cy="200" rx="26" ry="28" fill="url(#bw-hairGrad)"/>
-                        <path d="M183,174 Q172,178 163,190 Q158,200 160,212 Q162,222 167,230 Q172,235 179,234 Q184,229 185,222 Q187,210 188,200 Q187,186 182,175 Z" fill="url(#bw-skinGrad)"/>
-                        <ellipse cx="214" cy="203" rx="5" ry="7" fill="url(#bw-skinGrad)" opacity="0.8"/>
-                        <path d="M183,173 Q190,163 210,170" stroke="#3a3a4e" stroke-width="4" fill="none" stroke-linecap="round"/>
-                        <rect x="208" y="189" width="10" height="16" rx="4" fill="#3a3a4e"/>
-                        <rect x="206" y="191" width="6"  height="12" rx="3" fill="#4a4a5e"/>
-                        <path d="M162,187 Q167,184 173,186" stroke="#1a0f06" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.9"/>
-                        <ellipse cx="167" cy="196" rx="5.5" ry="4" fill="white" opacity="0.95"/>
-                        <circle cx="165" cy="197" r="3.2" fill="#3d2b1f"/>
-                        <circle cx="165" cy="197" r="1.7" fill="#0a0603"/>
-                        <circle cx="166" cy="195" r="0.9" fill="white" opacity="0.9"/>
-                        <path d="M161,193 Q167,189 173,193" stroke="#b07855" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.8"/>
-                        <circle cx="157" cy="208" r="3.5" fill="url(#bw-skinGrad)" opacity="0.65"/>
-                        <path d="M160,200 Q156,205 157,210" stroke="#c8906a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
-                        <path d="M159,210 Q163,208 167,210 Q168,212 167,215 Q167,218 164,219 L161,219 Q160,216 159,213 Q158,211 159,210 Z" fill="#1a0f06" opacity="0.85"/>
-                        <path d="M160,215 Q162,217 164,215" stroke="#9a5040" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.5"/>
-                        <path d="M161,219 Q159,224 160,229 Q162,234 167,236 Q173,237 179,235 Q184,231 186,224 Q186,219 183,218 Q177,219 170,219 Q165,219 161,219 Z" fill="#1a0f06" opacity="0.78"/>
-                        <circle cx="163" cy="222" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                        <circle cx="165" cy="226" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                        <circle cx="168" cy="230" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                        <circle cx="173" cy="233" r="0.8" fill="#3a1a08" opacity="0.4"/>
-                        <circle cx="178" cy="232" r="0.8" fill="#3a1a08" opacity="0.4"/>
-
-                        <!-- Back arm (right arm, swings during walk), pivot at shoulder (232,278) -->
+                        <use href="#dev-profile-head"/>
+                    <!-- Back arm (right arm, swings during walk), pivot at shoulder (232,278) -->
                         <g transform="translate(232, 278)">
                             <g class="bw-arm-back-walk">
-                                <path d="M0,0 Q22,16 32,30" stroke="url(#bw-shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
-                                <circle cx="34" cy="32" r="6" fill="url(#bw-skinGrad)"/>
+                                <path d="M0,0 Q22,16 32,30" stroke="url(#dev-shirt)" stroke-width="14" fill="none" stroke-linecap="round"/>
+                                <circle cx="34" cy="32" r="6" fill="url(#dev-skin)"/>
                             </g>
                         </g>
 
                         <!-- Front arm (left arm, waves after stop), pivot at shoulder (162,278) -->
                         <g transform="translate(162, 278)">
                             <g class="bw-arm-front-wave">
-                                <path d="M0,0 Q-22,-16 -30,-30" stroke="url(#bw-shirtGrad)" stroke-width="14" fill="none" stroke-linecap="round"/>
-                                <circle cx="-32" cy="-32" r="6" fill="url(#bw-skinGrad)"/>
+                                <path d="M0,0 Q-22,-16 -30,-30" stroke="url(#dev-shirt)" stroke-width="14" fill="none" stroke-linecap="round"/>
+                                <circle cx="-32" cy="-32" r="6" fill="url(#dev-skin)"/>
                             </g>
                         </g>
 

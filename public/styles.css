@@ -442,12 +442,14 @@ body {
     100% { transform: translateY(-1.5px); }
 }
 
+/* Discrete keystrokes at slightly different tempos so the hands
+   fall in and out of phase — reads as typing, not vibration */
 .left-hand {
-    animation: typeLeft 0.4s ease-in-out infinite alternate;
+    animation: typeLeft 0.34s steps(2, jump-none) infinite alternate;
 }
 
 .right-hand {
-    animation: typeRight 0.4s ease-in-out infinite alternate-reverse;
+    animation: typeRight 0.27s steps(2, jump-none) infinite alternate-reverse;
 }
 
 @keyframes typeLeft {
@@ -497,7 +499,6 @@ body {
     color: #fff;
     background: rgba(99, 102, 241, 0.25);
     border: 1px solid rgba(139, 92, 246, 0.4);
-    backdrop-filter: blur(4px);
     white-space: nowrap;
     opacity: 0;
     animation: techFloat 5s ease-out infinite;
@@ -1602,7 +1603,7 @@ body {
 /* Hero subtle float */
 @keyframes tl-hero-float {
     0%,100% { transform: translateY(0);    }
-    50%     { transform: translateY(-2px); }
+    50%     { transform: translateY(-5px); }
 }
 .tl-hero-body { animation: tl-hero-float 3.5s ease-in-out infinite; }
 
@@ -1677,7 +1678,7 @@ body {
 /* Hero: subtle float */
 @keyframes tb-hero-float {
     0%,100% { transform: translateY(0);    }
-    50%     { transform: translateY(-2px); }
+    50%     { transform: translateY(-5px); }
 }
 .tb-hero-body { animation: tb-hero-float 3.5s ease-in-out infinite; }
 
@@ -1832,8 +1833,19 @@ body {
     animation: bw-cursor-blink 0.7s step-end 8.0s infinite;
 }
 
+/* Character eye blink — the lid lives in the shared #dev-profile-head sprite,
+   so every <use> instance (hero sip profile + all three banners) blinks */
+@keyframes eyeBlink {
+    0%, 95.5%, 100% { opacity: 0; }
+    96.5%, 99%      { opacity: 1; }
+}
+.blink-lid {
+    animation: eyeBlink 4.2s linear infinite;
+}
+
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
+    .blink-lid { animation: none; opacity: 0; }
     .code-line,
     .screen-glow,
     .screen-cursor,

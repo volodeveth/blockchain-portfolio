@@ -158,6 +158,9 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
 }
 
 .hamburger span {
@@ -966,29 +969,32 @@ body {
     color: var(--primary-color);
 }
 
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
 .skill-item {
-    margin-bottom: 1.5rem;
+    margin: 0;
 }
 
 .skill-item span {
-    display: block;
-    margin-bottom: 0.5rem;
+    display: inline-block;
+    padding: 0.42rem 0.85rem;
+    font-size: 0.85rem;
     font-weight: 500;
+    line-height: 1.3;
+    color: var(--text-primary);
+    background: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(99, 102, 241, 0.22);
+    border-radius: 999px;
+    transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-.skill-bar {
-    width: 100%;
-    height: 8px;
-    background: rgba(99, 102, 241, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.skill-progress {
-    height: 100%;
-    background: var(--gradient);
-    border-radius: 10px;
-    transition: width 2s ease;
+.skill-item span:hover {
+    background: rgba(99, 102, 241, 0.16);
+    border-color: rgba(99, 102, 241, 0.45);
 }
 
 .contact {
@@ -1891,4 +1897,9 @@ body {
     .bw-clip-rect-1  { animation: none; width: 280px; }
     .bw-clip-rect-2  { animation: none; width: 438px; }
     .bw-cursor       { animation: none; opacity: 1; }
+}
+/* Pause animations for off-screen banners (added by IntersectionObserver in script.js) */
+.anim-paused,
+.anim-paused * {
+    animation-play-state: paused !important;
 }

@@ -10,7 +10,7 @@ const translations = {
             description: 'Full-stack developer & AI engineer with 10+ years experience. I build production-ready applications using multi-agent AI orchestration — Claude Code with specialized roles (Planner, Architect, Reviewer, Security Auditor, Implementer), parallel subagents, and third-party AI APIs (OpenAI, Gemini, Grok). One engineer. Team productivity. Expert in <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — every project ships with automated code review, security audit, and personal quality control.',
             viewProjects: 'View Projects',
             getInTouch: 'Get In Touch',
-            stats: { projects: 'Products Shipped', platforms: 'Active Platforms', rate: 'Hourly Rate', experience: 'Years Experience' }
+            stats: { projects: 'Products Shipped', platforms: 'Active Platforms', shopifyApps: 'Shopify Apps Published', experience: 'Years Experience' }
         },
         about: {
             title: 'About Me',
@@ -34,6 +34,7 @@ const translations = {
             title: 'Technical Expertise',
             cat: {
                 agentWorkflow: 'AI Agents & Dev Workflow',
+                ml: 'ML & LLM Engineering',
                 blockchain: 'Blockchain Development',
                 python: 'Python Development',
                 ai: 'AI Integration & Tools',
@@ -66,7 +67,12 @@ const translations = {
                 codeReview: 'Automated Code Review & Security Audit',
                 figmaMcp: 'Figma → Code (MCP API)',
                 thirdPartyAi: 'OpenAI / Gemini / Grok API Integration',
-                cicd: 'Git → Vercel CI/CD Pipeline'
+                cicd: 'Git → Vercel CI/CD Pipeline',
+                fineTuning: 'LLM Fine-Tuning (QLoRA / LoRA / PEFT)',
+                syntheticData: 'Synthetic Dataset Generation',
+                localLlm: 'GGUF / llama.cpp / Ollama (Local LLMs)',
+                selfExtending: 'Self-Extending Agents (OpenClaw)',
+                rag: 'RAG Pipeline (pgvector + Jina AI)'
             }
         },
         contact: {
@@ -104,57 +110,41 @@ const translations = {
             send: 'Send Message'
         },
         achievements: {
-            inkbot: {
-                title: 'Shopify App - InkBot (AI Product Descriptions)',
-                description: 'Built with multi-agent AI orchestration using Claude Code — from architecture planning to security audit. AI-powered Shopify app that generates SEO-optimized product descriptions using DeepSeek V3. Features bulk generation, brand voice analysis, SEO scoring, 111+ languages, and subscription plans. <a href="https://inkbot.app/" target="_blank" style="color: var(--accent-color);">Visit InkBot</a>'
+            shipped: {
+                title: '20+ Shipped Products',
+                description: 'Full-stack web apps, Shopify apps, smart contracts, AI agents, and ML pipelines delivered to production — 10+ platforms still live and active'
             },
-            clothcast: {
-                title: 'Shopify App - ClothCast (AI Virtual Try-On)',
-                description: 'Developed with multi-agent AI workflow — FLUX.2 API integration, widget UI, and analytics built in parallel by specialized subagents. AI Virtual Try-On Shopify app using FLUX.2 image generation. Customers upload a selfie to see themselves wearing any product. Features customizable widget, analytics dashboard, and privacy-first 24h data retention. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Visit ClothCast</a>'
+            shopifyApps: {
+                title: '2 Published Shopify Apps',
+                description: 'InkBot (AI product descriptions, 111+ languages) and ClothCast (AI virtual try-on with FLUX.2) — built, published, and maintained solo'
             },
-            nifta: {
-                title: 'NFT Marketplace - NiFTa (Base Network)',
-                description: 'Built with multi-agent AI orchestration — smart contracts, marketplace frontend, and security audit executed in parallel. Full-stack NFT marketplace on Base Network with 4 Solidity smart contracts (Factory, ERC-1155, Marketplace, Events). Features unique revenue split (Creator 50% / First Minter 10% / Referral 20%), 48h timer urgency mechanic, UUPS upgradeable contracts, and social verification via X/Farcaster OAuth. <a href="https://nifta-zeta.vercel.app/" target="_blank" style="color: var(--accent-color);">View MVP</a>'
+            mlPipeline: {
+                title: 'End-to-End ML Pipeline',
+                description: 'Synthetic dataset generation → QLoRA/LoRA fine-tuning → GGUF export → Ollama deployment — a complete in-house LLM training workflow'
             },
-            zorium: {
-                title: 'NFT Marketplace Development - ZORIUM.FUN',
-                description: 'Developed with multi-agent AI workflow — blockchain integration, analytics, and creator tools built simultaneously. Decentralized NFT marketplace on Zora Network with Next.js, TypeScript, RainbowKit, and Web3Modal. Features trending analytics, multi-chain support, and creator tools. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">View MVP</a>'
+            selfAgent: {
+                title: 'Self-Extending AI Agent',
+                description: 'Dual-LLM agent (Buddy) that autonomously writes, validates, and deploys its own skills — with Ukrainian voice interface and sandboxed execution'
             },
-            cryptoduel: {
-                title: 'Decentralized Gaming Platform - CryptoDuel',
-                description: 'Built with multi-agent AI orchestration — smart contracts, game logic, PostgreSQL schema, and frontend implemented in parallel. PvP crypto gaming platform on Base Network with Solidity smart contracts, Farcaster integration, PostgreSQL, and 4 game modes (Duel 1v1, Battle Royale). Features provably fair randomization and leaderboards. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Play Now</a>'
+            rag: {
+                title: 'Production RAG System',
+                description: '2,100+ indexed chunks, hybrid search (pgvector HNSW + BM25 + RRF fusion), neural reranking — self-hosted on AWS EC2 with CI/CD'
             },
-            fjordmekko: {
-                title: 'E-Commerce Platform - Fjord & Mekko',
-                description: 'Developed with multi-agent AI workflow — Next.js architecture, Leaflet integration, and Framer Motion animations built and reviewed by specialized agents. Professional online store for orthopedic mattresses using Next.js 16, React 19, Leaflet maps (20+ store locations), Resend email integration, and Framer Motion animations. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Visit Store</a>'
+            holders: {
+                title: '10,000+ Token Holders',
+                description: 'Built the ZORIUM token & DeFi staking ecosystem on Zora Network and successfully airdropped it to a community of 10,000+ holders'
             },
-            tradingbots: {
-                title: 'AI Trading Bots (Python & Node.js)',
-                description: 'Architected with multi-agent AI orchestration — trading algorithms, indicator logic, and risk management reviewed in parallel by specialized subagents. Sophisticated trading bots for Binance Futures with GPT-3.5-turbo integration, technical indicators (RSI, MACD, Bollinger Bands), multi-timeframe analysis, and 100x leverage scalping strategies'
-            },
-            lilurl: {
-                title: 'SaaS Platform - lilURL',
-                description: 'Built with multi-agent AI workflow — database schema, REST API, and analytics dashboard developed in parallel by specialized subagents. Full-featured URL shortening service (Bit.ly alternative) with Django 5.0, REST API, click analytics, QR code generation, subscription plans, and real-time dashboard. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">Visit lilURL</a>'
-            },
-            doshka: {
-                title: 'REST API Backend - Doshka (Kanban Board)',
-                description: 'Developed with multi-agent AI orchestration — Symfony architecture, JWT system, Redis queue, and OpenAPI docs built simultaneously by specialized subagents. Full-featured Trello-like REST API with Symfony 7.2, JWT authentication, role-based access control via Symfony Voters (owner/admin/member), async email notifications via Redis queue + Symfony Messenger, and daily deadline reminders via Symfony Scheduler. Full Docker Compose environment with PostgreSQL 16 and OpenAPI/Swagger docs. <a href="https://github.com/volodeveth/doshka-backend" target="_blank" style="color: var(--accent-color);">View on GitHub</a>'
-            },
-            socialbots: {
-                title: 'Social Media Automation Bots',
-                description: 'Built with multi-agent AI workflow — automation logic, content generation, and scheduling reviewed by specialized subagents. Multiple Python bots for automated posting on Zora.co and other social networks with AI content generation, scheduling, and cross-platform publishing capabilities'
-            },
-            zoriumeco: {
-                title: 'ZORIUM Ecosystem (Legacy)',
-                description: 'Developed with multi-agent AI orchestration — token contracts, staking mechanisms, and platform frontend built in parallel. Complete Web3 platform with custom tokens, staking mechanisms, successfully airdropped to 10,000+ holders. <a href="https://www.zorium.xyz/" target="_blank" style="color: var(--accent-color);">View Platform</a>'
-            },
-            aivideo: {
-                title: 'AI Video Content Creation',
-                description: 'Expert in AI-directed video production — combining Sora, Runway, and Midjourney into complete video workflows, including directing fully AI-generated animated films and professional video production'
+            nftCollections: {
+                title: 'Sold-Out NFT Collections',
+                description: 'Bored Giraffes Yacht Club — 3,333 NFTs sold out on Ethereum — plus The GAFs and a novel-to-NFT adaptation (Misery Avenue)'
             },
             nftjudge: {
                 title: 'NFT Design Awards Judge',
                 description: 'Official judge at <a href="https://nftdesignawards.io/judge/volodymyrdorosh" target="_blank" style="color: var(--accent-color);">NFT Design Awards</a>, evaluating innovative NFT projects and design excellence'
+            },
+            aivideo: {
+                title: 'AI Video Production',
+                description: 'Directing fully AI-generated animated films — complete video workflows combining Sora, Runway, and Midjourney'
             }
         },
         projectCards: {
@@ -169,6 +159,30 @@ const translations = {
             askdorosh: {
                 title: 'Ask About Dorosh — Production RAG System',
                 description: 'Production RAG chatbot that indexes 16 real projects + CV (2,100+ chunks). Hybrid search (pgvector HNSW + BM25 GIN) with RRF fusion, Jina Reranker v3, DeepSeek LLM streaming via SSE. Self-hosted on AWS EC2 with Nginx, PM2, Let\'s Encrypt SSL, and GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Try It Live</a>'
+            },
+            buddy: {
+                title: 'Buddy Agent — Self-Extending AI Assistant',
+                description: 'Self-extending Telegram AI assistant with dual-LLM architecture — DeepSeek V3.2 dispatches tasks while MiniMax M2.7 autonomously generates new skills. Ukrainian voice interface (Whisper STT + Edge-TTS), 3-tier security with PIN gate, persistent memory, and sandboxed execution with AST-based code validation. <a href="https://github.com/volodeveth/buddy-agent" target="_blank" style="color: var(--accent-color);">View on GitHub</a>'
+            },
+            pizzavoice: {
+                title: 'Pizza Voice Agent — Real-Time Voice Ordering',
+                description: 'Voice assistant for a pizzeria: natural spoken ordering in Ukrainian with real-time speech-to-speech conversation, menu logic, and order confirmation. Built with LiveKit Agents and the OpenAI Realtime API with a Next.js frontend. <a href="https://github.com/volodeveth/pizza-voice-agent" target="_blank" style="color: var(--accent-color);">View on GitHub</a>'
+            },
+            loopforge: {
+                title: 'LoopForge — Autonomous Multi-Agent Dev Loop',
+                description: 'Forges large features in an autonomous multi-agent loop for Claude Code: requirements interview → spec → plan → TDD implementation loop → verification. Agentic engineering distilled into a reusable workflow. <a href="https://github.com/volodeveth/loopforge" target="_blank" style="color: var(--accent-color);">View on GitHub</a>'
+            },
+            tinyllama: {
+                title: 'TinyLlama QLoRA Fine-Tuning Pipeline',
+                description: 'End-to-end LLM fine-tuning pipeline: QLoRA training on a Colab T4 GPU plus a local CPU LoRA pipeline. 4-bit quantization, adapter persistence, GGUF export with Q4_K_M quantization, and Ollama deployment with resume and incremental training. <a href="https://github.com/volodeveth/tinyllama-qlora-colab" target="_blank" style="color: var(--accent-color);">View on GitHub</a>'
+            },
+            datasetfactory: {
+                title: 'Dataset Factory — Synthetic Data Pipeline',
+                description: 'Universal pipeline for generating high-quality LLM training datasets. Interactive wizard, 4 output formats (Alpaca, Chat, QA, Classification), text chunking, validation with deduplication, language detection, and label distribution analysis. <a href="https://github.com/volodeveth/dataset-factory" target="_blank" style="color: var(--accent-color);">View on GitHub</a>'
+            },
+            langgraph: {
+                title: 'LangGraph Code Assistant Agent',
+                description: 'Intelligent code analysis agent built on a LangGraph state graph. Directory scanning with auto-watch (hash-based change detection), multi-file analysis, bug detection, code review, and test generation — with a Streamlit UI.'
             },
             zorium: {
                 title: 'ZORIUM.FUN - NFT Marketplace',
@@ -235,7 +249,7 @@ const translations = {
             description: 'Full-stack розробник та AI інженер з 10+ роками досвіду. Будую продакшн-ready додатки з мульти-агентною AI оркестрацією — Claude Code зі спеціалізованими ролями (Planner, Architect, Reviewer, Security Auditor, Implementer), паралельними субагентами та AI API сторонніх провайдерів (OpenAI, Gemini, Grok). Один інженер. Продуктивність команди. Експерт у <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — кожен проект поставляється з автоматизованим code review, аудитом безпеки та особистим контролем якості.',
             viewProjects: 'Переглянути проекти',
             getInTouch: "Зв'язатися",
-            stats: { projects: 'Продуктів реалізовано', platforms: 'Активних платформ', rate: 'Ставка за годину', experience: 'Років досвіду' }
+            stats: { projects: 'Продуктів реалізовано', platforms: 'Активних платформ', shopifyApps: 'Опублікованих Shopify додатків', experience: 'Років досвіду' }
         },
         about: {
             title: 'Про мене',
@@ -259,9 +273,10 @@ const translations = {
             title: 'Технічна експертиза',
             cat: {
                 agentWorkflow: 'AI-агенти та Воркфлоу',
+                ml: 'ML та LLM Інженерія',
                 blockchain: 'Blockchain-розробка',
                 python: 'Python-розробка',
-                ai: 'KI-інтеграція та інструменти',
+                ai: 'AI-інтеграція та інструменти',
                 frontend: 'Frontend-розробка',
                 backend: 'Backend-розробка',
                 shopify: 'Shopify-розробка',
@@ -291,7 +306,12 @@ const translations = {
                 codeReview: 'Автоматизований Code Review та Аудит Безпеки',
                 figmaMcp: 'Figma → Код (MCP API)',
                 thirdPartyAi: 'OpenAI / Gemini / Grok API Інтеграція',
-                cicd: 'Git → Vercel CI/CD Пайплайн'
+                cicd: 'Git → Vercel CI/CD Пайплайн',
+                fineTuning: 'LLM Файн-тюнінг (QLoRA / LoRA / PEFT)',
+                syntheticData: 'Генерація синтетичних датасетів',
+                localLlm: 'GGUF / llama.cpp / Ollama (локальні LLM)',
+                selfExtending: 'Самодоповнювані агенти (OpenClaw)',
+                rag: 'RAG Пайплайн (pgvector + Jina AI)'
             }
         },
         contact: {
@@ -329,57 +349,41 @@ const translations = {
             send: 'Надіслати'
         },
         achievements: {
-            inkbot: {
-                title: 'Shopify Додаток - InkBot (AI Описи Товарів)',
-                description: 'Побудовано з мульти-агентною AI оркестрацією Claude Code — від планування архітектури до аудиту безпеки. Створив AI-powered Shopify додаток для генерації SEO-оптимізованих описів товарів за допомогою DeepSeek V3. Функції: масова генерація, аналіз голосу бренду, SEO оцінка, 111+ мов та плани підписки. <a href="https://inkbot.app/" target="_blank" style="color: var(--accent-color);">Відвідати InkBot</a>'
+            shipped: {
+                title: '20+ реалізованих продуктів',
+                description: 'Full-stack веб-додатки, Shopify додатки, смарт-контракти, AI агенти та ML пайплайни в продакшні — 10+ платформ досі активні'
             },
-            clothcast: {
-                title: 'Shopify Додаток - ClothCast (AI Віртуальна Примірка)',
-                description: 'Розроблено з мульти-агентним AI воркфлоу — FLUX.2 API інтеграція, widget UI та аналітика побудовані паралельно спеціалізованими субагентами. Створив AI Shopify додаток для віртуальної примірки з використанням FLUX.2 генерації зображень. Клієнти завантажують селфі, щоб побачити себе в обраному одязі. Функції: кастомізований віджет, панель аналітики та приватність з 24-годинним зберіганням даних. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Відвідати ClothCast</a>'
+            shopifyApps: {
+                title: '2 опубліковані Shopify додатки',
+                description: 'InkBot (AI описи товарів, 111+ мов) та ClothCast (AI віртуальна примірка з FLUX.2) — створені, опубліковані та підтримувані самостійно'
             },
-            nifta: {
-                title: 'NFT Маркетплейс - NiFTa (Base Network)',
-                description: 'Побудовано з мульти-агентною AI оркестрацією — смарт-контракти, фронтенд маркетплейсу та аудит безпеки виконані паралельно. Розробляю повноцінний NFT маркетплейс на Base Network з 4 Solidity смарт-контрактами (Factory, ERC-1155, Marketplace, Events). Унікальний розподіл доходів (Автор 50% / Перший мінтер 10% / Реферал 20%), механіка 48-годинного таймера терміновості, UUPS оновлювані контракти та верифікація через X/Farcaster OAuth. <a href="https://nifta-zeta.vercel.app/" target="_blank" style="color: var(--accent-color);">Переглянути MVP</a>'
+            mlPipeline: {
+                title: 'End-to-End ML пайплайн',
+                description: 'Генерація синтетичних датасетів → QLoRA/LoRA файн-тюнінг → GGUF експорт → Ollama деплой — повний власний цикл тренування LLM'
             },
-            zorium: {
-                title: 'Розробка NFT Маркетплейсу - ZORIUM.FUN',
-                description: 'Розроблено з мульти-агентним AI воркфлоу — блокчейн інтеграція, аналітика та інструменти для авторів побудовані одночасно. Розробляю децентралізований NFT маркетплейс на Zora Network з Next.js, TypeScript, RainbowKit та Web3Modal. Функції: аналітика трендів, мультичейн підтримка та інструменти для авторів. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">Переглянути MVP</a>'
+            selfAgent: {
+                title: 'Самодоповнюваний AI агент',
+                description: 'Dual-LLM агент (Buddy), який автономно пише, валідує та деплоїть власні скіли — з українським голосовим інтерфейсом та sandbox-виконанням'
             },
-            cryptoduel: {
-                title: 'Децентралізована Ігрова Платформа - CryptoDuel',
-                description: 'Побудовано з мульти-агентною AI оркестрацією — смарт-контракти, ігрова логіка, PostgreSQL схема та фронтенд реалізовані паралельно. Створив PvP крипто-ігрову платформу на Base Network з Solidity смарт-контрактами, інтеграцією Farcaster, PostgreSQL та 4 ігровими режимами (Дуель 1v1, Батл Рояль). Функції: доказово чесна рандомізація та таблиці лідерів. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Грати зараз</a>'
+            rag: {
+                title: 'Продакшн RAG система',
+                description: '2 100+ проіндексованих чанків, гібридний пошук (pgvector HNSW + BM25 + RRF), нейронний реранкінг — self-hosted на AWS EC2 з CI/CD'
             },
-            fjordmekko: {
-                title: 'E-Commerce Платформа - Fjord & Mekko',
-                description: 'Розроблено з мульти-агентним AI воркфлоу — Next.js архітектура, Leaflet інтеграція та Framer Motion анімації побудовані та перевірені спеціалізованими агентами. Розробив професійний інтернет-магазин ортопедичних матраців з використанням Next.js 16, React 19, карт Leaflet (20+ локацій магазинів), інтеграції email через Resend та анімацій Framer Motion. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Відвідати магазин</a>'
+            holders: {
+                title: '10 000+ холдерів токена',
+                description: 'Створив токен ZORIUM та DeFi стейкінг екосистему на Zora Network, успішний аірдроп спільноті з 10 000+ холдерів'
             },
-            tradingbots: {
-                title: 'AI Торгові Боти (Python & Node.js)',
-                description: 'Спроектовано з мульти-агентною AI оркестрацією — торгові алгоритми, логіка індикаторів та управління ризиками перевірені паралельно спеціалізованими субагентами. Створив складних торгових ботів для Binance Futures з інтеграцією GPT-3.5-turbo, технічними індикаторами (RSI, MACD, Bollinger Bands), мультитаймфрейм аналізом та стратегіями скальпінгу з плечем 100x'
-            },
-            lilurl: {
-                title: 'SaaS Платформа - lilURL',
-                description: 'Побудовано з мульти-агентним AI воркфлоу — схема бази даних, REST API та аналітичний дашборд розроблені паралельно спеціалізованими субагентами. Створив повнофункціональний сервіс скорочення URL (альтернатива Bit.ly) з Django 5.0, REST API, аналітикою кліків, генерацією QR-кодів, планами підписки та дашбордом реального часу. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">Відвідати lilURL</a>'
-            },
-            doshka: {
-                title: 'REST API Backend - Doshka (Kanban Дошка)',
-                description: 'Розроблено з мульти-агентною AI оркестрацією — Symfony архітектура, JWT система, Redis черга та OpenAPI документація побудовані одночасно спеціалізованими субагентами. Розробив повноцінний REST API у стилі Trello з Symfony 7.2, JWT автентифікацією, рольовим контролем доступу через Symfony Voters (owner/admin/member), асинхронними email-повідомленнями через Redis + Symfony Messenger та щоденними нагадуваннями про дедлайни через Scheduler. Повне Docker Compose середовище з PostgreSQL 16 та OpenAPI/Swagger документацією. <a href="https://github.com/volodeveth/doshka-backend" target="_blank" style="color: var(--accent-color);">Переглянути на GitHub</a>'
-            },
-            socialbots: {
-                title: 'Боти Автоматизації Соціальних Мереж',
-                description: 'Побудовано з мульти-агентним AI воркфлоу — логіка автоматизації, генерація контенту та планування перевірені спеціалізованими субагентами. Розробив множинні Python боти для автоматичного постингу на Zora.co та інших соціальних мережах з AI генерацією контенту, плануванням та крос-платформною публікацією'
-            },
-            zoriumeco: {
-                title: 'Екосистема ZORIUM (Legacy)',
-                description: 'Розроблено з мульти-агентною AI оркестрацією — токен-контракти, механізми стейкінгу та фронтенд платформи побудовані паралельно. Створив повну Web3 платформу з кастомними токенами, механізмами стейкінгу та успішно роздав аірдроп 10,000+ холдерам. <a href="https://www.zorium.xyz/" target="_blank" style="color: var(--accent-color);">Переглянути платформу</a>'
-            },
-            aivideo: {
-                title: 'AI Створення Відеоконтенту',
-                description: 'Експерт у AI-режисурі відеовиробництва — поєднання Sora, Runway та Midjourney у повні відеоворкфлоу, включаючи режисуру повністю AI-генерованих анімаційних фільмів та професійне відеовиробництво'
+            nftCollections: {
+                title: 'Розпродані NFT колекції',
+                description: 'Bored Giraffes Yacht Club — 3 333 NFT, розпродано на Ethereum — плюс The GAFs та адаптація роману в NFT (Misery Avenue)'
             },
             nftjudge: {
                 title: 'Суддя NFT Design Awards',
                 description: 'Офіційний суддя на <a href="https://nftdesignawards.io/judge/volodymyrdorosh" target="_blank" style="color: var(--accent-color);">NFT Design Awards</a>, оцінюю інноваційні NFT проекти та досконалість дизайну'
+            },
+            aivideo: {
+                title: 'AI відеовиробництво',
+                description: 'Режисура повністю AI-генерованих анімаційних фільмів — повні відеоворкфлоу з Sora, Runway та Midjourney'
             }
         },
         projectCards: {
@@ -394,6 +398,30 @@ const translations = {
             askdorosh: {
                 title: 'Ask About Dorosh — Продакшн RAG Система',
                 description: 'Продакшн RAG чат-бот, що індексує 16 реальних проектів + CV (2,100+ чанків). Гібридний пошук (pgvector HNSW + BM25 GIN) з RRF фузією, Jina Reranker v3, DeepSeek LLM стрімінг через SSE. Self-hosted на AWS EC2 з Nginx, PM2, Let\'s Encrypt SSL та GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Спробувати наживо</a>'
+            },
+            buddy: {
+                title: 'Buddy Agent — Самодоповнюваний AI Асистент',
+                description: 'Самодоповнюваний Telegram AI асистент з dual-LLM архітектурою — DeepSeek V3.2 диспетчеризує задачі, а MiniMax M2.7 автономно генерує нові скіли. Український голосовий інтерфейс (Whisper STT + Edge-TTS), 3-рівнева безпека з PIN, персистентна пам\'ять та sandbox-виконання з AST-валідацією коду. <a href="https://github.com/volodeveth/buddy-agent" target="_blank" style="color: var(--accent-color);">Переглянути на GitHub</a>'
+            },
+            pizzavoice: {
+                title: 'Pizza Voice Agent — Голосове Замовлення в Реальному Часі',
+                description: 'Голосовий помічник піцерії: природне замовлення українською з real-time speech-to-speech розмовою, логікою меню та підтвердженням замовлення. Побудовано на LiveKit Agents і OpenAI Realtime API з Next.js фронтендом. <a href="https://github.com/volodeveth/pizza-voice-agent" target="_blank" style="color: var(--accent-color);">Переглянути на GitHub</a>'
+            },
+            loopforge: {
+                title: 'LoopForge — Автономний Мульти-Агентний Цикл Розробки',
+                description: 'Кує великі фічі в автономному мульти-агентному циклі для Claude Code: інтерв\'ю вимог → специфікація → план → TDD цикл імплементації → верифікація. Агентний інжиніринг у вигляді багаторазового воркфлоу. <a href="https://github.com/volodeveth/loopforge" target="_blank" style="color: var(--accent-color);">Переглянути на GitHub</a>'
+            },
+            tinyllama: {
+                title: 'TinyLlama QLoRA Пайплайн Файн-тюнінгу',
+                description: 'End-to-end пайплайн файн-тюнінгу LLM: QLoRA тренування на Colab T4 GPU плюс локальний CPU LoRA пайплайн. 4-бітна квантизація, збереження адаптерів, GGUF експорт з Q4_K_M квантизацією та Ollama деплой з відновленням та інкрементальним тренуванням. <a href="https://github.com/volodeveth/tinyllama-qlora-colab" target="_blank" style="color: var(--accent-color);">Переглянути на GitHub</a>'
+            },
+            datasetfactory: {
+                title: 'Dataset Factory — Пайплайн Синтетичних Даних',
+                description: 'Універсальний пайплайн генерації якісних тренувальних датасетів для LLM. Інтерактивний візард, 4 формати виводу (Alpaca, Chat, QA, Classification), чанкінг тексту, валідація з дедуплікацією, визначення мови та аналіз розподілу лейблів. <a href="https://github.com/volodeveth/dataset-factory" target="_blank" style="color: var(--accent-color);">Переглянути на GitHub</a>'
+            },
+            langgraph: {
+                title: 'LangGraph Агент Аналізу Коду',
+                description: 'Інтелектуальний агент аналізу коду на LangGraph state graph. Сканування директорій з auto-watch (виявлення змін через хешування), мультифайловий аналіз, виявлення багів, code review та генерація тестів — зі Streamlit UI.'
             },
             zorium: {
                 title: 'ZORIUM.FUN - NFT Маркетплейс',
@@ -460,7 +488,7 @@ const translations = {
             description: 'Full-Stack-Entwickler & KI-Ingenieur mit 10+ Jahren Erfahrung. Ich entwickle produktionsreife Anwendungen mit Multi-Agenten-KI-Orchestrierung — Claude Code mit spezialisierten Rollen (Planner, Architect, Reviewer, Security Auditor, Implementer), parallelen Subagenten und Drittanbieter-KI-APIs (OpenAI, Gemini, Grok). Ein Ingenieur. Team-Produktivität. Experte in <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — jedes Projekt wird mit automatischem Code-Review, Sicherheitsaudit und persönlicher Qualitätskontrolle geliefert.',
             viewProjects: 'Projekte ansehen',
             getInTouch: 'Kontakt aufnehmen',
-            stats: { projects: 'Ausgelieferte Produkte', platforms: 'Aktive Plattformen', rate: 'Stundensatz', experience: 'Jahre Erfahrung' }
+            stats: { projects: 'Ausgelieferte Produkte', platforms: 'Aktive Plattformen', shopifyApps: 'Veröffentlichte Shopify-Apps', experience: 'Jahre Erfahrung' }
         },
         about: {
             title: 'Über mich',
@@ -484,6 +512,7 @@ const translations = {
             title: 'Technische Kompetenz',
             cat: {
                 agentWorkflow: 'KI-Agenten & Workflow',
+                ml: 'ML & LLM Engineering',
                 blockchain: 'Blockchain-Entwicklung',
                 python: 'Python-Entwicklung',
                 ai: 'KI-Integration & Tools',
@@ -516,7 +545,12 @@ const translations = {
                 codeReview: 'Automatisiertes Code-Review & Sicherheitsaudit',
                 figmaMcp: 'Figma → Code (MCP API)',
                 thirdPartyAi: 'OpenAI / Gemini / Grok API Integration',
-                cicd: 'Git → Vercel CI/CD Pipeline'
+                cicd: 'Git → Vercel CI/CD Pipeline',
+                fineTuning: 'LLM-Fine-Tuning (QLoRA / LoRA / PEFT)',
+                syntheticData: 'Synthetische Datensatzgenerierung',
+                localLlm: 'GGUF / llama.cpp / Ollama (lokale LLMs)',
+                selfExtending: 'Selbsterweiternde Agenten (OpenClaw)',
+                rag: 'RAG-Pipeline (pgvector + Jina AI)'
             }
         },
         contact: {
@@ -554,57 +588,41 @@ const translations = {
             send: 'Nachricht senden'
         },
         achievements: {
-            inkbot: {
-                title: 'Shopify-App – InkBot (KI-Produktbeschreibungen)',
-                description: 'Entwickelt mit Multi-Agenten-KI-Orchestrierung über Claude Code — von der Architekturplanung bis zum Sicherheitsaudit. Entwicklung einer KI-gestützten Shopify-App zur Generierung SEO-optimierter Produktbeschreibungen mit DeepSeek V3. Funktionen: Massengenerierung, Markenstimm-Analyse, SEO-Bewertung, 111+ Sprachen und Abonnementpläne. <a href="https://inkbot.app/" target="_blank" style="color: var(--accent-color);">InkBot besuchen</a>'
+            shipped: {
+                title: '20+ ausgelieferte Produkte',
+                description: 'Full-Stack-Web-Apps, Shopify-Apps, Smart Contracts, KI-Agenten und ML-Pipelines in Produktion — 10+ Plattformen weiterhin aktiv'
             },
-            clothcast: {
-                title: 'Shopify-App – ClothCast (KI-Virtuelle Anprobe)',
-                description: 'Entwickelt mit Multi-Agenten-KI-Workflow — FLUX.2 API-Integration, Widget-UI und Analytics parallel von spezialisierten Subagenten erstellt. Entwicklung einer KI-basierten Shopify-App für virtuelle Anproben mit FLUX.2-Bildgenerierung. Kunden laden ein Selfie hoch und sehen sich selbst im gewünschten Produkt. Funktionen: anpassbares Widget, Analyse-Dashboard und datenschutzfreundliche 24h-Datenspeicherung. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">ClothCast besuchen</a>'
+            shopifyApps: {
+                title: '2 veröffentlichte Shopify-Apps',
+                description: 'InkBot (KI-Produktbeschreibungen, 111+ Sprachen) und ClothCast (KI-Virtual-Try-On mit FLUX.2) — solo entwickelt, veröffentlicht und gepflegt'
             },
-            nifta: {
-                title: 'NFT-Marktplatz – NiFTa (Base Network)',
-                description: 'Entwickelt mit Multi-Agenten-KI-Orchestrierung — Smart Contracts, Marktplatz-Frontend und Sicherheitsaudit parallel ausgeführt. Entwicklung eines Full-Stack-NFT-Marktplatzes auf dem Base Network mit 4 Solidity-Smart-Contracts (Factory, ERC-1155, Marketplace, Events). Einzigartiger Erlösaufteilung (Ersteller 50% / Erster Minter 10% / Empfehlung 20%), 48h-Timer-Dringlichkeitsmechanik, UUPS-aktualisierbare Contracts und soziale Verifizierung via X/Farcaster OAuth. <a href="https://nifta-zeta.vercel.app/" target="_blank" style="color: var(--accent-color);">MVP ansehen</a>'
+            mlPipeline: {
+                title: 'End-to-End-ML-Pipeline',
+                description: 'Synthetische Datensatzgenerierung → QLoRA/LoRA-Fine-Tuning → GGUF-Export → Ollama-Deployment — ein kompletter eigener LLM-Trainings-Workflow'
             },
-            zorium: {
-                title: 'NFT-Marktplatz-Entwicklung – ZORIUM.FUN',
-                description: 'Entwickelt mit Multi-Agenten-KI-Workflow — Blockchain-Integration, Analytics und Erstellerwerkzeuge gleichzeitig erstellt. Entwicklung eines dezentralen NFT-Marktplatzes auf dem Zora Network mit Next.js, TypeScript, RainbowKit und Web3Modal. Funktionen: Trend-Analyse, Multi-Chain-Unterstützung und Erstellerwerkzeuge. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">MVP ansehen</a>'
+            selfAgent: {
+                title: 'Selbsterweiternder KI-Agent',
+                description: 'Dual-LLM-Agent (Buddy), der autonom eigene Skills schreibt, validiert und deployt — mit Sprachschnittstelle und Sandbox-Ausführung'
             },
-            cryptoduel: {
-                title: 'Dezentrale Gaming-Plattform – CryptoDuel',
-                description: 'Entwickelt mit Multi-Agenten-KI-Orchestrierung — Smart Contracts, Spiellogik, PostgreSQL-Schema und Frontend parallel implementiert. Entwicklung einer PvP-Krypto-Gaming-Plattform auf dem Base Network mit Solidity-Smart-Contracts, Farcaster-Integration, PostgreSQL und 4 Spielmodi (Duell 1v1, Battle Royale). Funktionen: nachweislich faire Zufallsgenerierung und Bestenlisten. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Jetzt spielen</a>'
+            rag: {
+                title: 'Produktions-RAG-System',
+                description: '2.100+ indexierte Chunks, hybride Suche (pgvector HNSW + BM25 + RRF), neuronales Reranking — self-hosted auf AWS EC2 mit CI/CD'
             },
-            fjordmekko: {
-                title: 'E-Commerce-Plattform – Fjord & Mekko',
-                description: 'Entwickelt mit Multi-Agenten-KI-Workflow — Next.js-Architektur, Leaflet-Integration und Framer-Motion-Animationen von spezialisierten Agenten erstellt und überprüft. Entwicklung eines professionellen Online-Shops für orthopädische Matratzen mit Next.js 16, React 19, Leaflet-Karten (20+ Filialstandorte), Resend-E-Mail-Integration und Framer-Motion-Animationen. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Shop besuchen</a>'
+            holders: {
+                title: '10.000+ Token-Inhaber',
+                description: 'ZORIUM-Token & DeFi-Staking-Ökosystem auf dem Zora Network entwickelt und erfolgreich per Airdrop an 10.000+ Inhaber verteilt'
             },
-            tradingbots: {
-                title: 'KI-Trading-Bots (Python & Node.js)',
-                description: 'Entwickelt mit Multi-Agenten-KI-Orchestrierung — Handelsalgorithmen, Indikatorlogik und Risikomanagement parallel von spezialisierten Subagenten überprüft. Entwicklung ausgereifter Trading-Bots für Binance Futures mit GPT-3.5-turbo-Integration, technischen Indikatoren (RSI, MACD, Bollinger Bands), Multi-Timeframe-Analyse und 100x-Hebel-Scalping-Strategien'
-            },
-            lilurl: {
-                title: 'SaaS-Plattform – lilURL',
-                description: 'Entwickelt mit Multi-Agenten-KI-Workflow — Datenbankschema, REST API und Analyse-Dashboard parallel von spezialisierten Subagenten erstellt. Entwicklung eines vollständigen URL-Kürzungsdienstes (Bit.ly-Alternative) mit Django 5.0, REST API, Klick-Analyse, QR-Code-Generierung, Abonnementplänen und Echtzeit-Dashboard. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">lilURL besuchen</a>'
-            },
-            doshka: {
-                title: 'REST-API-Backend – Doshka (Kanban-Board)',
-                description: 'Entwickelt mit Multi-Agenten-KI-Orchestrierung — Symfony-Architektur, JWT-System, Redis-Queue und OpenAPI-Dokumentation gleichzeitig von spezialisierten Subagenten erstellt. Entwicklung einer vollständigen Trello-ähnlichen REST-API mit Symfony 7.2, JWT-Authentifizierung, rollenbasierter Zugriffskontrolle via Symfony Voters (owner/admin/member), asynchronen E-Mail-Benachrichtigungen via Redis-Queue + Symfony Messenger und täglichen Deadline-Erinnerungen via Symfony Scheduler. Vollständige Docker-Compose-Umgebung mit PostgreSQL 16 und OpenAPI/Swagger-Dokumentation. <a href="https://github.com/volodeveth/doshka-backend" target="_blank" style="color: var(--accent-color);">Auf GitHub ansehen</a>'
-            },
-            socialbots: {
-                title: 'Social-Media-Automatisierungsbots',
-                description: 'Entwickelt mit Multi-Agenten-KI-Workflow — Automatisierungslogik, Inhaltsgenerierung und Planung von spezialisierten Subagenten überprüft. Entwicklung mehrerer Python-Bots für automatisiertes Posting auf Zora.co und anderen sozialen Netzwerken mit KI-Inhaltsgenerierung, Planung und plattformübergreifender Veröffentlichung'
-            },
-            zoriumeco: {
-                title: 'ZORIUM-Ökosystem (Legacy)',
-                description: 'Entwickelt mit Multi-Agenten-KI-Orchestrierung — Token-Contracts, Staking-Mechanismen und Plattform-Frontend parallel erstellt. Entwicklung einer vollständigen Web3-Plattform mit eigenen Tokens, Staking-Mechanismen und erfolgreichem Airdrop an 10.000+ Inhaber. <a href="https://www.zorium.xyz/" target="_blank" style="color: var(--accent-color);">Plattform besuchen</a>'
-            },
-            aivideo: {
-                title: 'KI-Videocontent-Erstellung',
-                description: 'Experte in KI-gesteuerter Videoproduktion — Kombination von Sora, Runway und Midjourney zu vollständigen Video-Workflows, einschließlich der Regie vollständig KI-generierter Animationsfilme und professioneller Videoproduktion'
+            nftCollections: {
+                title: 'Ausverkaufte NFT-Kollektionen',
+                description: 'Bored Giraffes Yacht Club — 3.333 NFTs, ausverkauft auf Ethereum — plus The GAFs und eine Roman-zu-NFT-Adaption (Misery Avenue)'
             },
             nftjudge: {
-                title: 'NFT Design Awards – Juror',
-                description: 'Offizieller Juror bei den <a href="https://nftdesignawards.io/judge/volodymyrdorosh" target="_blank" style="color: var(--accent-color);">NFT Design Awards</a>, Bewertung innovativer NFT-Projekte und gestalterischer Exzellenz'
+                title: 'NFT Design Awards Juror',
+                description: 'Offizieller Juror bei den <a href="https://nftdesignawards.io/judge/volodymyrdorosh" target="_blank" style="color: var(--accent-color);">NFT Design Awards</a>, Bewertung innovativer NFT-Projekte und Design-Exzellenz'
+            },
+            aivideo: {
+                title: 'KI-Videoproduktion',
+                description: 'Regie vollständig KI-generierter Animationsfilme — komplette Video-Workflows mit Sora, Runway und Midjourney'
             }
         },
         projectCards: {
@@ -619,6 +637,30 @@ const translations = {
             askdorosh: {
                 title: 'Ask About Dorosh — Produktions-RAG-System',
                 description: 'Produktions-RAG-Chatbot, der 16 reale Projekte + CV indiziert (2.100+ Chunks). Hybridsuche (pgvector HNSW + BM25 GIN) mit RRF-Fusion, Jina Reranker v3, DeepSeek-LLM-Streaming via SSE. Self-hosted auf AWS EC2 mit Nginx, PM2, Let\'s Encrypt SSL und GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Live testen</a>'
+            },
+            buddy: {
+                title: 'Buddy Agent — Selbsterweiternder KI-Assistent',
+                description: 'Selbsterweiternder Telegram-KI-Assistent mit Dual-LLM-Architektur — DeepSeek V3.2 verteilt Aufgaben, während MiniMax M2.7 autonom neue Skills generiert. Ukrainische Sprachschnittstelle (Whisper STT + Edge-TTS), 3-stufige Sicherheit mit PIN, persistenter Speicher und Sandbox-Ausführung mit AST-basierter Code-Validierung. <a href="https://github.com/volodeveth/buddy-agent" target="_blank" style="color: var(--accent-color);">Auf GitHub ansehen</a>'
+            },
+            pizzavoice: {
+                title: 'Pizza Voice Agent — Sprachbestellung in Echtzeit',
+                description: 'Sprachassistent für eine Pizzeria: natürliche gesprochene Bestellung auf Ukrainisch mit Echtzeit-Speech-to-Speech-Dialog, Menülogik und Bestellbestätigung. Entwickelt mit LiveKit Agents und der OpenAI Realtime API mit Next.js-Frontend. <a href="https://github.com/volodeveth/pizza-voice-agent" target="_blank" style="color: var(--accent-color);">Auf GitHub ansehen</a>'
+            },
+            loopforge: {
+                title: 'LoopForge — Autonomer Multi-Agenten-Entwicklungszyklus',
+                description: 'Schmiedet große Features in einem autonomen Multi-Agenten-Loop für Claude Code: Anforderungsinterview → Spezifikation → Plan → TDD-Implementierungsschleife → Verifizierung. Agentic Engineering als wiederverwendbarer Workflow. <a href="https://github.com/volodeveth/loopforge" target="_blank" style="color: var(--accent-color);">Auf GitHub ansehen</a>'
+            },
+            tinyllama: {
+                title: 'TinyLlama QLoRA Fine-Tuning-Pipeline',
+                description: 'End-to-End-LLM-Fine-Tuning-Pipeline: QLoRA-Training auf Colab T4 GPU plus lokale CPU-LoRA-Pipeline. 4-Bit-Quantisierung, Adapter-Persistenz, GGUF-Export mit Q4_K_M-Quantisierung und Ollama-Deployment mit Resume- und inkrementellem Training. <a href="https://github.com/volodeveth/tinyllama-qlora-colab" target="_blank" style="color: var(--accent-color);">Auf GitHub ansehen</a>'
+            },
+            datasetfactory: {
+                title: 'Dataset Factory — Pipeline für synthetische Daten',
+                description: 'Universelle Pipeline zur Generierung hochwertiger LLM-Trainingsdatensätze. Interaktiver Wizard, 4 Ausgabeformate (Alpaca, Chat, QA, Classification), Text-Chunking, Validierung mit Deduplizierung, Spracherkennung und Label-Verteilungsanalyse. <a href="https://github.com/volodeveth/dataset-factory" target="_blank" style="color: var(--accent-color);">Auf GitHub ansehen</a>'
+            },
+            langgraph: {
+                title: 'LangGraph Code-Assistent-Agent',
+                description: 'Intelligenter Code-Analyse-Agent auf Basis eines LangGraph-State-Graphen. Verzeichnis-Scanning mit Auto-Watch (Hash-basierte Änderungserkennung), Multi-Datei-Analyse, Bug-Erkennung, Code-Review und Testgenerierung — mit Streamlit-UI.'
             },
             zorium: {
                 title: 'ZORIUM.FUN – NFT-Marktplatz',
@@ -715,6 +757,9 @@ function setActiveLangBtn(lang) {
 function applyTranslations(lang) {
     const t = translations[lang];
 
+    // Keep <html lang> in sync for a11y and SEO
+    document.documentElement.lang = lang === 'uk' ? 'uk' : lang;
+
     // Apply text content translations
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
@@ -806,6 +851,7 @@ function initializeNavigation() {
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', hamburger.classList.contains('active'));
     });
 
     navLinks.forEach(link => {
@@ -1026,6 +1072,23 @@ function checkFormSubmissionSuccess() {
     }
 }
 
+// Pause banner/hero animations when off-screen or tab hidden (performance)
+const bannerVisibility = new WeakMap();
+(function () {
+    var animated = document.querySelectorAll('.tl-banner, .walk-banner, .term-banner, .dev-scene');
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            bannerVisibility.set(entry.target, entry.isIntersecting);
+            entry.target.classList.toggle('anim-paused', !entry.isIntersecting);
+        });
+    }, { rootMargin: '100px' });
+    animated.forEach(function (el) { io.observe(el); });
+}());
+function bannerActive(el) {
+    return !document.hidden && bannerVisibility.get(el) !== false;
+}
+
 // Timeline Banner: auto-restart loop via SVG clone
 (function () {
     var banner = document.querySelector('.tl-banner');
@@ -1039,6 +1102,7 @@ function checkFormSubmissionSuccess() {
 
     function runCycle() {
         setTimeout(function () {
+            if (!bannerActive(banner)) { runCycle(); return; }
             svg.style.transition = 'opacity ' + FADE_MS + 'ms ease';
             svg.style.opacity = '0';
 
@@ -1078,6 +1142,7 @@ function checkFormSubmissionSuccess() {
 
     function runCycle() {
         setTimeout(function () {
+            if (!bannerActive(banner)) { runCycle(); return; }
             // Fade out
             svg.style.transition = 'opacity ' + FADE_MS + 'ms ease';
             svg.style.opacity = '0';
@@ -1120,6 +1185,7 @@ function checkFormSubmissionSuccess() {
 
     function runCycle() {
         setTimeout(function () {
+            if (!bannerActive(banner)) { runCycle(); return; }
             svg.style.transition = 'opacity ' + FADE_MS + 'ms ease';
             svg.style.opacity = '0';
 

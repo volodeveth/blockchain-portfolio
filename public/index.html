@@ -10,12 +10,42 @@
     <meta property="og:title" content="VoloDev.eth — Agentic Full Stack Developer & AI Engineer">
     <meta property="og:description" content="Multi-agent AI engineering: Claude Code orchestration, parallel subagents, automated code review. Expert in Next.js, React, TypeScript, Python, Node.js, Solidity.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://volodeveth.vercel.app/">
+    <meta property="og:image" content="https://volodeveth.vercel.app/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="VoloDev.eth — Agentic Full Stack Developer & AI Engineer">
     <meta name="twitter:description" content="Multi-agent AI engineering: Claude Code orchestration, parallel subagents, automated code review. Expert in Next.js, React, TypeScript, Python, Node.js, Solidity.">
-    <link rel="icon" type="image/png" href="logo.png">
+    <meta name="twitter:image" content="https://volodeveth.vercel.app/og-image.png">
+    <link rel="canonical" href="https://volodeveth.vercel.app/">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="logo-96.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Volodymyr Dorosh",
+        "alternateName": "VoloDev.eth",
+        "url": "https://volodeveth.vercel.app/",
+        "image": "https://volodeveth.vercel.app/profile-photo.jpg",
+        "jobTitle": "Agentic Full Stack Developer & AI Engineer",
+        "address": { "@type": "PostalAddress", "addressLocality": "Lviv", "addressCountry": "UA" },
+        "sameAs": [
+            "https://github.com/volodeveth",
+            "https://www.linkedin.com/in/volodymyr-dorosh-bb1bb0a4/",
+            "https://www.upwork.com/freelancers/~010f85a600db02d676",
+            "https://dou.ua/users/volodeveth/"
+        ],
+        "knowsAbout": ["Multi-Agent AI Systems", "Claude Code", "LLM Fine-Tuning", "RAG Systems", "Next.js", "React", "TypeScript", "Python", "Django", "Node.js", "PHP", "Symfony", "Solidity", "Shopify App Development"]
+    }
+    </script>
 </head>
 <body>
     <div class="cursor"></div>
@@ -23,7 +53,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="logo.png" alt="VoloDev.eth Logo" class="nav-logo-img">
+                <img src="logo-96.png" alt="VoloDev.eth Logo" class="nav-logo-img" width="36" height="36">
                 <span class="logo-text">VoloDev.eth</span>
             </div>
             <ul class="nav-menu">
@@ -41,11 +71,11 @@
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                 <i class="fas fa-moon" id="themeIcon"></i>
             </button>
-            <div class="hamburger">
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -56,14 +86,15 @@
                     <span class="title-line" data-i18n="hero.title1">Full-Stack Blockchain</span>
                     <span class="title-line gradient-text" data-i18n="hero.title2">& AI Developer</span>
                 </h1>
-                <p class="hero-subtitle" data-i18n="hero.subtitle">Smart Contracts | DeFi | NFT Marketplaces | AI Trading Bots | Shopify Apps | E-Commerce | SaaS</p>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Claude Code Agents | Multi-Agent Systems | Full-Stack Apps | AI Integration | Shopify | SaaS | Web3</p>
                 <p class="hero-location" data-i18n="hero.location">📍 Lviv, Ukraine | 🌐 Available Worldwide</p>
                 <p class="hero-description" data-i18n="hero.description">
-                    Blockchain developer with 10+ years experience building production-ready Web3 applications.
-                    Specializing in <strong>Solidity smart contracts</strong>, <strong>NFT marketplaces</strong>, <strong>DeFi staking platforms</strong>,
-                    <strong>AI trading bots</strong>, <strong>Shopify apps</strong>, <strong>SaaS platforms</strong>, and <strong>full-stack e-commerce</strong> solutions.
-                    Expert in <strong>Next.js, React, Remix, TypeScript, Python, Django, Node.js, PHP, Symfony</strong>, and AI tools
-                    (<strong>ChatGPT, Claude, Gemini, Midjourney, Sora, Runway</strong>).
+                    Full-stack developer &amp; AI engineer with 10+ years experience. I build production-ready applications
+                    using multi-agent AI orchestration — Claude Code with specialized roles (Planner, Architect, Reviewer,
+                    Security Auditor, Implementer), parallel subagents, and third-party AI APIs (OpenAI, Gemini, Grok).
+                    One engineer. Team productivity. Expert in <strong>Next.js, React, TypeScript, Python, Django, Node.js,
+                    PHP/Symfony, Solidity</strong> — every project ships with automated code review, security audit, and
+                    personal quality control.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary" data-i18n="hero.viewProjects">View Projects</a>
@@ -79,8 +110,8 @@
                         <span class="stat-label" data-i18n="hero.stats.platforms">Active Platforms</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">$30+</span>
-                        <span class="stat-label" data-i18n="hero.stats.rate">Hourly Rate</span>
+                        <span class="stat-number">2</span>
+                        <span class="stat-label" data-i18n="hero.stats.shopifyApps">Shopify Apps Published</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">10+</span>
@@ -320,8 +351,8 @@
                     <img src="profile-photo.jpg" alt="Volodymyr Dorosh" class="profile-photo">
                     <div class="card-content">
                         <h3>Volodymyr Dorosh</h3>
-                        <p data-i18n="about.profileLocation">Blockchain Developer from Lviv, Ukraine</p>
-                        <p data-i18n="about.profileTagline">Transforming ideas into Web3 reality</p>
+                        <p data-i18n="about.profileLocation">Agentic Full Stack Developer from Lviv, Ukraine</p>
+                        <p data-i18n="about.profileTagline">Shipping production apps with AI agent orchestration</p>
                         <div class="profile-socials">
                             <a href="https://www.upwork.com/freelancers/~010f85a600db02d676" target="_blank" title="Upwork"><i class="fas fa-briefcase"></i></a>
                             <a href="https://www.linkedin.com/in/volodymyr-dorosh-bb1bb0a4/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -331,10 +362,12 @@
                     </div>
                 </div>
                 <p class="about-intro" data-i18n="about.intro">
-                    I am a full-stack blockchain developer and Web3 innovator with 10+ years of experience
-                    and 20+ completed projects. My expertise spans NFT marketplaces, AI-powered trading bots,
-                    Shopify app development, decentralized gaming platforms, e-commerce solutions, and social media automation.
-                    I specialize in Python, Node.js, and PHP/Symfony development with deep AI integration (ChatGPT, Claude, Claude Code, Gemini, Midjourney, Sora, Runway).
+                    I'm a full-stack developer &amp; AI engineer with 10+ years of experience and 20+ shipped products.
+                    I work with multi-agent AI systems — Claude Code CLI orchestrating specialized subagents in parallel
+                    (Planner, Architect, Implementer, Reviewer, Security Auditor) — to deliver production-ready applications
+                    faster and at a fraction of the cost of a traditional team. Every project ships with automated code review,
+                    security audit, and my personal quality control. Stack: <strong>Next.js, React, TypeScript, Python, Django,
+                    Node.js, PHP/Symfony, Solidity</strong> — plus Shopify app development, SaaS, and Web3 integration.
                 </p>
             </div>
 
@@ -380,87 +413,52 @@
                 <h3 data-i18n="about.achievementsTitle">Key Achievements & Expertise</h3>
                 <div class="achievements-grid">
                     <div class="achievement-item">
-                        <i class="fas fa-pen-fancy"></i>
+                        <i class="fas fa-rocket"></i>
                         <div>
-                            <h4 data-i18n="achievements.inkbot.title">Shopify App - InkBot (AI Product Descriptions)</h4>
-                            <p data-i18n="achievements.inkbot.description">Built an AI-powered Shopify app that generates SEO-optimized product descriptions using DeepSeek V3. Features bulk generation, brand voice analysis, SEO scoring, 111+ languages, and subscription plans. <a href="https://inkbot.app/" target="_blank" style="color: var(--accent-color);">Visit InkBot</a></p>
+                            <h4 data-i18n="achievements.shipped.title">20+ Shipped Products</h4>
+                            <p data-i18n="achievements.shipped.description">Full-stack web apps, Shopify apps, smart contracts, AI agents, and ML pipelines delivered to production — 10+ platforms still live and active</p>
                         </div>
                     </div>
                     <div class="achievement-item">
-                        <i class="fas fa-tshirt"></i>
+                        <i class="fab fa-shopify"></i>
                         <div>
-                            <h4 data-i18n="achievements.clothcast.title">Shopify App - ClothCast (AI Virtual Try-On)</h4>
-                            <p data-i18n="achievements.clothcast.description">Built an AI Virtual Try-On Shopify app using FLUX.2 image generation. Customers upload a selfie to see themselves wearing any product. Features customizable widget, analytics dashboard, and privacy-first 24h data retention. <a href="https://cloth-cast.vercel.app/landing" target="_blank" style="color: var(--accent-color);">Visit ClothCast</a></p>
+                            <h4 data-i18n="achievements.shopifyApps.title">2 Published Shopify Apps</h4>
+                            <p data-i18n="achievements.shopifyApps.description">InkBot (AI product descriptions, 111+ languages) and ClothCast (AI virtual try-on with FLUX.2) — built, published, and maintained solo</p>
                         </div>
                     </div>
                     <div class="achievement-item">
-                        <i class="fas fa-layer-group"></i>
+                        <i class="fas fa-brain"></i>
                         <div>
-                            <h4 data-i18n="achievements.nifta.title">NFT Marketplace - NiFTa (Base Network)</h4>
-                            <p data-i18n="achievements.nifta.description">Building a full-stack NFT marketplace on Base Network with 4 Solidity smart contracts (Factory, ERC-1155, Marketplace, Events). Features unique revenue split (Creator 50% / First Minter 10% / Referral 20%), 48h timer urgency mechanic, UUPS upgradeable contracts, and social verification via X/Farcaster OAuth. <a href="https://nifta-zeta.vercel.app/" target="_blank" style="color: var(--accent-color);">View MVP</a></p>
-                        </div>
-                    </div>
-                    <div class="achievement-item">
-                        <i class="fas fa-store"></i>
-                        <div>
-                            <h4 data-i18n="achievements.zorium.title">NFT Marketplace Development - ZORIUM.FUN</h4>
-                            <p data-i18n="achievements.zorium.description">Building a decentralized NFT marketplace on Zora Network with Next.js, TypeScript, RainbowKit, and Web3Modal. Features trending analytics, multi-chain support, and creator tools. <a href="https://www.zorium.fun/" target="_blank" style="color: var(--accent-color);">View MVP</a></p>
-                        </div>
-                    </div>
-                    <div class="achievement-item">
-                        <i class="fas fa-gamepad"></i>
-                        <div>
-                            <h4 data-i18n="achievements.cryptoduel.title">Decentralized Gaming Platform - CryptoDuel</h4>
-                            <p data-i18n="achievements.cryptoduel.description">Built a PvP crypto gaming platform on Base Network with Solidity smart contracts, Farcaster integration, PostgreSQL, and 4 game modes (Duel 1v1, Battle Royale). Features provably fair randomization and leaderboards. <a href="https://www.cryptoduel.xyz/" target="_blank" style="color: var(--accent-color);">Play Now</a></p>
-                        </div>
-                    </div>
-                    <div class="achievement-item">
-                        <i class="fas fa-bed"></i>
-                        <div>
-                            <h4 data-i18n="achievements.fjordmekko.title">E-Commerce Platform - Fjord & Mekko</h4>
-                            <p data-i18n="achievements.fjordmekko.description">Developed a professional online store for orthopedic mattresses using Next.js 16, React 19, Leaflet maps (20+ store locations), Resend email integration, and Framer Motion animations. <a href="https://www.fjord-mekko.com.ua/" target="_blank" style="color: var(--accent-color);">Visit Store</a></p>
+                            <h4 data-i18n="achievements.mlPipeline.title">End-to-End ML Pipeline</h4>
+                            <p data-i18n="achievements.mlPipeline.description">Synthetic dataset generation → QLoRA/LoRA fine-tuning → GGUF export → Ollama deployment — a complete in-house LLM training workflow</p>
                         </div>
                     </div>
                     <div class="achievement-item">
                         <i class="fas fa-robot"></i>
                         <div>
-                            <h4 data-i18n="achievements.tradingbots.title">AI Trading Bots (Python & Node.js)</h4>
-                            <p data-i18n="achievements.tradingbots.description">Created sophisticated trading bots for Binance Futures with GPT-3.5-turbo integration, technical indicators (RSI, MACD, Bollinger Bands), multi-timeframe analysis, and 100x leverage scalping strategies</p>
+                            <h4 data-i18n="achievements.selfAgent.title">Self-Extending AI Agent</h4>
+                            <p data-i18n="achievements.selfAgent.description">Dual-LLM agent (Buddy) that autonomously writes, validates, and deploys its own skills — with Ukrainian voice interface and sandboxed execution</p>
                         </div>
                     </div>
                     <div class="achievement-item">
-                        <i class="fas fa-link"></i>
+                        <i class="fas fa-database"></i>
                         <div>
-                            <h4 data-i18n="achievements.lilurl.title">SaaS Platform - lilURL</h4>
-                            <p data-i18n="achievements.lilurl.description">Built a full-featured URL shortening service (Bit.ly alternative) with Django 5.0, REST API, click analytics, QR code generation, subscription plans, and real-time dashboard. <a href="https://lilurl.vercel.app/" target="_blank" style="color: var(--accent-color);">Visit lilURL</a></p>
-                        </div>
-                    </div>
-                    <div class="achievement-item">
-                        <i class="fas fa-columns"></i>
-                        <div>
-                            <h4 data-i18n="achievements.doshka.title">REST API Backend - Doshka (Kanban Board)</h4>
-                            <p data-i18n="achievements.doshka.description">Built a full-featured Trello-like REST API with Symfony 7.2, JWT authentication, role-based access control via Symfony Voters (owner/admin/member), async email notifications via Redis queue + Symfony Messenger, and daily deadline reminders via Symfony Scheduler. <a href="https://github.com/volodeveth/doshka-backend" target="_blank" style="color: var(--accent-color);">View on GitHub</a></p>
-                        </div>
-                    </div>
-                    <div class="achievement-item">
-                        <i class="fas fa-share-alt"></i>
-                        <div>
-                            <h4 data-i18n="achievements.socialbots.title">Social Media Automation Bots</h4>
-                            <p data-i18n="achievements.socialbots.description">Developed multiple Python bots for automated posting on Zora.co and other social networks with AI content generation, scheduling, and cross-platform publishing capabilities</p>
+                            <h4 data-i18n="achievements.rag.title">Production RAG System</h4>
+                            <p data-i18n="achievements.rag.description">2,100+ indexed chunks, hybrid search (pgvector HNSW + BM25 + RRF fusion), neural reranking — self-hosted on AWS EC2 with CI/CD</p>
                         </div>
                     </div>
                     <div class="achievement-item">
                         <i class="fas fa-coins"></i>
                         <div>
-                            <h4 data-i18n="achievements.zoriumeco.title">ZORIUM Ecosystem (Legacy)</h4>
-                            <p data-i18n="achievements.zoriumeco.description">Built a complete Web3 platform with custom tokens, staking mechanisms, and successfully airdropped to 10,000+ holders. <a href="https://www.zorium.xyz/" target="_blank" style="color: var(--accent-color);">View Platform</a></p>
+                            <h4 data-i18n="achievements.holders.title">10,000+ Token Holders</h4>
+                            <p data-i18n="achievements.holders.description">Built the ZORIUM token & DeFi staking ecosystem on Zora Network and successfully airdropped it to a community of 10,000+ holders</p>
                         </div>
                     </div>
                     <div class="achievement-item">
-                        <i class="fas fa-video"></i>
+                        <i class="fas fa-images"></i>
                         <div>
-                            <h4 data-i18n="achievements.aivideo.title">AI Video Content Creation</h4>
-                            <p data-i18n="achievements.aivideo.description">Expert in creating complex videos using AI tools, including directing fully AI-generated animated films and professional video production</p>
+                            <h4 data-i18n="achievements.nftCollections.title">Sold-Out NFT Collections</h4>
+                            <p data-i18n="achievements.nftCollections.description">Bored Giraffes Yacht Club — 3,333 NFTs sold out on Ethereum — plus The GAFs and a novel-to-NFT adaptation (Misery Avenue)</p>
                         </div>
                     </div>
                     <div class="achievement-item">
@@ -468,6 +466,13 @@
                         <div>
                             <h4 data-i18n="achievements.nftjudge.title">NFT Design Awards Judge</h4>
                             <p data-i18n="achievements.nftjudge.description">Official judge at <a href="https://nftdesignawards.io/judge/volodymyrdorosh" target="_blank" style="color: var(--accent-color);">NFT Design Awards</a>, evaluating innovative NFT projects and design excellence</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-video"></i>
+                        <div>
+                            <h4 data-i18n="achievements.aivideo.title">AI Video Production</h4>
+                            <p data-i18n="achievements.aivideo.description">Directing fully AI-generated animated films — complete video workflows combining Sora, Runway, and Midjourney</p>
                         </div>
                     </div>
                 </div>
@@ -687,6 +692,112 @@
                             <span class="tech-tag">DeepSeek</span>
                             <span class="tech-tag">AWS EC2</span>
                             <span class="tech-tag">GitHub Actions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI / ML Engineering Projects -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-robot project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projectCards.buddy.title">Buddy Agent — Self-Extending AI Assistant</h3>
+                        <p data-i18n="projectCards.buddy.description">Self-extending Telegram AI assistant with dual-LLM architecture — DeepSeek V3.2 dispatches tasks while MiniMax M2.7 autonomously generates new skills. Ukrainian voice interface (Whisper STT + Edge-TTS), 3-tier security with PIN gate, persistent memory, and sandboxed execution with AST-based code validation. <a href="https://github.com/volodeveth/buddy-agent" target="_blank" style="color: var(--accent-color);">View on GitHub</a></p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenClaw</span>
+                            <span class="tech-tag">DeepSeek V3.2</span>
+                            <span class="tech-tag">MiniMax M2.7</span>
+                            <span class="tech-tag">Whisper STT</span>
+                            <span class="tech-tag">Edge-TTS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-microphone project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projectCards.pizzavoice.title">Pizza Voice Agent — Real-Time Voice Ordering</h3>
+                        <p data-i18n="projectCards.pizzavoice.description">Voice assistant for a pizzeria: natural spoken ordering in Ukrainian with real-time speech-to-speech conversation, menu logic, and order confirmation. Built with LiveKit Agents and the OpenAI Realtime API with a Next.js frontend. <a href="https://github.com/volodeveth/pizza-voice-agent" target="_blank" style="color: var(--accent-color);">View on GitHub</a></p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LiveKit Agents</span>
+                            <span class="tech-tag">OpenAI Realtime</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">WebRTC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-infinity project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projectCards.loopforge.title">LoopForge — Autonomous Multi-Agent Dev Loop</h3>
+                        <p data-i18n="projectCards.loopforge.description">Forges large features in an autonomous multi-agent loop for Claude Code: requirements interview → spec → plan → TDD implementation loop → verification. Agentic engineering distilled into a reusable workflow. <a href="https://github.com/volodeveth/loopforge" target="_blank" style="color: var(--accent-color);">View on GitHub</a></p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Claude Code</span>
+                            <span class="tech-tag">Multi-Agent Orchestration</span>
+                            <span class="tech-tag">Spec-Driven Dev</span>
+                            <span class="tech-tag">TDD Automation</span>
+                            <span class="tech-tag">CLI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-microchip project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projectCards.tinyllama.title">TinyLlama QLoRA Fine-Tuning Pipeline</h3>
+                        <p data-i18n="projectCards.tinyllama.description">End-to-end LLM fine-tuning pipeline: QLoRA training on a Colab T4 GPU plus a local CPU LoRA pipeline. 4-bit quantization, adapter persistence, GGUF export with Q4_K_M quantization, and Ollama deployment with resume and incremental training. <a href="https://github.com/volodeveth/tinyllama-qlora-colab" target="_blank" style="color: var(--accent-color);">View on GitHub</a></p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">HuggingFace</span>
+                            <span class="tech-tag">PEFT</span>
+                            <span class="tech-tag">QLoRA / LoRA</span>
+                            <span class="tech-tag">llama.cpp / GGUF</span>
+                            <span class="tech-tag">Ollama</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-industry project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projectCards.datasetfactory.title">Dataset Factory — Synthetic Data Pipeline</h3>
+                        <p data-i18n="projectCards.datasetfactory.description">Universal pipeline for generating high-quality LLM training datasets. Interactive wizard, 4 output formats (Alpaca, Chat, QA, Classification), text chunking, validation with deduplication, language detection, and label distribution analysis. <a href="https://github.com/volodeveth/dataset-factory" target="_blank" style="color: var(--accent-color);">View on GitHub</a></p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">DeepSeek V3</span>
+                            <span class="tech-tag">OpenRouter</span>
+                            <span class="tech-tag">YAML Configs</span>
+                            <span class="tech-tag">Data Validation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-project-diagram project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projectCards.langgraph.title">LangGraph Code Assistant Agent</h3>
+                        <p data-i18n="projectCards.langgraph.description">Intelligent code analysis agent built on a LangGraph state graph. Directory scanning with auto-watch (hash-based change detection), multi-file analysis, bug detection, code review, and test generation — with a Streamlit UI.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LangGraph</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">MiniMax</span>
+                            <span class="tech-tag">OpenRouter</span>
                         </div>
                     </div>
                 </div>
@@ -1083,31 +1194,54 @@
                     <div class="skill-items">
                         <div class="skill-item">
                             <span data-i18n="skills.items.claudeCode">Claude Code Orchestration</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 98%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.multiAgent">Multi-Agent Systems (Opus / Sonnet / Haiku)</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.parallelAgents">Parallel Subagent Execution</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.codeReview">Automated Code Review & Security Audit</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 98%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.figmaMcp">Figma → Code (MCP API)</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.thirdPartyAi">OpenAI / Gemini / Grok API Integration</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.cicd">Git → Vercel CI/CD Pipeline</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-microchip"></i> <span data-i18n="skills.cat.ml">ML & LLM Engineering</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span data-i18n="skills.items.fineTuning">LLM Fine-Tuning (QLoRA / LoRA / PEFT)</span>
+                        </div>
+                        <div class="skill-item">
+                            <span data-i18n="skills.items.syntheticData">Synthetic Dataset Generation</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>HuggingFace Transformers</span>
+                        </div>
+                        <div class="skill-item">
+                            <span data-i18n="skills.items.localLlm">GGUF / llama.cpp / Ollama (Local LLMs)</span>
+                        </div>
+                        <div class="skill-item">
+                            <span data-i18n="skills.items.rag">RAG Pipeline (pgvector + Jina AI)</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>LangGraph Agents</span>
+                        </div>
+                        <div class="skill-item">
+                            <span data-i18n="skills.items.selfExtending">Self-Extending Agents (OpenClaw)</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Whisper STT / Edge-TTS</span>
                         </div>
                     </div>
                 </div>
@@ -1117,23 +1251,18 @@
                     <div class="skill-items">
                         <div class="skill-item">
                             <span>Python</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Django Framework</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.automationBots">Automation & Bots</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Web Scraping</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.tradingBots">Trading Bots</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                     </div>
                 </div>
@@ -1143,35 +1272,24 @@
                     <div class="skill-items">
                         <div class="skill-item">
                             <span>ChatGPT & OpenAI API</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Claude & Claude Code</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Google Gemini</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.aiImageGen">Midjourney & AI Image Gen</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.aiVideo">Sora & Runway (AI Video)</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.tradingAlgo">Trading Algorithms & ML</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>OpenRouter / DeepSeek / FLUX.2</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span data-i18n="skills.items.rag">RAG Pipeline (pgvector + Jina AI)</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                     </div>
                 </div>
@@ -1181,23 +1299,18 @@
                     <div class="skill-items">
                         <div class="skill-item">
                             <span>Next.js (14-16)</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>React (18-19)</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>TypeScript</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Tailwind CSS (v3-v4)</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Framer Motion</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                     </div>
                 </div>
@@ -1207,35 +1320,27 @@
                     <div class="skill-items">
                         <div class="skill-item">
                             <span>Node.js</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>PHP 8.3</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Symfony 7 / API Platform</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Django / DRF</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>PostgreSQL / Neon / Supabase</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.apiDev">API Development (REST)</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Vercel Functions</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Prisma ORM</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                     </div>
                 </div>
@@ -1245,23 +1350,18 @@
                     <div class="skill-items">
                         <div class="skill-item">
                             <span data-i18n="skills.items.shopifyAppDev">Shopify App Development</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Shopify Polaris & App Bridge</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Remix (Shopify Stack)</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.themeExt">Theme Extensions & Liquid</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Shopify CLI & APIs</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                     </div>
                 </div>
@@ -1271,39 +1371,30 @@
                     <div class="skill-items">
                         <div class="skill-item">
                             <span>Git / GitHub</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Binance API</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Farcaster SDK</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Leaflet Maps</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Resend / Email APIs</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Redis (Cache + Queue)</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Docker / Docker Compose</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>AWS EC2 / Nginx / PM2</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>GitHub Actions CI/CD</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                     </div>
                 </div>
@@ -1313,15 +1404,12 @@
                     <div class="skill-items">
                         <div class="skill-item">
                             <span data-i18n="skills.items.videoProduction">Video Production</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.aiVideos">AI-Generated Videos</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.animatedFilms">Animated Films</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                     </div>
                 </div>
@@ -1331,19 +1419,15 @@
                     <div class="skill-items">
                         <div class="skill-item">
                             <span data-i18n="skills.items.nftDev">NFT Development (ERC-721)</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.marketplaceDev">Marketplace Development</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.generativeArt">Generative Art</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span data-i18n="skills.items.ipfs">IPFS / Decentralized Storage</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                     </div>
                 </div>
@@ -1353,23 +1437,18 @@
                     <div class="skill-items">
                         <div class="skill-item">
                             <span>Smart Contracts</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Solidity</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Web3.js / Ethers.js / Viem</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Hardhat / Foundry</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                         <div class="skill-item">
                             <span>Wagmi / RainbowKit</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                     </div>
                 </div>
@@ -1585,7 +1664,7 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h3 data-i18n="contact.subtitle">Ready to Transform Your Vision</h3>
-                    <p data-i18n="contact.description">Whether you need NFT marketplace development, decentralized gaming platforms, AI-powered trading bots, Shopify app development, e-commerce solutions, social media automation, or custom blockchain development - I bring deep technical expertise and proven results to every project.</p>
+                    <p data-i18n="contact.description">Whether you need a full-stack web app, AI agent integration, Shopify app, SaaS platform, e-commerce solution, or Web3/blockchain development — you get multi-agent AI engineering: faster delivery, automated quality control, and senior-level code review on every commit. Team output. Solo price.</p>
 
                     <div class="contact-methods">
                         <a href="https://www.upwork.com/freelancers/~010f85a600db02d676" class="contact-method" target="_blank">
@@ -1646,6 +1725,7 @@
                         <input type="hidden" name="_subject" value="New Contact Form Submission from VoloDev.eth">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
                         
                         <div class="form-group">
                             <label for="name" data-i18n="form.name">Name</label>
@@ -1721,10 +1801,10 @@
             <div class="footer-content">
                 <div class="footer-text">
                     <div class="footer-brand">
-                        <img src="logo.png" alt="VoloDev.eth Logo" class="footer-logo-img">
+                        <img src="logo-96.png" alt="VoloDev.eth Logo" class="footer-logo-img" width="36" height="36">
                         <span class="footer-brand-name">VoloDev.eth</span>
                     </div>
-                    <p data-i18n="footer.copyright">&copy; 2026 VoloDev.eth - Blockchain Developer & Web3 Innovator. Ready to transform your vision into reality.</p>
+                    <p data-i18n="footer.copyright">&copy; 2026 VoloDev.eth — Agentic Full Stack Developer & AI Engineer. Team output. Solo price.</p>
                 </div>
                 <div class="footer-links">
                     <a href="https://www.upwork.com/freelancers/~010f85a600db02d676" target="_blank" title="Upwork">

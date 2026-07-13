@@ -1,7 +1,7 @@
 {
   "name": "blockchain-portfolio",
-  "version": "1.0.0",
-  "description": "Modern portfolio website for a blockchain developer and Web3 innovator",
+  "version": "2.0.0",
+  "description": "Portfolio website of Volodymyr Dorosh — Agentic Full Stack Developer & AI Engineer",
   "main": "index.html",
   "scripts": {
     "dev": "python -m http.server 3000",
@@ -9,14 +9,14 @@
     "preview": "python -m http.server 8080"
   },
   "keywords": [
-    "blockchain",
-    "web3",
     "portfolio",
-    "developer",
-    "nft",
-    "ai"
+    "agentic-developer",
+    "ai-engineer",
+    "multi-agent",
+    "full-stack",
+    "web3"
   ],
-  "author": "Blockchain Developer & Web3 Innovator",
+  "author": "Volodymyr Dorosh (VoloDev.eth)",
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {}

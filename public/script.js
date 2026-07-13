@@ -239,7 +239,19 @@ const translations = {
                 description: 'Transformed published novel into NFT collection, bridging traditional publishing with Web3 innovation. <a href="https://linktr.ee/miseryavenue" target="_blank" style="color: var(--accent-color);">Visit Project</a>'
             }
         },
-        footer: { copyright: '© 2026 VoloDev.eth — Agentic Full Stack Developer & AI Engineer. Team output. Solo price.' }
+        footer: { copyright: '© 2026 VoloDev.eth — Agentic Full Stack Developer & AI Engineer. Team output. Solo price.' },
+        rag: {
+            fabLabel: 'Ask my AI',
+            title: 'Ask About Dorosh',
+            subtitle: 'My own RAG pipeline — 16 projects + CV indexed',
+            welcome: "Hi! I'm an AI that knows Volodymyr's work inside out — 16 indexed projects plus his CV. Ask me anything about his skills, stack, or experience.",
+            q1: 'What Shopify apps has he built?',
+            q2: 'How does his multi-agent AI workflow work?',
+            q3: 'What is his ML fine-tuning experience?',
+            placeholder: 'Ask about skills, projects, experience...',
+            note: 'Live demo of my RAG stack: pgvector + Jina + DeepSeek, self-hosted on AWS',
+            error: 'Something went wrong — the AI backend may be busy. Try again in a moment or open the full app via the ↗ icon.'
+        }
     },
     uk: {
         nav: { home: 'Головна', about: 'Про мене', projects: 'Проекти', skills: 'Навички', contact: 'Контакти' },
@@ -480,7 +492,19 @@ const translations = {
                 description: 'Перетворив опублікований роман на NFT колекцію, з\'єднавши традиційне видавництво з Web3 інноваціями. <a href="https://linktr.ee/miseryavenue" target="_blank" style="color: var(--accent-color);">Відвідати проект</a>'
             }
         },
-        footer: { copyright: '© 2026 VoloDev.eth — Agentic Full Stack Розробник та AI Інженер. Продуктивність команди. Ціна одного.' }
+        footer: { copyright: '© 2026 VoloDev.eth — Agentic Full Stack Розробник та AI Інженер. Продуктивність команди. Ціна одного.' },
+        rag: {
+            fabLabel: 'Спитай мій AI',
+            title: 'Ask About Dorosh',
+            subtitle: 'Власний RAG пайплайн — 16 проектів + CV в індексі',
+            welcome: 'Привіт! Я AI, який знає роботу Володимира зсередини — 16 проіндексованих проектів плюс CV. Питай будь-що про навички, стек чи досвід.',
+            q1: 'Які Shopify додатки він створив?',
+            q2: 'Як працює його мульти-агентний AI воркфлоу?',
+            q3: 'Який у нього досвід файн-тюнінгу ML?',
+            placeholder: 'Спитай про навички, проекти, досвід...',
+            note: 'Живе демо мого RAG стеку: pgvector + Jina + DeepSeek, self-hosted на AWS',
+            error: 'Щось пішло не так — можливо, бекенд зайнятий. Спробуй ще раз за мить або відкрий повний додаток через іконку ↗.'
+        }
     },
     de: {
         nav: { home: 'Start', about: 'Über mich', projects: 'Projekte', skills: 'Kenntnisse', contact: 'Kontakt' },
@@ -721,7 +745,19 @@ const translations = {
                 description: 'Verwandlung eines veröffentlichten Romans in eine NFT-Collection – Brücke zwischen traditionellem Verlagswesen und Web3-Innovation. <a href="https://linktr.ee/miseryavenue" target="_blank" style="color: var(--accent-color);">Projekt besuchen</a>'
             }
         },
-        footer: { copyright: '© 2026 VoloDev.eth — Agentic Full Stack Entwickler & KI-Ingenieur. Team-Output. Solo-Preis.' }
+        footer: { copyright: '© 2026 VoloDev.eth — Agentic Full Stack Entwickler & KI-Ingenieur. Team-Output. Solo-Preis.' },
+        rag: {
+            fabLabel: 'Frag meine KI',
+            title: 'Ask About Dorosh',
+            subtitle: 'Eigene RAG-Pipeline — 16 Projekte + CV indexiert',
+            welcome: 'Hallo! Ich bin eine KI, die Volodymyrs Arbeit in- und auswendig kennt — 16 indexierte Projekte plus CV. Frag mich alles über Skills, Stack oder Erfahrung.',
+            q1: 'Welche Shopify-Apps hat er entwickelt?',
+            q2: 'Wie funktioniert sein Multi-Agenten-KI-Workflow?',
+            q3: 'Welche ML-Fine-Tuning-Erfahrung hat er?',
+            placeholder: 'Frag nach Skills, Projekten, Erfahrung...',
+            note: 'Live-Demo meines RAG-Stacks: pgvector + Jina + DeepSeek, self-hosted auf AWS',
+            error: 'Etwas ist schiefgelaufen — das Backend ist vielleicht ausgelastet. Versuche es gleich noch einmal oder öffne die vollständige App über das ↗-Symbol.'
+        }
     }
 };
 
@@ -1175,3 +1211,130 @@ if (prefersReducedMotion.matches) {
         el.style.transitionDuration = '0.01ms !important';
     });
 }
+// ===== RAG Chat Widget (Ask About Dorosh) =====
+(function () {
+    var RAG_API = 'https://ask-about-dorosh.duckdns.org/api/chat';
+    var chat = document.getElementById('ragChat');
+    if (!chat || !window.fetch || !window.ReadableStream) return;
+
+    var fab = document.getElementById('ragFab');
+    var panel = document.getElementById('ragPanel');
+    var closeBtn = document.getElementById('ragClose');
+    var messages = document.getElementById('ragMessages');
+    var form = document.getElementById('ragForm');
+    var input = document.getElementById('ragInput');
+    var send = document.getElementById('ragSend');
+    var suggestions = document.getElementById('ragSuggestions');
+    var busy = false;
+
+    function openChat() {
+        chat.classList.add('open');
+        panel.hidden = false;
+        fab.setAttribute('aria-expanded', 'true');
+        input.focus();
+    }
+
+    function closeChat() {
+        chat.classList.remove('open');
+        panel.hidden = true;
+        fab.setAttribute('aria-expanded', 'false');
+    }
+
+    fab.addEventListener('click', openChat);
+    closeBtn.addEventListener('click', closeChat);
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !panel.hidden) closeChat();
+    });
+
+    if (suggestions) {
+        suggestions.addEventListener('click', function (e) {
+            var chip = e.target.closest('.rag-chip');
+            if (chip) ask(chip.textContent.trim());
+        });
+    }
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var q = input.value.trim();
+        if (q) ask(q);
+    });
+
+    function addMsg(cls, text) {
+        var el = document.createElement('div');
+        el.className = 'rag-msg ' + cls;
+        el.textContent = text;
+        messages.appendChild(el);
+        messages.scrollTop = messages.scrollHeight;
+        return el;
+    }
+
+    function ragT(key) {
+        var lang = document.documentElement.lang || 'en';
+        var t = (translations[lang] && translations[lang].rag) || translations.en.rag;
+        return t[key] || translations.en.rag[key] || '';
+    }
+
+    async function ask(query) {
+        if (busy) return;
+        busy = true;
+        input.value = '';
+        input.disabled = true;
+        send.disabled = true;
+        if (suggestions) {
+            suggestions.remove();
+            suggestions = null;
+        }
+        addMsg('rag-msg-user', query);
+        var bot = addMsg('rag-msg-bot rag-msg-typing', '');
+
+        try {
+            var res = await fetch(RAG_API, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ query: query })
+            });
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+
+            var contentType = res.headers.get('content-type') || '';
+            if (contentType.indexOf('text/event-stream') === -1) {
+                // Non-stream JSON answer (e.g. "no relevant documents found")
+                var data = await res.json();
+                bot.textContent = data.answer || data.error || '…';
+            } else {
+                var reader = res.body.getReader();
+                var decoder = new TextDecoder();
+                var buf = '';
+                while (true) {
+                    var chunk = await reader.read();
+                    if (chunk.done) break;
+                    buf += decoder.decode(chunk.value, { stream: true });
+                    var frames = buf.split('\n\n');
+                    buf = frames.pop();
+                    for (var i = 0; i < frames.length; i++) {
+                        var line = frames[i];
+                        if (line.indexOf('data: ') !== 0) continue;
+                        var payload = line.slice(6);
+                        if (payload === '[DONE]') continue;
+                        try {
+                            var evt = JSON.parse(payload);
+                            if (evt.token) {
+                                bot.textContent += evt.token;
+                                messages.scrollTop = messages.scrollHeight;
+                            }
+                        } catch (parseErr) { /* skip malformed frame */ }
+                    }
+                }
+                if (!bot.textContent) bot.textContent = '…';
+            }
+        } catch (err) {
+            bot.classList.add('rag-msg-error');
+            bot.textContent = ragT('error');
+        }
+
+        bot.classList.remove('rag-msg-typing');
+        input.disabled = false;
+        send.disabled = false;
+        busy = false;
+        input.focus();
+    }
+}());

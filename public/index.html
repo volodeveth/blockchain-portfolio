@@ -1714,6 +1714,43 @@
         </div>
     </footer>
 
+    <!-- RAG Chat Widget — talks to the Ask About Dorosh pipeline (pgvector + Jina + DeepSeek) -->
+    <div class="rag-chat" id="ragChat">
+        <button class="rag-fab" id="ragFab" aria-expanded="false" aria-controls="ragPanel">
+            <i class="fas fa-robot" aria-hidden="true"></i>
+            <span class="rag-fab-label" data-i18n="rag.fabLabel">Ask my AI</span>
+        </button>
+        <section class="rag-panel" id="ragPanel" role="dialog" aria-label="AI chat about Volodymyr Dorosh" hidden>
+            <div class="rag-header">
+                <div class="rag-header-info">
+                    <h4 data-i18n="rag.title">Ask About Dorosh</h4>
+                    <p data-i18n="rag.subtitle">My own RAG pipeline — 16 projects + CV indexed</p>
+                </div>
+                <a href="https://ask-about-dorosh.duckdns.org" target="_blank" rel="noopener" class="rag-external" title="Open full app" aria-label="Open full app">
+                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                </a>
+                <button class="rag-close" id="ragClose" aria-label="Close chat">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="rag-messages" id="ragMessages" aria-live="polite">
+                <div class="rag-msg rag-msg-bot" data-i18n="rag.welcome">Hi! I'm an AI that knows Volodymyr's work inside out — 16 indexed projects plus his CV. Ask me anything about his skills, stack, or experience.</div>
+                <div class="rag-suggestions" id="ragSuggestions">
+                    <button class="rag-chip" data-i18n="rag.q1">What Shopify apps has he built?</button>
+                    <button class="rag-chip" data-i18n="rag.q2">How does his multi-agent AI workflow work?</button>
+                    <button class="rag-chip" data-i18n="rag.q3">What is his ML fine-tuning experience?</button>
+                </div>
+            </div>
+            <form class="rag-input-row" id="ragForm">
+                <input type="text" id="ragInput" data-i18n-placeholder="rag.placeholder" placeholder="Ask about skills, projects, experience..." autocomplete="off" maxlength="500">
+                <button type="submit" class="rag-send" id="ragSend" aria-label="Send message">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                </button>
+            </form>
+            <p class="rag-note" data-i18n="rag.note">Live demo of my RAG stack: pgvector + Jina + DeepSeek, self-hosted on AWS</p>
+        </section>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

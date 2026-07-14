@@ -134,7 +134,7 @@ const translations = {
             },
             rag: {
                 title: 'Production RAG System',
-                description: '3,400+ indexed chunks, hybrid search (pgvector HNSW + BM25 + RRF fusion), neural reranking — self-hosted on AWS EC2 with CI/CD'
+                description: '3,440+ indexed chunks, hybrid search (pgvector HNSW + BM25 + RRF fusion), neural reranking — self-hosted on AWS EC2 with CI/CD'
             },
             holders: {
                 title: '10,000+ Token Holders',
@@ -164,7 +164,7 @@ const translations = {
             },
             askdorosh: {
                 title: 'Ask About Dorosh — Production RAG System',
-                description: 'Production RAG chatbot that indexes 34 real projects + CV (3,400+ chunks). Hybrid search (pgvector HNSW + BM25 GIN) with RRF fusion, Jina Reranker v3, DeepSeek LLM streaming via SSE. Self-hosted on AWS EC2 with Nginx, PM2, Let\'s Encrypt SSL, and GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Try It Live</a>'
+                description: 'Production RAG chatbot that indexes 34 real projects + CV (3,440+ chunks). Hybrid search (pgvector HNSW + BM25 GIN) with RRF fusion, Jina Reranker v3, DeepSeek LLM streaming via SSE. Self-hosted on AWS EC2 with Nginx, PM2, Let\'s Encrypt SSL, and GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Try It Live</a>'
             },
             buddy: {
                 title: 'Buddy Agent — Self-Extending AI Assistant',
@@ -398,7 +398,7 @@ const translations = {
             },
             rag: {
                 title: 'Продакшн RAG система',
-                description: '3 400+ проіндексованих чанків, гібридний пошук (pgvector HNSW + BM25 + RRF), нейронний реранкінг — self-hosted на AWS EC2 з CI/CD'
+                description: '3 440+ проіндексованих чанків, гібридний пошук (pgvector HNSW + BM25 + RRF), нейронний реранкінг — self-hosted на AWS EC2 з CI/CD'
             },
             holders: {
                 title: '10 000+ холдерів токена',
@@ -428,7 +428,7 @@ const translations = {
             },
             askdorosh: {
                 title: 'Ask About Dorosh — Продакшн RAG Система',
-                description: 'Продакшн RAG чат-бот, що індексує 34 реальні проекти + CV (3,400+ чанків). Гібридний пошук (pgvector HNSW + BM25 GIN) з RRF фузією, Jina Reranker v3, DeepSeek LLM стрімінг через SSE. Self-hosted на AWS EC2 з Nginx, PM2, Let\'s Encrypt SSL та GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Спробувати наживо</a>'
+                description: 'Продакшн RAG чат-бот, що індексує 34 реальні проекти + CV (3,440+ чанків). Гібридний пошук (pgvector HNSW + BM25 GIN) з RRF фузією, Jina Reranker v3, DeepSeek LLM стрімінг через SSE. Self-hosted на AWS EC2 з Nginx, PM2, Let\'s Encrypt SSL та GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Спробувати наживо</a>'
             },
             buddy: {
                 title: 'Buddy Agent — Самодоповнюваний AI Асистент',
@@ -662,7 +662,7 @@ const translations = {
             },
             rag: {
                 title: 'Produktions-RAG-System',
-                description: '3.400+ indexierte Chunks, hybride Suche (pgvector HNSW + BM25 + RRF), neuronales Reranking — self-hosted auf AWS EC2 mit CI/CD'
+                description: '3.440+ indexierte Chunks, hybride Suche (pgvector HNSW + BM25 + RRF), neuronales Reranking — self-hosted auf AWS EC2 mit CI/CD'
             },
             holders: {
                 title: '10.000+ Token-Inhaber',
@@ -692,7 +692,7 @@ const translations = {
             },
             askdorosh: {
                 title: 'Ask About Dorosh — Produktions-RAG-System',
-                description: 'Produktions-RAG-Chatbot, der 34 reale Projekte + CV indiziert (3.400+ Chunks). Hybridsuche (pgvector HNSW + BM25 GIN) mit RRF-Fusion, Jina Reranker v3, DeepSeek-LLM-Streaming via SSE. Self-hosted auf AWS EC2 mit Nginx, PM2, Let\'s Encrypt SSL und GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Live testen</a>'
+                description: 'Produktions-RAG-Chatbot, der 34 reale Projekte + CV indiziert (3.440+ Chunks). Hybridsuche (pgvector HNSW + BM25 GIN) mit RRF-Fusion, Jina Reranker v3, DeepSeek-LLM-Streaming via SSE. Self-hosted auf AWS EC2 mit Nginx, PM2, Let\'s Encrypt SSL und GitHub Actions CI/CD. <a href="https://ask-about-dorosh.duckdns.org" target="_blank" style="color: var(--accent-color);">Live testen</a>'
             },
             buddy: {
                 title: 'Buddy Agent — Selbsterweiternder KI-Assistent',

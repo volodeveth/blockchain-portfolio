@@ -1,7 +1,7 @@
 // Translations
 const translations = {
     en: {
-        nav: { home: 'Home', about: 'About', projects: 'Projects', skills: 'Skills', contact: 'Contact' },
+        nav: { home: 'Home', about: 'About', experience: 'Experience', projects: 'Projects', skills: 'Skills', contact: 'Contact' },
         hero: {
             title1: 'AI Engineer',
             title2: '& Agentic Full Stack Developer',
@@ -244,6 +244,13 @@ const translations = {
             }
         },
         footer: { copyright: '© 2026 VoloDev.eth — AI Engineer & Agentic Full Stack Developer. Team output. Solo price.' },
+        experience: {
+            title: 'Professional Experience',
+            goal: { role: 'AI Engineer (part-time)', company: 'Goal Marketing Agency («Ціль»)', dates: 'Jun 2026 — Present', desc: 'AI agents and LLM-powered automation for marketing operations: multi-LLM pipelines, AI-assisted auditing and reporting systems.' },
+            freelance: { role: 'AI Engineer & Full-Stack Developer', company: 'Freelance & Own Products', dates: '2014 — Present', desc: 'Voice agents, RAG systems, self-extending assistants, LLM fine-tuning, Shopify apps, SaaS and Web3 platforms — 20+ shipped products (see Projects below).' },
+            dimison: { role: 'Digital Transformation Lead & Head of E-commerce', company: '«Dim i Son»', dates: 'Jan 2021 — Apr 2026', desc: 'Architected a custom Next.js/React e-commerce core replacing legacy CMS; built a real-time omnichannel ecosystem syncing inventory, logistics and sales between offline stores and the web; introduced AI agents for order intake, content generation and automated social publishing; automated marketing workflows (Google Ads, SEO, CRM) and supply-chain logic.' },
+            mekko: { role: 'Co-founder & Head of E-commerce', company: 'Mekko', dates: 'Jun 2011 — Jan 2021', desc: 'Co-founded and led a mattress e-commerce brand for almost 10 years: owned the entire technical side (Shopify store, SEO across platforms, Google & Meta Ads) plus project management, recruitment, R&D and marketing strategy.' }
+        },
         rag: {
             fabLabel: 'Ask my AI',
             title: 'Ask About Dorosh',
@@ -258,7 +265,7 @@ const translations = {
         }
     },
     uk: {
-        nav: { home: 'Головна', about: 'Про мене', projects: 'Проекти', skills: 'Навички', contact: 'Контакти' },
+        nav: { home: 'Головна', about: 'Про мене', experience: 'Досвід', projects: 'Проекти', skills: 'Навички', contact: 'Контакти' },
         hero: {
             title1: 'AI Інженер',
             title2: 'та Agentic Full Stack Розробник',
@@ -501,6 +508,13 @@ const translations = {
             }
         },
         footer: { copyright: '© 2026 VoloDev.eth — AI Інженер та Agentic Full Stack Розробник. Продуктивність команди. Ціна одного.' },
+        experience: {
+            title: 'Професійний досвід',
+            goal: { role: 'AI Інженер (part-time)', company: 'Маркетинг-агенція «Ціль»', dates: 'Черв 2026 — дотепер', desc: 'AI агенти та LLM-автоматизація маркетингових процесів: мульти-LLM пайплайни, AI-асистований аудит та системи звітності.' },
+            freelance: { role: 'AI Інженер та Full-Stack Розробник', company: 'Фріланс та власні продукти', dates: '2014 — дотепер', desc: 'Голосові агенти, RAG системи, самодоповнювані асистенти, файн-тюнінг LLM, Shopify додатки, SaaS та Web3 платформи — 20+ реалізованих продуктів (див. Проекти нижче).' },
+            dimison: { role: 'Digital Transformation Lead та керівник e-commerce', company: '«Дім і Сон»', dates: 'Січ 2021 — Кві 2026', desc: 'Спроектував кастомне e-commerce ядро на Next.js/React на заміну legacy CMS; побудував omnichannel екосистему з синхронізацією складу, логістики та продажів між офлайн-магазинами і сайтом у реальному часі; впровадив AI агентів для прийому замовлень, генерації контенту та автопостингу в соцмережах; автоматизував маркетингові процеси (Google Ads, SEO, CRM) і логістику.' },
+            mekko: { role: 'Співзасновник та керівник e-commerce', company: 'Mekko', dates: 'Черв 2011 — Січ 2021', desc: 'Співзаснував і майже 10 років керував e-commerce брендом матраців: повністю вів технічну частину (Shopify магазин, SEO на різних платформах, Google та Meta Ads), а також проектний менеджмент, рекрутинг, R&D і маркетингову стратегію.' }
+        },
         rag: {
             fabLabel: 'Спитай мій AI',
             title: 'Ask About Dorosh',
@@ -515,7 +529,7 @@ const translations = {
         }
     },
     de: {
-        nav: { home: 'Start', about: 'Über mich', projects: 'Projekte', skills: 'Kenntnisse', contact: 'Kontakt' },
+        nav: { home: 'Start', about: 'Über mich', experience: 'Erfahrung', projects: 'Projekte', skills: 'Kenntnisse', contact: 'Kontakt' },
         hero: {
             title1: 'KI-Ingenieur',
             title2: '& Agentic Full Stack Entwickler',
@@ -758,6 +772,13 @@ const translations = {
             }
         },
         footer: { copyright: '© 2026 VoloDev.eth — KI-Ingenieur & Agentic Full Stack Entwickler. Team-Output. Solo-Preis.' },
+        experience: {
+            title: 'Berufserfahrung',
+            goal: { role: 'KI-Ingenieur (Teilzeit)', company: 'Marketingagentur «Цil» (Goal)', dates: 'Juni 2026 — heute', desc: 'KI-Agenten und LLM-Automatisierung für Marketingprozesse: Multi-LLM-Pipelines, KI-gestützte Audits und Reporting-Systeme.' },
+            freelance: { role: 'KI-Ingenieur & Full-Stack-Entwickler', company: 'Freelance & eigene Produkte', dates: '2014 — heute', desc: 'Sprachagenten, RAG-Systeme, selbsterweiternde Assistenten, LLM-Fine-Tuning, Shopify-Apps, SaaS- und Web3-Plattformen — 20+ ausgelieferte Produkte (siehe Projekte unten).' },
+            dimison: { role: 'Digital Transformation Lead & Leiter E-Commerce', company: '«Dim i Son»', dates: 'Jan 2021 — Apr 2026', desc: 'Eigenes E-Commerce-Kernsystem mit Next.js/React als Ersatz für Legacy-CMS entworfen; Omnichannel-Ökosystem mit Echtzeit-Synchronisation von Lager, Logistik und Verkäufen zwischen Offline-Filialen und Web aufgebaut; KI-Agenten für Bestellannahme, Content-Generierung und automatisiertes Social-Publishing eingeführt; Marketing-Workflows (Google Ads, SEO, CRM) und Supply-Chain-Logik automatisiert.' },
+            mekko: { role: 'Mitgründer & Leiter E-Commerce', company: 'Mekko', dates: 'Juni 2011 — Jan 2021', desc: 'Mitgegründet und fast 10 Jahre eine E-Commerce-Matratzenmarke geführt: die gesamte technische Seite verantwortet (Shopify-Shop, SEO auf verschiedenen Plattformen, Google & Meta Ads) plus Projektmanagement, Recruiting, R&D und Marketingstrategie.' }
+        },
         rag: {
             fabLabel: 'Frag meine KI',
             title: 'Ask About Dorosh',

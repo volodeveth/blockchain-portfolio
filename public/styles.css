@@ -1970,6 +1970,12 @@ body {
     overflow: hidden;
 }
 
+/* Collapsed by default and when closed — the [hidden] attribute must win
+   over the display:flex above (author display beats the UA [hidden] rule) */
+.rag-panel[hidden] {
+    display: none;
+}
+
 .rag-header {
     display: flex;
     align-items: center;

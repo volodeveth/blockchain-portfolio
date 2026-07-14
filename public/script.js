@@ -3,11 +3,11 @@ const translations = {
     en: {
         nav: { home: 'Home', about: 'About', projects: 'Projects', skills: 'Skills', contact: 'Contact' },
         hero: {
-            title1: 'Agentic Full Stack',
-            title2: 'Developer & AI Engineer',
-            subtitle: 'Claude Code Agents | Multi-Agent Systems | Full-Stack Apps | AI Integration | Shopify | SaaS | Web3',
+            title1: 'AI Engineer',
+            title2: '& Agentic Full Stack Developer',
+            subtitle: 'AI Agents & Multi-Agent Systems | Voice Agents | RAG Systems | LLM Fine-Tuning | Full-Stack Apps | Shopify | Web3',
             location: '📍 Lviv, Ukraine | 🌐 Available Worldwide',
-            description: 'Full-stack developer & AI engineer with 10+ years experience. I build production-ready applications using multi-agent AI orchestration — Claude Code with specialized roles (Planner, Architect, Reviewer, Security Auditor, Implementer), parallel subagents, and third-party AI APIs (OpenAI, Gemini, Grok). One engineer. Team productivity. Expert in <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — every project ships with automated code review, security audit, and personal quality control.',
+            description: 'I engineer AI agents and agentic systems that do real work: <strong>voice agents</strong> that take orders in real time (LiveKit + OpenAI Realtime), <strong>self-extending assistants</strong> that write their own skills, <strong>production RAG pipelines</strong>, <strong>LLM fine-tuning</strong> (QLoRA → GGUF → Ollama), and AI-powered automation. I build the full stack around them — <strong>Next.js, React, TypeScript, Python, Node.js</strong> — and develop with a multi-agent Claude Code workflow, so every project ships with automated code review and security audit. Don\'t take my word for it — <strong>ask my AI in the corner: it\'s my own RAG system</strong>.',
             viewProjects: 'View Projects',
             getInTouch: 'Get In Touch',
             downloadCv: 'Download CV',
@@ -15,10 +15,10 @@ const translations = {
         },
         about: {
             title: 'About Me',
-            intro: 'I\'m a full-stack developer & AI engineer with 10+ years of experience and 20+ shipped products. I work with multi-agent AI systems — Claude Code CLI orchestrating specialized subagents in parallel (Planner, Architect, Implementer, Reviewer, Security Auditor) — to deliver production-ready applications faster and at a fraction of the cost of a traditional team. Every project ships with automated code review, security audit, and my personal quality control. Stack: <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — plus Shopify app development, SaaS, and Web3 integration.',
+            intro: 'I\'m an AI engineer & full-stack developer with 10+ years of experience and 20+ shipped products. I build agentic systems as products — voice agents, self-extending assistants, production RAG pipelines, LLM fine-tuning, and AI automation — and develop them with multi-agent Claude Code orchestration (Planner, Architect, Implementer, Reviewer, Security Auditor in parallel), delivering production-ready applications faster and at a fraction of the cost of a traditional team. Every project ships with automated code review, security audit, and my personal quality control. Stack: <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — plus Shopify app development, SaaS, and Web3 integration.',
             achievementsTitle: 'Key Achievements & Expertise',
-            profileLocation: 'Agentic Full Stack Developer from Lviv, Ukraine',
-            profileTagline: 'Shipping production apps with AI agent orchestration'
+            profileLocation: 'AI Engineer from Lviv, Ukraine',
+            profileTagline: 'I build AI agents that do real work'
         },
         projects: { title: 'Featured Projects' },
         langBanner: {
@@ -34,7 +34,7 @@ const translations = {
         skills: {
             title: 'Technical Expertise',
             cat: {
-                agentWorkflow: 'AI Agents & Dev Workflow',
+                agentWorkflow: 'AI Agents & Agentic Systems',
                 ml: 'ML & LLM Engineering',
                 blockchain: 'Blockchain Development',
                 python: 'Python Development',
@@ -69,6 +69,8 @@ const translations = {
                 figmaMcp: 'Figma → Code (MCP API)',
                 thirdPartyAi: 'OpenAI / Gemini / Grok API Integration',
                 cicd: 'Git → Vercel CI/CD Pipeline',
+                voiceAgents: 'Voice Agents (LiveKit / OpenAI Realtime)',
+                langgraphAgents: 'LangGraph Agents',
                 fineTuning: 'LLM Fine-Tuning (QLoRA / LoRA / PEFT)',
                 syntheticData: 'Synthetic Dataset Generation',
                 localLlm: 'GGUF / llama.cpp / Ollama (Local LLMs)',
@@ -79,7 +81,7 @@ const translations = {
         contact: {
             title: "Let's Build Something Amazing",
             subtitle: 'Ready to Transform Your Vision',
-            description: 'Whether you need a full-stack web app, AI agent integration, Shopify app, SaaS platform, e-commerce solution, or Web3/blockchain development — you get multi-agent AI engineering: faster delivery, automated quality control, and senior-level code review on every commit. Team output. Solo price.',
+            description: 'Whether you need an AI agent or multi-agent system, a voice agent, a RAG system or chatbot, LLM fine-tuning, a full-stack web app, Shopify app, SaaS platform, or Web3 development — you get multi-agent AI engineering: faster delivery, automated quality control, and senior-level code review on every commit. Team output. Solo price.',
             upwork: 'Upwork Profile',
             upworkDesc: 'View my professional profile and reviews',
             githubDesc: 'View my open source projects',
@@ -104,6 +106,8 @@ const translations = {
             shopifyApp: 'Shopify App Development',
             aiAgentIntegration: 'AI Agent Integration',
             multiAgentSystem: 'Multi-Agent System Development',
+            voiceAgent: 'Voice Agent (Realtime)',
+            ragChatbot: 'RAG System / AI Chatbot',
             consultation: 'Technical Consultation', other: 'Other',
             budget: 'Budget Range', selectBudget: 'Select Budget Range',
             under1k: 'Under $1,000', '1k5k': '$1,000 - $5,000', '5k10k': '$5,000 - $10,000',
@@ -239,7 +243,7 @@ const translations = {
                 description: 'Transformed published novel into NFT collection, bridging traditional publishing with Web3 innovation. <a href="https://linktr.ee/miseryavenue" target="_blank" style="color: var(--accent-color);">Visit Project</a>'
             }
         },
-        footer: { copyright: '© 2026 VoloDev.eth — Agentic Full Stack Developer & AI Engineer. Team output. Solo price.' },
+        footer: { copyright: '© 2026 VoloDev.eth — AI Engineer & Agentic Full Stack Developer. Team output. Solo price.' },
         rag: {
             fabLabel: 'Ask my AI',
             title: 'Ask About Dorosh',
@@ -256,11 +260,11 @@ const translations = {
     uk: {
         nav: { home: 'Головна', about: 'Про мене', projects: 'Проекти', skills: 'Навички', contact: 'Контакти' },
         hero: {
-            title1: 'Agentic Full Stack',
-            title2: 'Розробник та AI Інженер',
-            subtitle: 'Claude Code Агенти | Мульти-агентні Системи | Full-Stack Додатки | AI Інтеграція | Shopify | SaaS | Web3',
+            title1: 'AI Інженер',
+            title2: 'та Agentic Full Stack Розробник',
+            subtitle: 'AI Агенти та Мульти-агентні Системи | Голосові Агенти | RAG Системи | LLM Файн-тюнінг | Full-Stack Додатки | Shopify | Web3',
             location: '📍 Львів, Україна | 🌐 Працюю по всьому світу',
-            description: 'Full-stack розробник та AI інженер з 10+ роками досвіду. Будую продакшн-ready додатки з мульти-агентною AI оркестрацією — Claude Code зі спеціалізованими ролями (Planner, Architect, Reviewer, Security Auditor, Implementer), паралельними субагентами та AI API сторонніх провайдерів (OpenAI, Gemini, Grok). Один інженер. Продуктивність команди. Експерт у <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — кожен проект поставляється з автоматизованим code review, аудитом безпеки та особистим контролем якості.',
+            description: 'Я створюю AI агентів та агентні системи, які виконують реальну роботу: <strong>голосові агенти</strong>, що приймають замовлення в реальному часі (LiveKit + OpenAI Realtime), <strong>самодоповнювані асистенти</strong>, які пишуть власні скіли, <strong>продакшн RAG пайплайни</strong>, <strong>файн-тюнінг LLM</strong> (QLoRA → GGUF → Ollama) та AI-автоматизацію. Будую і весь стек навколо них — <strong>Next.js, React, TypeScript, Python, Node.js</strong> — а розробляю з мульти-агентним Claude Code воркфлоу, тож кожен проект поставляється з автоматизованим code review та аудитом безпеки. Не вір на слово — <strong>спитай мій AI у кутку екрана: це моя власна RAG система</strong>.',
             viewProjects: 'Переглянути проекти',
             getInTouch: "Зв'язатися",
             downloadCv: 'Завантажити CV',
@@ -268,10 +272,10 @@ const translations = {
         },
         about: {
             title: 'Про мене',
-            intro: 'Я full-stack розробник та AI інженер з 10+ роками досвіду та 20+ реалізованими продуктами. Працюю з мульти-агентними AI системами — Claude Code CLI оркеструє спеціалізованих субагентів паралельно (Planner, Architect, Implementer, Reviewer, Security Auditor) — щоб доставляти продакшн-ready додатки швидше та вдвічі дешевше ніж традиційна команда. Кожен проект поставляється з автоматизованим code review, аудитом безпеки та моїм особистим контролем якості. Стек: <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — плюс розробка Shopify додатків, SaaS та Web3 інтеграція.',
+            intro: 'Я AI інженер та full-stack розробник з 10+ роками досвіду та 20+ реалізованими продуктами. Будую агентні системи як продукт — голосові агенти, самодоповнювані асистенти, продакшн RAG пайплайни, файн-тюнінг LLM та AI-автоматизацію — і розробляю їх з мульти-агентною Claude Code оркестрацією (Planner, Architect, Implementer, Reviewer, Security Auditor паралельно), доставляючи продакшн-ready додатки швидше та дешевше ніж традиційна команда. Кожен проект поставляється з автоматизованим code review, аудитом безпеки та моїм особистим контролем якості. Стек: <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — плюс розробка Shopify додатків, SaaS та Web3 інтеграція.',
             achievementsTitle: 'Ключові досягнення та експертиза',
-            profileLocation: 'Agentic Full Stack Розробник зі Львова, Україна',
-            profileTagline: 'Постачаю продакшн-додатки з AI агентною оркестрацією'
+            profileLocation: 'AI Інженер зі Львова, Україна',
+            profileTagline: 'Створюю AI агентів, які виконують реальну роботу'
         },
         projects: { title: 'Вибрані проекти' },
         langBanner: {
@@ -287,7 +291,7 @@ const translations = {
         skills: {
             title: 'Технічна експертиза',
             cat: {
-                agentWorkflow: 'AI-агенти та Воркфлоу',
+                agentWorkflow: 'AI Агенти та Агентні Системи',
                 ml: 'ML та LLM Інженерія',
                 blockchain: 'Blockchain-розробка',
                 python: 'Python-розробка',
@@ -322,6 +326,8 @@ const translations = {
                 figmaMcp: 'Figma → Код (MCP API)',
                 thirdPartyAi: 'OpenAI / Gemini / Grok API Інтеграція',
                 cicd: 'Git → Vercel CI/CD Пайплайн',
+                voiceAgents: 'Голосові агенти (LiveKit / OpenAI Realtime)',
+                langgraphAgents: 'LangGraph агенти',
                 fineTuning: 'LLM Файн-тюнінг (QLoRA / LoRA / PEFT)',
                 syntheticData: 'Генерація синтетичних датасетів',
                 localLlm: 'GGUF / llama.cpp / Ollama (локальні LLM)',
@@ -332,7 +338,7 @@ const translations = {
         contact: {
             title: 'Створімо щось неймовірне',
             subtitle: 'Готовий втілити вашу візію',
-            description: 'Чи потрібен full-stack веб-додаток, AI агентна інтеграція, Shopify додаток, SaaS платформа, e-commerce рішення або Web3/blockchain розробка — ви отримуєте мульти-агентний AI інжиніринг: швидша доставка, автоматизований контроль якості та code review рівня senior на кожному коміті. Продуктивність команди. Ціна одного спеціаліста.',
+            description: 'Чи потрібен AI агент або мульти-агентна система, голосовий агент, RAG система чи чат-бот, файн-тюнінг LLM, full-stack веб-додаток, Shopify додаток, SaaS платформа або Web3 розробка — ви отримуєте мульти-агентний AI інжиніринг: швидша доставка, автоматизований контроль якості та code review рівня senior на кожному коміті. Продуктивність команди. Ціна одного спеціаліста.',
             upwork: 'Профіль Upwork',
             upworkDesc: 'Переглянути мій професійний профіль та відгуки',
             githubDesc: 'Мої проєкти з відкритим кодом',
@@ -357,6 +363,8 @@ const translations = {
             shopifyApp: 'Розробка Shopify додатків',
             aiAgentIntegration: 'AI Агентна Інтеграція',
             multiAgentSystem: 'Розробка Мульти-агентної Системи',
+            voiceAgent: 'Голосовий Агент (Realtime)',
+            ragChatbot: 'RAG Система / AI Чат-бот',
             consultation: 'Технічна консультація', other: 'Інше',
             budget: 'Діапазон бюджету', selectBudget: 'Оберіть діапазон бюджету',
             under1k: 'До $1,000', '1k5k': '$1,000 - $5,000', '5k10k': '$5,000 - $10,000',
@@ -492,7 +500,7 @@ const translations = {
                 description: 'Перетворив опублікований роман на NFT колекцію, з\'єднавши традиційне видавництво з Web3 інноваціями. <a href="https://linktr.ee/miseryavenue" target="_blank" style="color: var(--accent-color);">Відвідати проект</a>'
             }
         },
-        footer: { copyright: '© 2026 VoloDev.eth — Agentic Full Stack Розробник та AI Інженер. Продуктивність команди. Ціна одного.' },
+        footer: { copyright: '© 2026 VoloDev.eth — AI Інженер та Agentic Full Stack Розробник. Продуктивність команди. Ціна одного.' },
         rag: {
             fabLabel: 'Спитай мій AI',
             title: 'Ask About Dorosh',
@@ -509,11 +517,11 @@ const translations = {
     de: {
         nav: { home: 'Start', about: 'Über mich', projects: 'Projekte', skills: 'Kenntnisse', contact: 'Kontakt' },
         hero: {
-            title1: 'Agentic Full Stack',
-            title2: 'Entwickler & KI-Ingenieur',
-            subtitle: 'Claude Code Agenten | Multi-Agenten-Systeme | Full-Stack Apps | KI-Integration | Shopify | SaaS | Web3',
+            title1: 'KI-Ingenieur',
+            title2: '& Agentic Full Stack Entwickler',
+            subtitle: 'KI-Agenten & Multi-Agenten-Systeme | Sprachagenten | RAG-Systeme | LLM-Fine-Tuning | Full-Stack-Apps | Shopify | Web3',
             location: '📍 Lwiw, Ukraine | 🌐 Weltweit verfügbar',
-            description: 'Full-Stack-Entwickler & KI-Ingenieur mit 10+ Jahren Erfahrung. Ich entwickle produktionsreife Anwendungen mit Multi-Agenten-KI-Orchestrierung — Claude Code mit spezialisierten Rollen (Planner, Architect, Reviewer, Security Auditor, Implementer), parallelen Subagenten und Drittanbieter-KI-APIs (OpenAI, Gemini, Grok). Ein Ingenieur. Team-Produktivität. Experte in <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — jedes Projekt wird mit automatischem Code-Review, Sicherheitsaudit und persönlicher Qualitätskontrolle geliefert.',
+            description: 'Ich entwickle KI-Agenten und agentische Systeme, die echte Arbeit leisten: <strong>Sprachagenten</strong>, die Bestellungen in Echtzeit entgegennehmen (LiveKit + OpenAI Realtime), <strong>selbsterweiternde Assistenten</strong>, die eigene Skills schreiben, <strong>Produktions-RAG-Pipelines</strong>, <strong>LLM-Fine-Tuning</strong> (QLoRA → GGUF → Ollama) und KI-Automatisierung. Ich baue den gesamten Stack darum herum — <strong>Next.js, React, TypeScript, Python, Node.js</strong> — und entwickle mit einem Multi-Agenten-Claude-Code-Workflow, sodass jedes Projekt mit automatischem Code-Review und Sicherheitsaudit ausgeliefert wird. Glauben Sie nicht nur meinen Worten — <strong>fragen Sie meine KI unten rechts: das ist mein eigenes RAG-System</strong>.',
             viewProjects: 'Projekte ansehen',
             getInTouch: 'Kontakt aufnehmen',
             downloadCv: 'CV herunterladen',
@@ -521,10 +529,10 @@ const translations = {
         },
         about: {
             title: 'Über mich',
-            intro: 'Ich bin ein Full-Stack-Entwickler & KI-Ingenieur mit 10+ Jahren Erfahrung und 20+ ausgelieferten Produkten. Ich arbeite mit Multi-Agenten-KI-Systemen — Claude Code CLI orchestriert spezialisierte Subagenten parallel (Planner, Architect, Implementer, Reviewer, Security Auditor) — um produktionsreife Anwendungen schneller und zu einem Bruchteil der Kosten eines traditionellen Teams zu liefern. Jedes Projekt wird mit automatischem Code-Review, Sicherheitsaudit und persönlicher Qualitätskontrolle geliefert. Stack: <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — plus Shopify-App-Entwicklung, SaaS und Web3-Integration.',
+            intro: 'Ich bin KI-Ingenieur & Full-Stack-Entwickler mit 10+ Jahren Erfahrung und 20+ ausgelieferten Produkten. Ich baue agentische Systeme als Produkt — Sprachagenten, selbsterweiternde Assistenten, Produktions-RAG-Pipelines, LLM-Fine-Tuning und KI-Automatisierung — und entwickle sie mit Multi-Agenten-Claude-Code-Orchestrierung (Planner, Architect, Implementer, Reviewer, Security Auditor parallel), um produktionsreife Anwendungen schneller und zu einem Bruchteil der Kosten eines traditionellen Teams zu liefern. Jedes Projekt wird mit automatischem Code-Review, Sicherheitsaudit und persönlicher Qualitätskontrolle geliefert. Stack: <strong>Next.js, React, TypeScript, Python, Django, Node.js, PHP/Symfony, Solidity</strong> — plus Shopify-App-Entwicklung, SaaS und Web3-Integration.',
             achievementsTitle: 'Wichtigste Erfolge & Fachkenntnisse',
-            profileLocation: 'Agentic Full Stack Entwickler aus Lwiw, Ukraine',
-            profileTagline: 'Produktions-Apps mit KI-Agenten-Orchestrierung liefern'
+            profileLocation: 'KI-Ingenieur aus Lwiw, Ukraine',
+            profileTagline: 'Ich baue KI-Agenten, die echte Arbeit leisten'
         },
         projects: { title: 'Ausgewählte Projekte' },
         langBanner: {
@@ -540,7 +548,7 @@ const translations = {
         skills: {
             title: 'Technische Kompetenz',
             cat: {
-                agentWorkflow: 'KI-Agenten & Workflow',
+                agentWorkflow: 'KI-Agenten & Agentische Systeme',
                 ml: 'ML & LLM Engineering',
                 blockchain: 'Blockchain-Entwicklung',
                 python: 'Python-Entwicklung',
@@ -575,6 +583,8 @@ const translations = {
                 figmaMcp: 'Figma → Code (MCP API)',
                 thirdPartyAi: 'OpenAI / Gemini / Grok API Integration',
                 cicd: 'Git → Vercel CI/CD Pipeline',
+                voiceAgents: 'Sprachagenten (LiveKit / OpenAI Realtime)',
+                langgraphAgents: 'LangGraph-Agenten',
                 fineTuning: 'LLM-Fine-Tuning (QLoRA / LoRA / PEFT)',
                 syntheticData: 'Synthetische Datensatzgenerierung',
                 localLlm: 'GGUF / llama.cpp / Ollama (lokale LLMs)',
@@ -585,7 +595,7 @@ const translations = {
         contact: {
             title: 'Lass uns etwas Großartiges bauen',
             subtitle: 'Bereit, Ihre Vision umzusetzen',
-            description: 'Ob Sie eine Full-Stack-Web-App, KI-Agenten-Integration, Shopify-App, SaaS-Plattform, E-Commerce-Lösung oder Web3/Blockchain-Entwicklung benötigen — Sie erhalten Multi-Agenten-KI-Engineering: schnellere Lieferung, automatisierte Qualitätskontrolle und Senior-Level-Code-Review bei jedem Commit. Team-Output. Solo-Preis.',
+            description: 'Ob Sie einen KI-Agenten oder ein Multi-Agenten-System, einen Sprachagenten, ein RAG-System oder einen Chatbot, LLM-Fine-Tuning, eine Full-Stack-Web-App, Shopify-App, SaaS-Plattform oder Web3-Entwicklung benötigen — Sie erhalten Multi-Agenten-KI-Engineering: schnellere Lieferung, automatisierte Qualitätskontrolle und Senior-Level-Code-Review bei jedem Commit. Team-Output. Solo-Preis.',
             upwork: 'Upwork-Profil',
             upworkDesc: 'Mein professionelles Profil und Bewertungen ansehen',
             githubDesc: 'Meine Open-Source-Projekte ansehen',
@@ -610,6 +620,8 @@ const translations = {
             shopifyApp: 'Shopify-App-Entwicklung',
             aiAgentIntegration: 'KI-Agenten-Integration',
             multiAgentSystem: 'Multi-Agenten-System-Entwicklung',
+            voiceAgent: 'Sprachagent (Echtzeit)',
+            ragChatbot: 'RAG-System / KI-Chatbot',
             consultation: 'Technische Beratung', other: 'Sonstiges',
             budget: 'Budgetrahmen', selectBudget: 'Budgetrahmen auswählen',
             under1k: 'Unter $1.000', '1k5k': '$1.000 – $5.000', '5k10k': '$5.000 – $10.000',
@@ -745,7 +757,7 @@ const translations = {
                 description: 'Verwandlung eines veröffentlichten Romans in eine NFT-Collection – Brücke zwischen traditionellem Verlagswesen und Web3-Innovation. <a href="https://linktr.ee/miseryavenue" target="_blank" style="color: var(--accent-color);">Projekt besuchen</a>'
             }
         },
-        footer: { copyright: '© 2026 VoloDev.eth — Agentic Full Stack Entwickler & KI-Ingenieur. Team-Output. Solo-Preis.' },
+        footer: { copyright: '© 2026 VoloDev.eth — KI-Ingenieur & Agentic Full Stack Entwickler. Team-Output. Solo-Preis.' },
         rag: {
             fabLabel: 'Frag meine KI',
             title: 'Ask About Dorosh',
